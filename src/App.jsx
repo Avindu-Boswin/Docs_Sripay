@@ -25,9 +25,11 @@ function App() {
          <Route
           path="/about"
           element={
-            <AboutLayout>
-              <About />
-            </AboutLayout>
+      <HomeLayout>
+      <About />
+      </HomeLayout>
+        
+         
           }
         />
         
