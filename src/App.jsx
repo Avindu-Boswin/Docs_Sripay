@@ -1,16 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
-import { Alert, Button } from 'antd';
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from './pages/Home';
+import HomeLayout from './layouts/HomeLayout';
+import NotFound from './pages/errorPages/NotFound';
 
 function App() {
-
   return (
-   <div>
-    <Button>Default Button</Button>
-   </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomeLayout>
+              <Home />
+            </HomeLayout>
+          }
+        />
+        
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/not-found" replace />} />
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
