@@ -6,13 +6,45 @@ import { NavLink } from 'react-router-dom';
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-function SideBar() {
+
+function AcquirerSideBar({ isMobile = false, onClose }) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleCollapse = () => {
     setCollapsed((prev) => !prev);
   };
 
+  if (isMobile) {
+    // Render as a drawer for mobile
+    return (
+      <div className="h-full flex flex-col w-64 bg-white shadow-lg">
+        <div className="flex items-center justify-between p-2 border-b">
+          <Button
+            type='text'
+            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+            onClick={toggleCollapse}
+          />
+          <Button type="text" onClick={onClose}>&times;</Button>
+        </div>
+        <Menu theme='light' mode='inline' defaultSelectedKeys={['1']}>
+          <Menu.Item key='/'>
+            <NavLink to='/' />
+            {!collapsed && 'Home'}
+          </Menu.Item>
+          <Menu.Item key='2'>
+            {!collapsed && 'About'}
+          </Menu.Item>
+          <SubMenu key='sub1' title={!collapsed ? 'Submenu' : ''}>
+            <Menu.Item key='3'>{!collapsed && 'Option 1'}</Menu.Item>
+            <Menu.Item key='4'>{!collapsed && 'Option 2'}</Menu.Item>
+            <Menu.Item key='5'>{!collapsed && 'Option 3'}</Menu.Item>
+          </SubMenu>
+        </Menu>
+      </div>
+    );
+  }
+
+  // Desktop sidebar
   return (
     <Sider
       width={200}
@@ -35,7 +67,7 @@ function SideBar() {
         />
       </div>
       <Menu theme='light' mode='inline' defaultSelectedKeys={['1']}>
-        <Menu.Item key='/' >
+        <Menu.Item key='/'>
           <NavLink to='/' />
           {!collapsed && 'Home'}
         </Menu.Item>
@@ -52,4 +84,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default AcquirerSideBar;

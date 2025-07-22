@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import Logo from '../../assets/images/sripayLogo.jpg';
 
-export default function AcqNav() {
+export default function AcqNav({ onMobileMenuClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (onMobileMenuClick) onMobileMenuClick();
   };
 
   const toggleLangDropdown = () => {
@@ -14,7 +15,7 @@ export default function AcqNav() {
   };
 
   return (
-    <nav className="bg-white border-b w-full">
+    <nav className="sticky top-0 z-50 bg-white border-b w-full">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
