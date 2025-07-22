@@ -36,11 +36,8 @@ const NotFound = () => (
         animation: 'slideDown 0.8s',
       }}
     >
-      <img src={Logo} alt="Sripay Logo" style={{ width: 80, marginBottom: 18, borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} />
+      <img src={Logo} alt="Sripay Logo" style={{ height:'40px', width: "auto", marginBottom: 18 }} />
       <Error404 />
-      <div style={{ fontSize: 48, fontWeight: 700, color: '#1e293b', marginBottom: 8, letterSpacing: 2, fontFamily: 'Montserrat, sans-serif' }}>
-        404
-      </div>
       <div style={{ fontSize: 22, color: '#1e293b', marginBottom: 10, fontWeight: 600, fontFamily: 'Montserrat, sans-serif', letterSpacing: 1 }}>
         Oops! Page Not Found
       </div>
