@@ -79,14 +79,40 @@ export default function FlowbiteNavbar() {
           </ul>
         </div>
 
-        {/* Search - Right side */}
-        <div className="relative hidden md:flex md:order-3">
-          <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-            <span className="sr-only">Search icon</span>
+        {/* Language Selector & Search - Right side */}
+        <div className="items-center gap-4 hidden md:flex md:order-3">
+          {/* Custom Language Selector */}
+          <div className="relative group">
+            <button
+              type="button"
+              className="flex items-center px-3 py-2 text-sm font-semibold border border-gray-300 rounded-lg bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            >
+              <span className="mr-1">EN</span>
+              <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {/* Dropdown menu (hidden by default, shown on hover/focus) */}
+            <div className="absolute left-0 z-10 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity">
+              <ul className="py-1 text-sm text-gray-700" role="listbox">
+                <li>
+                  <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option">EN</button>
+                </li>
+                <li>
+                  <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option">中文</button>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div className="relative">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg className="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+              <span className="sr-only">Search icon</span>
+            </div>
             <input 
               type="text" 
               id="search-navbar" 
@@ -95,6 +121,7 @@ export default function FlowbiteNavbar() {
               className="block w-80 p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 hover:border-blue-500 placeholder-gray-400 transition-colors" 
               placeholder="Search..."
             />
+          </div>
         </div>
 
         {/* Mobile Search - Only shown when menu is open */}
