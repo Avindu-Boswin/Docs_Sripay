@@ -17,15 +17,34 @@ const DocumentationHero = () => {
         </div>
 
         {/* Role selection cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {['Developer', 'Business User', 'Administrator'].map((role) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {[
+            {
+              role: 'Acquirer',
+              color: 'from-blue-300 to-blue-200',
+              desc: 'Access guides and resources for acquirers.'
+            },
+            {
+              role: 'Merchant',
+              color: 'from-blue-100 to-blue-300',
+              desc: 'Find merchant onboarding and integration help.'
+            },
+            {
+              role: 'Developer',
+              color: 'from-blue-200 to-blue-300',
+              desc: 'View Developer Guide'
+            }
+          ].map(({ role, color, icon, desc }) => (
             <Link
               key={role}
-              to={`/docs/${role.toLowerCase().replace(' ', '-')}`}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+              to={`/docs/${role.toLowerCase()}`}
+              className={`bg-gradient-to-br ${color} p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center group`}
             >
-              <h3 className="text-lg font-medium text-gray-900 mb-2">{role}</h3>
-              <p className="text-gray-600">View documentation for {role.toLowerCase()}s</p>
+              <div className="flex flex-col items-center mb-2">
+                {icon}
+                <h3 className="text-xl font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors duration-200">{role}</h3>
+              </div>
+              <p className="text-gray-700 text-sm font-normal">{desc}</p>
             </Link>
           ))}
         </div>
