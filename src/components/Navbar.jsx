@@ -80,7 +80,7 @@ export default function FlowbiteNavbar() {
         </div>
 
         {/* Language Selector & Search - Right side */}
-        <div className="flex items-center gap-4 hidden md:flex md:order-3">
+        <div className="items-center gap-4 hidden md:flex md:order-3">
           {/* Custom Language Selector */}
           <div className="relative group">
             <button

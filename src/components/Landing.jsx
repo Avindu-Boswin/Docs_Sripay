@@ -17,34 +17,31 @@ const DocumentationHero = () => {
         </div>
 
         {/* Role selection cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
           {[
             {
               role: 'Acquirer',
-              color: 'from-blue-300 to-blue-200',
               desc: 'Access guides and resources for acquirers.'
             },
             {
               role: 'Merchant',
-              color: 'from-blue-100 to-blue-300',
               desc: 'Find merchant onboarding and integration help.'
             },
             {
               role: 'Developer',
-              color: 'from-blue-200 to-blue-300',
               desc: 'View Developer Guide'
             }
-          ].map(({ role, color, icon, desc }) => (
+          ].map(({ role, icon, desc }) => (
             <Link
               key={role}
               to={`/docs/${role.toLowerCase()}`}
-              className={`bg-gradient-to-br ${color} p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center group`}
+              className="bg-[#000D7A] p-4 md:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center group transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#001AAB] cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
-              <div className="flex flex-col items-center mb-2">
+              <div className="flex flex-col items-center mb-1 md:mb-2">
                 {icon}
-                <h3 className="text-xl font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors duration-200">{role}</h3>
+                <h3 className="text-base md:text-xl font-bold text-white mb-1 group-hover:text-white transition-colors duration-200">{role}</h3>
               </div>
-              <p className="text-gray-700 text-sm font-normal">{desc}</p>
+              <p className="text-white text-xs md:text-sm font-light">{desc}</p>
             </Link>
           ))}
         </div>
