@@ -2,7 +2,7 @@ import React from 'react'
 
 function AcquirerDocs() {
   return (
-    <div className='md:ml-10 md:mr-10'>
+    <div>
         fffffffffffffffffffff
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim maxime dolorum aliquam debitis facilis temporibus sit dolore. Reiciendis exercitationem nihil quidem soluta nisi debitis! Eligendi, minima? Iusto quasi adipisci laboriosam.
         Debitis earum saepe, itaque nesciunt dignissimos eaque accusamus esse ex voluptatibus praesentium ullam repellat animi odio magni cumque corrupti ducimus magnam aut explicabo similique voluptate eum adipisci fuga? Necessitatibus, doloribus?
