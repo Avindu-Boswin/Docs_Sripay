@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import HomeLayout from './layouts/HomeLayout';
 import NotFound from './pages/errorPages/NotFound';
 import About from './pages/About';
-import AboutLayout from './layouts/AboutLayout';
+
 import AcquirerDocs from './pages/acquirer/AcquirerDocs';
 import AcquirerLayout from './layouts/AcquirerLayout';
 
