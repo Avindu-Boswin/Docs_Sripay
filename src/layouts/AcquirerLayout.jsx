@@ -23,7 +23,7 @@ function AcquirerLayout({ children }) {
             <div style={{ display: 'flex', flex: 1 }}>
                 {/* Desktop Sidebar */}
                 <div className="hidden md:block">
-                  <AcquirerSideBar />
+                <AcquirerSideBar />
                 </div>
                 {/* Mobile Sidebar Drawer */}
                 {/* Mobile Sidebar Drawer with smooth transition */}
@@ -41,7 +41,8 @@ function AcquirerLayout({ children }) {
                     <AcquirerSideBar onClose={handleMobileSidebarClose} isMobile />
                   </div>
                 </div>
-                <main style={{ marginLeft: 0, padding: 24, width: '100%' }} className="md:ml-[200px]">
+                <main style={{ marginLeft: 0, padding: 24, width: '100%' }}>
+           
                     {children}
                 </main>
             </div>

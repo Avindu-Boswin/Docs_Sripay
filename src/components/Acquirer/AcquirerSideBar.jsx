@@ -1,5 +1,6 @@
 import { HomeOutlined, MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import { Button, Layout, Menu } from 'antd';
+import MenuItem from 'antd/es/menu/MenuItem';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -32,12 +33,17 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
             Home
           </Menu.Item>
           <Menu.Item key='2'>
-            About
+              Acquirer
           </Menu.Item>
-          <SubMenu key='sub1' title={'Submenu'}>
-            <Menu.Item key='3'>Option 1</Menu.Item>
-            <Menu.Item key='4'>Option 2</Menu.Item>
-            <Menu.Item key='5'>Option 3</Menu.Item>
+       
+          <Menu.Item key='4'>
+           Getting Started
+          </Menu.Item>
+        
+          <SubMenu key='sub1' title={'Features and Functionalities'}>
+            <Menu.Item key='3'>Merchant Registration</Menu.Item>
+            <Menu.Item key='4'>Merchant Registration Workflow</Menu.Item>
+           
           </SubMenu>
         </Menu>
       </div>
@@ -78,9 +84,9 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
   // Expanded sidebar
   return (
     <Sider
-      width={220}
+      width={270} 
       trigger={null}
-      collapsedWidth={50}
+      collapsedWidth={70}
       theme='light'
       collapsed={false}
       style={{
@@ -103,19 +109,62 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
           style={{ borderRadius: 8, boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}
         />
       </div>
-      <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 16, fontWeight: 500 }}>
-        <Menu.Item key='/'>
-          <NavLink to='/' />
-          {'Home'}
+      <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 15, fontWeight: 500 }}>
+        <Menu.Item key="home">
+          <NavLink to="/">Home</NavLink>
         </Menu.Item>
-        <Menu.Item key='2'>
-          {'About'}
+        <div className="flex items-center justify-center my-2">
+          <span className="flex-1 h-0.5 bg-gray-300 mx-3" />
+          <span className="whitespace-nowrap">Acquirer</span>
+          <span className="flex-1 h-0.5 bg-gray-300 mx-2" />
+        </div>
+        <Menu.Item key="introduction">
+          <NavLink to="/introduction">Introduction</NavLink>
         </Menu.Item>
-        <SubMenu key='sub1' title={'Submenu'}>
-          <Menu.Item key='3'>{'Option 1'}</Menu.Item>
-          <Menu.Item key='4'>{'Option 2'}</Menu.Item>
-          <Menu.Item key='5'>{'Option 3'}</Menu.Item>
+        <Menu.Item key="getting-started">
+          <NavLink to="/getting-started">Getting Started</NavLink>
+        </Menu.Item>
+        <SubMenu key="features" title={"Features and Functionalities"}>
+          <SubMenu key="merchant-registration" title={"Merchant Registration"}>
+            <Menu.Item key="registration-workflow">
+              <NavLink to="/merchant-registration/workflow">Registration Workflow</NavLink>
+            </Menu.Item>
+            <Menu.Item key="bulk-registration">
+              <NavLink to="/merchant-registration/bulk">Bulk Registration</NavLink>
+            </Menu.Item>
+            <Menu.Item key="self-sign-up">
+              <NavLink to="/merchant-registration/self-sign-up">Self Sign-Up</NavLink>
+            </Menu.Item>
+          </SubMenu>
+          <SubMenu key="merchant-management" title={"Merchant Management"}>
+            <Menu.Item key="suspending-merchant">
+              <NavLink to="/merchant-management/suspend">Suspending Merchant</NavLink>
+            </Menu.Item>
+            <Menu.Item key="activating-merchant">
+              <NavLink to="/merchant-management/activate">Activating Suspended Merchant</NavLink>
+            </Menu.Item>
+            <Menu.Item key="merchant-agreement">
+              <NavLink to="/merchant-management/agreement">Uploading Agreement</NavLink>
+            </Menu.Item>
+            <Menu.Item key="merchant-store-management">
+              <NavLink to="/merchant-management/store">Merchant Store Management</NavLink>
+            </Menu.Item>
+            <SubMenu key="store-management" title={"Merchant Store Management"}>
+              <Menu.Item key="create-new-store">
+                <NavLink to="/merchant-management/store/create">Creating a New Store</NavLink>
+              </Menu.Item>
+            </SubMenu>
+          </SubMenu>
         </SubMenu>
+        <Menu.Item key="troubleshooting">
+          <NavLink to="/troubleshooting">Troubleshooting</NavLink>
+        </Menu.Item>
+        <Menu.Item key="faq">
+          <NavLink to="/faq">Frequently Asked Questions</NavLink>
+        </Menu.Item>
+        <Menu.Item key="support">
+          <NavLink to="/support">Support Information</NavLink>
+        </Menu.Item>
       </Menu>
     </Sider>
   );

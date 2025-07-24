@@ -8,6 +8,7 @@ import About from './pages/About';
 
 import AcquirerDocs from './pages/acquirer/AcquirerDocs';
 import AcquirerLayout from './layouts/AcquirerLayout';
+import WhoCanbeAcquirer from './pages/acquirer/Introduction';
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
           element={
             <AcquirerLayout>
               <AcquirerDocs />
+            </AcquirerLayout>
+          }
+        />
+   <Route
+          path="/introduction"
+          element={
+            <AcquirerLayout>
+              <WhoCanbeAcquirer />
             </AcquirerLayout>
           }
         />
