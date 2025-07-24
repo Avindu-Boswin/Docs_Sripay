@@ -1,11 +1,14 @@
+
 import Logo from '../assets/images/sripay_w_1x.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t } = useTranslation();
     return (
         <footer className="mt-20 xl:mt-32 mx-auto w-full relative text-center bg-[#03045e] text-white">
             <div className="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
                 <h2 className="font-bold text-xl md:text-3xl xl:text-4xl leading-snug flex items-center justify-center gap-2">
-                    Learn more about
+                    {t('footer.learnMore')}
                     <span>
                         <img src={Logo} alt="Sripay Logo" className="inline h-6 md:h-10 align-middle" />
                     </span>
@@ -16,18 +19,18 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Visit SriPay
+                    {t('footer.visitSripay')}
                 </a>
                 <div className="mt-6">
                     <nav className="flex flex-wrap justify-center text-base font-medium">
                         <div className="px-5">
-                            <span>Need More Help? </span>
+                            <span>{t('footer.needHelp')} </span>
                             <a href="https://sripay.lk/contact" className="underline text-blue-200 hover:text-white transition-colors"
                                 target="_blank"
-                                rel="noopener noreferrer">Contact Us</a>
+                                rel="noopener noreferrer">{t('footer.contactUs')}</a>
                         </div>
                     </nav>
-                    <p className="mt-7 text-sm">© 2025 Sripay. All rights reserved. Unauthorized use, reproduction, or distribution of any content without prior written consent is strictly prohibited.</p>
+                    <p className="mt-7 text-sm">{t('footer.copyright')}</p>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,26 @@
+{
+    "docs": "DOCS",
+    "doc": "Documentation",
+    "subtitle": "Explore docs for our products, services, and more. Select your role and a product to get started.",
+    "footer": {
+        "learnMore": "Learn more about",
+        "visitSripay": "Visit SriPay",
+        "needHelp": "Need More Help?",
+        "contactUs": "Contact Us",
+        "copyright": "© 2025 Sripay. All rights reserved. Unauthorized use, reproduction, or distribution of any content without prior written consent is strictly prohibited."
+    },
+    "roles": {
+        "acquirer": {
+            "title": "Acquirer",
+            "desc": "Access guides and resources for acquirers."
+        },
+        "merchant": {
+            "title": "Merchant",
+            "desc": "Find merchant onboarding and integration help."
+        },
+        "developer": {
+            "title": "Developer",
+            "desc": "View Developer Guide"
+        }
+    }
+}

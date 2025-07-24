@@ -1,0 +1,26 @@
+{
+    "docs": "文档",
+    "doc": "文档",
+    "subtitle": "探索我们产品、服务等的文档。请选择您的角色和产品以开始。",
+    "footer": {
+        "learnMore": "了解更多关于",
+        "visitSripay": "访问 SriPay",
+        "needHelp": "需要更多帮助？",
+        "contactUs": "联系我们",
+        "copyright": "© 2025 Sripay。保留所有权利。未经事先书面同意，严禁擅自使用、复制或分发任何内容。"
+    },
+    "roles": {
+        "acquirer": {
+            "title": "收单方",
+            "desc": "获取收单方的指南和资源。"
+        },
+        "merchant": {
+            "title": "商户",
+            "desc": "查找商户入驻和集成帮助。"
+        },
+        "developer": {
+            "title": "开发者",
+            "desc": "查看开发者指南"
+        }
+    }
+}
