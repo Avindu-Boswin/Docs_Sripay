@@ -34,7 +34,7 @@ const DocumentationHero = () => {
           ].map(({ role, icon, desc }) => (
             <Link
               key={role}
-              to={`/docs/${role.toLowerCase()}`}
+              to={`/docs/${role.toLowerCase()}/introduction`}
               className="bg-[#000D7A] p-4 md:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center group transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#001AAB] cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
               <div className="flex flex-col items-center mb-1 md:mb-2">

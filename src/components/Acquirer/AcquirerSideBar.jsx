@@ -36,8 +36,12 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
               Acquirer
           </Menu.Item>
        
-          <Menu.Item key='4'>
+          <Menu.Item key='3'>
+            <NavLink to='/docs/acquirer/gettingStart'/>
+
+          
            Getting Started
+    
           </Menu.Item>
         
           <SubMenu key='sub1' title={'Features and Functionalities'}>
@@ -119,10 +123,10 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
           <span className="flex-1 h-0.5 bg-gray-300 mx-2" />
         </div>
         <Menu.Item key="introduction">
-          <NavLink to="/introduction">Introduction</NavLink>
+          <NavLink to="/docs/acquirer/introduction">Introduction</NavLink>
         </Menu.Item>
-        <Menu.Item key="getting-started">
-          <NavLink to="/getting-started">Getting Started</NavLink>
+        <Menu.Item key="gettingStart">
+          <NavLink to="/docs/acquirer/gettingStart">Getting Started</NavLink>
         </Menu.Item>
         <SubMenu key="features" title={"Features and Functionalities"}>
           <SubMenu key="merchant-registration" title={"Merchant Registration"}>

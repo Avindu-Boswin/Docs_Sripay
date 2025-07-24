@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
 import Footer from '../components/Footer';
 import AcqNav from '../components/Acquirer/AcquirerNavBar';
 import AcquirerSideBar from '../components/Acquirer/AcquirerSideBar';
+import { Outlet } from 'react-router-dom';
 
 
-function AcquirerLayout({ children }) {
+function AcquirerLayout() {
     const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
 
     // Handler to toggle sidebar from nav
@@ -43,9 +44,14 @@ function AcquirerLayout({ children }) {
                 </div>
                 <main style={{ marginLeft: 0, padding: 24, width: '100%' }}>
            
-                    {children}
+              <Outlet/>
+        
                 </main>
+                <div className='bg-blue-400'>
+                Is this page helpful?
+                </div>
             </div>
+           
             <Footer />
         </div>
     );
