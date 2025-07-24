@@ -16,7 +16,7 @@ export default function AcqNav({ onMobileMenuClick }) {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b w-full">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <div className="flex items-center justify-between mx-auto p-4">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src={Logo} className="h-7 md:h-8" alt="Sripay Logo" />
