@@ -27,28 +27,62 @@ function AcquirerSideBar({ isMobile = false, onClose }) {
           />
           <Button type="text" onClick={onClose}>&times;</Button>
         </div>
-        <Menu theme='light' mode='inline' defaultSelectedKeys={['1']}>
+        <Menu theme='light' mode='inline' defaultSelectedKeys={['/']}> {/* Use correct key for Home */}
           <Menu.Item key='/'>
-            <NavLink to='/' />
-            Home
+            <NavLink to='/'>Home</NavLink>
           </Menu.Item>
-          <Menu.Item key='2'>
-              Acquirer
+          <div className="flex items-center justify-center my-2">
+            <span className="flex-1 h-0.5 bg-gray-300 mx-3" />
+            <span className="whitespace-nowrap">Acquirer</span>
+            <span className="flex-1 h-0.5 bg-gray-300 mx-2" />
+          </div>
+          <Menu.Item key='introduction'>
+            <NavLink to='/docs/acquirer/introduction'>Introduction</NavLink>
           </Menu.Item>
-       
-          <Menu.Item key='3'>
-            <NavLink to='/docs/acquirer/gettingStart'/>
-
-          
-           Getting Started
-    
+          <Menu.Item key='gettingStart'>
+            <NavLink to='/docs/acquirer/gettingStart'>Getting Started</NavLink>
           </Menu.Item>
-        
-          <SubMenu key='sub1' title={'Features and Functionalities'}>
-            <Menu.Item key='3'>Merchant Registration</Menu.Item>
-            <Menu.Item key='4'>Merchant Registration Workflow</Menu.Item>
-           
+          <SubMenu key="features" title={"Features and Functionalities"}>
+            <SubMenu key="merchant-registration" title={"Merchant Registration"}>
+              <Menu.Item key="registration-workflow">
+                <NavLink to="/merchant-registration/workflow">Registration Workflow</NavLink>
+              </Menu.Item>
+              <Menu.Item key="bulk-registration">
+                <NavLink to="/merchant-registration/bulk">Bulk Registration</NavLink>
+              </Menu.Item>
+              <Menu.Item key="self-sign-up">
+                <NavLink to="/merchant-registration/self-sign-up">Self Sign-Up</NavLink>
+              </Menu.Item>
+            </SubMenu>
+            <SubMenu key="merchant-management" title={"Merchant Management"}>
+              <Menu.Item key="suspending-merchant">
+                <NavLink to="/merchant-management/suspend">Suspending Merchant</NavLink>
+              </Menu.Item>
+              <Menu.Item key="activating-merchant">
+                <NavLink to="/merchant-management/activate">Activating Suspended Merchant</NavLink>
+              </Menu.Item>
+              <Menu.Item key="merchant-agreement">
+                <NavLink to="/merchant-management/agreement">Uploading Agreement</NavLink>
+              </Menu.Item>
+              <Menu.Item key="merchant-store-management">
+                <NavLink to="/merchant-management/store">Merchant Store Management</NavLink>
+              </Menu.Item>
+              <SubMenu key="store-management" title={"Merchant Store Management"}>
+                <Menu.Item key="create-new-store">
+                  <NavLink to="/merchant-management/store/create">Creating a New Store</NavLink>
+                </Menu.Item>
+              </SubMenu>
+            </SubMenu>
           </SubMenu>
+          <Menu.Item key="troubleshooting">
+            <NavLink to="/troubleshooting">Troubleshooting</NavLink>
+          </Menu.Item>
+          <Menu.Item key="faq">
+            <NavLink to="/faq">Frequently Asked Questions</NavLink>
+          </Menu.Item>
+          <Menu.Item key="support">
+            <NavLink to="/support">Support Information</NavLink>
+          </Menu.Item>
         </Menu>
       </div>
     );

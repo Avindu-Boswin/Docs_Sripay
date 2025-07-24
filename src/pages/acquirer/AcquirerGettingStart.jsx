@@ -2,7 +2,7 @@ import React from 'react'
 
 function AcquirerGettingStart() {
     return (
-        <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[15%] xl:px-[25%] py-7'>
+        <div className='w-full px-4 sm:px-8  md:px-16 lg:px-[15%] xl:px-[25%] mt-10'>
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>Getting Started</h1>
             <span className='text-base sm:text-lg md:text-xl text-gray-600'>To become a Sub-Acquirer in the <span className='text-blue-600 font-bold'>SriPay</span> system, please follow these two main steps:</span>
 
