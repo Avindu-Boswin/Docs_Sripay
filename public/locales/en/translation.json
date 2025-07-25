@@ -43,4 +43,64 @@
         "benefit5": "Detailed reporting and analytics for transaction monitoring.",
         "benefit6": "Priority support and dedicated account management."
     }
+    ,
+    "acquirerGettingStart": {
+        "title": "Getting Started",
+        "intro": "To become a Sub-Acquirer in the SriPay system, please follow these two main steps:",
+        "step1Title": "Step 1 : Send a Request Email",
+        "step1EmailSubject": "Request to Create Sub-Acquirer Account",
+        "step1EmailDesc": "Email us at with the subject:",
+        "step1Include": "In the email, please include:",
+        "step1List": [
+            "Your Company Name",
+            "Contact person name and phone number",
+            "A brief statement requesting access to create a Sub-Acquirer account on SriPay"
+        ],
+        "step2Title": "Step 2: Provide Required Information",
+        "step2Desc": "Once we acknowledge your request, you’ll be asked to submit the following details:",
+        "companyDetailsTitle": "1. Company Details",
+        "companyDetailsList": [
+            "Company Name",
+            "Company Type",
+            "Registration Number (optional)",
+            "VAT Number (optional)",
+            "Country",
+            "SMS Mask (optional)",
+            "Settlement Type (default: Acquirer Manual)",
+            "Primary and Secondary Colors for theming",
+            "Mandatory Documents:"
+        ],
+        "mandatoryDocuments": [
+            "Business License",
+            "Agreement",
+            "Company Logo (Light & Dark versions)"
+        ],
+        "contactDetailsTitle": "2. Contact Details",
+        "contactDetailsList": [
+            "Email Address",
+            "Primary Phone",
+            "Secondary Phone (optional)",
+            "Website URL",
+            "Full Business Address"
+        ],
+        "financialDetailsTitle": "3. Financial Details",
+        "financialDetailsDesc": "You must provide both USD and LKR bank details. For each account, provide:",
+        "financialDetailsList": [
+            "Bank Name",
+            "Bank Code",
+            "SWIFT/BIC Code",
+            "Account Number",
+            "Account Holder Name",
+            "Branch Name",
+            "Branch Code",
+            "Street, City, and Postal Code"
+        ],
+        "financialNote": "Note: All banking data is encrypted and must match company registration documents.",
+        "loginCredentialsTitle": "4. Login Credentials",
+        "loginCredentialsDesc": "When Logging in, please provide:",
+        "loginCredentialsList": [
+            "Master email address (for login)",
+            "A temporary password will be issued at account creation, which you may reset upon first login."
+        ]
+    }
 }

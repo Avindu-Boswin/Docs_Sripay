@@ -43,4 +43,64 @@
         "benefit5": "详细的报告和分析，便于交易监控。",
         "benefit6": "优先支持和专属客户经理。"
     }
+    ,
+    "acquirerGettingStart": {
+        "title": "开始指南",
+        "intro": "要成为 SriPay 系统中的子收单方，请遵循以下两个主要步骤：",
+        "step1Title": "步骤 1：发送请求邮件",
+        "step1EmailSubject": "申请创建子收单方账户",
+        "step1EmailDesc": "请发送邮件，主题为：",
+        "step1Include": "邮件中请包含：",
+        "step1List": [
+            "您的公司名称",
+            "联系人姓名和电话号码",
+            "简要说明请求访问以在 SriPay 上创建子收单方账户"
+        ],
+        "step2Title": "步骤 2：提供所需信息",
+        "step2Desc": "我们确认您的请求后，您需要提交以下详细信息：",
+        "companyDetailsTitle": "1. 公司信息",
+        "companyDetailsList": [
+            "公司名称",
+            "公司类型",
+            "注册号（可选）",
+            "增值税号（可选）",
+            "国家",
+            "短信标识（可选）",
+            "结算类型（默认：收单方手动）",
+            "主题色和辅助色",
+            "必需文件："
+        ],
+        "mandatoryDocuments": [
+            "营业执照",
+            "协议",
+            "公司标志（浅色和深色版本）"
+        ],
+        "contactDetailsTitle": "2. 联系信息",
+        "contactDetailsList": [
+            "电子邮箱地址",
+            "主联系电话",
+            "备用电话（可选）",
+            "网站网址",
+            "完整的公司地址"
+        ],
+        "financialDetailsTitle": "3. 财务信息",
+        "financialDetailsDesc": "您必须同时提供美元和卢比的银行信息。每个账户需提供：",
+        "financialDetailsList": [
+            "银行名称",
+            "银行代码",
+            "SWIFT/BIC 代码",
+            "账号",
+            "账户持有人姓名",
+            "分行名称",
+            "分行代码",
+            "街道、城市和邮政编码"
+        ],
+        "financialNote": "注意：所有银行数据均加密，且必须与公司注册文件一致。",
+        "loginCredentialsTitle": "4. 登录凭证",
+        "loginCredentialsDesc": "登录时请提供：",
+        "loginCredentialsList": [
+            "主邮箱地址（用于登录）",
+            "账户创建时会发放临时密码，首次登录后可重置。"
+        ]
+    }
 }
