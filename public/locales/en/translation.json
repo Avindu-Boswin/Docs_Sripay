@@ -46,7 +46,8 @@
     ,
     "acquirerGettingStart": {
         "title": "Getting Started",
-        "intro": "To become a Sub-Acquirer in the SriPay system, please follow these two main steps:",
+        "intro": "To become a Sub-Acquirer in the ",
+        "intro2" : " system, please follow these two main steps:",
         "step1Title": "Step 1 : Send a Request Email",
         "step1EmailSubject": "Request to Create Sub-Acquirer Account",
         "step1EmailDesc": "Email us at with the subject:",

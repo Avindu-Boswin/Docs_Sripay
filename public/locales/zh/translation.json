@@ -46,7 +46,8 @@
     ,
     "acquirerGettingStart": {
         "title": "开始指南",
-        "intro": "要成为 SriPay 系统中的子收单方，请遵循以下两个主要步骤：",
+        "intro": "要成为",
+        "intro2" : "系统中的子收单方，请遵循以下两个主要步骤：",
         "step1Title": "步骤 1：发送请求邮件",
         "step1EmailSubject": "申请创建子收单方账户",
         "step1EmailDesc": "请发送邮件，主题为：",
