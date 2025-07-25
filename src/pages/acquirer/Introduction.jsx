@@ -3,7 +3,7 @@ import Businessman_pana from '../../assets/Businessman_pana.svg';
 
 function WhoCanbeAcquirer() {
   return (
-    <div className="w-full   l ml-8 sm:py-10">
+    <div className="w-full  sm:py-10">
       <div className="mx-auto w-full max-w-4xl flex flex-col md:flex-row justify-center gap-7 items-center">
         <div className="w-full md:w-full text-center md:text-left mb-6 md:mb-0">
           <h1 className="text-blue-700 font-bold text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-tight">
