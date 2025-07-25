@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import Logo from '../../assets/images/sripayLogo.jpg';
+import { useTranslation } from 'react-i18next';
 
 export default function AcqNav({ onMobileMenuClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+  const { i18n, t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,11 @@ export default function AcqNav({ onMobileMenuClick }) {
     setIsLangOpen(!isLangOpen);
   };
 
+  const handleLangChange = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsLangOpen(false);
+  };
+
   return (
     <nav className="sticky top-0 z-50 bg-white border-b w-full">
       <div className="flex items-center justify-between mx-auto p-4">
@@ -21,7 +28,7 @@ export default function AcqNav({ onMobileMenuClick }) {
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src={Logo} className="h-7 md:h-8" alt="Sripay Logo" />
           <span className="self-center text-xl md:text-3xl font-bold whitespace-nowrap">
-            DOCS
+            {t('docs')}
           </span>
         </a>
 
@@ -36,7 +43,7 @@ export default function AcqNav({ onMobileMenuClick }) {
               aria-haspopup="listbox"
               aria-expanded={isLangOpen}
             >
-              <span className="mr-1">EN</span>
+              <span className="mr-1">{i18n.language === 'zh' ? '中文' : 'EN'}</span>
               <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
@@ -47,10 +54,10 @@ export default function AcqNav({ onMobileMenuClick }) {
               <div className="absolute right-0 z-10 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg">
                 <ul className="py-1 text-sm text-gray-700" role="listbox">
                   <li>
-                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => setIsLangOpen(false)}>EN</button>
+                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => handleLangChange('en')}>EN</button>
                   </li>
                   <li>
-                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => setIsLangOpen(false)}>中文</button>
+                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => handleLangChange('zh')}>中文</button>
                   </li>
                 </ul>
               </div>

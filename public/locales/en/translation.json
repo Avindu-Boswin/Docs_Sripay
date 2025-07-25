@@ -22,5 +22,25 @@
             "title": "Developer",
             "desc": "View Developer Guide"
         }
+    },
+    "acquirerIntro": {
+        "title": "Who Can Be an",
+        "titleSpan": "Acquirer?",
+        "intro": "Becoming an Acquirer is a significant step for merchants who wish to expand their payment processing capabilities and offer seamless transactions to their customers. An Acquirer is typically a merchant or organization that is responsible for processing card payments and managing merchant accounts.",
+        "requirementsTitle": "Requirements to Become an Acquirer",
+        "requirement1": "Merchant must have been operating for a minimum of 6 months.",
+        "requirement2": "Merchant should have processed at least 100 transactions during this period.",
+        "requirement3": "Maintain a good transaction record with minimal chargebacks or disputes.",
+        "requirement4": "Provide valid business registration and compliance documents.",
+        "requirement5": "Demonstrate the ability to manage payment settlements and reconciliation.",
+        "whyTitle": "Why Become an Acquirer?",
+        "whyText": "Becoming an Acquirer allows merchants to take control of their payment processing, improve transaction efficiency, and offer a better experience to their customers. It opens up new business opportunities and helps build trust with partners and clients.",
+        "benefitsTitle": "Benefits & Features",
+        "benefit1": "Direct access to payment networks and faster settlements.",
+        "benefit2": "Enhanced security and fraud prevention tools.",
+        "benefit3": "Ability to onboard and manage multiple merchants.",
+        "benefit4": "Customizable payment solutions for different business needs.",
+        "benefit5": "Detailed reporting and analytics for transaction monitoring.",
+        "benefit6": "Priority support and dedicated account management."
     }
 }
