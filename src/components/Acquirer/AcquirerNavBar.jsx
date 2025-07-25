@@ -22,8 +22,8 @@ export default function AcqNav({ onMobileMenuClick }) {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b w-full">
-      <div className="flex items-center justify-between mx-auto p-4">
+    <nav className="fixed top-0 z-50 bg-white border-b w-full">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src={Logo} className="h-7 md:h-8" alt="Sripay Logo" />
@@ -67,7 +67,7 @@ export default function AcqNav({ onMobileMenuClick }) {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
-              onClick={toggleMenu}
+             onClick={onMobileMenuClick}
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-menu"
