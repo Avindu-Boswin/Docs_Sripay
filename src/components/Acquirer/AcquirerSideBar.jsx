@@ -80,7 +80,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               <NavLink to="/docs/acquirer/merchant-registration/workflow">Registration Workflow</NavLink>
             </Menu.Item>
             <Menu.Item key="bulk-registration">
-              <NavLink to="/merchant-registration/bulk">Bulk Registration</NavLink>
+              <NavLink to="/docs/acquirer/merchant-registration/bulk">Bulk Registration</NavLink>
             </Menu.Item>
             <Menu.Item key="self-sign-up">
               <NavLink to="/merchant-registration/self-sign-up">Self Sign-Up</NavLink>
