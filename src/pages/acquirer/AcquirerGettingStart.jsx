@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 function AcquirerGettingStart() {
     const { t } = useTranslation();
     return (
-        <div className='w-full px-4 sm:px-8  md:px-16 lg:px-[15%] xl:px-[25%] mt-10'>
+        <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[10%]  mt-10'>
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>{t('acquirerGettingStart.title')}</h1>
             <span className='text-base sm:text-lg md:text-xl text-gray-600'>{t('acquirerGettingStart.intro')}<span className='text-blue-600 font-bold'>SriPay</span>{t('acquirerGettingStart.intro2')}</span>
 

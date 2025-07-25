@@ -61,12 +61,12 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 <div className="overflow-y-auto scrollbar-thin h-full pt-6">
       <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 15, fontWeight: 500 }}>
         <Menu.Item key="home">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Back To Home</NavLink>
         </Menu.Item>
-        <div className="flex items-center justify-center my-2">
-          <span className="flex-1 h-0.5 bg-gray-300 mx-3" />
+        <div className="flex items-center justify-center my-2 mt-5 mb-5">
+          <span className="flex-1 h-0.5 bg-gray-300 ml-7 mr-2" />
           <span className="whitespace-nowrap">Acquirer</span>
-          <span className="flex-1 h-0.5 bg-gray-300 mx-2" />
+          <span className="flex-1 h-0.5 bg-gray-300 ml-2 mr-6" />
         </div>
         <Menu.Item key="introduction">
           <NavLink to="/docs/acquirer/introduction">Introduction</NavLink>
@@ -77,13 +77,16 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
         <SubMenu key="features" title={"Features and Functionalities"}>
           <SubMenu key="merchant-registration" title={"Merchant Registration"}>
             <Menu.Item key="registration-workflow">
-              <NavLink to="/merchant-registration/workflow">Registration Workflow</NavLink>
+              <NavLink to="/docs/acquirer/merchant-registration/workflow">Registration Workflow</NavLink>
             </Menu.Item>
             <Menu.Item key="bulk-registration">
               <NavLink to="/merchant-registration/bulk">Bulk Registration</NavLink>
             </Menu.Item>
             <Menu.Item key="self-sign-up">
               <NavLink to="/merchant-registration/self-sign-up">Self Sign-Up</NavLink>
+            </Menu.Item>
+            <Menu.Item key="self-sign-up">
+              <NavLink to="/merchant-registration/self-sign-up">Troubleshooting</NavLink>
             </Menu.Item>
           </SubMenu>
           <SubMenu key="merchant-management" title={"Merchant Management"}>

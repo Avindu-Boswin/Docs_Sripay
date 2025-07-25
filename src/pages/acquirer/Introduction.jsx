@@ -5,18 +5,18 @@ import Businessman_pana from '../../assets/Businessman_pana.svg';
 function WhoCanbeAcquirer() {
   const { t } = useTranslation();
   return (
-    <div className="w-full  sm:py-10">
-      <div className="mx-auto w-full max-w-4xl flex flex-col md:flex-row justify-center gap-7 items-center">
-        <div className="w-full md:w-full text-center md:text-left mb-6 md:mb-0">
-          <h1 className="text-blue-700 font-bold text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-tight">
+    <div className="w-full sm:py-10">
+      <div className="mx-auto w-full max-w-4xl flex flex-col md:flex-row justify-center  items-center">
+        <div className="w-full md:w-full text-center">
+          <h1 className="text-blue-700 mt-10 font-bold text-2xl sm:text-3xl md:text-5xl lg:text-[4rem]">
             {t('acquirerIntro.title')} <span className='block md:inline pl-0 md:pl-[40%]'>{t('acquirerIntro.titleSpan')}</span>
           </h1>
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
-          <img src={Businessman_pana} alt="acquirer" className="w-48 h-32 sm:w-72 sm:h-44 md:w-[500px] md:h-[300px] object-contain" />
+          <img src={Businessman_pana} alt="acquirer" className="hidden md:block w-48 h-32 sm:w-72 sm:h-44 md:w-[500px] md:h-[300px] object-contain" />
         </div>
       </div>
-      <div className='pl-[150px]'>
+      <div className='mx-10 sm:mx-0'>
         <div className='w-full sm:w-[80%] mx-auto mt-8 sm:mt-10 font-semibold text-base sm:text-lg text-gray-700'>
           <p>{t('acquirerIntro.intro')}</p>
         </div>

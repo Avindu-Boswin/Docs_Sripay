@@ -24,7 +24,7 @@ function MerchantRegistrationWorkflow() {
   const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
 
   return (
-    <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[15%] xl:px-[25%] mt-10'>
+    <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
       {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
       <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
         {t('acquirerRegWorkflow.title')}
@@ -43,7 +43,7 @@ function MerchantRegistrationWorkflow() {
         <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
           {steps[0].title}
         </h3>
-        <img src={Img1} alt='Merchant Basic Details' />
+        <img src={Img1} alt='Merchant Basic Details' className="mx-auto my-6 block md:w-4/5" />
 
         <div className='ml-1 sm:ml-3 mt-7'>
           <div className='mt-5'>
@@ -78,7 +78,7 @@ function MerchantRegistrationWorkflow() {
             ))}
           </ul>
 
-          <img src={Img2} alt='Merchant Welcome Email Confirmation' />
+          <img src={Img2} alt='Merchant Welcome Email Confirmation' className="mx-auto my-6 block md:w-4/5" />
         </div>
       </div>
 
@@ -87,7 +87,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[2].title}
         </h4>
-        <img src={Img3} className='mb-8' alt='Merchant Overview Dashboard' />
+        <img src={Img3} alt='Merchant Overview Dashboard' className="mx-auto mb-8 my-6 block md:w-4/5" />
 
         <span className='font-semibold text-gray-600'>{steps[2].featuresTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -112,7 +112,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[3].title}
         </h4>
-        <img src={Img4} className='mb-8' alt='Registration Details' />
+        <img src={Img4} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Registration Details' />
 
         <span className='font-semibold text-gray-600'>{steps[3].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -132,7 +132,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[4].title}
         </h4>
-        <img src={Img5} className='mb-8' alt='Address Details' />
+        <img src={Img5} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Address Details' />
 
         <span className='font-semibold text-gray-600'>{steps[4].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -152,7 +152,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[5].title}
         </h4>
-        <img src={Img6} className='mb-8' alt='Business Contact Person' />
+        <img src={Img6} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Business Contact Person' />
 
         <span className='font-semibold text-gray-600'>{steps[5].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -172,7 +172,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[6].title}
         </h4>
-        <img src={Img7} className='mb-8' alt='Business Activities' />
+        <img src={Img7} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Business Activities' />
 
         <span className='font-semibold text-gray-600'>{steps[6].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -192,7 +192,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[7].title}
         </h4>
-        <img src={Img8} className='mb-8' alt='Company Settlement Bank Details' />
+        <img src={Img8} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Company Settlement Bank Details' />
 
         <span className='font-semibold text-gray-600'>{steps[7].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -228,7 +228,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[8].title}
         </h4>
-        <img src={Img9} className='mb-8' alt='Owner Details' />
+        <img src={Img9} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Owner Details' />
 
         <span className='font-semibold text-gray-600'>{steps[8].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -248,7 +248,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[9].title}
         </h4>
-        <img src={Img10} className='mb-8' alt='Constitutional Documents Upload' />
+        <img src={Img10} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Constitutional Documents Upload' />
 
         <span className='font-semibold text-gray-600'>{steps[9].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -268,7 +268,7 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[10].title}
         </h4>
-        <img src={Img11} className='mb-8' alt='Review & Submit KYC Summary' />
+        <img src={Img11} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Review & Submit KYC Summary' />
 
         <span className='font-semibold text-gray-600'>{steps[10].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -289,8 +289,8 @@ function MerchantRegistrationWorkflow() {
           {steps[11].title}
         </h4>
         {/* two images */}
-        <img src={Img12} className='mb-8' alt='Sub-Acquirer Evaluation: Pending Requests' />
-        <img src={Img13} className='mb-8' alt='Sub-Acquirer Evaluation: Pending Requests' />
+        <img src={Img12} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Sub-Acquirer Evaluation: Pending Requests' />
+        <img src={Img13} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Sub-Acquirer Evaluation: Pending Requests' />
 
         <span className='font-semibold text-gray-600'>{steps[11].fieldsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
@@ -322,8 +322,8 @@ function MerchantRegistrationWorkflow() {
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[12].title}
         </h4>
-        <img src={Img14} className='mb-8' alt='Sub-Acquirer Review and Decision: Approve' />
-        <img src={Img15} className='mb-8' alt='Sub-Acquirer Review and Decision: Reject' />
+        <img src={Img14} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Sub-Acquirer Review and Decision: Approve' />
+        <img src={Img15} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Sub-Acquirer Review and Decision: Reject' />
 
         <span className='font-semibold text-gray-600'>{steps[12].actionOptionsTitle}</span>
         <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
