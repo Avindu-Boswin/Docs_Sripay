@@ -12,6 +12,7 @@ import AcquirerLayout from './layouts/AcquirerLayout';
 import AcquirerDocs from './pages/acquirer/AcquirerDocs';
 import WhoCanbeAcquirer from './pages/acquirer/Introduction';
 import AcquirerGettingStart from './pages/acquirer/AcquirerGettingStart';
+import MerchantRegistrationWorkflow from './pages/acquirer/RegWorkflow';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route index element={<AcquirerDocs />} />
           <Route path="introduction" element={<WhoCanbeAcquirer />} />
           <Route path="gettingStart" element={<AcquirerGettingStart />} />
+          <Route path="merchant-registration/workflow" element={<MerchantRegistrationWorkflow />} />
         </Route>
 
         {/* Fallbacks */}
