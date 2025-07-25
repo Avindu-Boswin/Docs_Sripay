@@ -321,5 +321,95 @@
             "Master email address (for login)",
             "A temporary password will be issued at account creation, which you may reset upon first login."
         ]
+    },
+    "regBulk": {
+        "title": "Merchant Bulk Registration",
+        "subtitle": "Registration Workflow",
+        "desc": "This feature allows Sub-Acquirers to onboard multiple merchants simultaneously using a predefined Excel template.",
+        "steps": [
+            {
+                "title": "Step 1: Navigate to Bulk Registration area",
+                "imgAlt": "Navigate to Bulk Registration area",
+                "points": [
+                    "Click the ‘Multiple Merchants’ button located next to ‘Create Merchant’.",
+                    "A modal titled ‘Create new merchants’ will open."
+                ]
+            },
+            {
+                "title": "Step 2: Understand the Upload Model",
+                "imgAlt": "Understand the Upload Model",
+                "desc": "The model includes",
+                "points": [
+                    "Excel File Upload Area – drag/drop or browse to upload.",
+                    "Download Sample Excel – click this to get the correct format.",
+                    "Important Note – file must be .xlsx, and all images/documents must be preuploaded."
+                ]
+            },
+            {
+                "title": "Step 3: Download & Fill the Sample Excel",
+                "points": [
+                    "Click ‘Download Sample Excel’ to get the correct format.",
+                    "Important Rules to follow when filling the excel file:"
+                ],
+                "rules": [
+                    "Do not rename headers.",
+                    "Do not remove any column.",
+                    "Every row must contain valid entries for all columns.",
+                    "Email must be unique and properly formatted.",
+                    "Mobile number must follow a valid format (+94).",
+                    "Ensure that all uploaded document URLs are publicly accessible to anyone with the link.",
+                    "Since the merchant evaluation process involves multiple layers (Sub-Acquirer, SriPay, and Alipay), granting access restricted to a specific party would not be practical. Therefore, all uploaded document URLs should be publicly accessible to ensure seamless review across all approval stages."
+                ]
+            },
+            {
+                "title": "Step 4: Upload and Validate the Excel File",
+                "points": [
+                    "Click the upload box or drag your completed .xlsx file into it."
+                ],
+                "validationTable": {
+                    "headers": ["Validation Type", "What It Checks", "Error Example on UI"],
+                    "rows": [
+                        ["File Format", "Only .xlsx accepted", "Invalid file type"],
+                        ["Column Headers", "Exact match with template", "Column headers in sheet ‘Merchant’ were modified..."],
+                        ["Required Fields", "No blank First Name, Email, etc.", "Row 2: missing value for First Name"],
+                        ["Structure", "Sheet name must be 'Merchant'", "Excel file does not match the Sripay template"]
+                    ]
+                },
+                "fail": "If validation fails",
+                "failPoints": [
+                    "A red error modal will appear showing the exact issue.",
+                    "Click ‘OK’, fix the Excel file, and re-upload."
+                ],
+                "imgAlt": "Validation UI"
+            },
+            {
+                "title": "Step 5: Upload Progress",
+                "imgAlt": "Upload Progress",
+                "success": "If the file passes validation",
+                "points": [
+                    "You will see the message: ‘Uploading merchants…’",
+                    "Wait until the process completes and the modal closes."
+                ]
+            },
+            {
+                "title": "Step 6: View New Merchants in Table",
+                "imgAlt": "View New Merchants in Table",
+                "desc": "Newly uploaded merchants appear in the main table with",
+                "points": [
+                    "Status: acquirer-in-progress",
+                    "Unique Merchant IDs",
+                    "Email addresses and other details as per Excel"
+                ]
+            },
+            {
+                "title": "Step 7: Proceed with Standard Evaluation Process",
+                "desc": "Each newly added merchant will",
+                "points": [
+                    "Appear in the merchant list.",
+                    "Require: KYC Information, Document Uploads, Review & Submit",
+                    "Flow through the stages - Acquirer In Progress → Sripay In Progress → Alipay-In Progress"
+                ]
+            }
+        ]
     }
 }
