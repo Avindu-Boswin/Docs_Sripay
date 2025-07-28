@@ -485,5 +485,193 @@
             "Fully integrated into the existing evaluation and compliance workflow."
         ],
         "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID."
+    },
+    "storeUserAssign": {
+        "title": "Assigning Store Users",
+        "desc": "Store User Management allows the Acquirer to assign users specifically to a store. These users will be responsible for handling store-level tasks such as viewing transactions, accessing terminals, or processing orders depending on their roles.",
+        "instructionsTitle": "To Assign users for a specific store:",
+        "steps": [
+            "Navigate to the Stores tab.",
+            "From the store list, click View (: > View) on the relevant store.",
+            "Navigate to the Add user to the outlet section inside the store profile."
+        ],
+        "note": "Note: Store users should be added by the merchant before assigning them to a store."
+    },
+    "storeCreate": {
+        "title": "Creating a New Store",
+        "step1Title": "Step 1: Navigate to Merchant List",
+        "step1": [
+            "Go to the Merchants tab and locate the merchant for whom you want to create a store.",
+            "Click on the 3-dot action menu next to the merchant entry.",
+            "From the action menu, click Create Store to begin the process."
+        ],
+        "step2Title": "Step 2: Fill Store Information",
+        "step2FieldsIntro": "You'll see fields for",
+        "step2Fields": [
+            "Store Name – The official name of the store/outlet.",
+            "Store Phone – Direct store contact number.",
+            "Store Email – Store’s email address for communication.",
+            "Province / District / City / Street – Physical location fields to map the store accurately.",
+            "Store QR currency – Select the preferred currency for your store’s QR code transactions.",
+            "Store Website – Include the store’s official website URL. If a dedicated outlet site is unavailable, you may use the main business website."
+        ],
+        "step2FieldsNote": "These fields help ensure each store is uniquely identifiable by address and contact details.",
+        "step3Title": "Step 3: Enter Bank Account Details",
+        "step3Intro": "To enable seamless settlement of funds, please provide your store’s bank account details. You may configure both Primary and Secondary settlement accounts. Only one account can be set as the default settlement account.",
+        "step3PrimaryTitle": "Primary Bank Account",
+        "step3PrimaryDesc": "This account will be used as the default for receiving settlement payments unless changed manually.",
+        "step3PrimaryFieldsTitle": "Required Fields",
+        "step3PrimaryFields": [
+            "Bank Type: Choose between Local or International bank account.",
+            "Settlement Currency: Select LKR or USD depending on your account preference.",
+            "Bank Name: Choose your bank from the list provided.",
+            "Bank Code: Input the official bank code.",
+            "Branch Name: Enter the name of the bank branch.",
+            "Branch Code: Provide the correct branch code for reference.",
+            "Account Number: Enter the full bank account number used for settlements.",
+            "Account Name: Input the name under which the account is registered."
+        ],
+        "step3SecondaryTitle": "Secondary Bank Account (Optional)",
+        "step3SecondaryDesc": "This optional account acts as a backup for settlement purposes and can be activated when needed.",
+        "step3SecondaryFieldsTitle": "Required Fields (same as Primary Bank Account)",
+        "step3SecondaryNote": "You can also toggle the option to Set as default settlement account if you prefer this to be the primary method of receiving payments.",
+        "step3Note": "Note: Ensure all information is accurate. Incorrect details may delay or reject settlements.",
+        "step3Next": "Click Next to proceed once all mandatory details are entered correctly.",
+        "step4Title": "Step 4: Submit Store Details",
+        "step4Intro": "To finalize your store registration, please complete the following required details. This information helps verify and activate your store for customer-facing services and settlements.",
+        "step4FrontTitle": "Store Front Photos",
+        "step4FrontDesc": "Upload clear exterior photos of your store front. This helps in authenticating the physical existence and visibility of the outlet.",
+        "step4FrontNote": "Ensure the store name board is clearly visible in the image.",
+        "step4InteriorTitle": "Interior Photos",
+        "step4InteriorDesc": "Upload clear interior photos of your store. This helps in verifying the operational nature and layout of your outlet.",
+        "step4InteriorNote": "Make sure the images represent the actual setup of the store (e.g., counters, displays, signage).",
+        "step4MobileTitle": "Mobile Number",
+        "step4MobileDesc": "Provide a valid mobile number for store-level communication and verification.",
+        "step4MobileList": [
+            "Must be active and reachable.",
+            "Click “Verify Phone Number” to receive and confirm a verification code."
+        ],
+        "step4EmailTitle": "Email Address",
+        "step4EmailDesc": "Enter a valid email address for official communications related to settlements, support, and notifications.",
+        "step4EmailList": [
+            "Click “Verify Email” to authenticate the email before submission."
+        ],
+        "step4VerifyNote": "Both phone and email must be verified before submitting the setup.",
+        "step4Submit": "Click Submit once all fields are filled and verified to complete your store onboarding.",
+        "step5Title": "Step 5: Acquirer Store Evaluation",
+        "step5Intro": "Once a store is submitted, it enters the Pending Requests stage for review and evaluation by the acquirer. The approval process ensures store legitimacy and compliance before activation.",
+        "step5PendingTitle": "Pending Requests Dashboard",
+        "step5PendingDesc": "On the Pending Requests page, acquirers can,",
+        "step5PendingList": [
+            "View all outlet submissions categorized by their current status:",
+            "Track requests using columns for Store Name, ID, City, Status, and Submitted Date.",
+            "Use filters or search functionality to locate specific records."
+        ],
+        "step5PendingStatus": [
+            "Awaiting Acquirer In Progress",
+            "Awaiting Sripay In Progress",
+            "Awaiting Alipay In Progress",
+            "Rejected"
+        ],
+        "step5EvalTitle": "Store Evaluation Panel",
+        "step5EvalDesc": "Clicking on the three dots ⋮ on request opens a detailed Store Evaluation view that includes:",
+        "step5EvalList": [
+            "Store Information",
+            "Store Photos",
+            "Merchant Information",
+            "Contact Information"
+        ],
+        "step5EvalStoreInfo": [
+            "Store Name, Store ID, Email (with verification status)",
+            "Website, QR Currency, Channel Fee, and Commission Rate",
+            "Timestamps (Created At & Updated At)",
+            "Current Status"
+        ],
+        "step5EvalStorePhotos": [
+            "Review uploaded Interior and Storefront photos to validate store presence."
+        ],
+        "step5EvalMerchantInfo": [
+            "Merchant ID, Name, and Category (e.g., Retail, Restaurant)"
+        ],
+        "step5EvalContactInfo": [
+            "Mobile Number (with verification status)",
+            "SMS & Email Notification settings",
+            "Website & Email notification settings",
+            "Option to Set as Top Outlet (if applicable)"
+        ],
+        "step6Title": "Step 6: Approval Actions",
+        "step6Intro": "Evaluators can take the following actions from the dropdown",
+        "step6Actions": [
+            "Send for Sripay Approval\nForwards the request to Sripay’s internal review team.",
+            "Reject\nDeclines the request with a confirmation prompt to prevent accidental action."
+        ],
+        "step6Dialog": "Each action triggers a confirmation dialog displaying:",
+        "step6DialogList": [
+            "Selected action",
+            "Request ID",
+            "Options to cancel or proceed"
+        ],
+        "step6Note": "Note: Once a request is sent to Sripay or rejected, its status updates in real time.",
+        "step6Confirm": "Click Confirm to finalize your selected action.",
+        "step7Title": "Step 7: SriPay Evaluation",
+        "step7Intro": "If the Sub-Acquirer sends the application forward, it moves to the SriPay Admin Panel for a second-level review.",
+        "step7AdminTitle": "SriPay Admin can:",
+        "step7AdminList": [
+            "Approve and forward to Alipay",
+            "Reject with comments and notify Sub-Acquirer"
+        ],
+        "step7NotifTitle": "System Notifications:",
+        "step7NotifList": [
+            "Sub-Acquirer is notified of SriPay’s decision",
+            "Merchant store remains in “SriPay In Progress” until final decision"
+        ],
+        "step8Title": "Step 8: Alipay Evaluation",
+        "step8Intro": "If SriPay approves the application, it is submitted to Alipay+ Team. This includes an automatic or manual compliance check by Alipay.",
+        "step8AdminTitle": "Alipay+ Admin can:",
+        "step8AdminList": [
+            "Approve: Merchant store is now live for payment acceptance",
+            "Reject: Sent back with reason; Sub-Acquirer and SriPay are notified"
+        ]
+    },    
+    "terminalManagement": {
+        "title": "Terminal Management",
+        "desc": "Terminal Management allows the Acquirer to configure and associate terminals (typically POS devices or QR interfaces) with each store. This setup is essential for enabling real-time transactions, QR scanning, and accurate transaction mapping per outlet.",
+        "accessTitle": "Accessing Terminal Management",
+        "accessDesc": "To manage terminals for a specific store:",
+        "accessSteps": [
+            "Go to the Stores section.",
+            "Select View (: > View) on the desired store.",
+            "Navigate to the Terminals section."
+        ],
+        "addTitle": "Adding a Terminal",
+        "addDesc1": "After a store is approved, you can begin assigning terminals for transactions. A terminal represents a specific POS (Point of Sale) device or checkout point within the store.",
+        "addDesc2": "Click on Create New Terminal on the Terminal section.",
+        "optionTitle": "Option Selection – Single vs. Multiple Terminals",
+        "optionDesc": "Start by selecting whether you want to create a Single Terminal or Multiple Terminals.",
+        "optionList": [
+            "Single Terminal: For stores with one checkout or payment point.",
+            "Multiple Terminals: For stores with several counters/devices (e.g., supermarkets or chains)."
+        ],
+        "optionNext": "Click Next after making your selection.",
+        "singleTitle": "Creating a Single Terminal",
+        "singleList": [
+            "Terminal ID: A unique identifier (e.g., T001).",
+            "Terminal Name: Assign a label (e.g., Terminal A).",
+            "Terminals: Shows current number of terminals in the store."
+        ],
+        "singleNext": "Click Yes to proceed and save the terminal.",
+        "multiTitle": "Creating Multiple Terminals",
+        "multiList": [
+            "Enter Number of Terminals you wish to create (e.g., 5)."
+        ],
+        "multiNext": "Click Submit to auto-generate terminal IDs and assign them to the store.",
+        "statusTitle": "Activate or Deactivate Terminal",
+        "statusList": [
+            "They will appear in the Terminals Table.",
+            "Status will indicate whether each terminal is active or deactive.",
+            "You can manage each terminal individually via the Action button."
+        ],
+        "statusNoteTitle": "Note:",
+        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action."
     }
 }
