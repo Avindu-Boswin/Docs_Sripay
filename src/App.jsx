@@ -21,6 +21,12 @@ import StoreCreate from './pages/acquirer/StoreCreate';
 import StoreUserAssign from './pages/acquirer/StoreUserAssign.jsx';
 import TerminalManagement from './pages/acquirer/TerminalManagement.jsx';
 import Introduction from './pages/merchant/Introduction.jsx';
+import MerchantSuspend from './pages/acquirer/MerchantSuspend';
+import ActivatingSuspend from './pages/acquirer/ActivatingSuspend';
+import AgreementUpload from './pages/acquirer/AgreementUpload';
+import Troubleshooting from './pages/acquirer/Troubleshooting';
+import Faq from './pages/acquirer/Faq';
+import Support from './pages/acquirer/Support';
 
 function App() {
   return (
@@ -41,10 +47,17 @@ function App() {
           <Route path="merchant-registration/workflow" element={<MerchantRegistrationWorkflow />} />
           <Route path="merchant-registration/bulk" element={<MerchantRegistrationBulk />} />
           <Route path="merchant-registration/self" element={<MerchantRegistrationSelf />} />
+          <Route path="merchant-management/suspend" element={<MerchantSuspend />} />
+          <Route path="merchant-management/activate" element={<ActivatingSuspend />} />
+          <Route path="merchant-management/agreement" element={<AgreementUpload />} />
           <Route path="merchant-management/store/view" element={<StoreViewAll />} />
           <Route path="merchant-management/store/create" element={<StoreCreate />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUserAssign />} />
           <Route path="merchant-management/store/terminal" element={<TerminalManagement />} />
+          <Route path="troubleshooting" element={<Troubleshooting />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="support" element={<Support />} />
+          
         </Route>
 
         {/* Merchant Docs Layout */}

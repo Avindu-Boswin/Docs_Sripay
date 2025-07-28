@@ -7,6 +7,7 @@ import Img4 from '../../assets/images/acquirer/img288.jpg'
 import Img5 from '../../assets/images/acquirer/img290.jpg'
 
 function MerchantRegistrationWorkflow() {
+    
     const { t } = useTranslation();
 
     // Convenience accessor for the huge steps array
