@@ -91,13 +91,13 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
           </SubMenu>
           <SubMenu key="merchant-management" title={"Merchant Management"}>
             <Menu.Item key="suspending-merchant">
-              <NavLink to="/merchant-management/suspend">Suspending Merchant</NavLink>
+              <NavLink to="/docs/acquirer/merchant-management/suspend">Suspending Merchant</NavLink>
             </Menu.Item>
             <Menu.Item key="activating-merchant">
-              <NavLink to="/merchant-management/activate">Activating Suspended Merchant</NavLink>
+              <NavLink to="/docs/acquirer/merchant-management/activate">Activating Suspended </NavLink>
             </Menu.Item>
             <Menu.Item key="merchant-agreement">
-              <NavLink to="/merchant-management/agreement">Uploading Agreement</NavLink>
+              <NavLink to="/docs/acquirer/merchant-management/agreement">Uploading Agreement</NavLink>
             </Menu.Item>
             <Menu.Item key="merchant-store-management">
               <NavLink to="/merchant-management/store">Merchant Store Management</NavLink>
@@ -110,13 +110,13 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
           </SubMenu>
         </SubMenu>
         <Menu.Item key="troubleshooting">
-          <NavLink to="/troubleshooting">Troubleshooting</NavLink>
+          <NavLink to="/docs/acquirer/troubleshooting">Troubleshooting</NavLink>
         </Menu.Item>
         <Menu.Item key="faq">
-          <NavLink to="/faq">Frequently Asked Questions</NavLink>
+          <NavLink to="/docs/acquirer/faq">Frequently Asked Questions</NavLink>
         </Menu.Item>
         <Menu.Item key="support">
-          <NavLink to="/support">Support Information</NavLink>
+          <NavLink to="/docs/acquirer/support">Support Information</NavLink>
         </Menu.Item>
       </Menu>
 
