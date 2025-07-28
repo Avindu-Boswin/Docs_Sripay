@@ -14,6 +14,7 @@ import WhoCanbeAcquirer from './pages/acquirer/Introduction';
 import AcquirerGettingStart from './pages/acquirer/AcquirerGettingStart';
 import MerchantRegistrationWorkflow from './pages/acquirer/RegWorkflow';
 import MerchantRegistrationBulk from './pages/acquirer/RegBulk';
+import MerchantRegistrationSelf from './pages/acquirer/regSelf';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="gettingStart" element={<AcquirerGettingStart />} />
           <Route path="merchant-registration/workflow" element={<MerchantRegistrationWorkflow />} />
           <Route path="merchant-registration/bulk" element={<MerchantRegistrationBulk />} />
+          <Route path="merchant-registration/self" element={<MerchantRegistrationSelf />} />
         </Route>
 
         {/* Fallbacks */}
