@@ -16,6 +16,9 @@ import MerchantRegistrationWorkflow from './pages/acquirer/RegWorkflow';
 import MerchantRegistrationBulk from './pages/acquirer/RegBulk';
 import MerchantRegistrationSelf from './pages/acquirer/regSelf';
 import StoreViewAll from './pages/acquirer/StoreViewAll';
+import StoreCreate from './pages/acquirer/StoreCreate';
+import StoreUserAssign from './pages/acquirer/StoreUserAssign.jsx';
+import TerminalManagement from './pages/acquirer/TerminalManagement.jsx';
 
 function App() {
   return (
@@ -37,6 +40,9 @@ function App() {
           <Route path="merchant-registration/bulk" element={<MerchantRegistrationBulk />} />
           <Route path="merchant-registration/self" element={<MerchantRegistrationSelf />} />
           <Route path="merchant-management/store/view" element={<StoreViewAll />} />
+          <Route path="merchant-management/store/create" element={<StoreCreate />} />
+          <Route path="merchant-management/store/assign-users" element={<StoreUserAssign />} />
+          <Route path="merchant-management/store/terminal" element={<TerminalManagement />} />
         </Route>
 
         {/* Fallbacks */}

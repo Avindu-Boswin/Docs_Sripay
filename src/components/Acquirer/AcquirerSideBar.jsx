@@ -108,6 +108,15 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                 <Menu.Item key="view-all-stores">
                   <NavLink to="/docs/acquirer/merchant-management/store/view">View All Stores</NavLink>
                 </Menu.Item>
+                <Menu.Item key="create-new-store">
+                  <NavLink to="/docs/acquirer/merchant-management/store/create">Creating a New Store</NavLink>
+                </Menu.Item>
+                <Menu.Item key="assign-store-users">
+                  <NavLink to="/docs/acquirer/merchant-management/store/assign-users">Assigning Store Users</NavLink>
+                </Menu.Item>
+                <Menu.Item key="terminal-management">
+                  <NavLink to="/docs/acquirer/merchant-management/store/terminal">Terminal Management</NavLink>
+                </Menu.Item>
               </SubMenu>
             </SubMenu>
 
