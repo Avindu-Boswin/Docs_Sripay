@@ -412,6 +412,31 @@
             }
         ]
     },
+    "storeViewAll": {
+        "title": "Merchant Store Management",
+        "intro": "The Merchant Store Management section allows Sub-Acquirers to manage the outlets (stores) under a registered merchant. Each merchant can have multiple stores, each with its own users and terminals. This section outlines how to view, create, and manage stores and their associated components.",
+        "viewAllTitle": "Viewing All Stores",
+        "viewAllIntro": "To access the list of all registered stores",
+        "viewAllSteps": [
+            "Navigate to the \"Stores\" section from the left sidebar.",
+            "You’ll see a table listing all existing stores including"
+        ],
+        "tableColumns": [
+            "Store ID",
+            "Store Name",
+            "Merchant Info",
+            "Acquirer Info",
+            "Contact Email & Phone",
+            "Status",
+            "Available Actions"
+        ],
+        "filterText": "Use filters to search by Merchant ID or Outlet ID.",
+        "actionMenu": "From the Action menu, you can",
+        "actions": [
+            "View complete store details",
+            "Reject stores to move it to pending approval"
+        ]
+    },
     "regSelf": {
         "title": "Merchant Self Sign-Up",
         "intro": "The Merchant Self Sign-Up feature allows Sub-Acquirers to enable their merchants to register independently using a dedicated, branded sign-up link. This simplifies the onboarding process by eliminating the need for manual merchant creation from the Sub-Acquirer dashboard.",
