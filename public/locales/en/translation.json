@@ -411,5 +411,54 @@
                 ]
             }
         ]
+    },
+    "regSelf": {
+        "title": "Merchant Self Sign-Up",
+        "intro": "The Merchant Self Sign-Up feature allows Sub-Acquirers to enable their merchants to register independently using a dedicated, branded sign-up link. This simplifies the onboarding process by eliminating the need for manual merchant creation from the Sub-Acquirer dashboard.",
+        "howToTitle": "How to Get Started",
+        "steps": [
+            {
+                "title": "Step 1: Send an Email Request",
+                "desc": "To activate this feature, you must send a formal request to SriPay to enable Merchant Self Sign-Up for your Sub-Acquirer account.",
+                "email": "support@sripay.lk",
+                "subject": "Request for Merchant Self Sign-Up Enablement",
+                "include": [
+                    "Your Sub-Acquirer Name and ID",
+                    "Contact Person Details",
+                    "Preferred branding details (optional – logo, color theme)"
+                ]
+            },
+            {
+                "title": "Step 2: SriPay Review & Enablement",
+                "points": [
+                    "SriPay will review your request and configure a custom sign-up URL.",
+                    "The sign-up page will include your Sub-Acquirer’s name and branding colors.",
+                    "You will be notified once the link is ready to be shared with merchants."
+                ]
+            },
+            {
+                "title": "Step 3: Merchant Access & KYC Submission",
+                "points": [
+                    "Merchants can use the self-registration link to:",
+                    "Create their account",
+                    "Submit KYC information",
+                    "Upload required documents",
+                    "All submitted applications will appear under your Sub-Acquirer Dashboard for review."
+                ]
+            },
+            {
+                "title": "Step 4: Proceed with Standard Evaluation Process",
+                "desc": "Once submitted, these merchants will follow the same approval flow:",
+                "flow": "Sub-Acquirer Review → SriPay Review → Alipay Review → Activation"
+            }
+        ],
+        "benefitsTitle": "Benefits of Merchant Self Sign-Up",
+        "benefits": [
+            "Saves time for Sub-Acquirers by reducing manual entry.",
+            "Enables merchants to take ownership of their onboarding.",
+            "Ensures faster scaling for large merchant acquisition campaigns.",
+            "Fully integrated into the existing evaluation and compliance workflow."
+        ],
+        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID."
     }
 }
