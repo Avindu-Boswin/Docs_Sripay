@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Acquirer/AcquirerNavBar";
 import Sidebar from "../components/Acquirer/AcquirerSideBar";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   const [collapsed, setCollapsed] = useState(false); // desktop
@@ -37,9 +38,12 @@ const Layout = () => {
           }`}
         >
           <Outlet />
+          <Footer />
         </main>
+
       </div>
     </div>
+    
   );
 };
 
