@@ -8,6 +8,7 @@ import NotFound from './pages/errorPages/NotFound';
 
 import HomeLayout from './layouts/HomeLayout';
 import AcquirerLayout from './layouts/AcquirerLayout';
+import Merchantlayout from './layouts/MerchantLayout';
 
 import AcquirerDocs from './pages/acquirer/AcquirerDocs';
 import WhoCanbeAcquirer from './pages/acquirer/Introduction';
@@ -19,6 +20,7 @@ import StoreViewAll from './pages/acquirer/StoreViewAll';
 import StoreCreate from './pages/acquirer/StoreCreate';
 import StoreUserAssign from './pages/acquirer/StoreUserAssign.jsx';
 import TerminalManagement from './pages/acquirer/TerminalManagement.jsx';
+import Introduction from './pages/merchant/Introduction.jsx';
 
 function App() {
   return (
@@ -44,6 +46,12 @@ function App() {
           <Route path="merchant-management/store/assign-users" element={<StoreUserAssign />} />
           <Route path="merchant-management/store/terminal" element={<TerminalManagement />} />
         </Route>
+
+        {/* Merchant Docs Layout */}
+        <Route path="/docs/merchant" element={<Merchantlayout />}>
+          <Route path="introduction" element={<Introduction />} />
+        </Route>
+
 
         {/* Fallbacks */}
         <Route path="/not-found" element={<NotFound />} />
