@@ -673,5 +673,87 @@
         ],
         "statusNoteTitle": "Note:",
         "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action."
+    },
+        "merchantSuspend": {
+        "title": "Suspending Merchant",
+        "howToTitle": "How to suspend a merchant:",
+        "steps": [
+            "Click on the three dots ”⋮” next to the merchant name.",
+            "Select Suspend.",
+            "A popup will prompt you to enter a reason before confirming the suspension."
+        ],
+        "note": "Suspended merchants will be moved to the Suspended tab and can only be reactivated by contacting SriPay."
+    },
+    "activatingSuspend": {
+        "title": "Activating Suspended Merchant",
+        "howToTitle": "To activate a merchant after suspending:",
+        "steps": [
+            "Click on the three dots ”⋮” and select Approve.",
+            "A confirmation window will appear.",
+            "Upon approval, the merchant status will change from ‘suspended’ to ‘approved’."
+        ]
+    },
+    "agreementUpload": {
+        "title": "Uploading Merchant Agreements",
+        "desc": "Sub-Acquirers must upload merchant agreements before a merchant can proceed.",
+        "steps": [
+            "Click Agreement from the merchant’s action menu",
+            "A model appears displaying already uploaded files and a button to Select PDF or Image"
+        ],
+        "keyPointsTitle": "Key Points:",
+        "keyPoints": [
+            "You can upload up to <1>5 agreement files</1>",
+            "Uploaded files <1>cannot be deleted</1>",
+            "Files must be in <1>PDF or image</1> format",
+            "Merchants can <1>view uploaded agreements</1> in their own portal"
+        ],
+        "note": "This ensures transparency and legal compliance between SriPay, the Acquirer, and the merchant."
+    },
+    "troubleshooting": {
+        "title": "Troubleshooting",
+        "desc": "If you encounter issues during the merchant onboarding or bulk registration process, consider the following resolutions:",
+        "excelTitle": "Excel Upload Errors",
+        "excel": [
+            { "issue": "Invalid file type", "solution": "Ensure the file is in .xlsx format. .xls, .csv, or .ods are not accepted." },
+            { "issue": "Column headers in sheet ‘Merchant’ were modified", "solution": "Do not rename, remove, or reorder any column headers in the sample Excel." },
+            { "issue": "Missing value for [Field]", "solution": "Every row must contain data for all required fields—especially email, mobile, and registration details." },
+            { "issue": "Excel file does not match the SriPay template", "solution": "Download the latest sample Excel from the platform and follow the format exactly." }
+        ],
+        "docTitle": "Uploaded Document Issues",
+        "docIssue": "Reviewer cannot access uploaded files",
+        "docSolution": "Ensure all document URLs are set to ‘Anyone with the link can view’ before submitting. This allows all reviewers (Sub-Acquirer → SriPay → Alipay) to access them.",
+        "kycTitle": "KYC Rejections",
+        "kycReasonsTitle": "Common Reasons:",
+        "kycReasons": [
+            "Mismatched registration details and document names",
+            "Invalid or incomplete contact information",
+            "Poor-quality or incorrect document uploads"
+        ],
+        "kycSolution": "Double-check all entries and uploaded documents before submission."
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+            {
+                "q": "Q1: Can I edit a merchant’s KYC after submission?",
+                "a": "A: No. Once submitted, edits cannot be made. You must reject the submission and ask the merchant to re-register."
+            },
+            {
+                "q": "Q2: What types of businesses are supported?",
+                "a": "A: SriPay supports Sole Proprietorships, Partnerships, Private and Public Limited Companies across a wide range of industries."
+            },
+            {
+                "q": "Q3: Can I use my own Merchant ID?",
+                "a": "A: Yes. If your custom Merchant ID is available, the system will validate and accept it."
+            },
+            {
+                "q": "Q4: What happens after I approve a merchant?",
+                "a": "A: The request is forwarded to SriPay for second-level review, then to Alipay for final evaluation. You will be notified at each stage."
+            },
+            {
+                "q": "Q5: What if two merchants have the same email?",
+                "a": "A: Duplicate emails are not allowed. Each merchant must register with a unique email address."
+            }
+        ]
     }
 }

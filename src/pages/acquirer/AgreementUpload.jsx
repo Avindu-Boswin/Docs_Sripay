@@ -1,22 +1,23 @@
+
 import React from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import Agreement from '../../assets/images/acquirer/img309.jpg';
 
 function AgreementUpload() {
+  const { t } = useTranslation();
   return (
     <div className="w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16">
       <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-700 mb-4 sm:mb-6">
-        Uploading Merchant Agreements
+        {t('agreementUpload.title')}
       </h1>
 
       <p className="text-gray-800 text-sm sm:text-base mb-4">
-        Sub-Acquirers must upload merchant agreements before a merchant can proceed.
+        {t('agreementUpload.desc')}
       </p>
 
       <ul className="list-disc list-inside space-y-3 text-gray-800 px-4 sm:px-5 py-4 text-sm sm:text-base leading-relaxed">
-        <li>Click Agreement from the merchant’s action menu</li>
-        <li>
-          A model appears displaying already uploaded files and a button to Select PDF or Image
-        </li>
+        <li>{t('agreementUpload.steps.0')}</li>
+        <li>{t('agreementUpload.steps.1')}</li>
         <img
           src={Agreement}
           alt="Agreement Upload"
@@ -24,25 +25,17 @@ function AgreementUpload() {
         />
       </ul>
 
-      <p className="font-semibold text-gray-700 mt-6 mb-2">Key Points:</p>
+      <p className="font-semibold text-gray-700 mt-6 mb-2">{t('agreementUpload.keyPointsTitle')}</p>
 
       <ul className="list-disc list-inside space-y-3 text-gray-800 px-4 sm:px-5 py-3 text-sm sm:text-base leading-relaxed">
-        <li>
-          You can upload up to <span className="font-semibold">5 agreement files</span>
-        </li>
-        <li>
-          Uploaded files <span className="font-semibold">cannot be deleted</span>
-        </li>
-        <li>
-          Files must be in <span className="font-semibold">PDF or image</span> format
-        </li>
-        <li>
-          Merchants can <span className="font-semibold">view uploaded agreements</span> in their own portal
-        </li>
+        <li><Trans i18nKey="agreementUpload.keyPoints.0"><span className="font-semibold" /></Trans></li>
+        <li><Trans i18nKey="agreementUpload.keyPoints.1"><span className="font-semibold" /></Trans></li>
+        <li><Trans i18nKey="agreementUpload.keyPoints.2"><span className="font-semibold" /></Trans></li>
+        <li><Trans i18nKey="agreementUpload.keyPoints.3"><span className="font-semibold" /></Trans></li>
       </ul>
 
       <p className="text-gray-800 text-sm sm:text-base mt-2">
-        This ensures transparency and legal compliance between SriPay, the Acquirer, and the merchant.
+        {t('agreementUpload.note')}
       </p>
     </div>
   );
