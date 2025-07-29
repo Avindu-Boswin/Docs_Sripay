@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../components/Acquirer/AcquirerNavBar";
-import Sidebar from "../components/Acquirer/AcquirerSideBar";
+import Header from "../components/Merchant/MerchantNavBar";
 import Footer from "../components/Footer";
+import Sidebar from "../components/Merchant/MerchantSideBar";
 
 const Layout = () => {
   const [collapsed, setCollapsed] = useState(false); // desktop

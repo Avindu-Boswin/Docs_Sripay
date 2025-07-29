@@ -1,7 +1,13 @@
+
 import React from 'react'
 import QuestionImage from '../../assets/images/acquirer/Questions-amico.svg'
 
+
+import { useTranslation } from 'react-i18next';
+
 function Faq() {
+  const { t } = useTranslation();
+  const questions = t('faq.questions', { returnObjects: true });
   return (
     <div className='w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16'>
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">
@@ -69,7 +75,7 @@ function Faq() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Faq;

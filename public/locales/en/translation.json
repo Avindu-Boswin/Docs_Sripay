@@ -411,5 +411,349 @@
                 ]
             }
         ]
+    },
+    "storeViewAll": {
+        "title": "Merchant Store Management",
+        "intro": "The Merchant Store Management section allows Sub-Acquirers to manage the outlets (stores) under a registered merchant. Each merchant can have multiple stores, each with its own users and terminals. This section outlines how to view, create, and manage stores and their associated components.",
+        "viewAllTitle": "Viewing All Stores",
+        "viewAllIntro": "To access the list of all registered stores",
+        "viewAllSteps": [
+            "Navigate to the \"Stores\" section from the left sidebar.",
+            "You’ll see a table listing all existing stores including"
+        ],
+        "tableColumns": [
+            "Store ID",
+            "Store Name",
+            "Merchant Info",
+            "Acquirer Info",
+            "Contact Email & Phone",
+            "Status",
+            "Available Actions"
+        ],
+        "filterText": "Use filters to search by Merchant ID or Outlet ID.",
+        "actionMenu": "From the Action menu, you can",
+        "actions": [
+            "View complete store details",
+            "Reject stores to move it to pending approval"
+        ]
+    },
+    "regSelf": {
+        "title": "Merchant Self Sign-Up",
+        "intro": "The Merchant Self Sign-Up feature allows Sub-Acquirers to enable their merchants to register independently using a dedicated, branded sign-up link. This simplifies the onboarding process by eliminating the need for manual merchant creation from the Sub-Acquirer dashboard.",
+        "howToTitle": "How to Get Started",
+        "steps": [
+            {
+                "title": "Step 1: Send an Email Request",
+                "desc": "To activate this feature, you must send a formal request to SriPay to enable Merchant Self Sign-Up for your Sub-Acquirer account.",
+                "email": "support@sripay.lk",
+                "subject": "Request for Merchant Self Sign-Up Enablement",
+                "include": [
+                    "Your Sub-Acquirer Name and ID",
+                    "Contact Person Details",
+                    "Preferred branding details (optional – logo, color theme)"
+                ]
+            },
+            {
+                "title": "Step 2: SriPay Review & Enablement",
+                "points": [
+                    "SriPay will review your request and configure a custom sign-up URL.",
+                    "The sign-up page will include your Sub-Acquirer’s name and branding colors.",
+                    "You will be notified once the link is ready to be shared with merchants."
+                ]
+            },
+            {
+                "title": "Step 3: Merchant Access & KYC Submission",
+                "points": [
+                    "Merchants can use the self-registration link to:",
+                    "Create their account",
+                    "Submit KYC information",
+                    "Upload required documents",
+                    "All submitted applications will appear under your Sub-Acquirer Dashboard for review."
+                ]
+            },
+            {
+                "title": "Step 4: Proceed with Standard Evaluation Process",
+                "desc": "Once submitted, these merchants will follow the same approval flow:",
+                "flow": "Sub-Acquirer Review → SriPay Review → Alipay Review → Activation"
+            }
+        ],
+        "benefitsTitle": "Benefits of Merchant Self Sign-Up",
+        "benefits": [
+            "Saves time for Sub-Acquirers by reducing manual entry.",
+            "Enables merchants to take ownership of their onboarding.",
+            "Ensures faster scaling for large merchant acquisition campaigns.",
+            "Fully integrated into the existing evaluation and compliance workflow."
+        ],
+        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID."
+    },
+    "storeUserAssign": {
+        "title": "Assigning Store Users",
+        "desc": "Store User Management allows the Acquirer to assign users specifically to a store. These users will be responsible for handling store-level tasks such as viewing transactions, accessing terminals, or processing orders depending on their roles.",
+        "instructionsTitle": "To Assign users for a specific store:",
+        "steps": [
+            "Navigate to the Stores tab.",
+            "From the store list, click View (: > View) on the relevant store.",
+            "Navigate to the Add user to the outlet section inside the store profile."
+        ],
+        "note": "Note: Store users should be added by the merchant before assigning them to a store."
+    },
+    "storeCreate": {
+        "title": "Creating a New Store",
+        "step1Title": "Step 1: Navigate to Merchant List",
+        "step1": [
+            "Go to the Merchants tab and locate the merchant for whom you want to create a store.",
+            "Click on the 3-dot action menu next to the merchant entry.",
+            "From the action menu, click Create Store to begin the process."
+        ],
+        "step2Title": "Step 2: Fill Store Information",
+        "step2FieldsIntro": "You'll see fields for",
+        "step2Fields": [
+            "Store Name – The official name of the store/outlet.",
+            "Store Phone – Direct store contact number.",
+            "Store Email – Store’s email address for communication.",
+            "Province / District / City / Street – Physical location fields to map the store accurately.",
+            "Store QR currency – Select the preferred currency for your store’s QR code transactions.",
+            "Store Website – Include the store’s official website URL. If a dedicated outlet site is unavailable, you may use the main business website."
+        ],
+        "step2FieldsNote": "These fields help ensure each store is uniquely identifiable by address and contact details.",
+        "step3Title": "Step 3: Enter Bank Account Details",
+        "step3Intro": "To enable seamless settlement of funds, please provide your store’s bank account details. You may configure both Primary and Secondary settlement accounts. Only one account can be set as the default settlement account.",
+        "step3PrimaryTitle": "Primary Bank Account",
+        "step3PrimaryDesc": "This account will be used as the default for receiving settlement payments unless changed manually.",
+        "step3PrimaryFieldsTitle": "Required Fields",
+        "step3PrimaryFields": [
+            "Bank Type: Choose between Local or International bank account.",
+            "Settlement Currency: Select LKR or USD depending on your account preference.",
+            "Bank Name: Choose your bank from the list provided.",
+            "Bank Code: Input the official bank code.",
+            "Branch Name: Enter the name of the bank branch.",
+            "Branch Code: Provide the correct branch code for reference.",
+            "Account Number: Enter the full bank account number used for settlements.",
+            "Account Name: Input the name under which the account is registered."
+        ],
+        "step3SecondaryTitle": "Secondary Bank Account (Optional)",
+        "step3SecondaryDesc": "This optional account acts as a backup for settlement purposes and can be activated when needed.",
+        "step3SecondaryFieldsTitle": "Required Fields (same as Primary Bank Account)",
+        "step3SecondaryNote": "You can also toggle the option to Set as default settlement account if you prefer this to be the primary method of receiving payments.",
+        "step3Note": "Note: Ensure all information is accurate. Incorrect details may delay or reject settlements.",
+        "step3Next": "Click Next to proceed once all mandatory details are entered correctly.",
+        "step4Title": "Step 4: Submit Store Details",
+        "step4Intro": "To finalize your store registration, please complete the following required details. This information helps verify and activate your store for customer-facing services and settlements.",
+        "step4FrontTitle": "Store Front Photos",
+        "step4FrontDesc": "Upload clear exterior photos of your store front. This helps in authenticating the physical existence and visibility of the outlet.",
+        "step4FrontNote": "Ensure the store name board is clearly visible in the image.",
+        "step4InteriorTitle": "Interior Photos",
+        "step4InteriorDesc": "Upload clear interior photos of your store. This helps in verifying the operational nature and layout of your outlet.",
+        "step4InteriorNote": "Make sure the images represent the actual setup of the store (e.g., counters, displays, signage).",
+        "step4MobileTitle": "Mobile Number",
+        "step4MobileDesc": "Provide a valid mobile number for store-level communication and verification.",
+        "step4MobileList": [
+            "Must be active and reachable.",
+            "Click “Verify Phone Number” to receive and confirm a verification code."
+        ],
+        "step4EmailTitle": "Email Address",
+        "step4EmailDesc": "Enter a valid email address for official communications related to settlements, support, and notifications.",
+        "step4EmailList": [
+            "Click “Verify Email” to authenticate the email before submission."
+        ],
+        "step4VerifyNote": "Both phone and email must be verified before submitting the setup.",
+        "step4Submit": "Click Submit once all fields are filled and verified to complete your store onboarding.",
+        "step5Title": "Step 5: Acquirer Store Evaluation",
+        "step5Intro": "Once a store is submitted, it enters the Pending Requests stage for review and evaluation by the acquirer. The approval process ensures store legitimacy and compliance before activation.",
+        "step5PendingTitle": "Pending Requests Dashboard",
+        "step5PendingDesc": "On the Pending Requests page, acquirers can,",
+        "step5PendingList": [
+            "View all outlet submissions categorized by their current status:",
+            "Track requests using columns for Store Name, ID, City, Status, and Submitted Date.",
+            "Use filters or search functionality to locate specific records."
+        ],
+        "step5PendingStatus": [
+            "Awaiting Acquirer In Progress",
+            "Awaiting Sripay In Progress",
+            "Awaiting Alipay In Progress",
+            "Rejected"
+        ],
+        "step5EvalTitle": "Store Evaluation Panel",
+        "step5EvalDesc": "Clicking on the three dots ⋮ on request opens a detailed Store Evaluation view that includes:",
+        "step5EvalList": [
+            "Store Information",
+            "Store Photos",
+            "Merchant Information",
+            "Contact Information"
+        ],
+        "step5EvalStoreInfo": [
+            "Store Name, Store ID, Email (with verification status)",
+            "Website, QR Currency, Channel Fee, and Commission Rate",
+            "Timestamps (Created At & Updated At)",
+            "Current Status"
+        ],
+        "step5EvalStorePhotos": [
+            "Review uploaded Interior and Storefront photos to validate store presence."
+        ],
+        "step5EvalMerchantInfo": [
+            "Merchant ID, Name, and Category (e.g., Retail, Restaurant)"
+        ],
+        "step5EvalContactInfo": [
+            "Mobile Number (with verification status)",
+            "SMS & Email Notification settings",
+            "Website & Email notification settings",
+            "Option to Set as Top Outlet (if applicable)"
+        ],
+        "step6Title": "Step 6: Approval Actions",
+        "step6Intro": "Evaluators can take the following actions from the dropdown",
+        "step6Actions": [
+            "Send for Sripay Approval\nForwards the request to Sripay’s internal review team.",
+            "Reject\nDeclines the request with a confirmation prompt to prevent accidental action."
+        ],
+        "step6Dialog": "Each action triggers a confirmation dialog displaying:",
+        "step6DialogList": [
+            "Selected action",
+            "Request ID",
+            "Options to cancel or proceed"
+        ],
+        "step6Note": "Note: Once a request is sent to Sripay or rejected, its status updates in real time.",
+        "step6Confirm": "Click Confirm to finalize your selected action.",
+        "step7Title": "Step 7: SriPay Evaluation",
+        "step7Intro": "If the Sub-Acquirer sends the application forward, it moves to the SriPay Admin Panel for a second-level review.",
+        "step7AdminTitle": "SriPay Admin can:",
+        "step7AdminList": [
+            "Approve and forward to Alipay",
+            "Reject with comments and notify Sub-Acquirer"
+        ],
+        "step7NotifTitle": "System Notifications:",
+        "step7NotifList": [
+            "Sub-Acquirer is notified of SriPay’s decision",
+            "Merchant store remains in “SriPay In Progress” until final decision"
+        ],
+        "step8Title": "Step 8: Alipay Evaluation",
+        "step8Intro": "If SriPay approves the application, it is submitted to Alipay+ Team. This includes an automatic or manual compliance check by Alipay.",
+        "step8AdminTitle": "Alipay+ Admin can:",
+        "step8AdminList": [
+            "Approve: Merchant store is now live for payment acceptance",
+            "Reject: Sent back with reason; Sub-Acquirer and SriPay are notified"
+        ]
+    },    
+    "terminalManagement": {
+        "title": "Terminal Management",
+        "desc": "Terminal Management allows the Acquirer to configure and associate terminals (typically POS devices or QR interfaces) with each store. This setup is essential for enabling real-time transactions, QR scanning, and accurate transaction mapping per outlet.",
+        "accessTitle": "Accessing Terminal Management",
+        "accessDesc": "To manage terminals for a specific store:",
+        "accessSteps": [
+            "Go to the Stores section.",
+            "Select View (: > View) on the desired store.",
+            "Navigate to the Terminals section."
+        ],
+        "addTitle": "Adding a Terminal",
+        "addDesc1": "After a store is approved, you can begin assigning terminals for transactions. A terminal represents a specific POS (Point of Sale) device or checkout point within the store.",
+        "addDesc2": "Click on Create New Terminal on the Terminal section.",
+        "optionTitle": "Option Selection – Single vs. Multiple Terminals",
+        "optionDesc": "Start by selecting whether you want to create a Single Terminal or Multiple Terminals.",
+        "optionList": [
+            "Single Terminal: For stores with one checkout or payment point.",
+            "Multiple Terminals: For stores with several counters/devices (e.g., supermarkets or chains)."
+        ],
+        "optionNext": "Click Next after making your selection.",
+        "singleTitle": "Creating a Single Terminal",
+        "singleList": [
+            "Terminal ID: A unique identifier (e.g., T001).",
+            "Terminal Name: Assign a label (e.g., Terminal A).",
+            "Terminals: Shows current number of terminals in the store."
+        ],
+        "singleNext": "Click Yes to proceed and save the terminal.",
+        "multiTitle": "Creating Multiple Terminals",
+        "multiList": [
+            "Enter Number of Terminals you wish to create (e.g., 5)."
+        ],
+        "multiNext": "Click Submit to auto-generate terminal IDs and assign them to the store.",
+        "statusTitle": "Activate or Deactivate Terminal",
+        "statusList": [
+            "They will appear in the Terminals Table.",
+            "Status will indicate whether each terminal is active or deactive.",
+            "You can manage each terminal individually via the Action button."
+        ],
+        "statusNoteTitle": "Note:",
+        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action."
+    },
+        "merchantSuspend": {
+        "title": "Suspending Merchant",
+        "howToTitle": "How to suspend a merchant:",
+        "steps": [
+            "Click on the three dots ”⋮” next to the merchant name.",
+            "Select Suspend.",
+            "A popup will prompt you to enter a reason before confirming the suspension."
+        ],
+        "note": "Suspended merchants will be moved to the Suspended tab and can only be reactivated by contacting SriPay."
+    },
+    "activatingSuspend": {
+        "title": "Activating Suspended Merchant",
+        "howToTitle": "To activate a merchant after suspending:",
+        "steps": [
+            "Click on the three dots ”⋮” and select Approve.",
+            "A confirmation window will appear.",
+            "Upon approval, the merchant status will change from ‘suspended’ to ‘approved’."
+        ]
+    },
+    "agreementUpload": {
+        "title": "Uploading Merchant Agreements",
+        "desc": "Sub-Acquirers must upload merchant agreements before a merchant can proceed.",
+        "steps": [
+            "Click Agreement from the merchant’s action menu",
+            "A model appears displaying already uploaded files and a button to Select PDF or Image"
+        ],
+        "keyPointsTitle": "Key Points:",
+        "keyPoints": [
+            "You can upload up to <1>5 agreement files</1>",
+            "Uploaded files <1>cannot be deleted</1>",
+            "Files must be in <1>PDF or image</1> format",
+            "Merchants can <1>view uploaded agreements</1> in their own portal"
+        ],
+        "note": "This ensures transparency and legal compliance between SriPay, the Acquirer, and the merchant."
+    },
+    "troubleshooting": {
+        "title": "Troubleshooting",
+        "desc": "If you encounter issues during the merchant onboarding or bulk registration process, consider the following resolutions:",
+        "excelTitle": "Excel Upload Errors",
+        "excel": [
+            { "issue": "Invalid file type", "solution": "Ensure the file is in .xlsx format. .xls, .csv, or .ods are not accepted." },
+            { "issue": "Column headers in sheet ‘Merchant’ were modified", "solution": "Do not rename, remove, or reorder any column headers in the sample Excel." },
+            { "issue": "Missing value for [Field]", "solution": "Every row must contain data for all required fields—especially email, mobile, and registration details." },
+            { "issue": "Excel file does not match the SriPay template", "solution": "Download the latest sample Excel from the platform and follow the format exactly." }
+        ],
+        "docTitle": "Uploaded Document Issues",
+        "docIssue": "Reviewer cannot access uploaded files",
+        "docSolution": "Ensure all document URLs are set to ‘Anyone with the link can view’ before submitting. This allows all reviewers (Sub-Acquirer → SriPay → Alipay) to access them.",
+        "kycTitle": "KYC Rejections",
+        "kycReasonsTitle": "Common Reasons:",
+        "kycReasons": [
+            "Mismatched registration details and document names",
+            "Invalid or incomplete contact information",
+            "Poor-quality or incorrect document uploads"
+        ],
+        "kycSolution": "Double-check all entries and uploaded documents before submission."
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+            {
+                "q": "Q1: Can I edit a merchant’s KYC after submission?",
+                "a": "A: No. Once submitted, edits cannot be made. You must reject the submission and ask the merchant to re-register."
+            },
+            {
+                "q": "Q2: What types of businesses are supported?",
+                "a": "A: SriPay supports Sole Proprietorships, Partnerships, Private and Public Limited Companies across a wide range of industries."
+            },
+            {
+                "q": "Q3: Can I use my own Merchant ID?",
+                "a": "A: Yes. If your custom Merchant ID is available, the system will validate and accept it."
+            },
+            {
+                "q": "Q4: What happens after I approve a merchant?",
+                "a": "A: The request is forwarded to SriPay for second-level review, then to Alipay for final evaluation. You will be notified at each stage."
+            },
+            {
+                "q": "Q5: What if two merchants have the same email?",
+                "a": "A: Duplicate emails are not allowed. Each merchant must register with a unique email address."
+            }
+        ]
     }
 }
