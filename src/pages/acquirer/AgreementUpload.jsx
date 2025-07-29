@@ -4,7 +4,7 @@ import Agreement from '../../assets/images/acquirer/img309.jpg';
 function AgreementUpload() {
   return (
     <div className="w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16">
-      <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-700 mb-4 sm:mb-6">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">
         Uploading Merchant Agreements
       </h1>
 

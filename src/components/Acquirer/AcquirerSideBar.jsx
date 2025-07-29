@@ -61,7 +61,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 <div className="overflow-y-auto scrollbar-thin h-full pt-6">
       <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 15, fontWeight: 500 }}>
         <Menu.Item key="home">
-          <NavLink to="/">Back To Home</NavLink>
+          <NavLink to="/">{'<'}   Back To Home</NavLink>
         </Menu.Item>
         <div className="flex items-center justify-center my-2 mt-5 mb-5">
           <span className="flex-1 h-0.5 bg-gray-300 ml-7 mr-2" />
