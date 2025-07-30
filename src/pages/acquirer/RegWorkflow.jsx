@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
 
 import Img1  from '../../assets/images/acquirer/img241.jpg';
 import Img2  from '../../assets/images/acquirer/img243.jpg';
@@ -17,11 +18,27 @@ import Img13 from '../../assets/images/acquirer/img266.jpg';
 import Img14 from '../../assets/images/acquirer/img270.jpg';
 import Img15 from '../../assets/images/acquirer/img271.jpg';
 
+
 function MerchantRegistrationWorkflow() {
   const { t } = useTranslation();
+  const { setSections } = useSections();
 
   // Convenience accessor for the huge steps array
   const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
+
+  useEffect(() => {
+    setSections(
+      steps.map((step, idx) => {
+        // Remove 'Step X:' or 'Step X：' (with full-width colon) from the start of the title if present
+        let cleanTitle = step.title?.replace(/^Step\s*\d+[:：]\s*/i, '').trim();
+        return {
+          id: `step${idx + 1}`,
+          label: cleanTitle
+        };
+      })
+    );
+    return () => setSections([]);
+  }, [setSections, steps]);
 
   return (
     <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
@@ -39,7 +56,7 @@ function MerchantRegistrationWorkflow() {
       </span>
 
       {/* ---------- STEP 1 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step1" className='mt-8 mb-6'>
         <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
           {steps[0].title}
         </h3>
@@ -65,7 +82,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 2 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step2" className='mt-8 mb-6'>
         <h3 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[1].title}
         </h3>
@@ -83,7 +100,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 3 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step3" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[2].title}
         </h4>
@@ -108,7 +125,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 4 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step4" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[3].title}
         </h4>
@@ -128,7 +145,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 5 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step5" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[4].title}
         </h4>
@@ -148,7 +165,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 6 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step6" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[5].title}
         </h4>
@@ -168,7 +185,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 7 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step7" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[6].title}
         </h4>
@@ -188,7 +205,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 8 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step8" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[7].title}
         </h4>
@@ -224,7 +241,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 9 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step9" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[8].title}
         </h4>
@@ -244,7 +261,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 10 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step10" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[9].title}
         </h4>
@@ -264,7 +281,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 11 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step11" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[10].title}
         </h4>
@@ -284,7 +301,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 12 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step12" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[11].title}
         </h4>
@@ -318,7 +335,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 13 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step13" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[12].title}
         </h4>
@@ -341,7 +358,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 14 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step14" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[13].title}
         </h4>
@@ -363,7 +380,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 15 ------------------------------------------------ */}
-      <div className='mt-8 mb-6'>
+      <div id="step15" className='mt-8 mb-6'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[14].title}
         </h4>
@@ -378,7 +395,7 @@ function MerchantRegistrationWorkflow() {
       </div>
 
       {/* ---------- STEP 16 ------------------------------------------------ */}
-      <div className='mt-8 mb-20'>
+      <div id="step16" className='mt-8 mb-20'>
         <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
           {steps[15].title}
         </h4>

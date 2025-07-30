@@ -1,9 +1,34 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
 
 function MerchantRegistrationSelf() {
     const { t } = useTranslation();
+    const { setSections } = useSections();
+
+    // Section titles for right side menu (remove 'Step X:' or similar prefixes)
+    const rawTitles = [
+        t('regSelf.steps.0.title'),
+        t('regSelf.steps.1.title'),
+        t('regSelf.steps.2.title'),
+        t('regSelf.steps.3.title'),
+        t('regSelf.benefitsTitle'),
+    ];
+    const sectionTitles = rawTitles.map(title =>
+        title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
+    );
+
+    useEffect(() => {
+        setSections(
+            sectionTitles.map((title, idx) => ({
+                id: `section${idx + 1}`,
+                label: title
+            }))
+        );
+        return () => setSections([]);
+    }, [setSections, ...sectionTitles]);
+
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TITLE & INTRO */}
@@ -14,7 +39,7 @@ function MerchantRegistrationSelf() {
             <h2 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.howToTitle')}</h2>
 
             {/* Step 1 */}
-            <div className='mb-8'>
+            <div id="section1" className='mb-8'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.steps.0.title')}</h3>
                 <div className='mb-2'>{t('regSelf.steps.0.desc')}</div>
                 <div className='bg-gray-50 border border-gray-200 rounded p-4 mb-2'>
@@ -34,7 +59,7 @@ function MerchantRegistrationSelf() {
             </div>
 
             {/* Step 2 */}
-            <div className='mb-8'>
+            <div id="section2" className='mb-8'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.steps.1.title')}</h3>
                 <ul className='list-disc ml-6 text-gray-700 text-sm'>
                     {t('regSelf.steps.1.points', { returnObjects: true }).map((item, idx) => (
@@ -44,7 +69,7 @@ function MerchantRegistrationSelf() {
             </div>
 
             {/* Step 3 */}
-            <div className='mb-8'>
+            <div id="section3" className='mb-8'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.steps.2.title')}</h3>
                 <ul className='list-disc ml-6 text-gray-700 text-sm'>
                     {t('regSelf.steps.2.points', { returnObjects: true }).map((item, idx) => (
@@ -54,7 +79,7 @@ function MerchantRegistrationSelf() {
             </div>
 
             {/* Step 4 */}
-            <div className='mb-8'>
+            <div id="section4" className='mb-8'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.steps.3.title')}</h3>
                 <div className='text-gray-700 text-sm mb-2'>{t('regSelf.steps.3.desc')}</div>
                 <div className='font-semibold text-gray-700'>
@@ -63,7 +88,7 @@ function MerchantRegistrationSelf() {
             </div>
 
             {/* Benefits */}
-            <div className='mb-8'>
+            <div id="section5" className='mb-8'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regSelf.benefitsTitle')}</h3>
                 <ul className='list-disc ml-6 text-gray-700 text-sm'>
                     {t('regSelf.benefits', { returnObjects: true }).map((item, idx) => (

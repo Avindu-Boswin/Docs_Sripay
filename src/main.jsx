@@ -4,9 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import 'antd/dist/reset.css'
 import './i18n.js'
+import { SectionProvider } from './components/SectionContext';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <SectionProvider>
+      <App />
+    </SectionProvider>
   </StrictMode>,
 )

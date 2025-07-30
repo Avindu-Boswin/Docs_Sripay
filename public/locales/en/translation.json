@@ -148,7 +148,7 @@
                 "purpose": "Captures financial settlement details. The primary bank will be used for immediate settlement unless otherwise changed via request."
             },
             {
-                "title": "Step 9. Owner Details",
+                "title": "Step 9: Owner Details",
                 "fieldsTitle": "Fields",
                 "fields": [
                     "Title, Full Name",
@@ -159,7 +159,7 @@
                 "purpose": "Records legal ownership for identity verification and compliance."
             },
             {
-                "title": "Step 10. Constitutional Documents Upload",
+                "title": "Step 10: Constitutional Documents Upload",
                 "fieldsTitle": "Documents Required",
                 "fields": [
                     "NIC/Passport (Front and Back)",

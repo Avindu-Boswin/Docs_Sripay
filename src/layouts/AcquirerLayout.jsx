@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSections } from "../components/SectionContext";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Acquirer/AcquirerNavBar";
 import Sidebar from "../components/Acquirer/AcquirerSideBar";
@@ -11,11 +12,8 @@ const Layout = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
-  const sections = [
-    { id: "before", label: "Before you begin" },
-    { id: "build", label: "Build an integration" },
-    { id: "make", label: "Make a payment", sub: true },
-  ];
+
+  const { sections } = useSections();
 
   return (
     <div className="flex flex-col min-h-screen transition-all duration-300">
@@ -65,14 +63,15 @@ const Layout = () => {
 
         {/* Right-side panel */}
         <div className="hidden lg:block w-64 shrink-0">
-          <div className=" fixed right-8 top-20 w-64 flex flex-col space-y-4">
+          <div className="fixed right-8 top-20 w-64 flex flex-col space-y-4">
             {/* Feedback */}
             <PageFeedback />
-
             {/* Scrollable Menu */}
-            <div className="max-h-[calc(90vh-96px)] overflow-y-auto pr-1">
-              <RightSideMenu sections={sections} />
-            </div>
+            {sections && sections.length > 0 && (
+              <div className="max-h-[calc(90vh-96px)] overflow-y-auto pr-1">
+                <RightSideMenu sections={sections} />
+              </div>
+            )}
           </div>
         </div>
 

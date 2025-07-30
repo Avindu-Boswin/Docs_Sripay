@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
 import Img1 from '../../assets/images/acquirer/img295.jpg';
 import Img2 from '../../assets/images/acquirer/img315.jpg';
 import Img3 from '../../assets/images/acquirer/img318.jpg';
@@ -11,9 +12,32 @@ import Img7 from '../../assets/images/acquirer/img335.jpg';
 
 function StoreCreate() {
     const { t } = useTranslation();
+    const { setSections } = useSections();
 
-    // Convenience accessor for the huge steps array
-    const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
+    // Section titles for right side menu (remove 'Step X:' or similar prefixes)
+    const rawTitles = [
+        t('storeCreate.step1Title'),
+        t('storeCreate.step2Title'),
+        t('storeCreate.step3Title'),
+        t('storeCreate.step4Title'),
+        t('storeCreate.step5Title'),
+        t('storeCreate.step6Title'),
+        t('storeCreate.step7Title'),
+        t('storeCreate.step8Title'),
+    ];
+    const sectionTitles = rawTitles.map(title =>
+        title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
+    );
+
+    useEffect(() => {
+        setSections(
+            sectionTitles.map((title, idx) => ({
+                id: `section${idx + 1}`,
+                label: title
+            }))
+        );
+        return () => setSections([]);
+    }, [setSections, ...sectionTitles]);
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
@@ -23,7 +47,7 @@ function StoreCreate() {
             </h1>
 
             {/* ---------- STEP 1:  Merchant List ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section1" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step1Title')}
                 </h3>
@@ -36,7 +60,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 2: Fill Store Information ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section2" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step2Title')}
                 </h3>
@@ -56,7 +80,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 3: Bank Account Details ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section3" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step3Title')}
                 </h3>
@@ -94,7 +118,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 4: Submit Store Details ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section4" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step4Title')}
                 </h3>
@@ -134,7 +158,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 5: Acquirer Store Evaluation ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section5" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step5Title')}
                 </h3>
@@ -198,7 +222,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 6: Approval Actions ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section6" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step6Title')}
                 </h3>
@@ -223,7 +247,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 7: SriPay Evaluation ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section7" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step7Title')}
                 </h3>
@@ -247,7 +271,7 @@ function StoreCreate() {
             </div>
 
             {/* ---------- STEP 8: Alipay Evaluation ---------- */}
-            <div className='mt-8 mb-6'>
+            <div id="section8" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     {t('storeCreate.step8Title')}
                 </h3>

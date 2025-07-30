@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
 import Img1 from '../../assets/images/acquirer/img281.jpg'
 import Img2 from '../../assets/images/acquirer/img283.jpg'
 import Img3 from '../../assets/images/acquirer/img286.jpg'
@@ -7,11 +8,32 @@ import Img4 from '../../assets/images/acquirer/img288.jpg'
 import Img5 from '../../assets/images/acquirer/img290.jpg'
 
 function MerchantRegistrationWorkflow() {
-    
     const { t } = useTranslation();
+    const { setSections } = useSections();
 
-    // Convenience accessor for the huge steps array
-    // const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
+    // Section titles for right side menu (remove 'Step X:' or similar prefixes)
+    const rawTitles = [
+        t('regBulk.steps.0.title'),
+        t('regBulk.steps.1.title'),
+        t('regBulk.steps.2.title'),
+        t('regBulk.steps.3.title'),
+        t('regBulk.steps.4.title'),
+        t('regBulk.steps.5.title'),
+        t('regBulk.steps.6.title'),
+    ];
+    const sectionTitles = rawTitles.map(title =>
+        title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
+    );
+
+    useEffect(() => {
+        setSections(
+            sectionTitles.map((title, idx) => ({
+                id: `step${idx + 1}`,
+                label: title
+            }))
+        );
+        return () => setSections([]);
+    }, [setSections, ...sectionTitles]);
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
@@ -21,7 +43,7 @@ function MerchantRegistrationWorkflow() {
             <span className='text-base sm:text-lg md:text-xl text-gray-600'>{t('regBulk.desc')}</span>
 
             {/* ---------- STEP 1 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step1" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.0.title')}</h3>
                 <img src={Img1} alt={t('regBulk.steps.0.imgAlt')} className="mx-auto mb-8 my-6 block md:w-4/5" />
                 <div className='ml-1 sm:ml-3 mt-7'>
@@ -35,7 +57,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 2 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step2" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.1.title')}</h3>
                 <img src={Img2} alt={t('regBulk.steps.1.imgAlt')} className="mx-auto mb-8 my-6 block md:w-4/5" />
                 <div className='ml-1 sm:ml-3 mt-7'>
@@ -51,7 +73,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 3 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step3" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.2.title')}</h3>
                 <div className='ml-1 sm:ml-3 mt-7'>
                     <ol className='list-decimal text-gray-700 ml-6 sm:ml-8 mt-4 text-sm space-y-3'>
@@ -73,7 +95,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 4 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step4" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.3.title')}</h3>
                 <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mt-4 text-sm'>
                     <li>{t('regBulk.steps.3.points.0')}</li>
@@ -112,7 +134,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 5 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step5" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.4.title')}</h3>
                 <img src={Img4} alt={t('regBulk.steps.4.imgAlt')} className="mx-auto mb-8 my-6 block md:w-4/5" />
                 <span className="font-semibold text-gray-700">{t('regBulk.steps.4.success')}</span>
@@ -127,7 +149,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 6 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step6" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.5.title')}</h3>
                 <img src={Img5} alt={t('regBulk.steps.5.imgAlt')} className="mx-auto mb-8 my-6 block md:w-4/5" />
                 <span className="font-semibold text-gray-700 text-lg">{t('regBulk.steps.5.desc')}</span>
@@ -143,7 +165,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- STEP 7 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step7" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>{t('regBulk.steps.6.title')}</h3>
                 <span className="font-semibold text-gray-700 text-lg">{t('regBulk.steps.6.desc')}</span>
                 <div className='ml-1 sm:ml-3 mt-7'>
