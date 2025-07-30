@@ -56,7 +56,7 @@ const Layout = () => {
 
           {/* Footer */}
           <div
-            className={`mr-16 ${collapsed ? "" : "md:ml-64"
+            className={`lg:mr-16 ${collapsed ? "" : "md:ml-64"
               }`}
           >
             <Footer />
@@ -64,7 +64,7 @@ const Layout = () => {
         </div>
 
         {/* Right-side panel */}
-        <div className="hidden md:block w-64 shrink-0">
+        <div className="hidden lg:block w-64 shrink-0">
           <div className=" fixed right-8 top-20 w-64 flex flex-col space-y-4">
             {/* Feedback */}
             <PageFeedback />
