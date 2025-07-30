@@ -63,23 +63,46 @@ const RightSideMenu = ({ sections }) => {
     return (
     <div className="h-full">
       <div className="text-gray-800 text-xs font-medium mb-4">On this page</div>
-      <ul className="space-y-4 text-sm text-gray-600">
-        {sections.map((section, i) => (
-          <li key={i} className={section.sub ? 'ml-4' : ''}>
-            <button
-              onClick={() => handleScroll(section.id)}
-              className={
-                `hover:text-blue-600 transition-colors w-full text-center break-words whitespace-normal leading-snug ` +
-                (activeId === section.id ? 'text-blue-600 font-semibold' : '')
-              }
-              style={{ wordBreak: 'break-word', whiteSpace: 'normal', textAlign: 'left', display: 'block', width: '100%' }}
+
+      {/* Border and indent wrapper */}
+      <div className="relative border-l-2 border-gray-200 pl-4">
+        <ul className="space-y-4 text-sm text-gray-600">
+          {sections.map((section) => (
+            <li
+              key={section.id}
+              className={`relative ${section.sub ? 'ml-4' : ''}`}
             >
-              {section.label}
-            </button>
-          </li>
-        ))}
-      </ul>
-      <div style={{ height: "3rem" }} /> {/* Add space after the last section */}
+
+              {/* Active indicator triangle (pointing right) */}
+              {activeId === section.id && (
+                <span
+                  className="absolute -left-[17px] top-1/2 transform -translate-y-1/2 z-[-1]"
+                  style={{
+                    width: '0',
+                    height: '0',
+                    borderTop: '5px solid transparent',
+                    borderBottom: '5px solid transparent',
+                    borderLeft: '7px solid #2563eb', // Tailwind blue-600
+                    display: 'inline-block',
+                  }}
+                />
+              )}
+
+              <button
+                onClick={() => handleScroll(section.id)}
+                className={`w-full text-left break-words leading-snug
+                  hover:text-blue-600 transition-colors
+                  ${activeId === section.id ? 'text-blue-600 font-medium' : ''}`}
+              >
+                {section.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Spacer at bottom so last item can scroll fully into view */}
+      <div style={{ height: '3rem' }} />
     </div>
   );
 };
