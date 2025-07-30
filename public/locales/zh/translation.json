@@ -756,5 +756,33 @@
                 "a": "A：不允许重复邮箱。每个商户必须使用唯一邮箱注册。"
             }
         ]
+    },
+        "support": {
+        "title": "支持信息",
+        "intro": "如需帮助，请联系 SriPay 子收单方支持团队：",
+        "emailSection": {
+            "title": "邮箱",
+            "desc": "请联系相关业务或技术支持团队，我们将在 1 个工作日内回复您：",
+            "label": "SriPay 子收单方支持",
+            "address": "邮箱地址：",
+            "email": "admin@sripay.lk",
+            "hours": "工作时间：全天 24 小时，周一至周日，UTC+8"
+        },
+        "websiteSection": {
+            "title": "官网",
+            "desc": "访问我们的官方网站，获取更多详情、文档和最新服务动态。",
+            "label": "SriPay 子收单方支持",
+            "linkLabel": "网址：",
+            "url": "www.sripay.lk"
+        },
+        "mobileSection": {
+            "title": "电话",
+            "desc": "如需商户处理或技术支持，可直接电话联系我们，获得即时帮助。",
+            "merchantLabel": "SriPay 商户子收单方支持",
+            "merchantMobile": "+94 76 703 5500 (Ms. Nishadi)",
+            "techLabel": "SriPay 子收单方技术支持",
+            "techMobile": "+94 76 664 1614 (Mr. Rusith)",
+            "hours": "工作时间：全天 24 小时，周一至周日，UTC+8"
+        }
     }
 }

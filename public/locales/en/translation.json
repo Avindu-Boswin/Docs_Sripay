@@ -755,5 +755,33 @@
                 "a": "A: Duplicate emails are not allowed. Each merchant must register with a unique email address."
             }
         ]
+    },
+        "support": {
+        "title": "Support Information",
+        "intro": "If you need assistance, please contact the SriPay Sub-Acquirer Support Team:",
+        "emailSection": {
+            "title": "Email",
+            "desc": "Contact the specific business or technical support team relevant to your needs, and we will get back to you within 1 business day:",
+            "label": "SriPay Sub-Acquirer support",
+            "address": "Address:",
+            "email": "admin@sripay.lk",
+            "hours": "Working hours: 24 hours, Monday–Sunday, UTC+8"
+        },
+        "websiteSection": {
+            "title": "Website",
+            "desc": "Visit our official website for more details, documentation, and the latest updates about our services.",
+            "label": "SriPay Sub-Acquirer support",
+            "linkLabel": "Web Link:",
+            "url": "www.sripay.lk"
+        },
+        "mobileSection": {
+            "title": "Mobile",
+            "desc": "Reach out directly via phone for immediate assistance with merchant handling or technical support.",
+            "merchantLabel": "SriPay Merchant Sub-Acquirer support",
+            "merchantMobile": "+94 76 703 5500 (Ms. Nishadi)",
+            "techLabel": "SriPay Sub-Acquirer Technical support",
+            "techMobile": "+94 76 664 1614 (Mr. Rusith)",
+            "hours": "Working hours: 24 hours, Monday–Sunday, UTC+8"
+        }
     }
 }
