@@ -71,6 +71,54 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
             <Menu.Item key="introduction">
               <NavLink to="/docs/merchant/introduction">Introduction</NavLink>
             </Menu.Item>
+            <Menu.Item key="gettingStart">
+              <NavLink to="/docs/merchant/gettingStart">Getting Started</NavLink>
+            </Menu.Item>
+            <SubMenu key="features" title={"Features and Functionalities"}>
+              <SubMenu key="merchant-registration" title={"Merchant Registration"}>
+                
+              
+                <Menu.Item key="self-registration">
+                  <NavLink to="/docs/merchant/merchant-selfregistration">Self Registration</NavLink>
+                </Menu.Item>
+              </SubMenu>
+
+              <SubMenu key="merchant-management" title={"Merchant Management"}>
+                <Menu.Item key="suspending-merchant">
+                  <NavLink to="/docs/merchant/merchant-management/suspend">Suspending Merchant</NavLink>
+                </Menu.Item>
+                <Menu.Item key="activating-merchant">
+                  <NavLink to="/docs/merchant/merchant-management/activate">Activating Suspended </NavLink>
+                </Menu.Item>
+                <Menu.Item key="merchant-agreement">
+                  <NavLink to="/docs/merchant/merchant-management/agreement">Uploading Agreement</NavLink>
+                </Menu.Item>
+              </SubMenu>
+
+              <SubMenu key="store-management" title={"Merchant Store Management"}>
+                <Menu.Item key="view-all-stores">
+                  <NavLink to="/docs/merchant/merchant-management/store/view">View All Stores</NavLink>
+                </Menu.Item>
+                <Menu.Item key="create-new-store">
+                  <NavLink to="/docs/merchant/merchant-management/store/create">Creating a New Store</NavLink>
+                </Menu.Item>
+                <Menu.Item key="assign-store-users">
+                  <NavLink to="/docs/merchant/merchant-management/store/assign-users">Assigning Store Users</NavLink>
+                </Menu.Item>
+                <Menu.Item key="terminal-management">
+                  <NavLink to="/docs/merchant/merchant-management/store/terminal">Terminal Management</NavLink>
+                </Menu.Item>
+              </SubMenu>
+            </SubMenu>
+            <Menu.Item key="troubleshooting">
+              <NavLink to="/docs/merchant/troubleshooting">Troubleshooting</NavLink>
+            </Menu.Item>
+            <Menu.Item key="faq">
+              <NavLink to="/docs/merchant/faq">Frequently Asked Questions</NavLink>
+            </Menu.Item>
+            <Menu.Item key="support">
+              <NavLink to="/docs/merchant/support">Support Information</NavLink>
+            </Menu.Item>
           </Menu>
 
         </div>

@@ -27,7 +27,11 @@ import AgreementUpload from './pages/acquirer/AgreementUpload';
 import Troubleshooting from './pages/acquirer/Troubleshooting';
 import Faq from './pages/acquirer/Faq';
 import Support from './pages/acquirer/Support';
-
+import GettingStart from './pages/merchant/GettingStart.jsx';
+import SelfRegistration from './pages/merchant/SelfRegistration.jsx';
+import TroubleshootingMerchant from './pages/merchant/Troubleshooting.jsx';
+import FaqMerchant from './pages/merchant/Faq.jsx'
+import MerchantSupport from './pages/merchant/Support.jsx'
 function App() {
   return (
     <BrowserRouter>
@@ -63,6 +67,11 @@ function App() {
         {/* Merchant Docs Layout */}
         <Route path="/docs/merchant" element={<Merchantlayout />}>
           <Route path="introduction" element={<Introduction />} />
+          <Route path="gettingstart" element={<GettingStart />} />
+          <Route path="merchant-selfregistration" element={<SelfRegistration />} />
+          <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
+          <Route path="faq" element={<FaqMerchant/>} />
+          <Route path='support' element={<MerchantSupport/>}/>
         </Route>
 
 
