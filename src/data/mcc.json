@@ -1,0 +1,1437 @@
+[
+  {
+    "ISO Range": "0700-0999 Agricultural services",
+    "MCC": "0742",
+    "Description": "Veterinary Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "0743",
+    "Description": "Wine producers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "0744",
+    "Description": "Champagne producers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "0763",
+    "Description": "Agricultural Co-operatives"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "0780",
+    "Description": "Horticultural Services, Landscaping Services"
+  },
+  {
+    "ISO Range": "1500-2999\nContracted services",
+    "MCC": "1520",
+    "Description": "General Contractors-Residential and Commercial"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1711",
+    "Description": "Air Conditioning Contractors – Sales and Installation, Heating Contractors – Sales, Service, Installation"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1731",
+    "Description": "Electrical Contractors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1740",
+    "Description": "Insulation – Contractors, Masonry, Stonework Contractors, Plastering Contractors, Stonework and Masonry Contractors, Tile Settings Contractors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1750",
+    "Description": "Carpentry Contractors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1761",
+    "Description": "Roofing – Contractors, Sheet Metal Work – Contractors, Siding – Contractors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1771",
+    "Description": "Contractors – Concrete Work"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "1799",
+    "Description": "Contractors – Special Trade, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "2741",
+    "Description": "Miscellaneous Publishing and Printing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "2791",
+    "Description": "Typesetting, Plate Making, & Related Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "2842",
+    "Description": "Specialty Cleaning, Polishing, and Sanitation Preparations"
+  },
+  {
+    "ISO Range": "4000-4799\nTransportation",
+    "MCC": "4011",
+    "Description": "Railroads"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4111",
+    "Description": "Local/Suburban Commuter Passenger Transportation – Railroads, Ferries, Local Water Transportation"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4112",
+    "Description": "Passenger Railways"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4119",
+    "Description": "Ambulance Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4121",
+    "Description": "Taxicabs and Limousines"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4131",
+    "Description": "Bus Lines, Including Charters, Tour Buses"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4214",
+    "Description": "Motor Freight Carriers, Moving and Storage Companies, Trucking – Local/Long Distance, Delivery Services – Local"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4215",
+    "Description": "Courier Services – Air or Ground, Freight forwarders"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4225",
+    "Description": "Public warehousing, Storage"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4411",
+    "Description": "Cruise and Steamship Lines"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4457",
+    "Description": "Boat Rentals and Leases"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4468",
+    "Description": "Marinas, Marine Service, and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4511",
+    "Description": "Airlines, Air Carriers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4582",
+    "Description": "Airports, Airport Terminals, Flying Fields"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4722",
+    "Description": "Travel Agencies and Tour Operations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4784",
+    "Description": "Toll and Bridge Fees"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4789",
+    "Description": "Transportation Services - not elsewhere classified"
+  },
+  {
+    "ISO Range": "4800-4999\nUtilities",
+    "MCC": "4812",
+    "Description": "Telecommunications Equipment including telephone sales"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4814",
+    "Description": "Fax services, Telecommunication Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4815",
+    "Description": "Monthly summary telephone charges"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4816",
+    "Description": "Computer Network Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4821",
+    "Description": "Telegraph services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4829",
+    "Description": "Wire transfers and money orders"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4899",
+    "Description": "Cable, Satellite and Other Pay Television/Radio/Streaming Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "4900",
+    "Description": "Electric, Gas, Sanitary and Water Utilities"
+  },
+  {
+    "ISO Range": "5000-5499\nRetail outlets",
+    "MCC": "5013",
+    "Description": "Motor vehicle supplies and new parts"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5021",
+    "Description": "Office and Commercial Furniture"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5039",
+    "Description": "Construction Materials, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5044",
+    "Description": "Office, Photographic, Photocopy, and Microfilm Equipment"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5045",
+    "Description": "Computers, Computer Peripheral Equipment, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5046",
+    "Description": "Commercial Equipment, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5047",
+    "Description": "Medical, Dental Ophthalmic, Hospital Equipment and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5051",
+    "Description": "Metal Service Centers and Offices"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5065",
+    "Description": "Electrical Parts and Equipment"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5072",
+    "Description": "Hardware Equipment and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5074",
+    "Description": "Plumbing and Heating Equipment and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5085",
+    "Description": "Industrial Supplies, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5094",
+    "Description": "Precious Stones and Metals, Watches and Jewelry"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5099",
+    "Description": "Durable Goods, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5111",
+    "Description": "Stationery, Office Supplies, Printing, and Writing Paper"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5122",
+    "Description": "Drugs, Drug Proprietors, and Druggist’s Sundries"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5131",
+    "Description": "Piece Goods, Notions, and Other Dry Goods"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5137",
+    "Description": "Men’s Women’s and Children’s Uniforms and Commercial Clothing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5139",
+    "Description": "Commercial Footwear"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5169",
+    "Description": "Chemicals and Allied Products, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5172",
+    "Description": "Petroleum and Petroleum Products"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5192",
+    "Description": "Books, Periodicals, and Newspapers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5193",
+    "Description": "Florists’ Supplies, Nursery Stock and Flowers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5198",
+    "Description": "Paints, Varnishes, and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5199",
+    "Description": "Non-durable Goods, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5200",
+    "Description": "Home Supply Warehouse Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5211",
+    "Description": "Lumber and Building Materials Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5231",
+    "Description": "Glass, Paint, and Wallpaper Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5251",
+    "Description": "Hardware Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5261",
+    "Description": "Nurseries – Lawn and Garden Supply Store"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5262",
+    "Description": "Ecommerce site hosted by market place operator with products/services provided by multiple third party suppliers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5271",
+    "Description": "Mobile Home Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5300",
+    "Description": "Wholesale Clubs"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5309",
+    "Description": "Duty Free Store"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5310",
+    "Description": "Discount Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5311",
+    "Description": "Department Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5331",
+    "Description": "Variety Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5399",
+    "Description": "Miscellaneous General Merchandise"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5411",
+    "Description": "Grocery Stores, Supermarkets"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5422",
+    "Description": "Meat Provisioners – Freezer and Locker"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5441",
+    "Description": "Candy, Nut, and Confectionery Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5451",
+    "Description": "Dairy Products Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5462",
+    "Description": "Bakeries"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5499",
+    "Description": "Miscellaneous Food Stores – Convenience Stores and Specialty Markets"
+  },
+  {
+    "ISO Range": "5500-5599\nAutomobiles and vehicles",
+    "MCC": "5511",
+    "Description": "Car and Truck Dealers (New and Used) Sales, Service, Repairs, Parts, and Leasing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5521",
+    "Description": "Automobile and Truck Dealers (Used Only) Sales, Service, Repairs, Parts, and Leasing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5531",
+    "Description": "Auto and home supply outlets"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5532",
+    "Description": "Automotive Tire Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5533",
+    "Description": "Automotive Parts, Accessories Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5541",
+    "Description": "Service Stations (with or without ancillary services)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5542",
+    "Description": "Automated Fuel Dispensers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5551",
+    "Description": "Boat Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5552",
+    "Description": "Electrical vehicle charging"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5561",
+    "Description": "Recreational and Utility Trailers, Camp Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5571",
+    "Description": "Motorcycle Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5592",
+    "Description": "Motor Home Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5598",
+    "Description": "Snowmobile Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5599",
+    "Description": "Miscellaneous Auto Dealers"
+  },
+  {
+    "ISO Range": "5600-5699\nClothing outlets",
+    "MCC": "5611",
+    "Description": "Men’s and Boy’s Clothing and Accessories Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5621",
+    "Description": "Women’s Ready-to-Wear Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5631",
+    "Description": "Women’s Accessory and Specialty Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5641",
+    "Description": "Children’s and Infant’s Wear Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5651",
+    "Description": "Family Clothing Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5655",
+    "Description": "Sports Apparel, Riding Apparel Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5661",
+    "Description": "Shoe Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5681",
+    "Description": "Furriers and Fur Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5691",
+    "Description": "Men’s and Women’s Clothing Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5697",
+    "Description": "Tailors, Seamstress, Mending, and Alterations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5698",
+    "Description": "Wig and Toupee Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5699",
+    "Description": "Miscellaneous Apparel and Accessory Shops"
+  },
+  {
+    "ISO Range": "5700-5999\nMiscellaneous outlets",
+    "MCC": "5712",
+    "Description": "Furniture, Home Furnishings, and Equipment Stores, Except Appliances"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5713",
+    "Description": "Floor Covering Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5714",
+    "Description": "Drapery, Window Covering and Upholstery Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5715",
+    "Description": "Alcoholic Beverage Wholesalers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5718",
+    "Description": "Fireplace, Fireplace Screens, and Accessories Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5719",
+    "Description": "Miscellaneous Home Furnishing Specialty Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5722",
+    "Description": "Household Appliance Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5732",
+    "Description": "Electronics Sale"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5733",
+    "Description": "Music Stores, Musical Instruments, Piano Sheet Music"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5734",
+    "Description": "Computer Software Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5735",
+    "Description": "Record Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5811",
+    "Description": "Caterers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5812",
+    "Description": "Eating places and Restaurants"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5813",
+    "Description": "Drinking Places (Alcoholic Beverages), Bars, Taverns, Cocktail lounges, Nightclubs and Discotheques"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5814",
+    "Description": "Fast Food Restaurants"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5817",
+    "Description": "Digital Goods—Software Applications (excluding games)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5818",
+    "Description": "Digital Goods—Multi-Category"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5912",
+    "Description": "Drug Stores and Pharmacies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5921",
+    "Description": "Package Stores – Beer, Wine, and Liquor"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5931",
+    "Description": "Used Merchandise and Secondhand Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5932",
+    "Description": "Antique Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5933",
+    "Description": "Pawn Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5935",
+    "Description": "Wrecking and Salvage Yards"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5937",
+    "Description": "Antique Reproductions"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5940",
+    "Description": "Bicycle Shops – Sales and Service"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5941",
+    "Description": "Sporting Goods Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5942",
+    "Description": "Book Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5943",
+    "Description": "Stationery Stores, Office and School Supply Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5944",
+    "Description": "Watch, Clock, Jewelry, and Silverware Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5945",
+    "Description": "Hobby, Toy, and Game Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5946",
+    "Description": "Camera and Photographic Supply Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5947",
+    "Description": "Card Shops, Gift, Novelty, and Souvenir Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5948",
+    "Description": "Luggage and Leather Goods Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5949",
+    "Description": "Sewing, Needle, Fabric, and Price Goods Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5950",
+    "Description": "Glassware/Crystal Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5960",
+    "Description": "Direct Marketing - Insurance Service"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5962",
+    "Description": "Direct Marketing – Travel Related Arrangements Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5963",
+    "Description": "Door-to-Door Sales"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5964",
+    "Description": "Direct Marketing – Catalog Merchant"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5965",
+    "Description": "Direct Marketing – Combination Catalog and Retail Merchant"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5966",
+    "Description": "Direct Marketing- Outbound Telemarketing Merchant"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5967",
+    "Description": "Direct Marketing – Inbound Telemarketing Merchant"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5968",
+    "Description": "Direct Marketing – Continuity/Subscription Merchant"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5969",
+    "Description": "Direct Marketing – Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5970",
+    "Description": "Artist’s Supply and Craft Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5971",
+    "Description": "Art Dealers and Galleries"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5972",
+    "Description": "Stamp and Coin Stores – Philatelic and Numismatic Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5973",
+    "Description": "Religious Goods Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5975",
+    "Description": "Hearing Aids – Sales, Service, and Supply Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5976",
+    "Description": "Orthopedic Goods Prosthetic Devices"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5977",
+    "Description": "Cosmetic Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5978",
+    "Description": "Typewriter Stores – Sales, Rental, Service"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5983",
+    "Description": "Fuel – Fuel Oil, Wood, Coal, Liquefied Petroleum"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5992",
+    "Description": "Florists"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5993",
+    "Description": "Cigar Stores and Stands"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5994",
+    "Description": "News Dealers and Newsstands"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5995",
+    "Description": "Pet Shops, Pet Foods, and Supplies Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5996",
+    "Description": "Swimming Pools – Sales, Service, and Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5997",
+    "Description": "Electric Razor Stores – Sales and Service"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5998",
+    "Description": "Tent and Awning Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "5999",
+    "Description": "Miscellaneous and Specialty Retail Stores"
+  },
+  {
+    "ISO Range": "6000-7299\nService providers",
+    "MCC": "6010",
+    "Description": "Financial Institutions – Manual Cash Disbursements"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "6011",
+    "Description": "Financial Institutions – Automated Cash Disbursements"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "6012",
+    "Description": "Financial Institutions – Merchandise and Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "6051",
+    "Description": "Non-Financial Institutions – Foreign Currency, Money Orders (not wire transfer) and Travelers Cheques"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "6211",
+    "Description": "Security Brokers/Dealers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "6300",
+    "Description": "Insurance Sales, Underwriting, and Premiums"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7011",
+    "Description": "Lodging – Hotels, Motels, Resorts, Central Reservation Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7012",
+    "Description": "Timeshares"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7032",
+    "Description": "Sporting and Recreational Camps"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7033",
+    "Description": "Trailer Parks and Camp Grounds"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7210",
+    "Description": "Laundry, Cleaning, and Garment Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7211",
+    "Description": "Laundry – Family and Commercial"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7216",
+    "Description": "Dry Cleaners"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7217",
+    "Description": "Carpet and Upholstery Cleaning"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7221",
+    "Description": "Photographic Studios"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7230",
+    "Description": "Barber and Beauty Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7251",
+    "Description": "Shoe Repair Shops, Shoe Shine Parlors, and Hat Cleaning Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7261",
+    "Description": "Funeral Service and Crematories"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7273",
+    "Description": "Dating and Escort Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7276",
+    "Description": "Tax Preparation Service"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7277",
+    "Description": "Counselling Service – Debt, Marriage, Personal"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7278",
+    "Description": "Buying and Shopping Services and Clubs"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7296",
+    "Description": "Clothing Rental – Costumes, Formal Wear, Uniforms"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7297",
+    "Description": "Massage Parlors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7298",
+    "Description": "Health and Beauty Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7299",
+    "Description": "Miscellaneous Personal Services (not elsewhere classified)"
+  },
+  {
+    "ISO Range": "7300-7529\nBusiness services",
+    "MCC": "7311",
+    "Description": "Advertising Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7321",
+    "Description": "Consumer Credit Reporting Agencies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7322",
+    "Description": "Debt Collection Agencies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7333",
+    "Description": "Commercial Photography, Art and Graphics"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7338",
+    "Description": "Quick Copy, Reproduction and Blueprinting Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7339",
+    "Description": "Stenographic and Secretarial Support Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7342",
+    "Description": "Exterminating and Disinfecting Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7349",
+    "Description": "Cleaning and Maintenance, Janitorial Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7361",
+    "Description": "Employment Agencies, Temporary Help Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7372",
+    "Description": "Computer Programming, Integrated Systems Design and Data Processing Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7375",
+    "Description": "Information Retrieval Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7379",
+    "Description": "Computer Maintenance and Repair Services, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7392",
+    "Description": "Management, Consulting, and Public Relations Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7393",
+    "Description": "Detective Agencies, Protective Agencies and Security Services, including Armoured Cars and Guard Dogs"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7394",
+    "Description": "Equipment Rental and Leasing Services, Tool Rental, Furniture Rental, and Appliance Rental"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7395",
+    "Description": "Photofinishing Laboratories, Photo Developing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7399",
+    "Description": "Business Services, Not Elsewhere Classified"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7512",
+    "Description": "Car Rental Companies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7513",
+    "Description": "Truck and Utility Trailer Rentals"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7519",
+    "Description": "Motor Home and Recreational Vehicle Rentals"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7523",
+    "Description": "Automobile Parking Lots and Garages"
+  },
+  {
+    "ISO Range": "7530-7799\nRepair services",
+    "MCC": "7531",
+    "Description": "Automotive Body Repair Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7534",
+    "Description": "Tire Re-treading and Repair Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7535",
+    "Description": "Paint Shops – Automotive"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7538",
+    "Description": "Automotive Service Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7542",
+    "Description": "Car Washes"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7549",
+    "Description": "Towing Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7622",
+    "Description": "Electronics Repair Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7623",
+    "Description": "Air Conditioning and Refrigeration Repair Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7629",
+    "Description": "Electrical and Small Appliance Repair Shops"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7631",
+    "Description": "Watch, Clock, and Jewelry Repair"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7641",
+    "Description": "Furniture Reupholstery, Furniture Repair, and Furniture Refinishing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7692",
+    "Description": "Welding Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7699",
+    "Description": "Repair Shops and Related Services –Miscellaneous"
+  },
+  {
+    "ISO Range": "7800-7999\nAmusement and\nentertainment",
+    "MCC": "7800",
+    "Description": "Government Owned Lotteries"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7801",
+    "Description": "Government-licensed Online Casinos (Online Gambling)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7802",
+    "Description": "Government-licensed Horse/Dog Racing"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7832",
+    "Description": "Motion Picture Theaters"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7841",
+    "Description": "Video Tape Rental Stores"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7911",
+    "Description": "Dance Halls, Studios and Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7922",
+    "Description": "Theatrical Producers (Except Motion Pictures), Ticket Agencies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7929",
+    "Description": "Bands, Orchestras, and Miscellaneous Entertainers (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7932",
+    "Description": "Billiard and Pool Establishments"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7933",
+    "Description": "Bowling Alleys"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7941",
+    "Description": "Commercial Sports, Athletic Fields, Professional Sports Clubs, and Sport Promoters"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7991",
+    "Description": "Tourist Attractions and Exhibits"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7992",
+    "Description": "Golf Courses – Public"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7993",
+    "Description": "Video Amusement Game Supplies"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7994",
+    "Description": "Video Game Arcades/Establishments"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7995",
+    "Description": "Betting (including Lottery Tickets, Casino Gaming Chips, Off-track Betting and Wagers at Race Tracks)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7996",
+    "Description": "Amusement Parks, Carnivals, Circuses, Fortune Tellers"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7997",
+    "Description": "Membership Clubs (Sports, Recreation, Athletic), Country Clubs, and Private Golf Courses"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7998",
+    "Description": "Aquariums, Sea-aquariums, Dolphinariums"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "7999",
+    "Description": "Recreation Services (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "8000-8999 Professional services and\nmembership organization",
+    "MCC": "8011",
+    "Description": "Doctors and Physicians (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8021",
+    "Description": "Dentists and Orthodontists"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8031",
+    "Description": "Osteopaths"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8041",
+    "Description": "Chiropractors"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8042",
+    "Description": "Optometrists and Ophthalmologists"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8043",
+    "Description": "Opticians, Opticians Goods and Eyeglasses"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8049",
+    "Description": "Podiatrists and Chiropodists"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8050",
+    "Description": "Nursing and Personal Care Facilities"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8062",
+    "Description": "Hospitals"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8071",
+    "Description": "Medical and Dental Laboratories"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8099",
+    "Description": "Medical Services and Health Practitioners (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8111",
+    "Description": "Legal Services and Attorneys"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8211",
+    "Description": "Elementary and Secondary Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8220",
+    "Description": "Colleges, Junior Colleges, Universities, and Professional Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8241",
+    "Description": "Correspondence Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8244",
+    "Description": "Business and Secretarial Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8249",
+    "Description": "Vocational Schools and Trade Schools"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8299",
+    "Description": "Schools and Educational Services (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8351",
+    "Description": "Child Care Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8398",
+    "Description": "Charitable and Social Service Organizations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8641",
+    "Description": "Civic, Fraternal, and Social Associations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8651",
+    "Description": "Political Organizations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8661",
+    "Description": "Religious Organizations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8675",
+    "Description": "Automobile Associations"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8699",
+    "Description": "Membership Organizations (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8734",
+    "Description": "Testing Laboratories (non-medical)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8911",
+    "Description": "Architectural – Engineering and Surveying Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8931",
+    "Description": "Accounting, Auditing, and Bookkeeping Services"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "8999",
+    "Description": "Professional Services (Not Elsewhere Defined)"
+  },
+  {
+    "ISO Range": "9200-9402\nGovernment services",
+    "MCC": "9211",
+    "Description": "Court Costs, including Alimony and Child Support"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "9222",
+    "Description": "Fines"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "9223",
+    "Description": "Bail and Bond Payments"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "9311",
+    "Description": "Tax Payments"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "9399",
+    "Description": "Government Services (Not Elsewhere Classified)"
+  },
+  {
+    "ISO Range": "",
+    "MCC": "9402",
+    "Description": "Postal Services – Government Only"
+  }
+]

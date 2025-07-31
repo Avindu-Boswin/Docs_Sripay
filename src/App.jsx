@@ -32,6 +32,7 @@ import SelfRegistration from './pages/merchant/SelfRegistration.jsx';
 import TroubleshootingMerchant from './pages/merchant/Troubleshooting.jsx';
 import FaqMerchant from './pages/merchant/Faq.jsx'
 import MerchantSupport from './pages/merchant/Support.jsx'
+import MerchantCategories from './pages/merchant/Categories.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -66,7 +67,8 @@ function App() {
 
         {/* Merchant Docs Layout */}
         <Route path="/docs/merchant" element={<Merchantlayout />}>
-          <Route path="introduction" element={<Introduction />} />
+          {/* <Route path="introduction" element={<Introduction />} /> */}
+          <Route path="categories" element={<MerchantCategories />} />
           <Route path="gettingstart" element={<GettingStart />} />
           <Route path="merchant-selfregistration" element={<SelfRegistration />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
