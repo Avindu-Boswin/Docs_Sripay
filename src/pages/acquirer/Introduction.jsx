@@ -9,7 +9,7 @@ function WhoCanbeAcquirer() {
 
   useEffect(() => {
     setSections([
-      { id: 'requirements', label: 'Requirements' },
+      { id: 'requirements', label: t('acquirerIntro.requirements') },
       { id: 'why', label: t('acquirerIntro.whyTitle') },
       { id: 'benefits', label: t('acquirerIntro.benefitsTitle')},
     ]);

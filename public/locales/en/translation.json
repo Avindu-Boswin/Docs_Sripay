@@ -41,7 +41,8 @@
         "benefit3": "Ability to onboard and manage multiple merchants.",
         "benefit4": "Customizable payment solutions for different business needs.",
         "benefit5": "Detailed reporting and analytics for transaction monitoring.",
-        "benefit6": "Priority support and dedicated account management."
+        "benefit6": "Priority support and dedicated account management.",
+        "requirements": "Requirements"
     }
     ,
     "acquirerRegWorkflow": {
@@ -783,5 +784,9 @@
             "techMobile": "+94 76 664 1614 (Mr. Rusith)",
             "hours": "Working hours: 24 hours, Monday–Sunday, UTC+8"
         }
+    },
+        "rightsidemenu": {
+        "onthispage": "On this page",
+        "ishelpful": "Is this page helpful?"
     }
 }

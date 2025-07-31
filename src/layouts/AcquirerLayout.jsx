@@ -54,7 +54,7 @@ const Layout = () => {
 
           {/* Footer */}
           <div
-            className={`lg:mr-16 ${collapsed ? "" : "md:ml-64"
+            className={`lg:mr-10 ${collapsed ? "" : "md:ml-64"
               }`}
           >
             <Footer />

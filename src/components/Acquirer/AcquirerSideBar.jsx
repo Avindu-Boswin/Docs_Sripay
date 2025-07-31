@@ -57,7 +57,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
       )}
       {!collapsed && (
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
-          <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 15, fontWeight: 500 }}>
+          <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
               <NavLink to="/">Back To Home</NavLink>
             </Menu.Item>

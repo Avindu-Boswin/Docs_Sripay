@@ -1,8 +1,11 @@
 
 
 import React, { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const RightSideMenu = ({ sections }) => {
+  const { t } = useTranslation();
   const [activeId, setActiveId] = useState(sections?.[0]?.id || null);
   const isManualScroll = useRef(false);
 
@@ -62,7 +65,7 @@ const RightSideMenu = ({ sections }) => {
 
     return (
     <div className="h-full">
-      <div className="text-gray-800 text-xs font-medium mb-4">On this page</div>
+      <div className="text-gray-800 text-xs font-medium mb-4">{t('rightsidemenu.onthispage')}</div>
 
       {/* Border and indent wrapper */}
       <div className="relative border-l-2 border-gray-200 pl-4">

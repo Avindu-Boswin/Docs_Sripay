@@ -1,8 +1,11 @@
 // src/components/PageFeedback.jsx
 import React, { useState } from 'react';
 import { LikeOutlined, DislikeOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
+
 
 const PageFeedback = ({ onChange }) => {
+    const { t } = useTranslation();
     const [selected, setSelected] = useState(null);
 
     const handleClick = (value) => {
@@ -15,7 +18,7 @@ const PageFeedback = ({ onChange }) => {
     return (
         <div className="flex flex-col space-y-4 mt-10 mb-2">
             <div>
-                <span className="text-gray-700 font-medium">Is this page helpful?</span>
+                <span className="text-gray-700 font-medium">{t('rightsidemenu.ishelpful')}</span>
             </div>
             <div className="flex items-center space-x-4">
                 <button
