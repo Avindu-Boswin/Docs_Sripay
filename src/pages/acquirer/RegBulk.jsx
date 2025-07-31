@@ -20,6 +20,7 @@ function MerchantRegistrationWorkflow() {
         t('regBulk.steps.4.title'),
         t('regBulk.steps.5.title'),
         t('regBulk.steps.6.title'),
+        t('regBulk.steps.7.title'),
     ];
     const sectionTitles = rawTitles.map(title =>
         title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
@@ -174,6 +175,34 @@ function MerchantRegistrationWorkflow() {
                         <li>{t('regBulk.steps.6.points.1')}</li>
                         <li>{t('regBulk.steps.6.points.2')}</li>
                     </ol>
+                </div>
+            </div>
+
+            {/* ---------- TROUBLESHOOTING SECTION ---------- */}
+            <div id="step8" className="mt-16 mb-20">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
+                    <div className="flex items-center mb-6">
+                        <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" /></svg>
+                        <h2 className="text-xl sm:text-2xl font-semibold text-blue-700 mt-3">Troubleshooting</h2>
+                    </div>
+                    <ul className="space-y-7 text-sm">
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>My Excel file upload fails or is rejected.</div>
+                            <div className="text-blue-800 ml-5">Ensure you are using the latest template provided by the system. Double-check that all required columns are present and that there are no empty mandatory fields. Remove any extra formatting or merged cells.</div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>Some merchants in my file are not being registered.</div>
+                            <div className="text-blue-800 ml-5">Check the validation table for errors. Merchants with missing or invalid data will not be processed. Correct any highlighted issues and re-upload the file.</div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>I get a "format error" or "invalid data" message.</div>
+                            <div className="text-blue-800 ml-5">Make sure all fields follow the required format (e.g., phone numbers, emails, IDs). Refer to the rules and examples shown above for each column.</div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>The page is not loading or is stuck.</div>
+                            <div className="text-blue-800 ml-5">Check your internet connection and try reloading the page. If the issue continues, try using a different browser or device.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

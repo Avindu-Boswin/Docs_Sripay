@@ -259,6 +259,9 @@
                     "Download or generate payment QR",
                     "View transactions, revenue reports"
                 ]
+            },
+            {
+                "title": "Step 17: Troubleshooting"
             }
         ]
     }
@@ -410,6 +413,9 @@
                     "Require: KYC Information, Document Uploads, Review & Submit",
                     "Flow through the stages - Acquirer In Progress → Sripay In Progress → Alipay-In Progress"
                 ]
+            },
+            {
+                "title": "Troubleshooting"
             }
         ]
     },
@@ -485,7 +491,8 @@
             "Ensures faster scaling for large merchant acquisition campaigns.",
             "Fully integrated into the existing evaluation and compliance workflow."
         ],
-        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID."
+        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID.",
+        "troubleshoot": "Troubleshooting"
     },
     "storeUserAssign": {
         "title": "Assigning Store Users",
