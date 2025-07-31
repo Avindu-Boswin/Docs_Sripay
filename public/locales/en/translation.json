@@ -639,7 +639,8 @@
         "step8AdminList": [
             "Approve: Merchant store is now live for payment acceptance",
             "Reject: Sent back with reason; Sub-Acquirer and SriPay are notified"
-        ]
+        ],
+        "step9Title": "Troubleshooting"
     },    
     "terminalManagement": {
         "title": "Terminal Management",
@@ -680,7 +681,8 @@
             "You can manage each terminal individually via the Action button."
         ],
         "statusNoteTitle": "Note:",
-        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action."
+        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action.",
+        "troubleshootTitle": "Troubleshooting"
     },
         "merchantSuspend": {
         "title": "Suspending Merchant",

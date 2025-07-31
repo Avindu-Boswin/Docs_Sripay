@@ -179,7 +179,7 @@ function MerchantRegistrationWorkflow() {
             </div>
 
             {/* ---------- TROUBLESHOOTING SECTION ---------- */}
-            <div id="step8" className="mt-16 mb-20">
+            <div id="step8" className="mt-16">
                 <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
                     <div className="flex items-center mb-6">
                         <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" /></svg>

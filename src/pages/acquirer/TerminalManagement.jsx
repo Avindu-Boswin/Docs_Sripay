@@ -20,6 +20,7 @@ function TerminalManagement() {
         t('terminalManagement.singleTitle'),
         t('terminalManagement.multiTitle'),
         t('terminalManagement.statusTitle'),
+        t('terminalManagement.troubleshootTitle'),
     ];
     const sectionTitles = rawTitles.map(title =>
         title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
@@ -109,6 +110,46 @@ function TerminalManagement() {
                 <p className='italic text-gray-600 mt-4'>
                     <span className='font-semibold'>{t('terminalManagement.statusNoteTitle')}</span> {t('terminalManagement.statusNote')}
                 </p>
+            </div>
+
+            
+            {/* ---------- TROUBLESHOOTING SECTION ---------- */}
+            <div id="section7" className="mt-16 mb-20">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
+                    <div className="flex items-center mb-6">
+                        <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" />
+                        </svg>
+                        <h2 className="text-xl sm:text-2xl font-semibold text-blue-700 mt-3">Troubleshooting</h2>
+                    </div>
+                    <ul className="space-y-7 text-sm">
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>I can't add a terminal or the "Add Terminal" button is disabled.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Ensure you have the correct permissions and have selected a merchant/store. If the merchant or store is not approved, you may not be able to add terminals.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>I can't change the terminal name.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                User cannot change the default terminal name. Terminal names are auto-generated based on the terminal count.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>The page is not loading or is stuck.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Check your internet connection and try reloading the page. If the issue continues, try using a different browser or device.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

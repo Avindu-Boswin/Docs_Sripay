@@ -24,6 +24,7 @@ function StoreCreate() {
         t('storeCreate.step6Title'),
         t('storeCreate.step7Title'),
         t('storeCreate.step8Title'),
+        t('storeCreate.step9Title'),
     ];
     const sectionTitles = rawTitles.map(title =>
         title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
@@ -284,6 +285,61 @@ function StoreCreate() {
                             <li>{t('storeCreate.step8AdminList.1')}</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+
+             {/* ---------- TROUBLESHOOTING SECTION ---------- */}
+            <div id="section9" className="mt-16">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
+                    <div className="flex items-center mb-6">
+                        <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" />
+                        </svg>
+                        <h2 className="text-xl sm:text-2xl font-semibold text-blue-700 mt-3">Troubleshooting</h2>
+                    </div>
+                    <ul className="space-y-7 text-sm">
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>I can't create a store or the "Create Store" button is disabled.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Make sure you have selected a merchant and have the necessary permissions. If the merchant is not approved or your account lacks access, the button may be unavailable.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>My store information is not saving or submitting.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Double-check that all required fields are filled out and formatted correctly. Ensure your internet connection is stable and try again. If the issue persists, refresh the page or clear your browser cache.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>Bank account details are being rejected.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Verify that all bank information matches the required format and is accurate. Only one account can be set as default. If you are unsure, contact your bank or support for clarification.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>Photo uploads fail or are not accepted.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Ensure your images are clear, in the correct format (JPG/PNG), and do not exceed the maximum file size. The store name board and interior should be clearly visible.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>The page is not loading or is stuck.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Check your internet connection and try reloading the page. If the issue continues, try using a different browser or device.
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -666,7 +666,8 @@
         "step8AdminList": [
             "审核通过：门店可正式收款",
             "驳回：退回并说明原因，子收单方和 SriPay 均收到通知"
-        ]
+        ],
+        "step9Title": "故障排查"
     },
     "terminalManagement": {
         "title": "终端管理",
@@ -707,7 +708,8 @@
             "可通过操作按钮单独管理每个终端。"
         ],
         "statusNoteTitle": "注意：",
-        "statusNote": "激活或停用终端时会弹出确认框，需点击“确定”以继续操作。"
+        "statusNote": "激活或停用终端时会弹出确认框，需点击“确定”以继续操作。",
+        "troubleshootTitle": "故障排查"
     },
     "merchantSuspend": {
         "title": "商户停用",
