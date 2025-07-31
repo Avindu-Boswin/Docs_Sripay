@@ -75,13 +75,13 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               <NavLink to="/docs/merchant/gettingStart">Getting Started</NavLink>
             </Menu.Item>
             <SubMenu key="features" title={"Features and Functionalities"}>
-              <SubMenu key="merchant-registration" title={"Merchant Registration"}>
+             
                 
               
                 <Menu.Item key="self-registration">
-                  <NavLink to="/docs/merchant/merchant-selfregistration">Self Registration</NavLink>
+                  <NavLink to="/docs/merchant/merchant-selfregistration">Merchant Registration</NavLink>
                 </Menu.Item>
-              </SubMenu>
+           
 
               <SubMenu key="merchant-management" title={"Merchant Management"}>
                 <Menu.Item key="suspending-merchant">
