@@ -43,6 +43,13 @@ function SelfRegistration() {
                 {t('acquirerRegWorkflow.title')}
             </h1>
 
+
+<p className='text-gray-700 text-base leading-relaxed mb-8'>
+  Once a merchant signs up and logs in to the <span className='font-semibold text-blue-600'>SriPay</span> system, they are automatically redirected to this registration workflow. This form is essential to complete their onboarding process. After submitting all required information, the merchant will be placed on a <span className='font-semibold text-yellow-600'>waiting list</span> until the assigned Acquirer reviews and approves the application.
+</p>
+
+
+
             {/* ---------- STEP 1 ------------------------------------------------ */}
             <div id="step-1" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>

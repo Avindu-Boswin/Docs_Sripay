@@ -78,29 +78,19 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               <NavLink to="/docs/merchant/categories">Merchant Categories</NavLink>
             </Menu.Item>
             <SubMenu key="features" title={"Features and Functionalities"}>
-             
-                
-              
-                <Menu.Item key="self-registration">
-                  <NavLink to="/docs/merchant/merchant-selfregistration">Merchant Registration</NavLink>
-                </Menu.Item>
-           
 
-              <SubMenu key="merchant-management" title={"Merchant Management"}>
-                <Menu.Item key="suspending-merchant">
-                  <NavLink to="/docs/merchant/merchant-management/suspend">Suspending Merchant</NavLink>
-                </Menu.Item>
-                <Menu.Item key="activating-merchant">
-                  <NavLink to="/docs/merchant/merchant-management/activate">Activating Suspended </NavLink>
-                </Menu.Item>
-                <Menu.Item key="merchant-agreement">
-                  <NavLink to="/docs/merchant/merchant-management/agreement">Uploading Agreement</NavLink>
-                </Menu.Item>
-              </SubMenu>
+
+
+              <Menu.Item key="self-registration">
+                <NavLink to="/docs/merchant/merchant-selfregistration">Merchant Registration</NavLink>
+              </Menu.Item>
+
+
+
 
               <SubMenu key="store-management" title={"Merchant Store Management"}>
                 <Menu.Item key="view-all-stores">
-                  <NavLink to="/docs/merchant/merchant-management/store/view">View All Stores</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoresViewAll">View All Stores</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-store">
                   <NavLink to="/docs/merchant/merchant-management/store/create">Creating a New Store</NavLink>
