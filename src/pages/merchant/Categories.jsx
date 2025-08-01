@@ -4,6 +4,7 @@ import privateMccData from '../../data/private_mcc.json';
 import { useSections } from '../../components/SectionContext';
 
 
+
 function MerchantCategories() {
     const { setSections } = useSections();
 
@@ -13,7 +14,9 @@ function MerchantCategories() {
             { id: 'iso-mcc', label: 'A1: Codes defined by ISO 18245' },
             { id: 'private-mcc', label: 'A2: Codes defined by SriPay for private use' },
         ]);
-        // eslint-disable-next-line
+        return () => {
+            setSections([]);
+        };
     }, [setSections]);
 
     return (
