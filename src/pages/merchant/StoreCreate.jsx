@@ -10,7 +10,7 @@ import Img6 from '../../assets/images/acquirer/img334.jpg';
 import Img7 from '../../assets/images/acquirer/img335.jpg';
 
 
-function StoreCreate() {
+function MerchantStoreCreate() {
     const { t } = useTranslation();
     const { setSections } = useSections();
 
@@ -44,7 +44,7 @@ function StoreCreate() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                {t('storeCreate.title')}
+                Merchnat store creation guide
             </h1>
 
             {/* ---------- STEP 1:  Merchant List ---------- */}
@@ -346,4 +346,4 @@ function StoreCreate() {
     );
 }
 
-export default StoreCreate;
+export default MerchantStoreCreate;

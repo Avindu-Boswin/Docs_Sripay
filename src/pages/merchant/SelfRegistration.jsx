@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
 
 
 
@@ -15,13 +16,30 @@ import Img11 from '../../assets/images/merchant/Img11.png';
 
 function SelfRegistration() {
     const { t } = useTranslation();
+    const { setSections } = useSections();
 
     // Convenience accessor for the huge steps array
     const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
+
+    useEffect(() => {
+        setSections([
+            { id: 'step-1', label: 'Registration Details' },
+            { id: 'step-2', label: 'Address Details' },
+            { id: 'step-3', label: 'Business Contact Person' },
+            { id: 'step-4', label: 'Business Activities' },
+            { id: 'step-5', label: 'Company Settlement Bank Details' },
+            { id: 'step-6', label: 'Owner Details' },
+            { id: 'step-7', label: 'Review & Submit KYC Summary' },
+            { id: 'step-8', label: 'Constitutional Documents' },
+        ]);
+        return () => setSections([]);
+        // eslint-disable-next-line
+    }, [setSections, t]);
+
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
-            <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
+            <h1 id="selfreg-title" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
                 {t('acquirerRegWorkflow.title')}
             </h1>
 
@@ -33,12 +51,11 @@ function SelfRegistration() {
 
 
             {/* ---------- STEP 1 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-1" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 1: Registration Details
                 </h4>
                 <img src={Img4} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Registration Details' />
-
                 <span className='font-semibold text-gray-600'>{steps[3].fieldsTitle}</span>
                 <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
                     {steps[3].fields.map((f, i) => (
@@ -53,7 +70,7 @@ function SelfRegistration() {
             </div>
 
             {/* ---------- STEP 2 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-2" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 2: Address Details
                 </h4>
@@ -73,7 +90,7 @@ function SelfRegistration() {
             </div>
 
             {/* ---------- STEP 3 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-3" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 3: Business Contact Person
                 </h4>
@@ -93,7 +110,7 @@ function SelfRegistration() {
             </div>
 
             {/* ---------- STEP 4 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-4" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 4: Business Activities
                 </h4>
@@ -113,7 +130,7 @@ function SelfRegistration() {
             </div>
 
             {/* ---------- STEP 5 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-5" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 5: Company Settlement Bank Details
                 </h4>
@@ -149,7 +166,7 @@ function SelfRegistration() {
             </div>
 
             {/* ---------- STEP 6 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-6" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 6. Owner Details
                 </h4>
@@ -171,7 +188,7 @@ function SelfRegistration() {
 
 
             {/* ---------- STEP 7 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-7" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 7: Review & Submit KYC Summary
                 </h4>
@@ -189,7 +206,7 @@ function SelfRegistration() {
                 </p>
             </div>
             {/* ---------- STEP 8 ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
+            <div id="step-8" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     Step 8: Constitutional Documents
                 </h4>

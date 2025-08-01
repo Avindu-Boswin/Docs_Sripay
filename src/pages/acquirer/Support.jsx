@@ -12,7 +12,7 @@ function Support() {
                 {t('support.title')}
             </h1>
             <div className='w-full h-[70px] bg-blue-100 border rounded-[5px] flex items-center justify-center mt-10'>
-                <span className='text-sm sm:text-base font-semibold text-gray-700 text-center'>
+                <span className='text-sm sm:text-medium font-semibold text-gray-700 text-center'>
                     {t('support.intro')}
                 </span>
             </div>

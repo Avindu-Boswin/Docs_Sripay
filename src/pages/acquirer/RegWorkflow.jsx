@@ -414,6 +414,34 @@ function MerchantRegistrationWorkflow() {
           ))}
         </ul>
       </div>
+
+      {/* ---------- TROUBLESHOOTING SECTION ---------- */}
+      <div id="step17" className="mt-16">
+        <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
+          <div className="flex items-center mb-6">
+            <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe"/><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" /></svg>
+            <h2 className="text-xl sm:text-2xl font-semibold text-blue-700 mt-3">Troubleshooting</h2>
+          </div>
+          <ul className="space-y-7 text-sm">
+            <li className="pl-2">
+              <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>I can't submit the registration form. What should I do?</div>
+              <div className="text-blue-800 ml-5">Double-check that all required fields are filled out and that your uploaded documents meet the specified format and size requirements. If the problem persists, try refreshing the page or clearing your browser cache.</div>
+            </li>
+            <li className="pl-2">
+              <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>I did not receive the confirmation email.</div>
+              <div className="text-blue-800 ml-5">Please check your spam or junk folder. If you still do not see the email, ensure that you entered the correct email address and request a new confirmation email from the login page.</div>
+            </li>
+            <li className="pl-2">
+              <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>My document upload keeps failing.</div>
+              <div className="text-blue-800 ml-5">Ensure your files are in the accepted format (PDF, JPG, or PNG) and do not exceed the maximum file size. Try renaming the file and uploading again.</div>
+            </li>
+            <li className="pl-2">
+              <div className="font-medium text-blue-900 mb-1 flex items-center"><span className="mr-2">•</span>The page is not loading or is stuck.</div>
+              <div className="text-blue-800 ml-5">Check your internet connection and try reloading the page. If the issue continues, try using a different browser or device.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

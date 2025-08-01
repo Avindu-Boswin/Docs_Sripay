@@ -259,6 +259,9 @@
                     "Download or generate payment QR",
                     "View transactions, revenue reports"
                 ]
+            },
+            {
+                "title": "Step 17: Troubleshooting"
             }
         ]
     }
@@ -410,6 +413,9 @@
                     "Require: KYC Information, Document Uploads, Review & Submit",
                     "Flow through the stages - Acquirer In Progress → Sripay In Progress → Alipay-In Progress"
                 ]
+            },
+            {
+                "title": "Troubleshooting"
             }
         ]
     },
@@ -485,7 +491,8 @@
             "Ensures faster scaling for large merchant acquisition campaigns.",
             "Fully integrated into the existing evaluation and compliance workflow."
         ],
-        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID."
+        "note": "All merchant data collected through the self-sign-up page is secure and traceable under your Sub-Acquirer ID.",
+        "troubleshoot": "Troubleshooting"
     },
     "storeUserAssign": {
         "title": "Assigning Store Users",
@@ -632,7 +639,8 @@
         "step8AdminList": [
             "Approve: Merchant store is now live for payment acceptance",
             "Reject: Sent back with reason; Sub-Acquirer and SriPay are notified"
-        ]
+        ],
+        "step9Title": "Troubleshooting"
     },    
     "terminalManagement": {
         "title": "Terminal Management",
@@ -673,7 +681,8 @@
             "You can manage each terminal individually via the Action button."
         ],
         "statusNoteTitle": "Note:",
-        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action."
+        "statusNote": "When activating or deactivating a terminal, a confirmation model will appear. You must click \"OK\" to proceed with the action.",
+        "troubleshootTitle": "Troubleshooting"
     },
         "merchantSuspend": {
         "title": "Suspending Merchant",
@@ -759,7 +768,7 @@
     },
         "support": {
         "title": "Support Information",
-        "intro": "If you need assistance, please contact the SriPay Sub-Acquirer Support Team:",
+        "intro": "If you need assistance, please contact the SriPay Sub-Acquirer Support Team",
         "emailSection": {
             "title": "Email",
             "desc": "Contact the specific business or technical support team relevant to your needs, and we will get back to you within 1 business day:",

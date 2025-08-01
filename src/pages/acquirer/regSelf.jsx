@@ -14,6 +14,7 @@ function MerchantRegistrationSelf() {
         t('regSelf.steps.2.title'),
         t('regSelf.steps.3.title'),
         t('regSelf.benefitsTitle'),
+        t('regSelf.troubleshoot'),
     ];
     const sectionTitles = rawTitles.map(title =>
         title.replace(/^Step\s*\d+[:：]?\s*/i, '').trim()
@@ -96,6 +97,53 @@ function MerchantRegistrationSelf() {
                     ))}
                 </ul>
                 <div className='mt-3 text-xs text-gray-600'><b>{t('regSelf.noteTitle', 'Note:')}</b> {t('regSelf.note')}</div>
+            </div>
+
+            {/* Troubleshooting */}
+            <div id="section6">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
+                    <div className="flex items-center mb-6">
+                        <svg className="w-7 h-7 text-blue-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="#e0f2fe" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" />
+                        </svg>
+                        <h2 className="text-xl sm:text-2xl font-semibold text-blue-700 mt-3">Troubleshooting</h2>
+                    </div>
+                    <ul className="space-y-7 text-sm">
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>I did not receive a response after submitting my registration email.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Please check your spam or junk folder. If you still do not see a response, ensure you sent the email to the correct address and try resending. You may also contact support for assistance.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>My registration information is incorrect or incomplete.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Double-check all the details you provided in your email. If you notice an error after submission, reply to the confirmation email or contact support to update your information.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>I am not sure what documents to include.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Refer to the "Include" section above for the required documents. If you are still unsure, reach out to support for clarification.
+                            </div>
+                        </li>
+                        <li className="pl-2">
+                            <div className="font-medium text-blue-900 mb-1 flex items-center">
+                                <span className="mr-2">•</span>The page is not loading or is stuck.
+                            </div>
+                            <div className="text-blue-800 ml-5">
+                                Check your internet connection and try reloading the page. If the issue continues, try using a different browser or device.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

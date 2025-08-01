@@ -57,7 +57,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
       )}
       {!collapsed && (
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
-          <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 15, fontWeight: 500 }}>
+          <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
               <NavLink to="/">Back To Home</NavLink>
             </Menu.Item>
@@ -68,11 +68,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               <span className="flex-1 h-0.5 bg-gray-300 ml-2 mr-6" />
             </div>
 
-            <Menu.Item key="introduction">
+            {/* <Menu.Item key="introduction">
               <NavLink to="/docs/merchant/introduction">Introduction</NavLink>
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item key="gettingStart">
               <NavLink to="/docs/merchant/gettingStart">Getting Started</NavLink>
+            </Menu.Item>
+            <Menu.Item key="categories">
+              <NavLink to="/docs/merchant/categories">Merchant Categories</NavLink>
             </Menu.Item>
             <SubMenu key="features" title={"Features and Functionalities"}>
 

@@ -1,0 +1,138 @@
+[
+  {
+    "MCC": "4513",
+    "Description": "Air Ticket Platform"
+  },
+  {
+    "MCC": "4514",
+    "Description": "Airlines System Vendor"
+  },
+  {
+    "MCC": "4905",
+    "Description": "Library"
+  },
+  {
+    "MCC": "4906",
+    "Description": "Charging Pile"
+  },
+  {
+    "MCC": "4908",
+    "Description": "Other Utility Payment – Not Elsewhere Classified"
+  },
+  {
+    "MCC": "4909",
+    "Description": "Cable TV Payment"
+  },
+  {
+    "MCC": "5423",
+    "Description": "Fruit Stores"
+  },
+  {
+    "MCC": "5466",
+    "Description": "Tea Stores"
+  },
+  {
+    "MCC": "5467",
+    "Description": "Health Care Products"
+  },
+  {
+    "MCC": "5564",
+    "Description": "Rail Transit Equipment"
+  },
+  {
+    "MCC": "5565",
+    "Description": "Aircraft and Accessories, Driveway Facilities"
+  },
+  {
+    "MCC": "5821",
+    "Description": "Online application store or platform"
+  },
+  {
+    "MCC": "5880",
+    "Description": "Campus Group Meal"
+  },
+  {
+    "MCC": "6399",
+    "Description": "Insurance, Not Elsewhere Classified (no longer valid for first presentment work)"
+  },
+  {
+    "MCC": "7013",
+    "Description": "Real Estate Agent/Broker "
+  },
+  {
+    "MCC": "7408",
+    "Description": "Website Design and Promotion"
+  },
+  {
+    "MCC": "7409",
+    "Description": "Social Network Site"
+  },
+  {
+    "MCC": "7410",
+    "Description": "Casual Games"
+  },
+  {
+    "MCC": "7411",
+    "Description": "Online Literature"
+  },
+  {
+    "MCC": "7412",
+    "Description": "Mobile Phone Images and Rings"
+  },
+  {
+    "MCC": "7413",
+    "Description": "Other Online Application – Not Elsewhere Classified "
+  },
+  {
+    "MCC": "7414",
+    "Description": "Video on Demand"
+  },
+  {
+    "MCC": "7511",
+    "Description": "Truck Stop"
+  },
+  {
+    "MCC": "7953",
+    "Description": "Live streaming content or platform services (digital goods or assets only)"
+  },
+  {
+    "MCC": "7954",
+    "Description": "Online Games Point Card, Channel Agent"
+  },
+  {
+    "MCC": "7956",
+    "Description": "Game System Vendor"
+  },
+  {
+    "MCC": "7957",
+    "Description": "Online Games Peripheral Services, Trading Platform"
+  },
+  {
+    "MCC": "7958",
+    "Description": "Online Games Operator"
+  },
+  {
+    "MCC": "8912",
+    "Description": "Decoration, Gardening"
+  },
+  {
+    "MCC": "9715",
+    "Description": "Files"
+  },
+  {
+    "MCC": "9752",
+    "Description": "Electronic Files"
+  },
+  {
+    "MCC": "5815",
+    "Description": "Digital Goods—Media, Books, Movies, Music"
+  },
+    {
+    "MCC": "5816",
+    "Description": "Digital Goods—Games"
+  },
+    {
+    "MCC": "7829",
+    "Description": "Motion Pictures and Video Tape Production and Distribution"
+  }
+]
