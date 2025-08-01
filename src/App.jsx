@@ -33,6 +33,7 @@ import TroubleshootingMerchant from './pages/merchant/Troubleshooting.jsx';
 import FaqMerchant from './pages/merchant/Faq.jsx'
 import MerchantSupport from './pages/merchant/Support.jsx'
 import MerchantStoresView from './pages/merchant/MerchantStoresView.jsx';
+import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -71,6 +72,7 @@ function App() {
           <Route path="gettingstart" element={<GettingStart />} />
           <Route path="merchant-selfregistration" element={<SelfRegistration />} />
           <Route path="merchant-StoresViewAll" element={<MerchantStoresView />} />
+          <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
