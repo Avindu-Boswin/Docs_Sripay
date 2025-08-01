@@ -5,7 +5,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined
 } from "@ant-design/icons";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -19,6 +19,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 
   const toggleFeatures = () => {
     setFeaturesOpen(!featuresOpen);
+  };
+
+  // Function to handle scrolling to top when a link is clicked
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -59,7 +67,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
           <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
-              <NavLink to="/">Back To Home</NavLink>
+              <NavLink to="/" onClick={handleLinkClick}>Back To Home</NavLink>
             </Menu.Item>
 
             <div className="flex items-center justify-center my-2 mt-5 mb-5">
@@ -69,20 +77,20 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
             </div>
 
             {/* <Menu.Item key="introduction">
-              <NavLink to="/docs/merchant/introduction">Introduction</NavLink>
+              <NavLink to="/docs/merchant/introduction" onClick={handleLinkClick}>Introduction</NavLink>
             </Menu.Item> */}
             <Menu.Item key="gettingStart">
-              <NavLink to="/docs/merchant/gettingStart">Getting Started</NavLink>
+              <NavLink to="/docs/merchant/gettingStart" onClick={handleLinkClick}>Getting Started</NavLink>
             </Menu.Item>
             <Menu.Item key="categories">
-              <NavLink to="/docs/merchant/categories">Merchant Categories</NavLink>
+              <NavLink to="/docs/merchant/categories" onClick={handleLinkClick}>Merchant Categories</NavLink>
             </Menu.Item>
             <SubMenu key="features" title={"Features and Functionalities"}>
 
 
 
               <Menu.Item key="self-registration">
-                <NavLink to="/docs/merchant/merchant-selfregistration">Merchant Registration</NavLink>
+                <NavLink to="/docs/merchant/merchant-selfregistration" onClick={handleLinkClick}>Merchant Registration</NavLink>
               </Menu.Item>
 
 
@@ -90,27 +98,30 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 
               <SubMenu key="store-management" title={"Merchant Store Management"}>
                 <Menu.Item key="view-all-stores">
-                  <NavLink to="/docs/merchant/merchant-StoresViewAll">View All Stores</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoresViewAll" onClick={handleLinkClick}>View All Stores</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-store">
-                  <NavLink to="/docs/merchant/merchant-StoreCreate">Single Store Creation</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoreCreate" onClick={handleLinkClick}>Single Store Creation</NavLink>
+                </Menu.Item>
+                <Menu.Item key="create-new-stores-bulk">
+                  <NavLink to="/docs/merchant/merchant-StoreCreateMultiple" onClick={handleLinkClick}>Multiple Store Creation</NavLink>
                 </Menu.Item>
                 <Menu.Item key="assign-store-users">
-                  <NavLink to="/docs/merchant/merchant-management/store/assign-users">Assigning Store Users</NavLink>
+                  <NavLink to="/docs/merchant/merchant-management/store/assign-users" onClick={handleLinkClick}>Assigning Store Users</NavLink>
                 </Menu.Item>
                 <Menu.Item key="terminal-management">
-                  <NavLink to="/docs/merchant/merchant-TerminalManagement">Terminal Management</NavLink>
+                  <NavLink to="/docs/merchant/merchant-TerminalManagement" onClick={handleLinkClick}>Terminal Management</NavLink>
                 </Menu.Item>
               </SubMenu>
             </SubMenu>
             <Menu.Item key="troubleshooting">
-              <NavLink to="/docs/merchant/troubleshooting">Troubleshooting</NavLink>
+              <NavLink to="/docs/merchant/troubleshooting" onClick={handleLinkClick}>Troubleshooting</NavLink>
             </Menu.Item>
             <Menu.Item key="faq">
-              <NavLink to="/docs/merchant/faq">Frequently Asked Questions</NavLink>
+              <NavLink to="/docs/merchant/faq" onClick={handleLinkClick}>Frequently Asked Questions</NavLink>
             </Menu.Item>
             <Menu.Item key="support">
-              <NavLink to="/docs/merchant/support">Support Information</NavLink>
+              <NavLink to="/docs/merchant/support" onClick={handleLinkClick}>Support Information</NavLink>
             </Menu.Item>
           </Menu>
 

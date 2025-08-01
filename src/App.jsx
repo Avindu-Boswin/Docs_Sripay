@@ -38,6 +38,7 @@ import MerchantStoreCreate from './pages/merchant/StoreCreate.jsx';
 import MerchantTerminalManagement from './pages/merchant/TerminalManagement.jsx';
 
 import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
+import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -78,6 +79,7 @@ function App() {
           <Route path="merchant-selfregistration" element={<SelfRegistration />} />
           <Route path="merchant-StoresViewAll" element={<MerchantStoresView />} />
           <Route path="merchant-StoreCreate" element={<MerchantStoreCreate />} />
+          <Route path="merchant-StoreCreateMultiple" element={<MerchantMultipleStore />} />
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
