@@ -27,7 +27,7 @@ export default function AcqNav({ onMobileMenuClick }) {
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src={Logo} className="h-7 md:h-8" alt="Sripay Logo" />
-          <span className="self-center text-xl md:text-3xl font-bold whitespace-nowrap">
+          <span className="self-center text-xl md:text-3xl  whitespace-nowrap">
             {t('docs')}
           </span>
         </a>
