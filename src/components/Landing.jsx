@@ -8,7 +8,7 @@ const DocumentationHero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-0 md:pt-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-0 md:pt-20 mb-20 md:mb-15">
       <div className="text-center">
         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{t('doc')}</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">

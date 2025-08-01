@@ -93,13 +93,13 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                   <NavLink to="/docs/merchant/merchant-StoresViewAll">View All Stores</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-store">
-                  <NavLink to="/docs/merchant/merchant-management/store/create">Creating a New Store</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoreCreate">Single Store Creation</NavLink>
                 </Menu.Item>
                 <Menu.Item key="assign-store-users">
                   <NavLink to="/docs/merchant/merchant-management/store/assign-users">Assigning Store Users</NavLink>
                 </Menu.Item>
                 <Menu.Item key="terminal-management">
-                  <NavLink to="/docs/merchant/merchant-management/store/terminal">Terminal Management</NavLink>
+                  <NavLink to="/docs/merchant/merchant-TerminalManagement">Terminal Management</NavLink>
                 </Menu.Item>
               </SubMenu>
             </SubMenu>

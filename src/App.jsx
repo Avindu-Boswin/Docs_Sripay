@@ -35,6 +35,8 @@ import MerchantSupport from './pages/merchant/Support.jsx'
 import MerchantStoresView from './pages/merchant/MerchantStoresView.jsx';
 import MerchantCategories from './pages/merchant/Categories.jsx';
 import MerchantStoreCreate from './pages/merchant/StoreCreate.jsx';
+import MerchantTerminalManagement from './pages/merchant/TerminalManagement.jsx';
+
 function App() {
   return (
     <BrowserRouter>
@@ -74,7 +76,8 @@ function App() {
           <Route path="gettingstart" element={<GettingStart />} />
           <Route path="merchant-selfregistration" element={<SelfRegistration />} />
           <Route path="merchant-StoresViewAll" element={<MerchantStoresView />} />
-          <Route path="merchant-management/store/create" element={<MerchantStoreCreate />} />
+          <Route path="merchant-StoreCreate" element={<MerchantStoreCreate />} />
+          <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
