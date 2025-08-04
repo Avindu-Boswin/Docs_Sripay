@@ -38,6 +38,7 @@ import MerchantStoreCreate from './pages/merchant/StoreCreate.jsx';
 import MerchantTerminalManagement from './pages/merchant/TerminalManagement.jsx';
 
 import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
+import Instore from './pages/merchant/transactions/Instore.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -80,6 +81,7 @@ function App() {
           <Route path="merchant-StoreCreate" element={<MerchantStoreCreate />} />
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
+          <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
