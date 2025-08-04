@@ -39,6 +39,8 @@ import MerchantTerminalManagement from './pages/merchant/TerminalManagement.jsx'
 
 import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
 import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
+import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
+import MarketingMaterials from './pages/MarketingMaterials.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -48,6 +50,8 @@ function App() {
         <Route element={<HomeLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/docs/branding-guidelines" element={<BrandingGuidelines />} />
+          <Route path="/docs/marketing-materials" element={<MarketingMaterials />} />
         </Route>
 
         {/* Acquirer Docs Layout */}
