@@ -68,7 +68,7 @@ function MerchantStoreCreate() {
                 </div>
             </div>
 
-            {/* ---------- STEP 3: Select Single Store Option ---------- */}
+            {/* ---------- STEP 3: Fill Store Information ---------- */}
             <div id="section3" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     Step 3: Fill Store Information

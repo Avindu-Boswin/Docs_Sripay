@@ -38,6 +38,9 @@ import MerchantStoreCreate from './pages/merchant/StoreCreate.jsx';
 import MerchantTerminalManagement from './pages/merchant/TerminalManagement.jsx';
 
 import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
+import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
+import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
+import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
 function App() {
   return (
@@ -48,6 +51,8 @@ function App() {
         <Route element={<HomeLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/docs/branding-guidelines" element={<BrandingGuidelines />} />
+          <Route path="/docs/marketing-materials" element={<MarketingMaterials />} />
         </Route>
 
         {/* Acquirer Docs Layout */}
@@ -79,6 +84,7 @@ function App() {
           <Route path="merchant-selfregistration" element={<SelfRegistration />} />
           <Route path="merchant-StoresViewAll" element={<MerchantStoresView />} />
           <Route path="merchant-StoreCreate" element={<MerchantStoreCreate />} />
+          <Route path="merchant-StoreCreateMultiple" element={<MerchantMultipleStore />} />
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="merchant-transaction/alipay_instore" element={<Instore />} />

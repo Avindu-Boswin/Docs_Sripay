@@ -5,7 +5,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined
 } from "@ant-design/icons";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -19,6 +19,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 
   const toggleFeatures = () => {
     setFeaturesOpen(!featuresOpen);
+  };
+  
+  // Function to handle scrolling to top when a link is clicked
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -59,7 +67,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
           <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
-              <NavLink to="/">Back To Home</NavLink>
+              <NavLink to="/" onClick={handleLinkClick}>Back To Home</NavLink>
             </Menu.Item>
 
             <div className="flex items-center justify-center my-2 mt-5 mb-5">
@@ -69,62 +77,62 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
             </div>
 
             <Menu.Item key="introduction">
-              <NavLink to="/docs/acquirer/introduction">Introduction</NavLink>
+              <NavLink to="/docs/acquirer/introduction" onClick={handleLinkClick}>Introduction</NavLink>
             </Menu.Item>
 
             <Menu.Item key="gettingStart">
-              <NavLink to="/docs/acquirer/gettingStart">Getting Started</NavLink>
+              <NavLink to="/docs/acquirer/gettingStart" onClick={handleLinkClick}>Getting Started</NavLink>
             </Menu.Item>
 
             <SubMenu key="features" title={"Features and Functionalities"}>
               <SubMenu key="merchant-registration" title={"Merchant Registration"}>
                 <Menu.Item key="registration-workflow">
-                  <NavLink to="/docs/acquirer/merchant-registration/workflow">Registration Workflow</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-registration/workflow" onClick={handleLinkClick}>Registration Workflow</NavLink>
                 </Menu.Item>
                 <Menu.Item key="bulk-registration">
-                  <NavLink to="/docs/acquirer/merchant-registration/bulk">Bulk Registration</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-registration/bulk" onClick={handleLinkClick}>Bulk Registration</NavLink>
                 </Menu.Item>
                 <Menu.Item key="self-registration">
-                  <NavLink to="/docs/acquirer/merchant-registration/self">Self Registration</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-registration/self" onClick={handleLinkClick}>Self Registration</NavLink>
                 </Menu.Item>
               </SubMenu>
 
               <SubMenu key="merchant-management" title={"Merchant Management"}>
                 <Menu.Item key="suspending-merchant">
-                  <NavLink to="/docs/acquirer/merchant-management/suspend">Suspending Merchant</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/suspend" onClick={handleLinkClick}>Suspending Merchant</NavLink>
                 </Menu.Item>
                 <Menu.Item key="activating-merchant">
-                  <NavLink to="/docs/acquirer/merchant-management/activate">Activating Suspended </NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/activate" onClick={handleLinkClick}>Activating Suspended </NavLink>
                 </Menu.Item>
                 <Menu.Item key="merchant-agreement">
-                  <NavLink to="/docs/acquirer/merchant-management/agreement">Uploading Agreement</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/agreement" onClick={handleLinkClick}>Uploading Agreement</NavLink>
                 </Menu.Item>
               </SubMenu>
 
               <SubMenu key="store-management" title={"Merchant Store Management"}>
                 <Menu.Item key="view-all-stores">
-                  <NavLink to="/docs/acquirer/merchant-management/store/view">View All Stores</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/store/view" onClick={handleLinkClick}>View All Stores</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-store">
-                  <NavLink to="/docs/acquirer/merchant-management/store/create">Creating a New Store</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/store/create" onClick={handleLinkClick}>Creating a New Store</NavLink>
                 </Menu.Item>
                 <Menu.Item key="assign-store-users">
-                  <NavLink to="/docs/acquirer/merchant-management/store/assign-users">Assigning Store Users</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/store/assign-users" onClick={handleLinkClick}>Assigning Store Users</NavLink>
                 </Menu.Item>
                 <Menu.Item key="terminal-management">
-                  <NavLink to="/docs/acquirer/merchant-management/store/terminal">Terminal Management</NavLink>
+                  <NavLink to="/docs/acquirer/merchant-management/store/terminal" onClick={handleLinkClick}>Terminal Management</NavLink>
                 </Menu.Item>
               </SubMenu>
             </SubMenu>
 
             <Menu.Item key="troubleshooting">
-              <NavLink to="/docs/acquirer/troubleshooting">Troubleshooting</NavLink>
+              <NavLink to="/docs/acquirer/troubleshooting" onClick={handleLinkClick}>Troubleshooting</NavLink>
             </Menu.Item>
             <Menu.Item key="faq">
-              <NavLink to="/docs/acquirer/faq">Frequently Asked Questions</NavLink>
+              <NavLink to="/docs/acquirer/faq" onClick={handleLinkClick}>Frequently Asked Questions</NavLink>
             </Menu.Item>
             <Menu.Item key="support">
-              <NavLink to="/docs/acquirer/support">Support Information</NavLink>
+              <NavLink to="/docs/acquirer/support" onClick={handleLinkClick}>Support Information</NavLink>
             </Menu.Item>
           </Menu>
 
