@@ -52,7 +52,7 @@ const Layout = () => {
           </main>
 
           {/* Footer */}
-          <div className={`lg:mr-10 ${collapsed ? "" : "md:ml-64"}`}>
+          <div className={`lg:mr-10 ${collapsed ? "" : "md:ml-[267px]"}`}>
             <Footer />
           </div>
         </div>

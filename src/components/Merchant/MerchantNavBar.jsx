@@ -81,9 +81,6 @@ export default function MerNav({ onMobileMenuClick }) {
           </div>
         </div>
       </div>
-
-      {/* Optional: Dropdown or menu can go here if needed in mobile view */}
-      {/* Example: <div id="navbar-menu" className={`${isMenuOpen ? 'block' : 'hidden'}`}>...</div> */}
     </nav>
   );
 }
