@@ -45,6 +45,9 @@ import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
 import Layout from './layouts/DeveloperLayout.jsx';
 import DevGettingStart from './pages/developer/GettingStart.jsx';
+import SystemIntroduction from './pages/developer/SystemIntro.jsx';
+import SystemArchitecture from './pages/developer/SystemArchitecture.jsx';
+import WebApplicationArchitecture from './pages/developer/WebApplicationArchitecture.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -101,6 +104,10 @@ function App() {
         {/* Developer Docs Layout */}
         <Route path="/docs/developer" element={<Layout />}>
           <Route path="gettingstart" element={<DevGettingStart />} />
+          <Route path="introduction" element={<SystemIntroduction />} />
+          <Route path="system_architecture" element={<SystemArchitecture />} />
+          <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
+
         </Route>
 
 

@@ -77,8 +77,20 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
             </div>
 
             <Menu.Item key="gettingStart">
-              <NavLink to="/docs/merchant/gettingStart" onClick={handleLinkClick}>Getting Started</NavLink>
+              <NavLink to="/docs/developer/gettingstart" onClick={handleLinkClick}>Getting Started</NavLink>
             </Menu.Item>
+
+            <SubMenu key="system-architecture" title={"System Overview"} className="!text-gray-700">
+                <Menu.Item key="intro">
+                  <NavLink to="/docs/developer/introduction" onClick={handleLinkClick}>Introduction</NavLink>
+                </Menu.Item>
+                <Menu.Item key="system-architecture">
+                  <NavLink to="/docs/developer/system_architecture" onClick={handleLinkClick}>System Architecture</NavLink>
+                </Menu.Item>
+                <Menu.Item key="web-application-architecture">
+                  <NavLink to="/docs/developer/web_application_architecture" onClick={handleLinkClick}>Web App Architecture</NavLink>
+                </Menu.Item>
+              </SubMenu>
           </Menu>
 
         </div>
