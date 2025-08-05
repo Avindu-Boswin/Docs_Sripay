@@ -2,20 +2,21 @@ import React from 'react';
 
 function Troubleshooting() {
   return (
-    <div className='w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-10 mb-16'>
-      <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-        Troubleshooting Guide
+    <div className='w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-10 mb-20'>
+      <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8'>
+        Troubleshooting
       </h1>
 
-      <p className='text-gray-700 text-base leading-relaxed mb-6'>
-        This guide provides solutions to common issues faced by  Merchants, and Store Users in SriPay.
+      <p className='text-gray-700 text-sm sm:text-base leading-relaxed mb-8'>
+        This guide provides solutions to common issues faced by Merchants and Store Users in SriPay.
       </p>
 
-    
       {/* Merchant Issues */}
-      <section className='mb-10'>
-        <h2 className='text-xl sm:text-2xl font-semibold text-blue-800 mb-4'>Merchant Issues</h2>
-        <ul className='list-disc pl-6 space-y-8 text-gray-700 text-sm sm:text-base'>
+      <section className='mb-12'>
+        <h2 className='text-lg sm:text-xl md:text-2xl  mb-4'>
+          Merchant Issues
+        </h2>
+        <ul className='list-disc pl-5 sm:pl-6 space-y-6 sm:space-y-8 text-gray-700 text-sm sm:text-base'>
           <li>
             <strong>Issue:</strong> OTP not received during store user assignment<br />
             <strong>Solution:</strong> Ask the user to check their spam folder. Ensure a valid email address was entered.
@@ -28,13 +29,19 @@ function Troubleshooting() {
             <strong>Issue:</strong> Merchant registration stuck on "Waiting for Approval"<br />
             <strong>Solution:</strong> This is normal. Wait until the Acquirer approves the request. No user action is required.
           </li>
+          <li>
+            <strong>Issue:</strong> Media Uploading Error in Gallery<br />
+            <strong>Solution:</strong> Ensure the uploaded media file is at least 10MB in size. Files smaller than 10MB may not be accepted.
+          </li>
         </ul>
       </section>
 
       {/* Store User Issues */}
-      <section className='mb-10'>
-        <h2 className='text-xl sm:text-2xl font-semibold text-blue-800 mb-4'>Store User Issues</h2>
-        <ul className='list-disc pl-6 space-y-4 text-gray-700 text-sm sm:text-base'>
+      <section className='mb-12'>
+        <h2 className='text-lg sm:text-xl md:text-2xl  mb-4'>
+          Store User Issues
+        </h2>
+        <ul className='list-disc pl-5 sm:pl-6 space-y-6 text-gray-700 text-sm sm:text-base'>
           <li>
             <strong>Issue:</strong> Email verification failed<br />
             <strong>Solution:</strong> Resend the OTP from the merchant dashboard. Ensure the user is using the correct OTP within the time limit.
@@ -46,12 +53,7 @@ function Troubleshooting() {
         </ul>
       </section>
 
-      {/* Contact Info */}
-      <div className='mt-10 bg-blue-100 p-6 rounded-lg text-center text-sm sm:text-base text-gray-700'>
-        <p>If your issue is not listed here, please contact the SriPay Technical Support Team:</p>
-        <p className='mt-2'><strong>Email:</strong> support@sripay.lk</p>
-        <p><strong>Phone:</strong> +94 76 664 1614</p>
-      </div>
+      
     </div>
   );
 }

@@ -42,6 +42,7 @@ import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
 import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Agreement from './pages/Agreement.jsx';
+import Instore from './pages/merchant/transactions/Instore.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -88,6 +89,7 @@ function App() {
           <Route path="merchant-StoreCreateMultiple" element={<MerchantMultipleStore />} />
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
+          <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
