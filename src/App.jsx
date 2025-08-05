@@ -43,6 +43,8 @@ import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
+import Layout from './layouts/DeveloperLayout.jsx';
+import DevGettingStart from './pages/developer/GettingStart.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -93,6 +95,12 @@ function App() {
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
+        </Route>
+
+
+        {/* Developer Docs Layout */}
+        <Route path="/docs/developer" element={<Layout />}>
+          <Route path="gettingstart" element={<DevGettingStart />} />
         </Route>
 
 
