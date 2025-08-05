@@ -41,6 +41,7 @@ import StoreUsersAssign from './pages/merchant/StoreUsersAssign.jsx';
 import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
 import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
+import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
 import Online from './pages/merchant/transactions/online.jsx';
  
@@ -55,6 +56,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/docs/branding-guidelines" element={<BrandingGuidelines />} />
           <Route path="/docs/marketing-materials" element={<MarketingMaterials />} />
+          <Route path="/docs/agreement" element={<Agreement />} />
         </Route>
 
         {/* Acquirer Docs Layout */}

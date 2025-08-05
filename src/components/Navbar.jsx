@@ -13,7 +13,7 @@ export default function FlowbiteNavbar() {
   };
 
   return (
-    <nav className="bg-white border-b">
+    <nav className="bg-white border-b sticky top-0 z-50">
       <div className="flex flex-wrap items-center justify-between p-4 w-full">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse md:order-1">

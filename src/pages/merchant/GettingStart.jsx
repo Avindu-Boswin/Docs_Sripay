@@ -18,12 +18,12 @@ function GettingStart() {
       <span className='text-base text-gray-700'>
         Merchants can register directly with <span className='text-blue-500'>SriPay</span> as an acquirer using{' '}
         <a
-          href="https://acquirer.sripay.lk/"
+          href="https://connect.sripay.lk/"
           target="_blank"
           rel="noopener noreferrer"
           className='text-blue-500'
         >
-          www.acquirer.sripay.lk
+          www.connect.sripay.lk
         </a>{' '}
         link. Merchants should provide valid details in this process.
       </span>
