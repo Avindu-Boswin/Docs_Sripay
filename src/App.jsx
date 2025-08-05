@@ -43,6 +43,8 @@ import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
+import Online from './pages/merchant/transactions/online.jsx';
+ 
 import Layout from './layouts/DeveloperLayout.jsx';
 import DevGettingStart from './pages/developer/GettingStart.jsx';
 import SystemIntroduction from './pages/developer/SystemIntro.jsx';
@@ -95,6 +97,7 @@ function App() {
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
+          <Route path="merchant-transaction/alipay_online" element={<Online />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
@@ -111,7 +114,17 @@ function App() {
         </Route>
 
 
-        {/* Fallbacks */}
+        {/* Developer Docs Layout */}
+        <Route path="/docs/developer" element={<Layout />}>
+          <Route path="gettingstart" element={<DevGettingStart />} />
+          <Route path="introduction" element={<SystemIntroduction />} />
+          <Route path="system_architecture" element={<SystemArchitecture />} />
+          <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
+
+        </Route>
+
+
+        {/* Fallbacks */}ß
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/not-found" replace />} />
 
