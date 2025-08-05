@@ -42,6 +42,8 @@ import MerchantMultipleStore from './pages/merchant/MultipleStoreCreate.jsx';
 import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
+import Online from './pages/merchant/transactions/online.jsx';
+ 
 function App() {
   return (
     <BrowserRouter>
@@ -88,13 +90,14 @@ function App() {
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
+          <Route path="merchant-transaction/alipay_online" element={<Online />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
         </Route>
 
 
-        {/* Fallbacks */}
+        {/* Fallbacks */}ß
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/not-found" replace />} />
 
