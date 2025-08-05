@@ -114,16 +114,6 @@ function App() {
         </Route>
 
 
-        {/* Developer Docs Layout */}
-        <Route path="/docs/developer" element={<Layout />}>
-          <Route path="gettingstart" element={<DevGettingStart />} />
-          <Route path="introduction" element={<SystemIntroduction />} />
-          <Route path="system_architecture" element={<SystemArchitecture />} />
-          <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
-
-        </Route>
-
-
         {/* Fallbacks */}ß
         <Route path="/not-found" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/not-found" replace />} />
