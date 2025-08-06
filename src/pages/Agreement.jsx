@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import AgreementPDF from '../assets/agreement/Alipay Service Agreement+Schedules for CDF by Boswin.pdf';
+import AgreementPDF from '../assets/agreement/Alipay Service Agreement+Schedules for Merchant by Boswin.pdf';
 
 function Agreement() {
     return (
