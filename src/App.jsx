@@ -60,10 +60,15 @@ import DeploymentAndInfrastructure from './pages/developer/DeploymentAndInfrastr
 import ThirdPartyIntegration from './pages/developer/ThirdPartyIntegration.jsx';
 import ComplianceAndPrivacy from './pages/developer/ComplianceAndPrivacy.jsx';
 import MaintenanceAndSupport from './pages/developer/MaintenanceAndSupport.jsx';
+import AgreementType from './pages/AgreementType.jsx';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+        {/* Separate Agreement Routes to view in connect.sripay.lk */}
+        <Route path="/merchant_agreement" element={<Agreement />} />
 
         {/* Public Routes */}
         <Route element={<HomeLayout />}>
@@ -71,7 +76,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/docs/branding-guidelines" element={<BrandingGuidelines />} />
           <Route path="/docs/marketing-materials" element={<MarketingMaterials />} />
-          <Route path="/docs/agreement" element={<Agreement />} />
+          <Route path="/docs/agreement" element={<AgreementType />} />
         </Route>
 
         {/* Acquirer Docs Layout */}
