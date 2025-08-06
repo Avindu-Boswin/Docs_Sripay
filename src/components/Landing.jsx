@@ -29,19 +29,31 @@ const DocumentationHero = () => {
 
         {/* Role selection cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
-          {['acquirer', 'merchant', 'developer'].map((roleKey) => (
-            <Link
-              key={roleKey}
-              to={`/docs/${roleKey}/gettingstart`}
-              className="bg-[#000D7A] p-4 md:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center group transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#001AAB] cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
-              onClick={handleLinkClick}
-            >
-              <div className="flex flex-col items-center mb-1 md:mb-2">
-                <h3 className="text-base md:text-xl font-bold text-white mb-1 group-hover:text-white transition-colors duration-200">{t(`roles.${roleKey}.title`)}</h3>
-              </div>
-              <p className="text-white text-xs md:text-sm font-light">{t(`roles.${roleKey}.desc`)}</p>
-            </Link>
-          ))}
+          {['acquirer', 'merchant', 'developer'].map((roleKey) =>
+            roleKey !== 'acquirer' ? (
+              <Link
+                key={roleKey}
+                to={`/docs/${roleKey}/gettingstart`}
+                className="bg-[#000D7A] p-4 md:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center group transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#001AAB] cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
+                onClick={handleLinkClick}
+              >
+                <div className="flex flex-col items-center mb-1 md:mb-2">
+                  <h3 className="text-base md:text-xl font-bold text-white mb-1 group-hover:text-white transition-colors duration-200">{t(`roles.${roleKey}.title`)}</h3>
+                </div>
+                <p className="text-white text-xs md:text-sm font-light">{t(`roles.${roleKey}.desc`)}</p>
+              </Link>
+            ) : <Link
+                key={roleKey}
+                to={`/docs/${roleKey}/introduction`}
+                className="bg-[#000D7A] p-4 md:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center group transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-[#001AAB] cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
+                onClick={handleLinkClick}
+              >
+                <div className="flex flex-col items-center mb-1 md:mb-2">
+                  <h3 className="text-base md:text-xl font-bold text-white mb-1 group-hover:text-white transition-colors duration-200">{t(`roles.${roleKey}.title`)}</h3>
+                </div>
+                <p className="text-white text-xs md:text-sm font-light">{t(`roles.${roleKey}.desc`)}</p>
+              </Link>
+          )}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mt-4 md:mt-8">
           <Link

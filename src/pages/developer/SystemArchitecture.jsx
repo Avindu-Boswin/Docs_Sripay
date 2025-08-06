@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { useSections } from '../../components/SectionContext';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
 
 import Img1 from '../../assets/images/developer/system_architecture_overview.png';
 
 function SystemArchitecture() {
     const { t } = useTranslation();
     const { setSections } = useSections();
-
-    // Convenience accessor for the huge steps array
-    const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
 
     useEffect(() => {
         setSections([
@@ -26,7 +26,6 @@ function SystemArchitecture() {
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id="step-1" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
                 System Architecture Overview
-
             </h1>
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
@@ -51,7 +50,9 @@ function SystemArchitecture() {
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
                     System Diagram
                 </h4>
-                <img src={Img1} className='mb-8 mx-auto my-6 block md:w-full' alt='System Architecture Overview' />
+                <Zoom>
+                    <img src={Img1} className='mb-8 mx-auto my-6 block md:w-full' alt='System Architecture Overview' />
+                </Zoom>
             </div>
 
             {/* ---------- Component Descriptions ------------------------------------------------ */}

@@ -90,6 +90,36 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                 <Menu.Item key="web-application-architecture">
                   <NavLink to="/docs/developer/web_application_architecture" onClick={handleLinkClick}>Web App Architecture</NavLink>
                 </Menu.Item>
+                <Menu.Item key="mobile-application-architecture">
+                  <NavLink to="/docs/developer/mobile_application_architecture" onClick={handleLinkClick}>Mobile App Architecture</NavLink>
+                </Menu.Item>
+                <Menu.Item key="backend-architecture">
+                  <NavLink to="/docs/developer/backend_architecture" onClick={handleLinkClick}>Backend Architecture</NavLink>
+                </Menu.Item>
+                <Menu.Item key="database-architecture">
+                  <NavLink to="/docs/developer/database_architecture" onClick={handleLinkClick}>Database Architecture</NavLink>
+                </Menu.Item>
+                <Menu.Item key="authentication-and-authorization">
+                  <NavLink to="/docs/developer/authentication_and_authorization" onClick={handleLinkClick}>Authentication & Authorization</NavLink>
+                </Menu.Item>
+                <Menu.Item key="encryption-and-security">
+                  <NavLink to="/docs/developer/encryption_and_security" onClick={handleLinkClick}>Encryption & Security</NavLink>
+                </Menu.Item>
+                <Menu.Item key="api-security">
+                  <NavLink to="/docs/developer/api_security" onClick={handleLinkClick}>API Security</NavLink>
+                </Menu.Item>
+                <Menu.Item key="deployment-and-infrastructure">
+                  <NavLink to="/docs/developer/deployment_and_infrastructure" onClick={handleLinkClick}>Deployment & Infrastructure</NavLink>
+                </Menu.Item>
+                <Menu.Item key="third-party-integration">
+                  <NavLink to="/docs/developer/third_party_integration" onClick={handleLinkClick}>Third Party Integration</NavLink>
+                </Menu.Item>
+                <Menu.Item key="compliance-and-privacy">
+                  <NavLink to="/docs/developer/compliance_and_privacy" onClick={handleLinkClick}>Compliance & Privacy</NavLink>
+                </Menu.Item>
+                <Menu.Item key="maintenance-and-support">
+                  <NavLink to="/docs/developer/maintenance_and_support" onClick={handleLinkClick}>Maintenance & Support</NavLink>
+                </Menu.Item>
               </SubMenu>
           </Menu>
 

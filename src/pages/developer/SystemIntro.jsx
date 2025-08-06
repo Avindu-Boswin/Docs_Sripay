@@ -4,26 +4,13 @@ import { useSections } from '../../components/SectionContext';
 
 function SystemIntroduction() {
     const { t } = useTranslation();
-    const { setSections } = useSections();
-
-    // Convenience accessor for the huge steps array
-    const steps = t('acquirerRegWorkflow.steps', { returnObjects: true });
-
-    useEffect(() => {
-        setSections([
-            { id: 'step-1', label: 'Introduction' },
-        ]);
-        return () => setSections([]);
-        // eslint-disable-next-line
-    }, [setSections, t]);
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
-            <h1 id="step-1" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
                 Introduction
             </h1>
-
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
                 SriPay Connect is a cloud-based payment Enterprise Resource Planning
