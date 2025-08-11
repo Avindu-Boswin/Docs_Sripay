@@ -69,6 +69,8 @@ import OrderCodeResultListner from './pages/developer/acquirer_api/OrderCodeResu
 import UserPresentPay from './pages/developer/acquirer_api/UserPresentPay.jsx';
 import UserPresentPayWaiting from './pages/developer/acquirer_api/UserPresentPayWaiting.jsx';
 import InstorePaymentInquiry from './pages/developer/acquirer_api/InstorePaymentInquiry.jsx';
+import PaymentLinkCreate from './pages/developer/acquirer_api/PaymentLinkCreate.jsx';
+import OnlinePaymentInquiry from './pages/developer/acquirer_api/OnlinePaymentInquiry.jsx';
 
 function App() {
   return (
@@ -153,6 +155,8 @@ function App() {
           <Route path="acquirer_api/instore/user_present_pay" element={<UserPresentPay />} />
           <Route path="acquirer_api/instore/user_present_pay_waiting" element={<UserPresentPayWaiting />} />
           <Route path="acquirer_api/instore/instore_payment_inquiry" element={<InstorePaymentInquiry />} />
+          <Route path="acquirer_api/online/payment_link_create" element={<PaymentLinkCreate />} />
+          <Route path="acquirer_api/online/payment_inquiry" element={<OnlinePaymentInquiry />} />
         </Route>
 
 

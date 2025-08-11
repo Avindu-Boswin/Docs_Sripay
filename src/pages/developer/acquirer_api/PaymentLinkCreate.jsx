@@ -30,13 +30,13 @@ const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
     );
 };
 
-function UserPresentPay() {
+function PaymentLinkCreate() {
     const { t } = useTranslation();
     const { setSections } = useSections();
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'User Present Pay' },
+            { id: 'step-1', label: 'Payment Link Create' },
             { id: 'step-2', label: 'Endpoint' },
             { id: 'step-3', label: 'Request Header' },
             { id: 'step-4', label: 'Request Body' },
@@ -53,15 +53,15 @@ function UserPresentPay() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                User Present Pay
+                Payment Link Create
             </h1>
 
             <div className="flex flex-row items-start md:items-center gap-2 mb-8">
                 <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">POST</span>
-                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/userpresent-pay</span>
+                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/online/pay</span>
             </div>
 
-            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint initiates an Alipay+ overseas spot payment transaction for user-presented scenarios, validating acquirer, outlet, and terminal details, and generating a transaction request.</p>
+            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint initiates an Alipay+ online payment transaction for a given outlet, generating a payment request with a redirect URL for user authorization, tailored for acquirer integrations.</p>
 
             {/* ---------- Endpoint ------------------------------------------------ */}
             <div className='mt-8 mb-6'>
@@ -70,9 +70,10 @@ function UserPresentPay() {
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-pay</span></li>
+                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/online/pay</span></li>
                     <li><span className='font-semibold'>Method</span> – <span className='font-bold text-yellow-500'>POST</span></li>
-                    <li><span className='font-semibold'>Description</span> – Initiates a user-presented Alipay+ transaction by validating inputs and interacting with the Alipay+ API, tailored for acquirer integrations.</li>
+                    <li><span className='font-semibold'>Description</span> – <span> Initiates an Alipay+ online payment process, validating outlet and merchant details, and returns a payment URL for user authorization.</span></li>
+
                 </ul>
 
             </div>
@@ -112,51 +113,23 @@ function UserPresentPay() {
                                 type: 'string',
                                 required: 'Yes',
                                 description: 'Unique identifier of the outlet.',
-                                validation: 'Must be a non-empty string.',
+                                validation: 'Must be a non-empty string.'
                             },
                             {
                                 key: '2',
                                 parameter: <span className='font-mono'>amount</span>,
-                                type: (
-                                    <>
-                                        number
-                                    </>
-                                ),
+                                type: 'number',
                                 required: 'Yes',
                                 description: 'Transaction amount.',
-                                validation: 'Must be a positive number greater than 0.',
+                                validation: 'Must be a positive number greater than 0.'
                             },
                             {
                                 key: '3',
-                                parameter: <span className='font-mono'>subject</span>,
+                                parameter: <span className='font-mono'>orderDescription</span>,
                                 type: 'string',
                                 required: 'Yes',
-                                description: 'Description of the transaction.',
-                                validation: 'Must be a string, max length 100 characters.',
-                            },
-                            {
-                                key: '4',
-                                parameter: <span className='font-mono'>currency</span>,
-                                type: 'string',
-                                required: 'Yes',
-                                description: 'Currency of the transaction.',
-                                validation: 'Must be either USD or LKR.',
-                            },
-                            {
-                                key: '5',
-                                parameter: <span className='font-mono'>terminalId</span>,
-                                type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the terminal.',
-                                validation: 'Must be a non-empty string.',
-                            },
-                            {
-                                key: '6',
-                                parameter: <span className='font-mono'>buyer_identity_code</span>,
-                                type: 'string',
-                                required: 'Yes',
-                                description: 'Buyer\'s identity code (e.g., barcode).',
-                                validation: 'Must be a non-empty string.',
+                                description: 'Description of the order.',
+                                validation: 'Must be a string, max length 100 characters.'
                             }
                         ]}
                         columns={[
@@ -187,7 +160,7 @@ function UserPresentPay() {
                                 title: <span className='font-semibold'>Validation Rules</span>,
                                 dataIndex: 'validation',
                                 key: 'validation',
-                            },
+                            }
                         ]}
                     />
                 </div>
@@ -198,14 +171,11 @@ function UserPresentPay() {
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
                     <li><span className='font-semibold'>outletId: </span> Required, non-empty string.</li>
-                    <li><span className='font-semibold'>amount:</span> Required, must be a positive number (greater than 0).</li>
-                    <li><span className='font-semibold'>subject: </span> Required, string with a maximum length of 100 characters.</li>
-                    <li><span className='font-semibold'>currency: </span>  Required, must be one of USD or LKR.</li>
-                    <li><span className='font-semibold'>terminalId: </span> Required, non-empty string.</li>
-                    <li><span className='font-semibold'>buyer_identity_code: </span> Required, non-empty string.</li>
+                    <li><span className='font-semibold'>amount: </span>  Required, must be a positive number (greater than 0).</li>
+                    <li><span className='font-semibold'>orderDescription: </span>  Required, string with a maximum length of 100 characters.</li>
+                    <li><span className='font-semibold'>currency: </span>  Fixed as USD (not user-configurable in this endpoint).</li>
                 </ul>
             </div>
-
 
             {/* ---------- Sample Request --------------------------------------- */}
             <div id='step-5' className="mt-12 mb-8">
@@ -215,10 +185,7 @@ function UserPresentPay() {
                     code={`{
     "outletId": "outlet_12345",
     "amount": 50.00,
-    "subject": "Purchase at Outlet XYZ",
-    "currency": "USD",
-    "terminalId": "T001",
-    "buyer_identity_code": "123456789012"
+    "orderDescription": "Online purchase at Outlet XYZ"
 }`}
                 />
 
@@ -240,41 +207,24 @@ function UserPresentPay() {
                     <li><span className="font-semibold">Content Type</span>: application/json</li>
                 </ul>
 
-                <p><span className="font-semibold">Response Body</span>:   (Success):</p>
+                <p><span className="font-semibold">Response Body</span></p>
 
                 <CodeBlock
                     code={`{
     "code": "PAYMENT_INITIATED",
-    "message": "Transaction successfully initiated.",
+    "message": "Payment initiated successfully.",
     "status": "SUCCESS",
     "data": {
-        "tradeStatus": "SUCCESS",
-        "partner_trans_id": "202508051345001234",
-        "trade_no": "ALIPAY_TX_123456",
-        "outTradeNo": "202508051345001234"
+        "paymentId": "PAY_1234567890abcdef",
+        "paymentUrl": "https://alipay.com/payment/1234567890abcdef",
+        "currency": "USD",
+        "paymentAmount": "50.00",
+        "paymentResult": {
+            "resultCode": "SUCCESS",
+            "resultStatus": "S"
+        }
     }
 }
-
-`}
-                    bgColor="bg-green-50"
-                />
-
-                <p><span className="font-semibold">Response Body</span>:   (Pending Authentication):</p>
-
-                <CodeBlock
-                    code={`{
-    "code": "AWAITING_USER_AUTH",
-    "message": "Waiting for user authentication.",
-    "status": "PENDING",
-    "data": {
-        "tradeStatus": "UNKNOWN",
-        "partner_trans_id": "202508051345001234",
-        "trade_no": "ALIPAY_TX_123456",
-        "outTradeNo": "202508051345001234"
-    }
-}
-
-
 `}
                     bgColor="bg-green-50"
                 />
@@ -287,15 +237,30 @@ function UserPresentPay() {
                     Below are the possible error responses, including their status codes, error codes, and messages:
                 </p>
 
-                {/* Missing Parameters */}
+                {/* Invalid Input */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
+                    <p className="text-lg font-semibold text-gray-700">1. Invalid Input</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
-    "code": "MISSING_PARAMS",
-    "message": "acquirerId, outletId, amount, subject, currency, terminalId, buyer_identity_code are required.",
+    "code": "INVALID_INPUT",
+    "message": "outletId, amount, orderDescription are required.",
+    "status": "FAIL"
+}`}
+                        bgColor="bg-red-50"
+                    />
+                </div>
+
+                {/* Order Description Too Long */}
+                <div className="mb-6">
+                    <p className="text-lg font-semibold text-gray-700">2. Order Description Too Long</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <CodeBlock
+                        code={`{
+    "code": "ORDER_DESC_TOO_LONG",
+    "message": "orderDescription must not exceed 100 characters.",
     "status": "FAIL"
 }`}
                         bgColor="bg-red-50"
@@ -304,10 +269,10 @@ function UserPresentPay() {
 
                 {/* Invalid Amount */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">2. Invalid Amount</p>
+                    <p className="text-lg font-semibold text-gray-700">3. Invalid Amount</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
     "code": "INVALID_AMOUNT",
     "message": "Amount must be a positive number.",
@@ -317,45 +282,60 @@ function UserPresentPay() {
                     />
                 </div>
 
-                {/* Invalid Currency */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">3. Invalid Currency</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "INVALID_CURRENCY",
-    "message": "Currency must be USD / LKR.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Invalid Subject */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">4. Invalid Subject</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "INVALID_SUBJECT",
-    "message": "Subject max length is 100 characters.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
                 {/* Outlet Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">5. Outlet Not Found</p>
+                    <p className="text-lg font-semibold text-gray-700">4. Outlet Not Found</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
     "code": "OUTLET_NOT_FOUND",
-    "message": "Outlet outlet_12345 not found.",
+    "message": "Outlet not found with ID: outlet_12345",
+    "status": "FAIL"
+}`}
+                        bgColor="bg-red-50"
+                    />
+                </div>
+
+                {/* Outlet Not Approved */}
+                <div className="mb-6">
+                    <p className="text-lg font-semibold text-gray-700">5. Outlet Not Approved</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <CodeBlock
+                        code={`{
+    "code": "OUTLET_NOT_APPROVED",
+    "message": "Outlet Status Not Approved.",
+    "status": "FAIL"
+}`}
+                        bgColor="bg-red-50"
+                    />
+                </div>
+
+                {/* Outlet Not Alipay Online Approved */}
+                <div className="mb-6">
+                    <p className="text-lg font-semibold text-gray-700">6. Outlet Not Alipay Online Approved</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <CodeBlock
+                        code={`{
+    "code": "OUTLET_NOT_ALIPAY_ONLINE_APPROVED",
+    "message": "Outlet Alipay Online Status Not Approved.",
+    "status": "FAIL"
+}`}
+                        bgColor="bg-red-50"
+                    />
+                </div>
+
+                {/* Outlet Missing Merchant */}
+                <div className="mb-6">
+                    <p className="text-lg font-semibold text-gray-700">7. Outlet Missing Merchant</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <CodeBlock
+                        code={`{
+    "code": "OUTLET_MISSING_MERCHANT",
+    "message": "Merchant ID is missing in outlet document.",
     "status": "FAIL"
 }`}
                         bgColor="bg-red-50"
@@ -364,10 +344,10 @@ function UserPresentPay() {
 
                 {/* Acquirer-Outlet Mismatch */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">6. Acquirer-Outlet Mismatch</p>
+                    <p className="text-lg font-semibold text-gray-700">8. Acquirer-Outlet Mismatch</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
     "code": "ACQUIRER_OUTLET_MISMATCH",
     "message": "Outlet does not belong to provided acquirerId.",
@@ -377,168 +357,60 @@ function UserPresentPay() {
                     />
                 </div>
 
-                {/* Outlet Not Approved */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">7. Outlet Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "OUTLET_NOT_APPROVED",
-    "message": "Outlet status not approved.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Outlet Not Approved for Alipay+ Offline */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">8. Outlet Not Approved for Alipay+ Offline</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "OUTLET_NOT_APPROVED",
-    "message": "Outlet is not approved for Alipay+ offline.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Terminal Not Approved */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">9. Terminal Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "TERMINAL_NOT_APPROVED",
-    "message": "Terminal not active for this outlet.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Outlet Missing Merchant */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">10. Outlet Missing Merchant</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "OUTLET_MISSING_MERCHANT",
-    "message": "Outlet document missing merchant reference.",
-    "status": "ERROR"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
                 {/* Merchant Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">11. Merchant Not Found</p>
+                    <p className="text-lg font-semibold text-gray-700">9. Merchant Not Found</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
     "code": "MERCHANT_NOT_FOUND",
-    "message": "Merchant <merchantId> not found.",
+    "message": "Merchant not found with ID: <merchantId>",
     "status": "FAIL"
 }`}
                         bgColor="bg-red-50"
                     />
                 </div>
 
-                {/* Acquirer-Merchant Mismatch */}
+                {/* Config Missing */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">12. Acquirer-Merchant Mismatch</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "ACQUIRER_MERCHANT_MISMATCH",
-    "message": "Merchant does not belong to provided acquirerId.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Alipay+ Unreachable */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">13. Alipay+ Unreachable</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "ALIPAY_UNREACHABLE",
-    "message": "Unable to reach Alipay.",
-    "status": "ERROR",
-    "error": "Specific error message"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* XML Parse Error */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">14. XML Parse Error</p>
+                    <p className="text-lg font-semibold text-gray-700">10. Config Missing</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
-    "code": "XML_PARSE_ERROR",
-    "message": "Error parsing Alipay+response.",
-    "status": "ERROR",
-    "error": "Specific error message"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Alipay+ Invalid Response */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">15. Alipay+ Invalid Response</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
-                        code={`{
-    "code": "ALIPAY_INVALID_RESPONSE",
-    "message": "Invalid response from Alipay.",
+    "code": "CONFIG_MISSING",
+    "message": "Alipay Plus Client ID or endpoint not configured.",
     "status": "ERROR"
 }`}
                         bgColor="bg-red-50"
                     />
                 </div>
 
-                {/* Alipay+ Transaction Failed */}
+                {/* Signature Failed */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">16. Alipay+ Transaction Failed</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-lg font-semibold text-gray-700">11. Signature Failed</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
-    "code": "ALIPAY_TRANSACTION_FAILED",
-    "message": "Alipay+ did not accept the transaction.",
-    "status": "FAIL",
-    "error": "result_code_value"
+    "code": "SIGNATURE_FAILED",
+    "message": "Failed to generate Alipay+ signature.",
+    "status": "ERROR"
 }`}
                         bgColor="bg-red-50"
                     />
                 </div>
 
-                {/* Server Error */}
+                {/* Payment Failed */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">17. Server Error</p>
+                    <p className="text-lg font-semibold text-gray-700">12. Payment Failed</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <CodeBlock
                         code={`{
-    "code": "SERVER_ERROR",
-    "message": "Internal server error.",
+    "code": "PAYMENT_FAILED",
+    "message": "Error processing payment.",
     "status": "ERROR",
     "error": "Specific error message"
 }`}
@@ -550,4 +422,4 @@ function UserPresentPay() {
     )
 }
 
-export default UserPresentPay;
+export default PaymentLinkCreate;

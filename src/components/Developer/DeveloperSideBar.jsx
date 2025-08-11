@@ -176,6 +176,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                     <NavLink to="/docs/developer/acquirer_api/instore/instore_payment_inquiry" onClick={handleLinkClick}>Instore Payment Inquiry</NavLink>
                   </Menu.Item>
                 </SubMenu>
+                <SubMenu key="api-online" title={"Alipay+ Online APIs"} className="!text-gray-700">
+                  <Menu.Item key="payment-link-create">
+                    <NavLink to="/docs/developer/acquirer_api/online/payment_link_create" onClick={handleLinkClick}>Payment Link Create</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="payment-inquiry">
+                    <NavLink to="/docs/developer/acquirer_api/online/payment_inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
+                  </Menu.Item>
+                </SubMenu>
               </SubMenu>
 
           </Menu>
