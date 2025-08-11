@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Logo from '../../assets/images/sripayLogo.jpg';
 import { useTranslation } from 'react-i18next';
 
-export default function MerNav({ onMobileMenuClick }) {
+export default function DevNav({ onMobileMenuClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const { i18n, t } = useTranslation();

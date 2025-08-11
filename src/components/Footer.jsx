@@ -22,14 +22,6 @@ export default function Footer() {
                     {t('footer.visitSripay')}
                 </a>
                 <div className="mt-6">
-                    <nav className="flex flex-wrap justify-center text-base font-medium mb-2">
-                        <div className="px-5">
-                            <span>You can review the agreement here  </span>
-                            <a href="/docs/agreement" className="underline text-blue-500 hover:text-black transition-colors"
-                                target="_current"
-                                rel="noopener noreferrer">View</a>
-                        </div>
-                    </nav>
                     <nav className="flex flex-wrap justify-center text-base font-medium">
                         <div className="px-5">
                             <span>{t('footer.needHelp')} </span>

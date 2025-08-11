@@ -46,10 +46,30 @@ import Instore from './pages/merchant/transactions/Instore.jsx';
 import Online from './pages/merchant/transactions/online.jsx';
 import CartPayment from './pages/merchant/transactions/CartPayment.jsx';
  
+import Layout from './layouts/DeveloperLayout.jsx';
+import DevGettingStart from './pages/developer/GettingStart.jsx';
+import SystemIntroduction from './pages/developer/SystemIntro.jsx';
+import SystemArchitecture from './pages/developer/SystemArchitecture.jsx';
+import WebApplicationArchitecture from './pages/developer/WebApplicationArchitecture.jsx';
+import MobileApplicationArchitecture from './pages/developer/MobileApplicationArchitecture.jsx';
+import BackendArchitecture from './pages/developer/BackendArchitecture.jsx';
+import DatabaseArchitecture from './pages/developer/DatabaseArchitecture.jsx';
+import AuthenticationAndAuthorization from './pages/developer/AuthenticationAndAuthorization.jsx';
+import EncryptionAndSecurity from './pages/developer/EncryptionAndSecurity.jsx';
+import APISecurity from './pages/developer/APIsecurity.jsx';
+import DeploymentAndInfrastructure from './pages/developer/DeploymentAndInfrastructure.jsx';
+import ThirdPartyIntegration from './pages/developer/ThirdPartyIntegration.jsx';
+import ComplianceAndPrivacy from './pages/developer/ComplianceAndPrivacy.jsx';
+import MaintenanceAndSupport from './pages/developer/MaintenanceAndSupport.jsx';
+import AgreementType from './pages/AgreementType.jsx';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+        {/* Separate Agreement Routes to view in connect.sripay.lk */}
+        <Route path="/merchant_agreement" element={<Agreement />} />
 
         {/* Public Routes */}
         <Route element={<HomeLayout />}>
@@ -57,7 +77,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/docs/branding-guidelines" element={<BrandingGuidelines />} />
           <Route path="/docs/marketing-materials" element={<MarketingMaterials />} />
-          <Route path="/docs/agreement" element={<Agreement />} />
+          <Route path="/docs/agreement" element={<AgreementType />} />
         </Route>
 
         {/* Acquirer Docs Layout */}
@@ -98,6 +118,25 @@ function App() {
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
+        </Route>
+
+
+        {/* Developer Docs Layout */}
+        <Route path="/docs/developer" element={<Layout />}>
+          <Route path="gettingstart" element={<DevGettingStart />} />
+          <Route path="introduction" element={<SystemIntroduction />} />
+          <Route path="system_architecture" element={<SystemArchitecture />} />
+          <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
+          <Route path="mobile_application_architecture" element={<MobileApplicationArchitecture />} />
+          <Route path="backend_architecture" element={<BackendArchitecture />} />
+          <Route path="database_architecture" element={<DatabaseArchitecture />} />
+          <Route path="authentication_and_authorization" element={<AuthenticationAndAuthorization />} />
+          <Route path="encryption_and_security" element={<EncryptionAndSecurity />} />
+          <Route path="api_security" element={<APISecurity />} />
+          <Route path="deployment_and_infrastructure" element={<DeploymentAndInfrastructure />} />
+          <Route path="third_party_integration" element={<ThirdPartyIntegration />} />
+          <Route path="compliance_and_privacy" element={<ComplianceAndPrivacy />} />
+          <Route path="maintenance_and_support" element={<MaintenanceAndSupport />} />
         </Route>
 
 

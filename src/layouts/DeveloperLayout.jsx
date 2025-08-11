@@ -1,8 +1,8 @@
 
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../components/Merchant/MerchantNavBar";
-import Sidebar from "../components/Merchant/MerchantSideBar";
+import Header from "../components/Developer/DeveloperNavBar";
+import Sidebar from "../components/Developer/DeveloperSideBar";
 import Footer from "../components/Footer";
 import RightSideMenu from "../components/RightSideMenu";
 import PageFeedback from "../components/Feedback";
@@ -44,7 +44,7 @@ const Layout = () => {
           <main
             className={`flex-grow transition-all duration-300 ease-in-out ${isMobileSearchOpen ? "mt-28 nav:mt-16" : "mt-16"} ${collapsed ? "" : "md:ml-64"}`}
           >
-            <div className="flex flex-col md:flex-row  gap-10">
+            <div className="flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 gap-10">
               <div className="flex-1 min-w-0">
                 <Outlet />
               </div>
