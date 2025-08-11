@@ -36,12 +36,11 @@ function MerchantMultipleStore() {
 
     return (
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10">
-            {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
+          
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">Multiple Store Creation</h1>
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-700">Creation Workflow</h3>
-            <span className="text-base sm:text-lg md:text-xl text-gray-600">This feature allows Merchants to create multiple stores simultaneously using a predefined Excel template.</span>
+            <span className="text-base sm:text-base md:text-base text-gray-600">This feature allows Merchants to create multiple stores simultaneously using a predefined Excel template.</span>
 
-            {/* ---------- STEP 1 ---------- */}
             <div id="step1" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     Step 1: Navigate to Stores Tab
@@ -53,7 +52,7 @@ function MerchantMultipleStore() {
                 <img src={Img1} alt='Step 1: Navigate to Stores Tab' className="mx-auto my-6 block md:w-4/5" />
             </div>
 
-            {/* ---------- STEP 2 ---------- */}
+           
             <div id="step2" className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     Step 2: Select Multiple Store Option
@@ -69,7 +68,7 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- STEP 3 ------------------------------------------------ */}
+           
             <div id="step3" className="mt-8 mb-6">
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-5">Step 3: Understand the Upload Model</h3>
                 <img src={Img3} alt="Understand the Upload Model" className="mx-auto mb-8 my-6 block md:w-4/5" />
@@ -85,7 +84,7 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- STEP 4 ------------------------------------------------ */}
+       
             <div id="step4" className="mt-8 mb-6">
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-5">Step 4: Download & Fill the Sample Excel</h3>
                 <div className="ml-1 sm:ml-3 mt-7">
@@ -107,7 +106,6 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- STEP 5 ------------------------------------------------ */}
             <div id="step5" className="mt-8 mb-6">
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-5">Step 5: Upload and Validate the Excel File</h3>
                 <ul className="list-disc text-gray-700 ml-6 sm:ml-8 mt-4 text-sm">
@@ -142,7 +140,6 @@ function MerchantMultipleStore() {
                 <img src={Img4} alt="Validation UI" className="mx-auto mb-8 my-6 block md:w-4/5" />
             </div>
 
-            {/* ---------- STEP 6 ------------------------------------------------ */}
             <div id="step6" className="mt-8 mb-6">
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-5">Step 6: Upload Progress</h3>
                 <img src={Img5} alt="Upload Progress" className="mx-auto mb-8 my-6 block md:w-4/5" />
@@ -157,14 +154,14 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- Store Evaluation Procedure ---------- */}
+           
             <div id="step7" className='mt-10 mb-10'>
                 <h3 className='text-2xl sm:text-3xl font-bold text-gray-700 mb-5'>
                     Store Evaluation Procedure
                 </h3>
             </div>
 
-            {/* ---------- Acquirer Store Evaluation ---------- */}
+          
             <div className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     Acquirer Evaluation
@@ -174,7 +171,6 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- SriPay Evaluation ---------- */}
             <div className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     SriPay Evaluation
@@ -198,7 +194,6 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- Alipay Evaluation ---------- */}
             <div className='mt-8 mb-6'>
                 <h3 className='text-xl sm:text-2xl font-semibold text-gray-700 mb-5'>
                     Alipay Evaluation
@@ -215,7 +210,6 @@ function MerchantMultipleStore() {
                 </div>
             </div>
 
-            {/* ---------- TROUBLESHOOTING SECTION ---------- */}
             <div id="step8" className="mt-16">
                 <div className="bg-blue-50 border border-blue-200 rounded-xl px-6 py-8 shadow-sm">
                     <div className="flex items-center mb-6">

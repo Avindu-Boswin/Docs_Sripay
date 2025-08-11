@@ -14,7 +14,7 @@ const Layout = () => {
 
 
   const { sections } = useSections();
-
+//sm:px-8 md:px-12 lg:px-16 xl:px-20
   return (
     <div className="flex flex-col min-h-screen transition-all duration-300">
       {/* Top bar */}
@@ -45,7 +45,7 @@ const Layout = () => {
             className={`flex-grow transition-all duration-300 ease-in-out ${isMobileSearchOpen ? "mt-28 nav:mt-16" : "mt-16"
               } ${collapsed ? "" : "md:ml-64"}`}
           >
-            <div className="flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 gap-10">
+            <div className="flex flex-col md:flex-row px-4  py-10 gap-10">
               <div className="flex-1 min-w-0">
                 <Outlet />
               </div>
