@@ -30,20 +30,20 @@ const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
     );
 };
 
-function OrderCodeResultListner() {
+function UserPresentPayWaiting() {
     const { t } = useTranslation();
     const { setSections } = useSections();
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'Order Code Result Listner' },
+            { id: 'step-1', label: 'User Present Pay Waiting' },
             { id: 'step-2', label: 'Endpoint' },
             { id: 'step-3', label: 'Request Header' },
             { id: 'step-4', label: 'Request Parameters' },
             { id: 'step-5', label: 'Sample Request' },
             { id: 'step-6', label: 'Success Response' },
             { id: 'step-7', label: 'Error Responses' }
-            
+
         ]);
         return () => setSections([]);
         // eslint-disable-next-line
@@ -53,16 +53,15 @@ function OrderCodeResultListner() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Order Code Result Listener
+                User Present Pay Waiting
             </h1>
 
             <div className="flex flex-row items-start md:items-center gap-2 mb-8">
                 <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">GET</span>
-                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/ordercode-listener/:outTradeNo</span>
+                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/:partnerTransId</span>
             </div>
 
-            <p className='text-gray-700 text-base leading-relaxed mb-8'>
-This endpoint establishes a real-time connection using Server-Sent Events (SSE) to listen for updates on Alipay+ transactions identified by outTradeNo. It streams transaction status changes, converting timestamps from GMT+8 to Asia/Colombo (GMT+5:30).            </p>
+            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint retrieves the status of a user-presented Alipay transaction awaiting authentication, identified by partnerTransId. It allows rechecking to verify if user authentication has occurred, returning the latest transaction details.</p>
 
             {/* ---------- Endpoint ------------------------------------------------ */}
             <div className='mt-8 mb-6'>
@@ -71,9 +70,9 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/ordercode-listener/:outTradeNo</span></li>
+                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/:partnerTransId</span></li>
                     <li><span className='font-semibold'>Method</span> – <span className='font-bold text-green-500'>GET</span></li>
-                    <li><span className='font-semibold'>Description</span> – Provides real-time updates on the transaction status for a specific outTradeNo using SSE.</li>
+                    <li><span className='font-semibold'>Description</span> – Fetches the transaction status for a given partnerTransId, useful for rechecking after user authentication, tailored for acquirer integrations.</li>
                 </ul>
 
             </div>
@@ -109,10 +108,11 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
                         dataSource={[
                             {
                                 key: '1',
-                                parameter: <span className='font-mono'>outTradeNo</span>,
+                                parameter: <span className='font-mono'>partnerTransId</span>,
                                 type: 'string',
                                 required: 'Yes',
-                                description: 'Unique identifier of the Alipay+ transaction..'                            }
+                                description: 'Unique identifier of the partner transaction.'
+                            }
                         ]}
                         columns={[
                             {
@@ -143,27 +143,25 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
                 </div>
 
                 <p id='' className='text-md mb-4 mt-10 font-bold text-gray-700'>
-                    Request Parameters Validation
+                    Request Body Validation
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>outTradeNo: </span> Required, must be a non-empty string.</li>
+                    <li><span className='font-semibold'>partnerTransId: </span> Required, must be a non-empty string.</li>
+                    <li><span className='font-semibold'>acquirerId:</span> Required, provided in headers as acquirerid or x-acq-id.</li>
                 </ul>
             </div>
-
 
             {/* ---------- Sample Request --------------------------------------- */}
             <div id='step-5' className="mt-12 mb-8">
                 <p className="text-xl mb-4 font-semibold text-gray-700">Sample Request</p>
-                <ul>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/ordercode-listener/abc1234567890</span></li>
-                </ul>
+                <p><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/202508051418001234</span></p>
 
                 <p className="font-semibold mb-2">Headers</p>
                 <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
                     <div>acquirerid: acquirer_98765</div>
                     <div>Authorization: Bearer abc123xyz789</div>
-                    <div>AuthKey: key_456def789</div>
+                    <div>Auth-Key: key_456def789</div>
                     <div>Content-Type: application/json</div>
                 </div>
             </div>
@@ -174,28 +172,33 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
 
                 <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
                     <li><span className="font-semibold">Status Code</span>: <span className='text-green-600 font-bold'>200 OK</span></li>
-                    <li><span className="font-semibold">Content Type</span>: text/event-stream</li>
-                    <li><span className="font-semibold">Response Body</span>:  Streams events in SSE format.</li>
+                    <li><span className="font-semibold">Content Type</span>: application/json</li>
                 </ul>
 
-                <p> Example (as of 01:37 PM +0530, Tuesday, August 05, 2025):<br />event: update</p>
+                <p><span className="font-semibold">Response Body</span> (as of 02:18 PM +0530, Tuesday, August 05, 2025)</p>
 
-                <CodeBlock 
-                    code={`data: [{"id":"tx123456","trade_status":"SUCCESS","timestamp":"2025-08-05 13:07:00"}]
+                <CodeBlock
+                    code={`{
+    "code": "TRANSACTION_FOUND",
+    "message": "Transaction retrieved successfully.",
+    "status": "SUCCESS",
+    "transactions": [
+        {
+            "transactionId": "tx123456",
+            "timestamp": "2025-08-05 14:10:00",
+            "currency": "USD",
+            "amount": "50.00",
+            "outletName": "Outlet XYZ",
+            "outletId": "outlet_12345",
+            "transactionStatus": "SUCCESS",
+            "paymentMethod": "Alipay+"
+        }
+    ]
+}
 `}
                     bgColor="bg-green-50"
                 />
-
-                <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
-                    <li><span className="font-semibold">event</span>: update - Indicates a transaction update.</li>
-                    <li><span className="font-semibold">data</span>:  JSON array containing transaction details (id, trade_status, timestamp).</li>
-                </ul>
             </div>
-
-
-
-
-
 
             {/* ---------- Error Response --------------------------------------- */}
             <div id='step-7' className="mt-12 mb-8">
@@ -204,34 +207,54 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
                     Below are the possible error responses, including their status codes, error codes, and messages:
                 </p>
 
-                {/* Firestore Listener Error */}
+                {/* Missing Parameters */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Firestore Listener Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-green-600 font-bold">200 OK (with error event)</span></p>
-                    <p className="text-gray-700 mb-2 font-semibold">Response Body:</p>
-                    <p>event: error</p>
-
+                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
                     <CodeBlock 
-                        code={`data: {"code":"FIRESTORE_ERROR","message":"Error listening to transaction changes.","status":"ERROR"}`}
+                        code={`{
+    "code": "MISSING_PARAMS",
+    "message": "partnerTransId and acquirerId are required.",
+    "status": "FAIL"
+}`}
                         bgColor="bg-red-50"
                     />
                 </div>
 
-                {/* Unexpected Server Error */}
+                {/* Transaction Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">2. Unexpected Server Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-green-600 font-bold">200 OK (with error event)</span></p>
-                    <p className="text-gray-700 mb-2 font-semibold">Response Body:</p>
-                    <p>event: error</p>
-
+                    <p className="text-lg font-semibold text-gray-700">2. Transaction Not Found</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
                     <CodeBlock 
-                        code={`data: {"code":"UNEXPECTED_ERROR","message":"Unexpected server error.","status":"ERROR"}`}
+                        code={`{
+    "code": "TRANSACTION_NOT_FOUND",
+    "message": "No transaction found for the given partnerTransId and merchantId.",
+    "status": "FAIL"
+}`}
                         bgColor="bg-red-50"
                     />
                 </div>
-           </div>
+
+                {/* Server Error */}
+                <div className="mb-6">
+                    <p className="text-lg font-semibold text-gray-700">3. Server Error</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
+                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <CodeBlock 
+                        code={`{
+    "code": "SERVER_ERROR",
+    "message": "An error occurred while retrieving transaction details.",
+    "status": "ERROR",
+    "error": "Specific error message"
+}`}
+                        bgColor="bg-red-50"
+                    />
+                </div>
+            </div>
         </div>
     )
 }
 
-export default OrderCodeResultListner;
+export default UserPresentPayWaiting;

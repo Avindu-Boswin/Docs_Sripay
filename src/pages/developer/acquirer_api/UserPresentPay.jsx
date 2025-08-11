@@ -37,6 +37,12 @@ function UserPresentPay() {
     useEffect(() => {
         setSections([
             { id: 'step-1', label: 'Order Code Pay QR' },
+            { id: 'step-2', label: 'Endpoint' },
+            { id: 'step-3', label: 'Request Header' },
+            { id: 'step-4', label: 'Request Body' },
+            { id: 'step-5', label: 'Sample Request' },
+            { id: 'step-6', label: 'Success Response' },
+            { id: 'step-7', label: 'Error Responses' }
 
         ]);
         return () => setSections([]);

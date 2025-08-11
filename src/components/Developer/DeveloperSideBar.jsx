@@ -169,6 +169,9 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                   <Menu.Item key="user-present-pay">
                     <NavLink to="/docs/developer/acquirer_api/instore/user_present_pay" onClick={handleLinkClick}>User Present Pay</NavLink>
                   </Menu.Item>
+                  <Menu.Item key="user-present-pay-waiting">
+                    <NavLink to="/docs/developer/acquirer_api/instore/user_present_pay_waiting" onClick={handleLinkClick}>User Present Pay Waiting</NavLink>
+                  </Menu.Item>
                 </SubMenu>
               </SubMenu>
 
