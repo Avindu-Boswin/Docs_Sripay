@@ -30,7 +30,7 @@ const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
     );
 };
 
-function UserPresentPayWaiting() {
+function InstorePaymentInquiry() {
     const { t } = useTranslation();
     const { setSections } = useSections();
 
@@ -53,15 +53,15 @@ function UserPresentPayWaiting() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                User Present Pay Waiting
+                Instore Payment Inquiry
             </h1>
 
             <div className="flex flex-row items-start md:items-center gap-2 mb-8">
                 <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">GET</span>
-                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/:partnerTransId</span>
+                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/pay-info/:transactionId</span>
             </div>
 
-            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint retrieves the status of a user-presented Alipay transaction awaiting authentication, identified by partnerTransId. It allows rechecking to verify if user authentication has occurred, returning the latest transaction details.</p>
+            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint retrieves detailed information about transactions and refunds associated with a specific transactionId (trade_no) for a given acquirer, sorting results by timestamp in descending order.</p>
 
             {/* ---------- Endpoint ------------------------------------------------ */}
             <div className='mt-8 mb-6'>
@@ -70,9 +70,8 @@ function UserPresentPayWaiting() {
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/:partnerTransId</span></li>
+                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/pay-info/:transactionId</span></li>
                     <li><span className='font-semibold'>Method</span> – <span className='font-bold text-green-500'>GET</span></li>
-                    <li><span className='font-semibold'>Description</span> – Fetches the transaction status for a given partnerTransId, useful for rechecking after user authentication, tailored for acquirer integrations.</li>
                 </ul>
 
             </div>
@@ -108,10 +107,10 @@ function UserPresentPayWaiting() {
                         dataSource={[
                             {
                                 key: '1',
-                                parameter: <span className='font-mono'>partnerTransId</span>,
+                                parameter: <span className='font-mono'>transactionId</span>,
                                 type: 'string',
                                 required: 'Yes',
-                                description: 'Unique identifier of the partner transaction.'
+                                description: 'Unique identifier of the transaction (trade_no).'
                             }
                         ]}
                         columns={[
@@ -147,15 +146,14 @@ function UserPresentPayWaiting() {
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>partnerTransId: </span> Required, must be a non-empty string.</li>
-                    <li><span className='font-semibold'>acquirerId:</span> Required, provided in headers as acquirerid or x-acq-id.</li>
+                    <li><span className='font-semibold'>transactionId: </span> Required, must be a non-empty string.</li>
                 </ul>
             </div>
 
             {/* ---------- Sample Request --------------------------------------- */}
             <div id='step-5' className="mt-12 mb-8">
                 <p className="text-xl mb-4 font-semibold text-gray-700">Sample Request</p>
-                <p><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/202508051418001234</span></p>
+                <p><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/pay-info/ALIPAY_TX_123456</span></p>
 
                 <p className="font-semibold mb-2">Headers</p>
                 <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
@@ -175,25 +173,41 @@ function UserPresentPayWaiting() {
                     <li><span className="font-semibold">Content Type</span>: application/json</li>
                 </ul>
 
-                <p><span className="font-semibold">Response Body</span> (as of 02:18 PM +0530, Tuesday, August 05, 2025)</p>
+                <p><span className="font-semibold">Response Body</span></p>
 
                 <CodeBlock
                     code={`{
     "code": "TRANSACTION_FOUND",
-    "message": "Transaction retrieved successfully.",
+    "message": "Transaction record(s) retrieved successfully.",
     "status": "SUCCESS",
-    "transactions": [
-        {
-            "transactionId": "tx123456",
-            "timestamp": "2025-08-05 14:10:00",
-            "currency": "USD",
-            "amount": "50.00",
-            "outletName": "Outlet XYZ",
-            "outletId": "outlet_12345",
-            "transactionStatus": "SUCCESS",
-            "paymentMethod": "Alipay+"
-        }
-    ]
+    "data": {
+        "transactions": [
+            {
+                "transactionId": "tx123456",
+                "timestamp": "2025-08-05 14:20:00",
+                "currency": "USD",
+                "amount": "50.00",
+                "outletName": "Outlet XYZ",
+                "outletId": "outlet_12345",
+                "subject": "Purchase at Outlet XYZ",
+                "transactionStatus": "SUCCESS",
+                "settlementStatus": true,
+                "paymentMethod": "Alipay+"
+            },
+            {
+                "transactionId": "refund123",
+                "timestamp": "2025-08-05 14:15:00",
+                "currency": "USD",
+                "amount": "25.00",
+                "outletName": "Outlet XYZ",
+                "outletId": "outlet_12345",
+                "subject": "Partial Refund",
+                "transactionStatus": "REFUNDED",
+                "settlementStatus": false,
+                "paymentMethod": "Alipay+"
+            }
+        ]
+    }
 }
 `}
                     bgColor="bg-green-50"
@@ -207,15 +221,15 @@ function UserPresentPayWaiting() {
                     Below are the possible error responses, including their status codes, error codes, and messages:
                 </p>
 
-                {/* Missing Parameters */}
+                {/* Missing Transaction ID */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
+                    <p className="text-lg font-semibold text-gray-700">1. Missing Transaction ID</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
                     <p className="text-gray-700 mb-2">Response Body:</p>
                     <CodeBlock 
                         code={`{
-    "code": "MISSING_PARAMS",
-    "message": "partnerTransId and acquirerId are required.",
+    "code": "MISSING_TRANSACTION_ID",
+    "message": "transactionId (trade_no) is required.",
     "status": "FAIL"
 }`}
                         bgColor="bg-red-50"
@@ -230,7 +244,7 @@ function UserPresentPayWaiting() {
                     <CodeBlock 
                         code={`{
     "code": "TRANSACTION_NOT_FOUND",
-    "message": "No transaction found for the given partnerTransId and merchantId.",
+    "message": "No transaction or refund record found for the given trade number.",
     "status": "FAIL"
 }`}
                         bgColor="bg-red-50"
@@ -257,4 +271,4 @@ function UserPresentPayWaiting() {
     )
 }
 
-export default UserPresentPayWaiting;
+export default InstorePaymentInquiry;
