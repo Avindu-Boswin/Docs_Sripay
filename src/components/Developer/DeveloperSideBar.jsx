@@ -166,6 +166,9 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                   <Menu.Item key="order-code-result-listener">
                     <NavLink to="/docs/developer/acquirer_api/instore/order_code_result_listener" onClick={handleLinkClick}>Order Code Result Listener</NavLink>
                   </Menu.Item>
+                  <Menu.Item key="user-present-pay">
+                    <NavLink to="/docs/developer/acquirer_api/instore/user_present_pay" onClick={handleLinkClick}>User Present Pay</NavLink>
+                  </Menu.Item>
                 </SubMenu>
               </SubMenu>
 

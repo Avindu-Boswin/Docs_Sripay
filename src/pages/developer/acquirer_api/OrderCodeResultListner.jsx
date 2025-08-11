@@ -213,7 +213,7 @@ This endpoint establishes a real-time connection using Server-Sent Events (SSE) 
 
                 {/* Unexpected Server Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">Unexpected Server Error</p>
+                    <p className="text-lg font-semibold text-gray-700">2. Unexpected Server Error</p>
                     <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-green-600 font-bold">200 OK (with error event)</span></p>
                     <p className="text-gray-700 mb-2 font-semibold">Response Body:</p>
                     <p>event: error</p>

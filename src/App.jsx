@@ -66,6 +66,7 @@ import AcqApiOverview from './pages/developer/acquirer_api/Overview.jsx';
 import AcqEndpoints from './pages/developer/acquirer_api/Endpoints.jsx';
 import OrderCodePayQr from './pages/developer/acquirer_api/OrderCodePayQr.jsx';
 import OrderCodeResultListner from './pages/developer/acquirer_api/OrderCodeResultListner.jsx';
+import UserPresentPay from './pages/developer/acquirer_api/UserPresentPay.jsx';
 
 function App() {
   return (
@@ -147,6 +148,7 @@ function App() {
           <Route path="acquirer_api/endpoints" element={<AcqEndpoints />} />
           <Route path="acquirer_api/instore/order_code_pay_qr" element={<OrderCodePayQr />} />
           <Route path="acquirer_api/instore/order_code_result_listener" element={<OrderCodeResultListner />} />
+          <Route path="acquirer_api/instore/user_present_pay" element={<UserPresentPay />} />
         </Route>
 
 
