@@ -44,6 +44,7 @@ import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
 import Online from './pages/merchant/transactions/online.jsx';
+import CartPayment from './pages/merchant/transactions/CartPayment.jsx';
  
 import Layout from './layouts/DeveloperLayout.jsx';
 import DevGettingStart from './pages/developer/GettingStart.jsx';
@@ -117,6 +118,7 @@ function App() {
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
           <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
           <Route path="merchant-transaction/alipay_online" element={<Online />} />
+          <Route path="merchant-transaction/card_payments" element={<CartPayment />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>
