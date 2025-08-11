@@ -61,6 +61,10 @@ import ThirdPartyIntegration from './pages/developer/ThirdPartyIntegration.jsx';
 import ComplianceAndPrivacy from './pages/developer/ComplianceAndPrivacy.jsx';
 import MaintenanceAndSupport from './pages/developer/MaintenanceAndSupport.jsx';
 import AgreementType from './pages/AgreementType.jsx';
+import AcqApiOverview from './pages/developer/acquirer_api/Overview.jsx';
+import AcqEndpoints from './pages/developer/acquirer_api/Endpoints.jsx';
+import OrderCodePayQr from './pages/developer/acquirer_api/OrderCodePayQr.jsx';
+import OrderCodeResultListner from './pages/developer/acquirer_api/OrderCodeResultListner.jsx';
 
 function App() {
   return (
@@ -122,6 +126,7 @@ function App() {
         {/* Developer Docs Layout */}
         <Route path="/docs/developer" element={<Layout />}>
           <Route path="gettingstart" element={<DevGettingStart />} />
+          {/* System Overview */}
           <Route path="introduction" element={<SystemIntroduction />} />
           <Route path="system_architecture" element={<SystemArchitecture />} />
           <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
@@ -135,6 +140,11 @@ function App() {
           <Route path="third_party_integration" element={<ThirdPartyIntegration />} />
           <Route path="compliance_and_privacy" element={<ComplianceAndPrivacy />} />
           <Route path="maintenance_and_support" element={<MaintenanceAndSupport />} />
+          {/* Acquirer APIs */}
+          <Route path="acquirer_api/overview" element={<AcqApiOverview />} />
+          <Route path="acquirer_api/endpoints" element={<AcqEndpoints />} />
+          <Route path="acquirer_api/instore/order_code_pay_qr" element={<OrderCodePayQr />} />
+          <Route path="acquirer_api/instore/order_code_result_listener" element={<OrderCodeResultListner />} />
         </Route>
 
 

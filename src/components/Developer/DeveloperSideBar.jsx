@@ -65,6 +65,36 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
       )}
       {!collapsed && (
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
+          <style>
+            {`
+              /* Allow menu text to wrap to multiple lines instead of truncating with ellipsis */
+              .ant-menu-item .ant-menu-title-content {
+                white-space: normal !important;
+                word-break: break-word !important;
+                line-height: 1.3 !important;
+              }
+              
+              /* Fix submenu item text wrapping */
+              .ant-menu-submenu .ant-menu-title-content {
+                white-space: normal !important;
+                word-break: break-word !important;
+              }
+
+              /* Adjust item height and padding for wrapped text */
+              .ant-menu-item {
+                height: auto !important;
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+                line-height: 1.3 !important;
+              }
+
+              /* Make sure links fill the entire item space */
+              .ant-menu-item a {
+                display: inline-block !important;
+                line-height: 1.3 !important;
+              }
+            `}
+          </style>
           <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
               <NavLink to="/" onClick={handleLinkClick}>Back To Home</NavLink>
@@ -121,6 +151,24 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                   <NavLink to="/docs/developer/maintenance_and_support" onClick={handleLinkClick}>Maintenance & Support</NavLink>
                 </Menu.Item>
               </SubMenu>
+
+              <SubMenu key="api-acquirer" title={"Acquirer APIs"} className="!text-gray-700">
+                <Menu.Item key="overview">
+                  <NavLink to="/docs/developer/acquirer_api/overview" onClick={handleLinkClick}>Overview</NavLink>
+                </Menu.Item>
+                <Menu.Item key="endpoints">
+                  <NavLink to="/docs/developer/acquirer_api/endpoints" onClick={handleLinkClick}>Endpoints</NavLink>
+                </Menu.Item>
+                <SubMenu key="api-instore" title={"Alipay+ Instore APIs"} className="!text-gray-700">
+                  <Menu.Item key="order-code-pay-qr">
+                    <NavLink to="/docs/developer/acquirer_api/instore/order_code_pay_qr" onClick={handleLinkClick}>Order Code Pay QR</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="order-code-result-listener">
+                    <NavLink to="/docs/developer/acquirer_api/instore/order_code_result_listener" onClick={handleLinkClick}>Order Code Result Listener</NavLink>
+                  </Menu.Item>
+                </SubMenu>
+              </SubMenu>
+
           </Menu>
 
         </div>
