@@ -13,12 +13,12 @@ export default function FlowbiteNavbar() {
   };
 
   return (
-    <nav className="bg-white border-b sticky top-0 z-50">
+    <nav className=" pt-6 px-8 sticky z-50">
       <div className="flex flex-wrap items-center justify-between p-4 w-full">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse md:order-1">
           <img src={Logo} className="h-7 md:h-8" alt="Sripay Logo" />
-          <span className="self-center text-xl md:text-3xl  whitespace-nowrap">
+          <span className="self-center text-xl md:text-3xl whitespace-nowrap">
             {t('docs')}
           </span>
         </a>
@@ -29,7 +29,7 @@ export default function FlowbiteNavbar() {
           <div className="relative group">
             <button
               type="button"
-              className="flex items-center px-3 py-2 text-sm font-semibold border border-gray-300 rounded-lg bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+              className="flex items-center px-3 py-2 text-sm font-semibold border border-gray-300 rounded-lg bg-white/20 backdrop-blur-md hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
               aria-haspopup="listbox"
               aria-expanded="false"
             >
@@ -38,14 +38,26 @@ export default function FlowbiteNavbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            {/* Dropdown menu (hidden by default, shown on hover/focus) */}
+            {/* Dropdown menu */}
             <div className="absolute left-0 z-10 mt-2 w-16 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity">
               <ul className="py-1 text-sm text-gray-700" role="listbox">
                 <li>
-                  <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => i18n.changeLanguage('en')}>EN</button>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-gray-100"
+                    role="option"
+                    onClick={() => i18n.changeLanguage('en')}
+                  >
+                    EN
+                  </button>
                 </li>
                 <li>
-                  <button className="w-full text-left px-4 py-2 hover:bg-gray-100" role="option" onClick={() => i18n.changeLanguage('zh')}>中文</button>
+                  <button
+                    className="w-full text-left px-4 py-2 hover:bg-gray-100"
+                    role="option"
+                    onClick={() => i18n.changeLanguage('zh')}
+                  >
+                    中文
+                  </button>
                 </li>
               </ul>
             </div>
