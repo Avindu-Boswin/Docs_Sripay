@@ -80,6 +80,7 @@ import MerchantUserPresentPayWaiting from './pages/developer/merchant_api/UserPr
 import MerchantVoidTransaction from './pages/developer/merchant_api/VoidTransactions.jsx';
 import MerchantInstorePaymentInquiry from './pages/developer/merchant_api/InstorePaymentInquiry.jsx';
 import MerchantInstoreNotSettledLatest from './pages/developer/merchant_api/InstoreNotSettledLatest.jsx';
+import VoidTransaction from './pages/developer/acquirer_api/VoidTransactions.jsx';
 
 function App() {
   return (
@@ -163,6 +164,7 @@ function App() {
           <Route path="acquirer_api/instore/order_code_result_listener" element={<OrderCodeResultListner />} />
           <Route path="acquirer_api/instore/user_present_pay" element={<UserPresentPay />} />
           <Route path="acquirer_api/instore/user_present_pay_waiting" element={<UserPresentPayWaiting />} />
+          <Route path="acquirer_api/instore/void_transaction" element={<VoidTransaction />} />
           <Route path="acquirer_api/instore/instore_payment_inquiry" element={<InstorePaymentInquiry />} />
           <Route path="acquirer_api/online/payment_link_create" element={<PaymentLinkCreate />} />
           <Route path="acquirer_api/online/payment_inquiry" element={<OnlinePaymentInquiry />} />
