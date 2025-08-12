@@ -219,6 +219,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                     <NavLink to="/docs/developer/merchant_api/instore/not_settled_latest_transactions" onClick={handleLinkClick}>Instore Not Settled Latest Transactions</NavLink>
                   </Menu.Item>
                 </SubMenu>
+                <SubMenu key="webframe-mer" title={"Web Frame Online"} className="!text-gray-700">
+                  <Menu.Item key="overview-webframe-mer">
+                    <NavLink to="/docs/developer/merchant_api/online_webframe/overview" onClick={handleLinkClick}>Overview</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="payment-request-webframe-mer">
+                    <NavLink to="/docs/developer/merchant_api/online_webframe/payment_request" onClick={handleLinkClick}>Payment Request</NavLink>
+                  </Menu.Item>
+                </SubMenu>
                 <SubMenu key="api-online-mer" title={"Alipay+ Online APIs"} className="!text-gray-700">
                 </SubMenu>
               </SubMenu>

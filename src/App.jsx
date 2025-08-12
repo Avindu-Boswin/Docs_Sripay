@@ -81,6 +81,8 @@ import MerchantVoidTransaction from './pages/developer/merchant_api/VoidTransact
 import MerchantInstorePaymentInquiry from './pages/developer/merchant_api/InstorePaymentInquiry.jsx';
 import MerchantInstoreNotSettledLatest from './pages/developer/merchant_api/InstoreNotSettledLatest.jsx';
 import VoidTransaction from './pages/developer/acquirer_api/VoidTransactions.jsx';
+import WebFrameOverview from './pages/developer/merchant_api/WebFrameOverview.jsx';
+import PaymentRequest from './pages/developer/merchant_api/PaymentRequest.jsx';
 
 function App() {
   return (
@@ -178,6 +180,8 @@ function App() {
           <Route path="merchant_api/instore/void_transaction" element={<MerchantVoidTransaction />} />
           <Route path="merchant_api/instore/instore_payment_inquiry" element={<MerchantInstorePaymentInquiry />} />
           <Route path="merchant_api/instore/not_settled_latest_transactions" element={<MerchantInstoreNotSettledLatest />} />
+          <Route path="merchant_api/online_webframe/overview" element={<WebFrameOverview />} />
+          <Route path="merchant_api/online_webframe/payment_request" element={<PaymentRequest />} />
         </Route>
 
 
