@@ -87,13 +87,13 @@ function MerchantApiOverview() {
 
         <p className='font-semibold mb-2'>Example</p>
         <ul className='list-disc pl-6 mb-4 text-gray-800'>
-          <li><span className='font-semibold'>Host:</span> <span className='text-[#0073ff]'>https://open-sea.sripayplus.com/secure/merchant</span></li>
+          <li><span className='font-semibold'>Host:</span> <span className='text-[#0073ff]'>https://example.com/secure/merchant</span></li>
           <li><span className='font-semibold'>Endpoint:</span> <span className='text-[#0073ff]'>/v2/alipayplus/instore/pay</span></li>
         </ul>
 
         <p className='font-semibold mb-1'>Complete Request URL</p>
         <p className='text-[#0073ff] break-all mb-4'>
-          https://open-sea.sripayplus.com/secure/merchant/v2/alipayplus/instore/pay
+          https://example.com/secure/merchant/v2/alipayplus/instore/pay
         </p>
 
         {/* 2. Request Method Section */}
@@ -167,9 +167,9 @@ function MerchantApiOverview() {
         <p className='font-semibold mb-2'>Steps to retrieve your keys:</p>
         <ol className='list-decimal pl-6 mb-6 text-gray-800'>
           <li>Go to your profile.</li>
-          <li>Scroll to the bottom.</li>
+          <li>Click API Management.</li>
           <li>Verify using your password.</li>
-          <li>Retrieve your keys.</li>
+          <li> Retrieve your keys.</li>
         </ol>
 
         {/* 4. Response Body */}

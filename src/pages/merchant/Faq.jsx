@@ -13,14 +13,14 @@ function Faq() {
             Frequently Asked Questions
           </h1>
     
-          <div className='w-full flex flex-col lg:flex-row justify-between items-center gap-10 mt-10'>
+          <div className='w-full flex flex-col justify-between items-center gap-10 mt-10'>
             {/* Left Image */}
             <div className='w-full lg:w-1/2 flex justify-center'>
               <img src={QuestionImage} alt='FAQ Illustration' className='w-full max-w-[500px] h-auto' />
             </div>
     
             {/* Right FAQ Content */}
-            <div className='w-full lg:w-1/2 p-5 sm:p-8 md:p-10 bg-blue-50 rounded-[3rem]'>
+            <div className='w-full p-5 sm:p-8 md:p-10 bg-blue-50 rounded-[3rem]'>
               <div className='space-y-6 text-sm sm:text-base'>
                 <div>
                   <span className='font-semibold text-gray-800 text-base sm:text-lg'>
