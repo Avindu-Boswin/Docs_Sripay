@@ -71,6 +71,15 @@ import UserPresentPayWaiting from './pages/developer/acquirer_api/UserPresentPay
 import InstorePaymentInquiry from './pages/developer/acquirer_api/InstorePaymentInquiry.jsx';
 import PaymentLinkCreate from './pages/developer/acquirer_api/PaymentLinkCreate.jsx';
 import OnlinePaymentInquiry from './pages/developer/acquirer_api/OnlinePaymentInquiry.jsx';
+import MerchantApiOverview from './pages/developer/merchant_api/Overview.jsx';
+import MerchantEndpoints from './pages/developer/merchant_api/Endpoints.jsx';
+import MerchantOrderCodePayQr from './pages/developer/merchant_api/OrderCodePayQr.jsx';
+import MerchantOrderCodeResultListner from './pages/developer/merchant_api/OrderCodeResultListner.jsx';
+import MerchantUserPresentPay from './pages/developer/merchant_api/UserPresentPay.jsx';
+import MerchantUserPresentPayWaiting from './pages/developer/merchant_api/UserPresentPayWaiting.jsx';
+import MerchantVoidTransaction from './pages/developer/merchant_api/VoidTransactions.jsx';
+import MerchantInstorePaymentInquiry from './pages/developer/merchant_api/InstorePaymentInquiry.jsx';
+import MerchantInstoreNotSettledLatest from './pages/developer/merchant_api/InstoreNotSettledLatest.jsx';
 
 function App() {
   return (
@@ -157,6 +166,16 @@ function App() {
           <Route path="acquirer_api/instore/instore_payment_inquiry" element={<InstorePaymentInquiry />} />
           <Route path="acquirer_api/online/payment_link_create" element={<PaymentLinkCreate />} />
           <Route path="acquirer_api/online/payment_inquiry" element={<OnlinePaymentInquiry />} />
+          { /* Merchant APIs */}
+          <Route path="merchant_api/overview" element={<MerchantApiOverview />} />
+          <Route path="merchant_api/endpoints" element={<MerchantEndpoints />} />
+          <Route path="merchant_api/instore/order_code_pay_qr" element={<MerchantOrderCodePayQr />} />
+          <Route path="merchant_api/instore/order_code_result_listener" element={<MerchantOrderCodeResultListner />} />
+          <Route path="merchant_api/instore/user_present_pay" element={<MerchantUserPresentPay />} />
+          <Route path="merchant_api/instore/user_present_pay_waiting" element={<MerchantUserPresentPayWaiting />} />
+          <Route path="merchant_api/instore/void_transaction" element={<MerchantVoidTransaction />} />
+          <Route path="merchant_api/instore/instore_payment_inquiry" element={<MerchantInstorePaymentInquiry />} />
+          <Route path="merchant_api/instore/not_settled_latest_transactions" element={<MerchantInstoreNotSettledLatest />} />
         </Route>
 
 

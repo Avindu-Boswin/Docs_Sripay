@@ -186,6 +186,40 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                 </SubMenu>
               </SubMenu>
 
+              <SubMenu key="api-merchant" title={"Merchant APIs"} className="!text-gray-700">
+                <Menu.Item key="overview-mer">
+                  <NavLink to="/docs/developer/merchant_api/overview" onClick={handleLinkClick}>Overview</NavLink>
+                </Menu.Item>
+                <Menu.Item key="endpoints-mer">
+                  <NavLink to="/docs/developer/merchant_api/endpoints" onClick={handleLinkClick}>Endpoints</NavLink>
+                </Menu.Item>
+                <SubMenu key="api-instore-mer" title={"Alipay+ Instore APIs"} className="!text-gray-700">
+                  <Menu.Item key="order-code-pay-qr-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/order_code_pay_qr" onClick={handleLinkClick}>Order Code Pay QR</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="order-code-result-listener-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/order_code_result_listener" onClick={handleLinkClick}>Order Code Result Listener</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="user-present-pay-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/user_present_pay" onClick={handleLinkClick}>User Present Pay</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="user-present-pay-waiting-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/user_present_pay_waiting" onClick={handleLinkClick}>User Present Pay Waiting</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="void-transaction-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/void_transaction" onClick={handleLinkClick}>Void Transaction</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="instore-payment-inquiry-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/instore_payment_inquiry" onClick={handleLinkClick}>Instore Payment Inquiry</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="instore-not-settled-latest-merchant">
+                    <NavLink to="/docs/developer/merchant_api/instore/not_settled_latest_transactions" onClick={handleLinkClick}>Instore Not Settled Latest Transactions</NavLink>
+                  </Menu.Item>
+                </SubMenu>
+                <SubMenu key="api-online-mer" title={"Alipay+ Online APIs"} className="!text-gray-700">
+                </SubMenu>
+              </SubMenu>
+
           </Menu>
 
         </div>
