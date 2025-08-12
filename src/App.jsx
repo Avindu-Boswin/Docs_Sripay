@@ -85,6 +85,9 @@ import WebFrameOverview from './pages/developer/merchant_api/WebFrameOverview.js
 import PaymentRequest from './pages/developer/merchant_api/PaymentRequest.jsx';
 import MerchantPaymentLinkCreate from './pages/developer/merchant_api/PaymentLinkCreate.jsx';
 import MerchantOnlinePaymentInquiry from './pages/developer/merchant_api/OnlinePaymentInquiry.jsx';
+import CardPaymentOverview from './pages/developer/merchant_api/CardPaymentOverview.jsx';
+import MerchantPaymentLinkCreateCard from './pages/developer/merchant_api/PaymentLinkCreateCard.jsx';
+import CardPaymentInquiry from './pages/developer/merchant_api/CardPaymentInquiry.jsx';
 
 function App() {
   return (
@@ -186,6 +189,9 @@ function App() {
           <Route path="merchant_api/online_webframe/payment_request" element={<PaymentRequest />} />
           <Route path="merchant_api/online/payment_link_create" element={<MerchantPaymentLinkCreate />} />
           <Route path="merchant_api/online/payment_inquiry" element={<MerchantOnlinePaymentInquiry />} />
+          <Route path="merchant_api/card_payments/overview" element={<CardPaymentOverview />} />
+          <Route path="merchant_api/card_payments/payment_link_create" element={<MerchantPaymentLinkCreateCard />} />
+          <Route path="merchant_api/card_payments/payment_inquiry" element={<CardPaymentInquiry />} />
         </Route>
 
 

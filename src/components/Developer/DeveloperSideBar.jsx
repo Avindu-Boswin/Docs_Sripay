@@ -235,6 +235,17 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                     <NavLink to="/docs/developer/merchant_api/online/payment_inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
                   </Menu.Item>
                 </SubMenu>
+                <SubMenu key="api-card-mer" title={"Card Payments APIs"} className="!text-gray-700">
+                  <Menu.Item key="overview-card-mer">
+                    <NavLink to="/docs/developer/merchant_api/card_payments/overview" onClick={handleLinkClick}>Overview</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="card-payment-link-create-mer">
+                    <NavLink to="/docs/developer/merchant_api/card_payments/payment_link_create" onClick={handleLinkClick}>Payment Link Create</NavLink>
+                  </Menu.Item>
+                  <Menu.Item key="card-payment-inquiry-mer">
+                    <NavLink to="/docs/developer/merchant_api/card_payments/payment_inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
+                  </Menu.Item>
+                </SubMenu>
               </SubMenu>
 
           </Menu>
