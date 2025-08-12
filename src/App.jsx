@@ -43,9 +43,14 @@ import BrandingGuidelines from './pages/BrandingGuidelines.jsx';
 import MarketingMaterials from './pages/MarketingMaterials.jsx';
 import Agreement from './pages/Agreement.jsx';
 import Instore from './pages/merchant/transactions/Instore.jsx';
-import Online from './pages/merchant/transactions/online.jsx';
+import Online from './pages/merchant/transactions/Online.jsx';
+
 import CartPayment from './pages/merchant/transactions/CartPayment.jsx';
  
+import InstoreReports from './pages/merchant/Reports/Instore.jsx';
+import OnlineReports from './pages/merchant/Reports/Online.jsx';
+
+
 import Layout from './layouts/DeveloperLayout.jsx';
 import DevGettingStart from './pages/developer/GettingStart.jsx';
 import SystemIntroduction from './pages/developer/SystemIntro.jsx';
@@ -62,6 +67,7 @@ import ThirdPartyIntegration from './pages/developer/ThirdPartyIntegration.jsx';
 import ComplianceAndPrivacy from './pages/developer/ComplianceAndPrivacy.jsx';
 import MaintenanceAndSupport from './pages/developer/MaintenanceAndSupport.jsx';
 import AgreementType from './pages/AgreementType.jsx';
+import CardPayment from './pages/merchant/Reports/CardPayment.jsx';
 import AcqApiOverview from './pages/developer/acquirer_api/Overview.jsx';
 import AcqEndpoints from './pages/developer/acquirer_api/Endpoints.jsx';
 import OrderCodePayQr from './pages/developer/acquirer_api/OrderCodePayQr.jsx';
@@ -141,6 +147,9 @@ function App() {
           <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
           <Route path="merchant-transaction/alipay_online" element={<Online />} />
           <Route path="merchant-transaction/card_payments" element={<CartPayment />} />
+          <Route path="merchant-transaction/reports/alipay_instore" element={<InstoreReports />} />
+          <Route path="merchant-transaction/reports/alipay_online" element={<OnlineReports />} />
+          <Route path="merchant-transaction/reports/card_payments" element={<CardPayment />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>

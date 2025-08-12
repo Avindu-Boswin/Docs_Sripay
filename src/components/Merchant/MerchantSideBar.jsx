@@ -124,6 +124,17 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
                   <NavLink to='/docs/merchant/merchant-transaction/card_payments'> Card Payments</NavLink>
                 </Menu.Item>
               </SubMenu>
+              <SubMenu key='merchant-transaction-reports' title={' Transaction Reports'}>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay_instore'> Alipay+Instore </NavLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay_online'> Alipay+Online </NavLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/card_payments'> Card Payments</NavLink>
+                </Menu.Item>
+              </SubMenu>
             </SubMenu>
             <Menu.Item key="troubleshooting">
               <NavLink to="/docs/merchant/troubleshooting" onClick={handleLinkClick}>Troubleshooting</NavLink>

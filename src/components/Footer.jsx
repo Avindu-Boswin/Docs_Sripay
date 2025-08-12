@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 export default function Footer() {
     const { t } = useTranslation();
     return (
-        <footer className="mx-auto w-full relative text-center bg-[#fafafa] text-black rounded-tl-[30px] rounded-tr-[30px]">
+        <footer className="mx-auto w-full  relative text-center bg-[#fafafa] text-black rounded-tl-[30px] rounded-tr-[30px]">
             <div className="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
                 <h2 className="font-bold text-xl md:text-3xl xl:text-4xl leading-snug flex items-center justify-center gap-2">
                     {t('footer.learnMore')}

@@ -150,7 +150,7 @@ function Instore() {
   const selectedMethod = selectedMethodIdx !== null ? methods[selectedMethodIdx] : null;
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-8 mb-16">
+    <div className="w-full px-4 sm:px-8 md:px-16  lg:px-[12%] mt-8 mb-16">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">In-store payments</h1>
 
       <div className="flex flex-col md:flex-row justify-between items-center mb-10 p-4 gap-6">
