@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Img1 from '../../assets/images/merchant/Img16.png';
 import Img2 from '../../assets/images/merchant/Img17.png';
 import Img3 from '../../assets/images/merchant/Img18.png';
 
+import { useTranslation } from 'react-i18next';
+import { useSections } from '../../components/SectionContext';
+
 function StoreUsersAssign() {
+
+  const { setSections } = useSections();
+  const { t } = useTranslation;
+
+  useEffect(() => {
+    setSections([
+      { id: 'step-1', label: 'Add Store Users' },
+      { id: 'step-2', label: 'Store user deactivate' },
+    
+
+    ]);
+    return () => setSections([]);
+
+  }, [setSections, t]);
+
   return (
     <div className="w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-10 mb-16">
       {/* Title */}
@@ -17,7 +35,7 @@ function StoreUsersAssign() {
         An OTP (One-Time Password) will be sent to the entered email address for verification. The user must verify the email before activating their account.
       </p>
 
-      <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mt-6 mb-4">
+      <h3 id='step-1' className="text-xl sm:text-2xl font-semibold text-gray-800 mt-6 mb-4">
         Steps to Assign Store Users
       </h3>
 
@@ -44,7 +62,7 @@ function StoreUsersAssign() {
         />
       </div>
 
-      <div className="py-3">
+      <div id='step-2' className="py-3">
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-10">
           To update a store user's information or change their status, click the action menu (three dots) in the row. From there, select <strong>Edit</strong> to modify user details or <strong>Deactivate</strong> to revoke access.
         </p>

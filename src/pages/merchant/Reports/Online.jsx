@@ -1,13 +1,31 @@
 import { main } from 'framer-motion/client'
-import React from 'react'
+import React ,{ useEffect } from 'react'
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import Img1 from '../../../assets/images/merchant/Img43.png';
 import Img2 from '../../../assets/images/merchant/Img40.png';
 import Img3 from '../../../assets/images/merchant/Img41.png';
 import Img4 from '../../../assets/images/merchant/Img44.png';
+import { useSections } from '../../../components/SectionContext';
+import { useTranslation } from 'react-i18next';
 
 function Online() {
+    const { setSections } = useSections();
+    const {t} = useTranslation
+
+
+      useEffect(() => {
+              setSections([
+                  { id: 'step-1', label: 'Settled Transactions' },
+                  { id: 'step-2', label: 'Settled Transactions Table' },
+                  { id: 'step-3', label: 'Transaction Table Columns' },
+
+                
+              ]);
+              return () => setSections([]);
+              // eslint-disable-next-line
+          }, [setSections, t]);
+          
     return (
         <main className="w-full px-4 sm:px-6 md:px-12 lg:px-[12%] mt-6 sm:mt-8 mb-12 sm:mb-16">
             <header>
@@ -22,7 +40,7 @@ function Online() {
             </header>
                 {/* Settled Transactions */}
       <section className="mt-8">
-        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Settled Transactions</h2>
+        <h2  id='step-1' className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Settled Transactions</h2>
         <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
           The Settled Transactions section provides merchants with a quick snapshot of all finalized Online payment
           activities. It helps monitor transaction outcomes and assess overall business performance at a glance.
@@ -55,7 +73,7 @@ function Online() {
       </section>
           {/* Search & Filter Cards */}
           <section className="mt-10 sm:mt-12">
-        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Settled Transactions Table</h2>
+        <h2 id='step-2' className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Settled Transactions Table</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full">
           {/* Search */}
@@ -89,7 +107,7 @@ function Online() {
       </section>
 
       <section className="mt-10 sm:mt-12">
-        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Transaction Table Columns</h2>
+        <h2 id='step-3' className="text-lg sm:text-xl font-semibold text-gray-800 py-2">Transaction Table Columns</h2>
 
         <div className="mt-4 sm:mt-6 mb-6 sm:mb-8">
           <Zoom>

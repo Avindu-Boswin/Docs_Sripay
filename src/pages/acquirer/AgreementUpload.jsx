@@ -1,13 +1,28 @@
 
-import React from 'react';
+import React , { useState, useEffect }  from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import Agreement from '../../assets/images/acquirer/img309.jpg';
 
+import { useSections } from '../../components/SectionContext';
+
+
 function AgreementUpload() {
   const { t } = useTranslation();
+   const { setSections } = useSections();
+
+    useEffect(() => {
+       setSections([
+         { id: 'step-1', label: 'Merchant Agreement Upload' },
+
+   
+       ]);
+       return () => setSections([]);
+   
+     }, [setSections, t]);
+
   return (
     <div className="w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">
+      <h1 id='step-1' className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8">
         {t('agreementUpload.title')}
       </h1>
 

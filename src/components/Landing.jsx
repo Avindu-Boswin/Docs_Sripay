@@ -7,12 +7,12 @@ import Navbar from './Navbar';
 import Document_Image from '../assets/documents.svg';
 
 // ===== Collage images =====
-import PhoneCenter from '../assets/hero/Center-phon.png';
-import LeftWide from '../assets/hero/left-wide.png';
+import PhoneCenter from '../assets/hero/Center-phon.jpeg';
+import LeftWide from '../assets/hero/qrScan.webp';
 import RightTopTall from '../assets/hero/right-top-tall.png';
 import RightWeather from '../assets/hero/right-weather-wide.png';
-import BottomLeft from '../assets/hero/bottom-left.png';
-import BottomRight from '../assets/hero/bottom-right.png';
+import BottomLeft from '../assets/hero/bottom-left.webp';
+import BottomRight from '../assets/hero/bottom-right.webp';
 
 const DocumentationHero = () => {
   const { t } = useTranslation();
@@ -59,48 +59,49 @@ const DocumentationHero = () => {
         </div>
 
         {/* ===== Collage — hidden on mobile ===== */}
-        <div className="relative mx-auto mb-10 md:mb-16 lg:mb-20 max-w-[1200px] hidden md:block">
-          <div className="relative h-[420px] md:h-[560px] lg:h-[600px] mt-4">
+        <div className="relative mx-auto  md:mb-16 lg:mb-20 max-w-[1200px] hidden md:block">
+          <div className="relative h-[420px] md:h-[560px] lg:h-[600px] mt-[6%] ">
             <img
               src={PhoneCenter}
               alt="App preview"
               loading="lazy"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[360px] md:h-[520px] lg:h-[560px] w-auto rounded-[2rem] shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[460px] md:h-[620px] lg:h-[650px] w-auto rounded-[2rem] shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 520px, 560px"
             />
             <img
               src={LeftWide}
               alt="Dashboard card"
               loading="lazy"
-              className="absolute left-[-7%] top-[10%] h-[180px] md:h-[230px] lg:h-[250px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute left-[4%] top-[10%] h-[180px] md:h-[230px] lg:h-[230px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 230px, 250px"
             />
             <img
               src={RightTopTall}
               alt="Analytics wheel"
               loading="lazy"
-              className="absolute right-[2%] top-[16%] h-[150px] md:h-[190px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute right-[-1.5%] top-[14%] h-[150px] md:h-[190px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 190px, 210px"
             />
             <img
               src={RightWeather}
               alt="Weather widget"
               loading="lazy"
-              className="absolute right-[2%] top-[60%] h-[160px] md:h-[200px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute right-[-3%] top-[55%] h-[160px] md:h-[200px] lg:h-[250px] w-[120px] rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 200px, 210px"
             />
             <img
               src={BottomLeft}
               alt="Stats card"
               loading="lazy"
-              className="absolute left-[2%] bottom-[2%] h-[140px] md:h-[140px] lg:h-[170px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute left-[8%] bottom-[3%] h-[140px] md:h-[140px] lg:h-[200px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none border-4 border-white"
               sizes="(max-width: 1024px) 140px, 170px"
             />
+
             <img
               src={BottomRight}
               alt="Payment receipt"
               loading="lazy"
-              className="absolute right-[18%] md:right-[20%] bottom-0 h-[130px] md:h-[175px] lg:h-[185px] w-auto rounded-2xl shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute right-[12%] md:right-[10%] bottom-10 h-[130px] md:h-[175px] lg:h-[185px] w-auto rounded-2xl shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 175px, 185px"
             />
           </div>
@@ -108,7 +109,7 @@ const DocumentationHero = () => {
         {/* ===== /Collage ===== */}
 
         {/* Role cards */}
-        <section aria-label="Primary roles" className="max-w-4xl mx-auto ">
+        <section aria-label="Primary roles" className="max-w-4xl mx-auto py-7 ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             {['acquirer', 'merchant', 'developer'].map((roleKey) => (
               <Link

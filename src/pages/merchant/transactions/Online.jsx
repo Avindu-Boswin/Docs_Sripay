@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import Img6 from '../../../assets/images/merchant/Img26.png';
 import Img7 from '../../../assets/images/merchant/Img27.png';
 import Img8 from '../../../assets/images/merchant/Img28.png';
@@ -12,11 +12,30 @@ import Img15 from '../../../assets/images/merchant/Img36.png';
 import Img16 from '../../../assets/images/merchant/Img29.png';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { useTranslation } from 'react-i18next';
+import { useSections } from '../../../components/SectionContext';
+
 
 function Online() {
   const [activeTab, setActiveTab] = useState('have a wallet');
   const [haveWalletPayType, setHaveWalletPayType] = useState('web');
   const [noWalletPayType, setNoWalletPayType] = useState('web');
+
+  const { setSections } = useSections();
+  const { t } = useTranslation;
+
+  useEffect(() => {
+    setSections([
+      { id: 'step-1', label: 'Create an Online Transaction' },
+      { id: 'step-2', label: 'Wallet Select' },
+      { id: 'step-3', label: 'Web Payment Flow' },
+      { id: 'step-4', label: 'Select Payment Method' },
+      { id: 'step-5', label: 'Payment Receipt Details' },
+   
+    ]);
+    return () => setSections([]);
+
+  }, [setSections, t]);
 
   return (
     <div className="w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10 mb-16">
@@ -24,7 +43,7 @@ function Online() {
         Online Payments
       </h1>
 
-      
+
       <div className="flex flex-col md:flex-row justify-between items-center mb-10 p-4 gap-6">
         <p className="text-gray-600 sm:text-sm md:w-[55%] max-w-3xl text-base">
           A single integration into Antom, allows you to accept all onboarded e-wallets, cards, and alternative
@@ -47,7 +66,7 @@ function Online() {
       </div>
 
       {/* Step to Create Transaction */}
-      <h3 className="text-2xl text-gray-700 py-7">How to create an Online Transaction?</h3>
+      <h3 id='step-1' className="text-2xl text-gray-700 py-7">How to create an Online Transaction?</h3>
       <p>
         Click <strong>Transactions</strong> &gt; <strong>Alipay + Online</strong> &gt;{' '}
         <strong>Create Transaction</strong>.
@@ -61,7 +80,7 @@ function Online() {
       </div>
 
       {/* Main Tabs */}
-      <div>
+      <div id='step-2' >
         <div className="flex border-b mb-6">
           <button
             onClick={() => setActiveTab('have a wallet')}
@@ -83,7 +102,7 @@ function Online() {
           </button>
         </div>
 
-        {/* I HAVE A WALLET TAB */}
+       
         {activeTab === 'have a wallet' && (
           <>
             <p className="text-gray-600 sm:text-sm max-w-3xl text-base mb-6">
@@ -114,13 +133,13 @@ function Online() {
 
             {haveWalletPayType === 'web' && (
               <div className="mt-4">
-                <h4 className="text-xl text-gray-700 mb-3">Web Payment Flow</h4>
+                <h4 id='step-3' className="text-xl text-gray-700 mb-3">Web Payment Flow</h4>
                 <p className=' text-base text-gray-700 text-sm py-1 '>In this process, the merchant initiates an Alipay+ transaction by selecting the Web payment method. A payment link is generated, which can be directly shared with the customer. The customer completes the payment by opening the link in their browser</p>
                 <Zoom>
                   <img src={Img9} alt="Web Pay Flow" className="rounded-md shadow mx-auto md:w-4/5" />
 
                 </Zoom>
-                <h4 className='text-xl text-gray-700 mb-3 mt-8'>Select Payment Method</h4>
+                <h4 id='step-4' className='text-xl text-gray-700 mb-3 mt-8'>Select Payment Method</h4>
                 <p className="text-gray-700 text-base  text-sm py-1">
                   At this step, the merchant can choose the preferred <strong>payment method</strong> for the transaction.
                   Available options include <strong>Alipay+</strong> and
@@ -132,7 +151,7 @@ function Online() {
                   <img src={Img13} alt="Web Pay Flow" className="rounded-md shadow mx-auto md:w-4/5" />
 
                 </Zoom>
-                <h4 className='text-xl text-gray-700 mb-3 mt-8'>Payment Receipt Details</h4>
+                <h4 id='step-5' className='text-xl text-gray-700 mb-3 mt-8'>Payment Receipt Details</h4>
                 <p className=' text-base text-gray-700 text-sm py-1 '>Merchants can initiate a transaction by generating a QR code, which customers can scan to complete the payment. Additionally, the payment link can be copied or shared directly with another customer, providing flexibility in how the transaction is completed.</p>
 
                 <Zoom>
@@ -241,7 +260,7 @@ function Online() {
                 <h4 className="text-xl text-gray-700 mb-3">Mobile Payment Flow</h4>
                 <p className='text-base text-gray-700 text-sm py-1 '>Merchants can select the User Pay Type as Mobile, allowing them to define the customer's device environment for the transaction. Once selected, they can further specify the user’s operating system (iOS or Android) and the payment mode (In-App or In-Browser) to ensure a seamless payment experience.
 
-</p>
+                </p>
                 <Zoom>
 
                   <img src={Img11} alt="Web Pay Flow" className="rounded-md shadow mx-auto md:w-4/5" />

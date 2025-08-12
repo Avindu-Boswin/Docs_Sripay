@@ -1,12 +1,28 @@
-import React from 'react';
+import React , { useState, useEffect }  from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Img1 from '../../assets/images/merchant/Img1.png';
 import Img2 from '../../assets/images/merchant/Img2.png';
 import Img3 from '../../assets/images/merchant/Img3.png';
 
+import { useSections } from '../../components/SectionContext';
+
+
 function GettingStart() {
   const { t } = useTranslation();
+   const { setSections } = useSections();
+
+     useEffect(() => {
+       setSections([
+         { id: 'step-1', label: 'Sign up details form' },
+         { id: 'step-2', label: 'Verify Mobile Number' },
+         { id: 'step-3', label: 'Create Password' },
+       
+   
+       ]);
+       return () => setSections([]);
+   
+     }, [setSections, t]);
 
   return (
     <div className='w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16'>
@@ -35,7 +51,7 @@ function GettingStart() {
 
       {/* Step 1 */}
       <div className='w-full mt-10'>
-        <h2 className='text-3xl font-semibold py-3'>Sign Up</h2>
+        <h2 id='step-1' className='text-3xl font-semibold py-3'>Sign Up</h2>
         <span className='text-xl sm:text-2xl font-semibold text-gray-700 ml-4'>Step 1 :</span>
         <p className='py-4 ml-10'>
           Enter your personal details such as first name, last name, mobile number, and email address accurately to begin the sign-up process.
@@ -44,7 +60,7 @@ function GettingStart() {
       </div>
 
       {/* Step 2 */}
-      <div className='w-full mt-10'>
+      <div id='step-2' className='w-full mt-10'>
         <span className='text-xl sm:text-2xl font-semibold text-gray-700 ml-4'>Step 2 :</span>
         <p className='py-4 ml-10'>
           Verify your mobile number using the OTP sent to your registered phone to proceed securely.
@@ -53,7 +69,7 @@ function GettingStart() {
       </div>
 
       {/* Step 3 */}
-      <div className='w-full mt-10'>
+      <div id='step-3' className='w-full mt-10'>
         <span className='text-xl sm:text-2xl font-semibold text-gray-700 ml-4'>Step 3 :</span>
         <p className='py-4 ml-10'>
           Set up your account by creating a password and agreeing to the terms to complete registration.

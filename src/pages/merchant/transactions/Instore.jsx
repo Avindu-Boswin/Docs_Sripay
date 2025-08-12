@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { useTranslation } from 'react-i18next';
+import { useSections } from '../../../components/SectionContext';
 
 import UserCode from '../../../assets/images/merchant/AlipayLogo.png';
 import Img1 from '../../../assets/images/merchant/Img19.png';
@@ -16,6 +18,21 @@ import UsdtIcon from '../../../assets/images/merchant/USDT.png';
 
 function Instore() {
   const [selectedMethodIdx, setSelectedMethodIdx] = useState(0); // Auto-select Alipay Plus
+  const { setSections } = useSections();
+  const { t } = useTranslation;
+
+  useEffect(() => {
+    setSections([
+      { id: 'step-1', label: 'Create an Instore Transaction' },
+      { id: 'step-2', label: 'Select Payment Method' },
+      { id: 'step-3', label: 'Alipay Plus Details' },
+      { id: 'step-4', label: 'Scan QR Code' },
+      { id: 'step-5', label: 'Payment Complete' },
+
+    ]);
+    return () => setSections([]);
+
+  }, [setSections, t]);
 
   const methods = [
     {
@@ -25,7 +42,7 @@ function Instore() {
       disabled: false,
       details: (
         <>
-          <h4 className="text-2xl font-bold mb-2">Alipay Plus Details</h4>
+          <h4 id='step-3' className="text-2xl font-bold mb-2">Alipay Plus Details</h4>
           <div className="mt-8 p-6 bg-white rounded-lg shadow border border-gray-200">
             <h4 className="text-xl font-semibold text-gray-700 mb-4">Enter Transaction Value</h4>
             <span className="text-sm text-gray-600">
@@ -37,7 +54,7 @@ function Instore() {
               </Zoom>
             </div>
 
-            <h4 className="text-xl font-semibold text-gray-700 mb-4 mt-10">Scan QR Code</h4>
+            <h4 id='step-4' className="text-xl font-semibold text-gray-700 mb-4 mt-10">Scan QR Code</h4>
             <span className="text-gray-700 text-base">
               Scan the QR code below using your device with the{' '}
               <a href="https://sripay.lk/wallets" target="_blank" rel="noopener noreferrer">
@@ -51,7 +68,7 @@ function Instore() {
               </Zoom>
             </div>
 
-            <h4 className="text-xl font-semibold text-gray-700 mb-4 mt-10">Payment Complete</h4>
+            <h4 id='step-5' className="text-xl font-semibold text-gray-700 mb-4 mt-10">Payment Complete</h4>
             <span className="text-gray-700 text-base">
               After completing the payment, the merchant will see a <strong>Payment Received</strong> success message.
             </span>
@@ -72,7 +89,7 @@ function Instore() {
       details: (
         <>
           <h4 className="text-2xl font-bold mb-2">Scan Pay QR Via Alipay Plus</h4>
-          <div className="mt-8 p-6 bg-white rounded-lg shadow border border-gray-200">
+          <div   className="mt-8 p-6 bg-white rounded-lg shadow border border-gray-200">
             <h4 className="text-xl font-semibold text-gray-700 mb-4">Enter Transaction Value</h4>
             <span className="text-sm text-gray-600">
               The merchant can choose the preferred currency type — either <strong>LKR</strong> or <strong>USD</strong> — before entering the amount.
@@ -168,7 +185,7 @@ function Instore() {
         </div>
       </div>
 
-      <h3 className="text-2xl text-gray-700 py-7">How to create a Transaction?</h3>
+      <h3 id='step-1' className="text-2xl text-gray-700 py-7">How to create a Transaction?</h3>
       <p>Click <strong>Transactions</strong> &gt; <strong>Alipay+ InStore</strong> &gt; <strong>Create Transaction</strong>.</p>
       <ul className="list-disc list-inside ml-4 mt-4 mb-10">
         <li>Select or type the <strong>Store</strong></li>
@@ -179,7 +196,7 @@ function Instore() {
         <img src={Img1} alt="Create Transaction" className="mx-auto my-6 block md:w-4/5 rounded-lg shadow" />
       </Zoom>
 
-      <h3 className="text-2xl text-gray-700 py-7">Step 2: Select Payment Method</h3>
+      <h3 id='step-2' className="text-2xl text-gray-700 py-7"> Select Payment Method</h3>
       <Zoom>
         <img src={Img2} alt="Select Payment Method" className="mx-auto my-6 block md:w-4/5 rounded-lg shadow" />
       </Zoom>
