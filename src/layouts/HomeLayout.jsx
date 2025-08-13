@@ -12,7 +12,7 @@ const HomeLayout = () => (
      <Outlet/>
      
     </main>
-    <DeveloperHeading/>
+   
     <Footer />
   </div>
 );
