@@ -34,7 +34,8 @@ const DocumentationHero = () => {
       {/* Soft fallback bg on mobile */}
       {/* <div className="md:hidden absolute inset-0 bg-gradient-to-b from-sky-50 via-blue-50 to-white" aria-hidden /> */}
 
-      <Navbar />
+      <Navbar className="" />
+
 
       <main className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-20 pb-14 md:pb-16">
         <header className="text-center">
@@ -65,35 +66,35 @@ const DocumentationHero = () => {
               src={PhoneCenter}
               alt="App preview"
               loading="lazy"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[460px] md:h-[620px] lg:h-[650px] w-auto rounded-[2rem] shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[460px] md:h-[450px] lg:h-[650px] w-auto rounded-[2rem] shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 520px, 560px"
             />
             <img
               src={LeftWide}
               alt="Dashboard card"
               loading="lazy"
-              className="absolute left-[4%] top-[10%] h-[180px] md:h-[230px] lg:h-[230px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute md:left-[4%] md:top-[17%] lg:top-[10%] h-[180px] md:h-[150px] lg:h-[230px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 230px, 250px"
             />
             <img
               src={RightTopTall}
               alt="Analytics wheel"
               loading="lazy"
-              className="absolute right-[-1.5%] top-[14%] h-[150px] md:h-[190px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute md:right-[1%] lg:right-[-1.5%] md:top-[20%] lg:top-[14%] h-[150px] md:h-[123px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 190px, 210px"
             />
             <img
               src={RightWeather}
               alt="Weather widget"
               loading="lazy"
-              className="absolute right-[-3%] top-[55%] h-[160px] md:h-[200px] lg:h-[250px] w-[120px] rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute hidden lg:block right-[-3%] top-[55%] h-[160px] md:h-[200px] lg:h-[250px] w-[120px] rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 200px, 210px"
             />
             <img
               src={BottomLeft}
               alt="Stats card"
               loading="lazy"
-              className="absolute left-[8%] bottom-[3%] h-[140px] md:h-[140px] lg:h-[200px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none border-4 border-white"
+              className="absolute md:left-[4.5%] lg:left-[8%] md:bottom-[20%] lg:bottom-[3%] h-[140px] md:h-[150px] lg:h-[200px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none border-4 border-white"
               sizes="(max-width: 1024px) 140px, 170px"
             />
 
@@ -101,7 +102,7 @@ const DocumentationHero = () => {
               src={BottomRight}
               alt="Payment receipt"
               loading="lazy"
-              className="absolute right-[12%] md:right-[10%] bottom-10 h-[130px] md:h-[175px] lg:h-[185px] w-auto rounded-2xl shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
+              className="absolute right-[12%] md:right-[2%]  lg:right-[10%] md:bottom-[20%] lg:bottom-10 h-[130px] md:h-[155px] lg:h-[185px] w-auto rounded-2xl shadow-2xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 175px, 185px"
             />
           </div>
@@ -109,7 +110,7 @@ const DocumentationHero = () => {
         {/* ===== /Collage ===== */}
 
         {/* Role cards */}
-        <section aria-label="Primary roles" className="max-w-4xl mx-auto py-7 ">
+        <section aria-label="Primary roles" className="max-w-4xl mx-auto pt-5 pb-3 md:pb-6 ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             {['acquirer', 'merchant', 'developer'].map((roleKey) => (
               <Link
@@ -130,14 +131,14 @@ const DocumentationHero = () => {
         </section>
 
         {/* Quick links */}
-        <section aria-label="Quick links" className="max-w-4xl mx-auto mt-4 sm:mt-6 md:mt-8">
+        <section aria-label="Quick links" className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             <Link
               to="/docs/branding-guidelines"
               onClick={handleLinkClick}
               className="bg-[#000D7A] px-5 py-5 md:px-8 md:py-8 rounded-2xl shadow-lg border border-blue-900/20 flex flex-col items-center text-center transition-transform duration-200 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#001AAB] focus:outline-none focus:ring-2 focus:ring-blue-400 active:scale-[0.99]"
             >
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1">
+              <h3 className="text-base sm:text-lg md:text-xl disable font-bold text-white mb-1">
                 Branding Guidelines
               </h3>
               <p className="text-white/90 text-xs sm:text-sm font-light">
@@ -172,7 +173,9 @@ const DocumentationHero = () => {
             </Link>
           </div>
         </section>
+        
       </main>
+      
     </div>
   );
 };

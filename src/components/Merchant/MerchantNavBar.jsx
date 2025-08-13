@@ -22,7 +22,7 @@ export default function MerNav({ onMobileMenuClick }) {
   };
 
   return (
-    <nav className="fixed top-0 z-50 bg-white border-b w-full">
+    <nav className="fixed md:px-3 lg:px-3 top-0 z-50 bg-white border-b w-full">
       <div className="flex items-center justify-between mx-auto p-4">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse">

@@ -13,7 +13,7 @@ export default function FlowbiteNavbar() {
   };
 
   return (
-    <nav className=" pt-6 px-8 sticky z-50">
+    <nav className=" py-2 md:py-2 lg:py-3 px-4 md:px-9 sticky z-50 sticky top-0 z-50  backdrop-blur-md ">
       <div className="flex flex-wrap items-center justify-between p-4 w-full">
         {/* Logo - Left side */}
         <a href="/" className="flex items-center space-x-2 rtl:space-x-reverse md:order-1">
