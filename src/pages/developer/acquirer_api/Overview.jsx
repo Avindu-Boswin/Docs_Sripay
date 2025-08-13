@@ -89,13 +89,13 @@ function AcqApiOverview() {
 
                 <p className='font-semibold mb-2'>Example</p>
                 <ul className='list-disc pl-6 mb-4 text-gray-800'>
-                    <li><span className='font-semibold'>Host:</span> <span className='text-[#0073ff]'>https://open-sea.sripayplus.com/secure/acquirer</span></li>
+                    <li><span className='font-semibold'>Host:</span> <span className='text-[#0073ff]'>https://example.com/secure/acquirer</span></li>
                     <li><span className='font-semibold'>Endpoint:</span> <span className='text-[#0073ff]'>/v2/alipayplus/instore/pay</span></li>
                 </ul>
 
                 <p className='font-semibold mb-1'>Complete Request URL</p>
                 <p className='text-[#0073ff] break-all mb-4'>
-                    https://open-sea.sripayplus.com/secure/acquirer/v2/alipayplus/instore/pay
+                    https://example.com/secure/acquirer/v2/alipayplus/instore/pay
                 </p>
 
                 {/* 2. Request Method Section */}
