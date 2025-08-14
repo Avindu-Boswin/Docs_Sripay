@@ -5,6 +5,9 @@ import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 
 import Document_Image from '../assets/documents.svg';
+import DeveloperHeading from '../components/DeveloperHeading';
+import ThirdSection from '../components/ThirdSection';
+
 
 // ===== Collage images =====
 import PhoneCenter from '../assets/hero/Center-phon.jpeg';
@@ -13,12 +16,16 @@ import RightTopTall from '../assets/hero/right-top-tall.png';
 import RightWeather from '../assets/hero/right-weather-wide.png';
 import BottomLeft from '../assets/hero/bottom-left.webp';
 import BottomRight from '../assets/hero/bottom-right.webp';
+import RoleCards from './RoleCards';
+import { div } from 'framer-motion/client';
 
 const DocumentationHero = () => {
   const { t } = useTranslation();
   const handleLinkClick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
+    <div>
+  
     <div className="relative">
       {/* Background glows (hidden on mobile for perf) */}
       <div
@@ -107,75 +114,14 @@ const DocumentationHero = () => {
             />
           </div>
         </div>
-        {/* ===== /Collage ===== */}
-
-        {/* Role cards */}
-        <section aria-label="Primary roles" className="max-w-4xl mx-auto pt-5 pb-3 md:pb-6 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            {['acquirer', 'merchant', 'developer'].map((roleKey) => (
-              <Link
-                key={roleKey}
-                to={`/docs/${roleKey}/${roleKey === 'acquirer' ? 'introduction' : 'gettingstart'}`}
-                onClick={handleLinkClick}
-                className="bg-[#000D7A] px-5 py-5 md:px-8 md:py-8 rounded-2xl shadow-lg border border-blue-900/20 flex flex-col items-center text-center transition-transform duration-200 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#001AAB] focus:outline-none focus:ring-2 focus:ring-blue-400 active:scale-[0.99]"
-              >
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1">
-                  {t(`roles.${roleKey}.title`)}
-                </h3>
-                <p className="text-white/90 text-xs sm:text-sm font-light">
-                  {t(`roles.${roleKey}.desc`)}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* Quick links */}
-        <section aria-label="Quick links" className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-            <Link
-              to="/docs/branding-guidelines"
-              onClick={handleLinkClick}
-              className="bg-[#000D7A] px-5 py-5 md:px-8 md:py-8 rounded-2xl shadow-lg border border-blue-900/20 flex flex-col items-center text-center transition-transform duration-200 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#001AAB] focus:outline-none focus:ring-2 focus:ring-blue-400 active:scale-[0.99]"
-            >
-              <h3 className="text-base sm:text-lg md:text-xl disable font-bold text-white mb-1">
-                Branding Guidelines
-              </h3>
-              <p className="text-white/90 text-xs sm:text-sm font-light">
-                Guidelines ensuring consistent brand voice
-              </p>
-            </Link>
-
-            <Link
-              to="/docs/marketing-materials"
-              onClick={handleLinkClick}
-              className="bg-[#000D7A] px-5 py-5 md:px-8 md:py-8 rounded-2xl shadow-lg border border-blue-900/20 flex flex-col items-center text-center transition-transform duration-200 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#001AAB] focus:outline-none focus:ring-2 focus:ring-blue-400 active:scale-[0.99]"
-            >
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1">
-                Marketing Materials
-              </h3>
-              <p className="text-white/90 text-xs sm:text-sm font-light">
-                Assets showcasing our brand story
-              </p>
-            </Link>
-
-            <Link
-              to="/docs/agreement"
-              onClick={handleLinkClick}
-              className="bg-[#000D7A] px-5 py-5 md:px-8 md:py-8 rounded-2xl shadow-lg border border-blue-900/20 flex flex-col items-center text-center transition-transform duration-200 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#001AAB] focus:outline-none focus:ring-2 focus:ring-blue-400 active:scale-[0.99]"
-            >
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-1">
-                View Agreement
-              </h3>
-              <p className="text-white/90 text-xs sm:text-sm font-light">
-                View acquirer and merchant agreements
-              </p>
-            </Link>
-          </div>
-        </section>
-        
+   
       </main>
+         
       
+    </div>
+    <RoleCards/>
+       <DeveloperHeading/>
+         <ThirdSection/>
     </div>
   );
 };
