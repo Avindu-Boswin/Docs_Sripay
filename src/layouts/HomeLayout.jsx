@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 const HomeLayout = () => (
   <div>
-
+ 
     <main>
  
      <Outlet/>

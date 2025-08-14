@@ -95,7 +95,7 @@ function RoleCards() {
                 {/* Header bar to draw attention */}
                 <div className="mx-auto mb-8 md:mb-12 text-center">
 
-                    <h2 className="mt-4 text-3xl  sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-[.4rem]
+                    <h2 className="mt-4 text-3xl  sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-[.3rem]
                     ">
                         Sections
                     </h2>

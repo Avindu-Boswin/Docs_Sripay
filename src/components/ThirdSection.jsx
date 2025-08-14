@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 function ThirdSection() {
 
-    const navigate = useNavigate();
+
+  const navigate = useNavigate();
 
     
     return (
