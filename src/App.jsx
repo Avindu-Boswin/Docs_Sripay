@@ -144,12 +144,12 @@ function App() {
           <Route path="merchant-StoreCreateMultiple" element={<MerchantMultipleStore />} />
           <Route path="merchant-TerminalManagement" element={<MerchantTerminalManagement />} />
           <Route path="merchant-management/store/assign-users" element={<StoreUsersAssign />} />
-          <Route path="merchant-transaction/alipay_instore" element={<Instore />} />
-          <Route path="merchant-transaction/alipay_online" element={<Online />} />
-          <Route path="merchant-transaction/card_payments" element={<CartPayment />} />
-          <Route path="merchant-transaction/reports/alipay_instore" element={<InstoreReports />} />
-          <Route path="merchant-transaction/reports/alipay_online" element={<OnlineReports />} />
-          <Route path="merchant-transaction/reports/card_payments" element={<CardPayment />} />
+          <Route path="merchant-transaction/alipay-instore" element={<Instore />} />
+          <Route path="merchant-transaction/alipay-online" element={<Online />} />
+          <Route path="merchant-transaction/card-payments" element={<CartPayment />} />
+          <Route path="merchant-transaction/reports/alipay-instore" element={<InstoreReports />} />
+          <Route path="merchant-transaction/reports/alipay-online" element={<OnlineReports />} />
+          <Route path="merchant-transaction/reports/card-payments" element={<CardPayment />} />
           <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
           <Route path="faq" element={<FaqMerchant/>} />
           <Route path='support' element={<MerchantSupport/>}/>

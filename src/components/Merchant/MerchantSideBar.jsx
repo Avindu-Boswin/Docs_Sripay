@@ -115,24 +115,24 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               </SubMenu>
               <SubMenu key='merchant-transaction' title={'Merchant Transactions'}>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/alipay_instore'> Alipay+Instore </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/alipay-instore'> Alipay+Instore </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/alipay_online'> Alipay+Online </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/alipay-online'> Alipay+Online </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/card_payments'> Card Payments</NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/card-payments'> Card Payments</NavLink>
                 </Menu.Item>
               </SubMenu>
               <SubMenu key='merchant-transaction-reports' title={' Transaction Reports'}>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay_instore'> Alipay+Instore </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-instore'> Alipay+Instore </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay_online'> Alipay+Online </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-online'> Alipay+Online </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/card_payments'> Card Payments</NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/card-payments'> Card Payments</NavLink>
                 </Menu.Item>
               </SubMenu>
             </SubMenu>
