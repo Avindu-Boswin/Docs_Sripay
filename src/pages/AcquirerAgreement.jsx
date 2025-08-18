@@ -1,14 +1,24 @@
 import React from "react";
+import AcquirerAgreementPdf from '../assets/agreement/AlipayPlus_Sub Acquirer_Agreement.pdf';
 
 function AcquirerAgreement() {
+    const pdfUrl =
+    typeof AcquirerAgreementPdf === 'string'
+      ? encodeURI(AcquirerAgreementPdf)
+      : AcquirerAgreementPdf;
+
     return (
         <div className="w-full max-w-6xl mx-auto p-8 bg-white shadow-md print:shadow-none">
             {/* Download Link */}
-            <div className="mt-1 mb-5 w-full flex justify-end">
-                <a href="/Alipayplus_Sub_Acquirer_Agreement.pdf" download>
-                    <p className="text-md text-blue-600 underline">Download the Agreement</p>
-                </a>
-            </div>
+          <div className="mt-1 mb-5 w-full flex justify-end">
+        <a
+          href={pdfUrl}
+          download="AlipayPlus_Sub_Acquirer_Agreement.pdf"
+          className="text-md text-blue-600 underline"
+        >
+          Download the Agreement
+        </a>
+      </div>
 
             {/* Title */}
             <div className="border-b-2 border-gray-200 pb-6 mb-8">
