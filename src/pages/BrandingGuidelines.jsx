@@ -11,7 +11,7 @@ export default function BrandingGuidelines() {
       <Header />
 
       {/* Page container */}
-      <main className="mt-24">
+      <main className="mt-24 md:py-2 sm:py-1 lg:py-3">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-[10rem]">
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-800 mt-10">
