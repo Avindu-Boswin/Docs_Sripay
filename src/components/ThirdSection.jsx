@@ -9,7 +9,7 @@ function ThirdSection() {
 
     
     return (
-        <div className="px-4 sm:px-8 lg:px-[23%] w-full py-20">
+        <div className="px-4 sm:px-8 lg:px-[17%] w-full py-20">
   <div className="mx-auto flex flex-col items-center text-center">
     {/* Badge */}
     

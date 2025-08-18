@@ -18,7 +18,7 @@ function DeveloperHeading() {
         handleLinkClick();
     }
     return (
-        <div className=" sm:px-8 lg:px-[23%] w-full py-10 ">
+        <div className=" sm:px-8 lg:px-[20%] w-full py-10 ">
             <div className="flex  flex-col md:flex-row items-center justify-between gap-8">
 
                 {/* Left side - Details */}
