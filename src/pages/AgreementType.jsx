@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Agreement from './Agreement';
+import AcquirerAgreement from './AcquirerAgreement';
 
 const AgreementType = () => {
     const { t } = useTranslation();
@@ -40,7 +41,7 @@ const AgreementType = () => {
             {/* Content Rendering Area */}
             <div className="agreement-content">
                 {selectedType === 'merchant' && <Agreement />}
-                {selectedType === 'acquirer' && null}
+                {selectedType === 'acquirer' && <AcquirerAgreement/>}
             </div>
         </div>
     );
