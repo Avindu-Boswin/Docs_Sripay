@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Merchant/MerchantNavBar";
 
+
 // ✅ Use a dedicated video import or serve from /public
 // Option A (Vite): append ?url so bundler gives a file URL
 import PayNowVideo from "../assets/images/PaymentInformation(1).mp4?url";
@@ -9,7 +10,7 @@ import PayNowVideo from "../assets/images/PaymentInformation(1).mp4?url";
 // const PayNowVideo = "/Payment Information.mp4";
 
 import PosterImage from "../assets/images/TopRated.png"; // used in cards section poster
-import ScanForOffers from "../assets/images/QRScan.png";
+import ScanForOffers from "../assets/images/UpdatedQrScan.png";
 import { Coins, Award, Megaphone } from "lucide-react";
 
 export default function MarketingMaterials() {
@@ -112,8 +113,8 @@ export default function MarketingMaterials() {
 
         {/* Checkout offers */}
         <div className="flex flex-row justify-between items-center py-10 px-10 w-full mx-auto">
-          <div className="lg:pl-10 md:pl-5 pl-2 ">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Top Rated Merchant</h2>
+          <div className="lg:pl-10 md:pl-5 pl-2 sm:px-3  lg:px-3 ">
+            <h2 className="text-2xl text-3xl font-bold text-gray-900">Top Rated Merchant</h2>
             <p className="mt-3 text-gray-600">Show Top Rated Batch in Outlet Dashboard.</p>
           </div>
 
@@ -132,7 +133,7 @@ export default function MarketingMaterials() {
         {/* In‑store promotion code */}
         <div className="flex flex-row justify-between items-center py-5 px-10 w-full mx-auto">
           {/* Phone mockup */}
-          <div className="rounded-2xl w-[40%] inline-block">
+          <div className="rounded-2xl w-[40%]  inline-block">
             <img
               src={ScanForOffers}
               alt="Checkout screen with payment method"
@@ -141,8 +142,8 @@ export default function MarketingMaterials() {
           </div>
 
           {/* Copy */}
-          <div className="mt-8 w-[60%]">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">In‑store promotion code</h3>
+          <div className="mt-8 px:2 md:px-10 w-[60%]">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">In‑store QR Card</h3>
             <p className="mt-4 text-gray-700 leading-7">
               Our marketing technology analyses user payment behaviour to deliver personalised instant incentives—such as
               discounts, points and gifts—to help boost conversions for merchants in their stores, and generate new revenue
