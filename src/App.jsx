@@ -161,46 +161,46 @@ function App() {
           <Route path="gettingstart" element={<DevGettingStart />} />
           {/* System Overview */}
           <Route path="introduction" element={<SystemIntroduction />} />
-          <Route path="system_architecture" element={<SystemArchitecture />} />
-          <Route path="web_application_architecture" element={<WebApplicationArchitecture />} />
-          <Route path="mobile_application_architecture" element={<MobileApplicationArchitecture />} />
-          <Route path="backend_architecture" element={<BackendArchitecture />} />
-          <Route path="database_architecture" element={<DatabaseArchitecture />} />
-          <Route path="authentication_and_authorization" element={<AuthenticationAndAuthorization />} />
-          <Route path="encryption_and_security" element={<EncryptionAndSecurity />} />
-          <Route path="api_security" element={<APISecurity />} />
-          <Route path="deployment_and_infrastructure" element={<DeploymentAndInfrastructure />} />
-          <Route path="third_party_integration" element={<ThirdPartyIntegration />} />
-          <Route path="compliance_and_privacy" element={<ComplianceAndPrivacy />} />
-          <Route path="maintenance_and_support" element={<MaintenanceAndSupport />} />
+          <Route path="system-architecture" element={<SystemArchitecture />} />
+          <Route path="web-application-architecture" element={<WebApplicationArchitecture />} />
+          <Route path="mobile-application-architecture" element={<MobileApplicationArchitecture />} />
+          <Route path="backend-architecture" element={<BackendArchitecture />} />
+          <Route path="database-architecture" element={<DatabaseArchitecture />} />
+          <Route path="authentication-and-authorization" element={<AuthenticationAndAuthorization />} />
+          <Route path="encryption-and-security" element={<EncryptionAndSecurity />} />
+          <Route path="api-security" element={<APISecurity />} />
+          <Route path="deployment-and-infrastructure" element={<DeploymentAndInfrastructure />} />
+          <Route path="third-party-integration" element={<ThirdPartyIntegration />} />
+          <Route path="compliance-and-privacy" element={<ComplianceAndPrivacy />} />
+          <Route path="maintenance-and-support" element={<MaintenanceAndSupport />} />
           {/* Acquirer APIs */}
-          <Route path="acquirer_api/overview" element={<AcqApiOverview />} />
-          <Route path="acquirer_api/endpoints" element={<AcqEndpoints />} />
-          <Route path="acquirer_api/instore/order_code_pay_qr" element={<OrderCodePayQr />} />
-          <Route path="acquirer_api/instore/order_code_result_listener" element={<OrderCodeResultListner />} />
-          <Route path="acquirer_api/instore/user_present_pay" element={<UserPresentPay />} />
-          <Route path="acquirer_api/instore/user_present_pay_waiting" element={<UserPresentPayWaiting />} />
-          <Route path="acquirer_api/instore/void_transaction" element={<VoidTransaction />} />
-          <Route path="acquirer_api/instore/instore_payment_inquiry" element={<InstorePaymentInquiry />} />
-          <Route path="acquirer_api/online/payment_link_create" element={<PaymentLinkCreate />} />
-          <Route path="acquirer_api/online/payment_inquiry" element={<OnlinePaymentInquiry />} />
+          <Route path="acquirer-api/overview" element={<AcqApiOverview />} />
+          <Route path="acquirer-api/endpoints" element={<AcqEndpoints />} />
+          <Route path="acquirer-api/instore/order-code-pay-qr" element={<OrderCodePayQr />} />
+          <Route path="acquirer-api/instore/order-code-result-listener" element={<OrderCodeResultListner />} />
+          <Route path="acquirer-api/instore/user-present-pay" element={<UserPresentPay />} />
+          <Route path="acquirer-api/instore/user-present-pay-waiting" element={<UserPresentPayWaiting />} />
+          <Route path="acquirer-api/instore/void-transaction" element={<VoidTransaction />} />
+          <Route path="acquirer-api/instore/instore-payment-inquiry" element={<InstorePaymentInquiry />} />
+          <Route path="acquirer-api/online/payment-link-create" element={<PaymentLinkCreate />} />
+          <Route path="acquirer-api/online/payment-inquiry" element={<OnlinePaymentInquiry />} />
           { /* Merchant APIs */}
-          <Route path="merchant_api/overview" element={<MerchantApiOverview />} />
-          <Route path="merchant_api/endpoints" element={<MerchantEndpoints />} />
-          <Route path="merchant_api/instore/order_code_pay_qr" element={<MerchantOrderCodePayQr />} />
-          <Route path="merchant_api/instore/order_code_result_listener" element={<MerchantOrderCodeResultListner />} />
-          <Route path="merchant_api/instore/user_present_pay" element={<MerchantUserPresentPay />} />
-          <Route path="merchant_api/instore/user_present_pay_waiting" element={<MerchantUserPresentPayWaiting />} />
-          <Route path="merchant_api/instore/void_transaction" element={<MerchantVoidTransaction />} />
-          <Route path="merchant_api/instore/instore_payment_inquiry" element={<MerchantInstorePaymentInquiry />} />
-          <Route path="merchant_api/instore/not_settled_latest_transactions" element={<MerchantInstoreNotSettledLatest />} />
-          <Route path="merchant_api/online_webframe/overview" element={<WebFrameOverview />} />
-          <Route path="merchant_api/online_webframe/payment_request" element={<PaymentRequest />} />
-          <Route path="merchant_api/online/payment_link_create" element={<MerchantPaymentLinkCreate />} />
-          <Route path="merchant_api/online/payment_inquiry" element={<MerchantOnlinePaymentInquiry />} />
-          <Route path="merchant_api/card_payments/overview" element={<CardPaymentOverview />} />
-          <Route path="merchant_api/card_payments/payment_link_create" element={<MerchantPaymentLinkCreateCard />} />
-          <Route path="merchant_api/card_payments/payment_inquiry" element={<CardPaymentInquiry />} />
+          <Route path="merchant-api/overview" element={<MerchantApiOverview />} />
+          <Route path="merchant-api/endpoints" element={<MerchantEndpoints />} />
+          <Route path="merchant-api/instore/order-code-pay-qr" element={<MerchantOrderCodePayQr />} />
+          <Route path="merchant-api/instore/order-code-result-listener" element={<MerchantOrderCodeResultListner />} />
+          <Route path="merchant-api/instore/user-present-pay" element={<MerchantUserPresentPay />} />
+          <Route path="merchant-api/instore/user-present-pay-waiting" element={<MerchantUserPresentPayWaiting />} />
+          <Route path="merchant-api/instore/void-transaction" element={<MerchantVoidTransaction />} />
+          <Route path="merchant-api/instore/instore-payment-inquiry" element={<MerchantInstorePaymentInquiry />} />
+          <Route path="merchant-api/instore/not-settled-latest-transactions" element={<MerchantInstoreNotSettledLatest />} />
+          <Route path="merchant-api/online-webframe/overview" element={<WebFrameOverview />} />
+          <Route path="merchant-api/online-webframe/payment-request" element={<PaymentRequest />} />
+          <Route path="merchant-api/online/payment-link-create" element={<MerchantPaymentLinkCreate />} />
+          <Route path="merchant-api/online/payment-inquiry" element={<MerchantOnlinePaymentInquiry />} />
+          <Route path="merchant-api/card-payments/overview" element={<CardPaymentOverview />} />
+          <Route path="merchant-api/card-payments/payment-link-create" element={<MerchantPaymentLinkCreateCard />} />
+          <Route path="merchant-api/card-payments/payment-inquiry" element={<CardPaymentInquiry />} />
         </Route>
 
 
