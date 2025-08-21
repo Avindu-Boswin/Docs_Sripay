@@ -1,7 +1,12 @@
 {
     "docs": "文档",
     "doc": "文档",
+    "sections": "部分",
     "subtitle": "探索我们产品、服务等的文档。请选择您的角色和产品以开始。",
+    "documentationIntro": "SriPay 文件是您整合安全可靠付款的端到端指南。探索 REST API、身份驗證流程、Webhook 和最佳實踐，讓您自信地快速交付",
+    "thirdsectiontitle": "使用 SriPay 構建",
+    "developersectiondiscription": "SriPay 開發者文件是一份全面的指南，旨在幫助開發者有效地整合和使用 SriPay 的支付解決方案。它提供了有關 API 端點、身份驗證方法以及使用 SriPay 建立應用程式的最佳實踐的詳細資訊。",
+    "developerheading": "開發者標題",
     "footer": {
         "learnMore": "了解更多关于",
         "visitSripay": "访问 SriPay",
@@ -21,6 +26,18 @@
         "developer": {
             "title": "开发者",
             "desc": "查看开发者指南"
+        },
+        "bradingguidline": {
+            "title": "品牌指南",
+            "desc": "確保品牌聲音一致的指南"
+        },
+        "marketingmaterials": {
+            "title": "行銷資料",
+            "desc": "展示我們品牌故事的資產"
+        },
+        "agreement": {
+            "title": "查看協議",
+            "desc": "查看收單機構和商家協議"
         }
     },
     "acquirerIntro": {
@@ -836,5 +853,3823 @@
     "rightsidemenu": {
         "onthispage": "本页内容",
         "ishelpful": "此页面有帮助吗？"
+    },
+    "merchantgettingstart": {
+        "title": "入門",
+        "title2": "您想透過 SriPay 成為商家嗎",
+        "desription1": {
+            "section1": "商家可以直接註冊",
+            "section2": "作為收購方使用",
+            "section3": "鏈接。商家應在此過程中提供有效的詳細資訊。"
+        },
+        "title3": "有收單機構嗎？",
+        "desription2": {
+            "section1": "商家也可以透過與 SriPay 合作的收單機構進行註冊"
+        },
+        "signup": "報名",
+        "step1": {
+            "title": "步驟1",
+            "desc": "準確輸入您的個人資訊，例如姓名、姓氏、手機號碼和電子郵件地址，以開始註冊程序。"
+        },
+        "step2": {
+            "title": "步驟2",
+            "desc": "使用發送到您註冊的手機的 OTP 驗證您的手機號碼，以確保安全。"
+        },
+        "step3": {
+            "title": "步驟3",
+            "desc": "透過建立密碼並同意條款來設定您的帳戶以完成註冊。"
+        },
+        "sections": {
+            "section1": "報名詳情表格",
+            "section2": "驗證手機號碼",
+            "section3": "建立密碼"
+        }
+    },
+    "merchantcategories": {
+        "title": "中冶集團名單",
+        "desc": "以下是 SriPay 使用的商家類別代碼 (MCC) 清單。這些代碼對於根據商家提供的商品或服務類型對其進行分類至關重要。",
+        "desc2": "A1：ISO 18245 定義的代碼",
+        "sections": {
+            "section1": "MCC 列表",
+            "section2": "A1：由 ISO 18245 定义的代码",
+            "section3": "A2：由 SriPay 定义的专用代码"
+        }
+    },
+    "selfregistration": {
+        "desc": "商戶註冊並登入 SriPay 系統後，會自動進入此註冊流程。此表單是完成其入駐流程的重要步驟。提交所有必要資訊後，商戶將被列入等待名單，直到指定的收單機構審核並批准申請。",
+        "step1": "步驟 1：註冊詳情",
+        "step2": "第 2 步：地址詳情",
+        "step3": "步驟 3：業務聯絡人",
+        "step4": "第四步：商業活動",
+        "step5": "第五步：公司結算銀行詳細信息",
+        "step6": "步驟 6：所有者詳細信息",
+        "step7": "步驟 7：審核並提交 KYC 摘要",
+        "step8": "第八步：憲法文件",
+        "des": {
+            "sub1": "自動產生所有已完成欄位的摘要",
+            "sub2": "商家可以審核並確認最終提交",
+            "sub3": "商家註冊後，章程文件可依照以下步驟更新：",
+            "sub4": "導航到主頁，然後選擇個人資料，前往我的帳戶，選擇 KYC，最後選擇憲法文件。"
+        },
+        "sections": {
+            "section1": "注册详情",
+            "section2": "地址详情",
+            "section3": "业务联系人",
+            "section4": "业务活动",
+            "section5": "公司结算银行详情",
+            "section6": "所有者详情",
+            "section7": "审核并提交 KYC 摘要",
+            "section8": "公司章程文件"
+          }
+    },
+    "viewallstore":{
+        "title2":"商家可依以下三個類別申請：",
+        "category1":"店內",
+      "category2" :"在線的",
+       "category3":"簽證/碩士",
+       "title3":"一旦創建了商店，其可見性取決於當前狀態：",
+       "status":{
+        "status1":"得到正式認可的",
+        "status2":"草稿",
+        "status3":"被拒絕"
+    },
+    "desc1":"該商店將出現在其相應的類別下（店內、線上或 Visa/Master）。",
+     "desc2":" 如果商店創建過程不完整，它將出現在“草稿”部分。",
+     "desc3":"如果商店被支付寶拒絕，它將被列在“已拒絕”部分下。"
+
+
+    },
+    "singlestorecreation": {
+    "title": "單店創建",
+
+    "sectionsMenu": {
+      "section1": "導覽至商店標籤",
+      "section2": "選擇單店選項",
+      "section3": "填寫商店資訊",
+      "section4": "輸入銀行帳戶詳情",
+      "section5": "提交商店詳情",
+      "section6": "審核流程",
+      "section7": "故障排除"
+    },
+
+    "alts": {
+      "step1": "步驟 1：導覽至商店標籤",
+      "step2": "步驟 2：選擇單店選項",
+      "step3": "步驟 3：填寫商店資訊",
+      "step4": "步驟 4：輸入銀行帳戶詳情",
+      "step5": "步驟 5：提交商店詳情"
+    },
+
+    "steps1": {
+      "title": "步驟 1：導覽至「商店」標籤",
+      "subtitle1": "從頂部導覽列轉到商店部分。",
+      "subtitle2": "點選「建立商店」按鈕。"
+    },
+
+    "steps2": {
+      "title": "步驟 2：選擇單店選項",
+      "subtitle1": "您將看到 2 個商店建立選項",
+      "option1": { "title": "單店", "desc": "此選項用於建立單一商店。" },
+      "option2": { "title": "多家商店", "desc": "此選項可一次建立多個商店。" },
+      "subtitle2": "從那裡選擇「單一商店」選項並點擊「下一步」。"
+    },
+
+    "steps3": {
+      "title": "步驟 3：填寫商店資訊",
+      "subtitle1": "您將看到以下欄位",
+      "filed1": { "title": "店家名稱", "desc": "商店／專賣店的正式名稱。" },
+      "filed2": { "title": "MCC", "desc": "商家的類別。" },
+      "filed3": { "title": "商店信箱", "desc": "用於溝通的商店電子郵件地址。" },
+      "bullets": {
+        "address": "國家／省／區／城市／街道／經度／緯度 —— 用於準確定位商店的實體地址欄位。",
+        "qrCurrency": "商店 QR 貨幣 —— 選擇 QR 交易的偏好結算貨幣。",
+        "website": "商店網站 —— 填寫商店的官方網站 URL；若無專屬分店網站可填寫主網站。",
+        "note": "以上欄位可確保每間商店能以地址與聯絡資訊被唯一識別。"
+      }
+    },
+
+    "steps4": {
+      "title": "步驟 4：輸入銀行帳戶詳情",
+      "para": "為了實現無縫結算，請提供商店的銀行帳戶資料。您可以設定主要與次要結算帳戶，但僅能將一個帳戶設為預設結算帳戶。",
+      "primaryTitle": "主要銀行帳戶",
+      "primaryDesc": "此帳戶預設用於接收結算款，除非您手動更改。",
+      "requiredFields": "必填欄位",
+      "primaryList": {
+        "bankName": "銀行名稱：從支援的金融機構清單中選擇。",
+        "branchName": "分行名稱：填寫開戶分行名稱。",
+        "branchCode": "分行代碼：填寫開戶分行的代碼。",
+        "branchAddr": "分行街道／城市／郵遞區號：填寫分行所在地址資訊。",
+        "country": "銀行國家：選擇該銀行所在的國家。",
+        "accName": "帳戶名稱：填寫開戶所使用的姓名或公司名稱。",
+        "accNumber": "帳號：輸入完整的銀行帳號（不含空格）。",
+        "currency": "幣別：選擇此結算帳戶的幣別（如 USD、LKR）。",
+        "swift": "Swift／BIC 代碼：國際匯款（尤其美元）所需。",
+        "status": "結算狀態：預設為啟用，表示可接收款項。"
+      },
+      "secondaryTitle": "次要銀行帳戶（可選）",
+      "secondaryDesc": "此帳戶作為備用結算帳戶，需要時可啟用。",
+      "secondaryReq": "必填欄位（與主要帳戶相同）",
+      "secondaryNote": "您也可以切換設定，使其成為預設結算帳戶。",
+      "noteLabel": "注意：",
+      "noteDesc": "請確保資訊正確無誤；錯誤資料可能造成結算延遲或被拒。",
+      "next": "所有必填欄位正確填寫後，點擊「下一步」。"
+    },
+
+    "steps5": {
+      "title": "步驟 5：提交商店詳情",
+      "para": "若要完成商店註冊，請提供以下必填資訊。這些資料有助於驗證並啟用商店對客服務與結算功能。",
+      "frontPhotosTitle": "店面照片",
+      "frontPhotosDesc": "上傳清晰的店面外觀照片，以利驗證實體門市的存在與可見度。",
+      "frontPhotosNote": "請確保店名招牌清晰可見。",
+      "interiorPhotosTitle": "室內照片",
+      "interiorPhotosDesc": "上傳清晰的室內照片，以利驗證營業狀況與場域配置。",
+      "interiorPhotosNote": "照片應呈現實際陳設（如櫃臺、展示、標示等）。",
+      "mobileTitle": "手機號碼",
+      "mobileDesc": "提供有效的手機號碼以供店層級聯絡與驗證。",
+      "mobileList": {
+        "active": "必須可用且可撥通。",
+        "verify": "點擊「驗證手機號碼」以接收並輸入驗證碼。"
+      },
+      "emailTitle": "電子郵件地址",
+      "emailDesc": "填寫有效的電子郵件，將用於結算、支援與通知等正式溝通。",
+      "emailList": { "verify": "提交前請點擊「驗證電子郵件」。" },
+      "submitNote": "提交前須完成手機與電子郵件驗證。",
+      "submitCta": "所有欄位填寫與驗證完成後，點擊「提交」，以完成商店入駐流程。"
+    },
+
+    "evaluation": {
+      "title": "商店審核流程",
+      "acquirerTitle": "收單機構審核",
+      "acquirerPara": "商店提交後將進入待審清單，由收單機構進行審查，以確保合法合規後再啟用。",
+      "sripayTitle": "SriPay 審核",
+      "sripayPara": "若子收單機構將申請送審，申請將進入 SriPay 後台進行二次審查。",
+      "sripayCan": "SriPay 管理員可：",
+      "sripayList": {
+        "approve": "批准並轉交 Alipay",
+        "reject": "駁回並附註原因，同時通知子收單機構"
+      },
+      "sysNote": "系統通知：",
+      "sysList": {
+        "notify": "子收單機構會收到 SriPay 的審核結果通知",
+        "progress": "在最終決定前，商店狀態維持「SriPay 處理中」"
+      },
+      "alipayTitle": "Alipay 審核",
+      "alipayPara": "若 SriPay 批准，申請將送至 Alipay+ 團隊，並由 Alipay 進行自動或人工合規檢查。",
+      "alipayCan": "Alipay+ 管理員可：",
+      "alipayList": {
+        "approve": "批准：商店即可接受付款",
+        "reject": "駁回：回傳原因，並通知子收單機構與 SriPay"
+      }
+    },
+
+    "troubleshooting": {
+      "title": "故障排除",
+      "draftQ": "「儲存草稿」按鈕是做什麼的？",
+      "draftA": "可在不提交表單的情況下儲存進度，稍後再回來完成。",
+      "saveQ": "商店資料無法儲存或提交",
+      "saveA": "請檢查必填欄位是否完整且格式正確，並留意表單上的驗證錯誤提示。若仍無法處理，請重新整理或清除瀏覽器快取。",
+      "bankQ": "銀行帳戶資訊被拒絕",
+      "bankA": "請再次確認格式與內容正確。僅能設定一個預設帳戶。如有疑問，請聯絡銀行或客服。",
+      "photoQ": "照片上傳失敗或未被接受",
+      "photoA": "請確保圖片清晰、格式為 JPG 或 PNG，且未超過檔案大小限制。招牌與室內須清晰可見。",
+      "pageQ": "頁面無法載入或卡住",
+      "pageA": "請檢查網路連線並重新載入。若持續發生，請改用其他瀏覽器或裝置。"
     }
+  },
+  "multiplestorecreation": {
+    "title": "多店創建",
+    "workflow": "建立流程",
+    "intro": "此功能允許商戶使用預先定義的 Excel 範本，一次性建立多間商店。",
+
+    "sectionsMenu": {
+      "section1": "前往多店創建",
+      "section2": "選擇多店選項",
+      "section3": "了解上傳視窗",
+      "section4": "下載並填寫範例 Excel",
+      "section5": "上傳並驗證 Excel 檔案",
+      "section6": "上傳進度",
+      "section7": "商店審核流程",
+      "section8": "故障排除"
+    },
+
+    "alts": {
+      "step1": "步驟 1：導覽至商店標籤",
+      "step2": "步驟 2：選擇多店選項",
+      "step3": "步驟 3：了解上傳視窗",
+      "step4": "步驟 4：下載並填寫範例 Excel",
+      "step5": "步驟 5：上傳並驗證 Excel 檔案",
+      "step6": "步驟 6：上傳進度"
+    },
+
+    "steps1": {
+      "title": "步驟 1：導覽至「商店」標籤",
+      "li1": "從頂部導覽列進入商店區域。",
+      "li2": "點擊「建立商店」按鈕。"
+    },
+
+    "steps2": {
+      "title": "步驟 2：選擇多店選項",
+      "p1": "您將看到 2 種商店建立方式。",
+      "single": "單店 —— 用於建立單一商店。",
+      "multiple": "多店 —— 可一次建立多個商店。",
+      "p2": "在此選擇「多店」選項，然後點擊「下一步」。"
+    },
+
+    "steps3": {
+      "title": "步驟 3：了解上傳視窗",
+      "includes": "上傳視窗包含：",
+      "li1": "Excel 檔上傳區 —— 可拖放或瀏覽選取上傳。",
+      "li2": "下載範例 Excel —— 取得正確格式。",
+      "li3": "重要說明 —— 僅支援 .xlsx；所有圖片／文件須先上傳取得可公開連結。"
+    },
+
+    "steps4": {
+      "title": "步驟 4：下載並填寫範例 Excel",
+      "ol1": "點擊「下載範例 Excel」以取得正確格式。",
+      "rulesTitle": "填寫 Excel 時請遵循以下規則：",
+      "r1": "請勿更改表頭名稱。",
+      "r2": "請勿刪除任何欄位。",
+      "r3": "每一列都必須填入所有欄位的有效值。",
+      "r4": "Email 必須唯一且格式正確。",
+      "r5": "手機號碼須符合有效格式（+94）。",
+      "r6": "所有上傳文件 URL 需設定為「持有連結者皆可存取」。",
+      "r7": "因審核包含子收單機構、SriPay 與 Alipay，多個環節需檢視，故文件連結需公開以確保流程順暢。"
+    },
+
+    "steps5": {
+      "title": "步驟 5：上傳並驗證 Excel 檔案",
+      "li1": "點擊上傳區或拖曳完成的 .xlsx 檔案至該區。",
+      "table": {
+        "h1": "驗證類型",
+        "h2": "檢查內容",
+        "h3": "介面上的錯誤範例",
+        "row1c1": "檔案格式",
+        "row1c2": "僅接受 .xlsx",
+        "row1c3": "檔案類型無效",
+        "row2c1": "欄位表頭",
+        "row2c2": "必須與範本完全一致",
+        "row2c3": "工作表「Merchant」中的表頭已被修改…",
+        "row3c1": "必填欄位",
+        "row3c2": "不得空白（如店名、Email 等）",
+        "row3c3": "第 2 列：缺少 Store Name 值"
+      },
+      "onFailTitle": "若驗證失敗",
+      "onFail1": "系統會跳出紅色錯誤視窗，顯示問題原因。",
+      "onFail2": "點擊「確定」，修正 Excel 後重新上傳。",
+      "imgAlt": "驗證介面示意"
+    },
+
+    "steps6": {
+      "title": "步驟 6：上傳進度",
+      "imgAlt": "上傳進度示意",
+      "passTitle": "若檔案通過驗證",
+      "li1": "您將看到「正在上傳商店…」等提示訊息。",
+      "li2": "請等待程序完成並自動關閉視窗。"
+    },
+
+    "evaluation": {
+      "title": "商店審核流程",
+      "acquirerTitle": "收單機構審核",
+      "acquirerPara": "商店提交後，將進入待審清單，由收單機構進行審查，以確保合法合規後再啟用。",
+      "sripayTitle": "SriPay 審核",
+      "sripayPara": "若子收單機構將申請送審，申請將進入 SriPay 後台進行第二層審查。",
+      "sripayCan": "SriPay 管理員可：",
+      "sripayApprove": "批准並轉交 Alipay",
+      "sripayReject": "駁回並附註原因並通知子收單機構",
+      "sysNote": "系統通知：",
+      "sysNotify": "子收單機構會收到 SriPay 的審核結果通知",
+      "sysProgress": "最終決定前，商店狀態維持「SriPay 處理中」",
+      "alipayTitle": "Alipay 審核",
+      "alipayPara": "若 SriPay 批准，申請將送至 Alipay+ 團隊，並由 Alipay 進行自動或人工合規檢查。",
+      "alipayCan": "Alipay+ 管理員可：",
+      "alipayApprove": "批准：商店即可啟用收款",
+      "alipayReject": "駁回：回傳原因，並通知子收單機構與 SriPay"
+    },
+
+    "troubleshooting": {
+      "title": "故障排除",
+      "q1": "我的 Excel 上傳失敗或被拒絕。",
+      "a1": "請確認使用系統提供的最新範本。檢查所有必填欄位與表頭是否齊全且未留空，並移除自訂格式或合併儲存格。",
+      "q2": "出現「格式錯誤」或「資料無效」訊息。",
+      "a2": "請依規範填寫（如電話、Email、ID 等），並參考上方各欄位的規則與範例。",
+      "q3": "頁面無法載入或卡住。",
+      "a3": "請檢查網路連線後重新整理；若仍異常，請改用其他瀏覽器或裝置。"
+    }
+  },
+  "storeusersassign": {
+    "title": "指派商店使用者",
+    "menu": {
+      "add": "新增商店使用者",
+      "deactivate": "停用商店使用者"
+    },
+    "intro": "若要指派商店使用者，商戶需完成「新增商店使用者」表單，提供使用者的姓名、電子郵件與密碼。系統會寄送一次性密碼（OTP）至該電子郵件以供驗證，使用者必須完成驗證後才能啟用帳戶。",
+    "stepsTitle": "指派商店使用者步驟",
+    "step1": "步驟 1：前往「我的帳戶」並選擇「商店使用者」，然後點擊「新增商店使用者」。",
+    "step2": "步驟 2：點擊「新增商店使用者」以開啟表單。",
+    "manage": "若要更新使用者資訊或變更狀態，請點擊該列的動作選單（三個點）。可選擇「編輯」以修改資料，或選擇「停用」以撤銷存取權限。",
+    "alts": {
+      "nav": "前往商店使用者頁面",
+      "form": "新增商店使用者表單",
+      "edit": "編輯商店使用者"
+    }
+  }
+  ,"terminalmanagement": {
+    "title": "終端機管理",
+    "intro": "終端機管理可讓商戶為各商店設定並關聯終端機。",
+
+    "sectionsMenu": {
+      "section1": "進入終端機管理",
+      "section2": "新增終端機",
+      "section3": "選擇單／多終端機",
+      "section4": "建立單一終端機",
+      "section5": "建立多個終端機",
+      "section6": "啟用／停用終端機",
+      "section7": "故障排除"
+    },
+
+    "alts": {
+      "img1": "進入終端機管理",
+      "img2": "由三點選單新增終端機",
+      "img3": "由終端機區域新增終端機",
+      "img4": "選擇單一或多個終端機",
+      "img5": "建立單一終端機",
+      "img6": "建立多個終端機",
+      "img7": "終端機狀態檢視"
+    },
+
+    "section1": {
+      "title": "進入終端機管理",
+      "lead": "若要管理特定商店的終端機",
+      "ol": {
+        "li1": "前往商店區域。",
+        "li2": "點擊要管理終端機的商店以進入。",
+        "li3": "查看既有終端機清單，或建立新的終端機。"
+      },
+      "importantLabel": "重要：",
+      "important": "僅當商店狀態為「已核准（Approved）」時，才可進行終端機管理。"
+    },
+
+    "section2": {
+      "title": "新增終端機",
+      "p1": "商店核准後，即可開始指派交易終端機。終端機代表店內特定的 POS 裝置或結帳點。",
+      "placesTitle": "可從兩個位置新增終端機：",
+      "fromMenu": "從「佣金費率」旁的三點選單 …",
+      "fromSection": "從終端機區域"
+    },
+
+    "section3": {
+      "title": "選擇單／多終端機",
+      "p1": "首先選擇要建立單一終端機，或一次建立多個終端機。",
+      "bullets": {
+        "single": "單一終端機：適用於只有一個結帳點的商店。",
+        "multiple": "多個終端機：適用於有多個櫃檯／裝置的商店（如超市或連鎖）。"
+      },
+      "p2": "完成選擇後，點擊「下一步」以繼續建立流程。"
+    },
+
+    "section4": {
+      "title": "建立單一終端機",
+      "b1": "終端機名稱會自動產生（例如：Terminal 1）。",
+      "b2": "為維持一致性，終端機名稱為系統產生，無法修改。",
+      "b3": "新建立的終端機預設為「啟用」。",
+      "p": "點擊「建立」以完成單一終端機設定。"
+    },
+
+    "section5": {
+      "title": "建立多個終端機",
+      "b1": "輸入要建立的數量（例如 5），點擊「建立」即可一次產生多個終端機。",
+      "p": "系統會依序命名（Terminal 1、Terminal 2…）建立指定數量的終端機。"
+    },
+
+    "section6": {
+      "title": "啟用／停用終端機",
+      "b1": "在終端機清單中找到欲變更的終端機。",
+      "b2": "於「啟用」欄位切換開關即可啟用或停用。",
+      "b3": "停用的終端機在重新啟用前無法用於收款。",
+      "noteLabel": "注意：",
+      "noteDesc": "狀態變更會立即生效，但可能需要最多 5 分鐘才會同步至所有系統。"
+    },
+
+    "section7": {
+      "title": "故障排除",
+      "q1": "無法新增終端機，或「新增終端機」按鈕是停用的。",
+      "a1": "請確認您具有正確權限且已選擇商戶／商店。若商戶或商店尚未核准，可能無法新增終端機。",
+      "q2": "無法更改終端機名稱。",
+      "a2": "終端機名稱為系統依數量自動產生，使用者無法修改。",
+      "q3": "頁面無法載入或卡住。",
+      "a3": "請檢查網路連線並重新整理。若問題持續，請改用其他瀏覽器或裝置。"
+    }
+  },
+  "instore": {
+    "title": "店內支付",
+    "heroLead": "透過單一整合，讓全球顧客於門市輕鬆完成付款。運用先進數位支付與 QR 技術，加速交易、降低成本，並提升實體門市的顧客體驗。",
+    "videoTitle": "QR 付款影片",
+
+    "sectionsMenu": {
+      "step1": "建立店內交易",
+      "step2": "選擇付款方式",
+      "step3": "Alipay Plus 詳細說明",
+      "step4": "掃描 QR Code",
+      "step5": "付款完成"
+    },
+
+    "howTo": {
+      "title": "如何建立交易？",
+      "instruction": "點擊",
+      "navPath": "Transactions > Alipay+ InStore > Create Transaction",
+      "bullets": {
+        "store": "選擇或輸入「商店」",
+        "terminal": "選擇或輸入「終端機」",
+        "purpose": "選擇或輸入「付款用途」"
+      },
+      "alts": {
+        "createTx": "建立交易畫面",
+        "selectMethod": "選擇付款方式畫面"
+      }
+    },
+
+    "infoBanner": "想了解各付款方式的操作？點擊下方任一選項以查看說明。",
+
+    "methods": {
+      "alipayPlus": {
+        "cardTitle": "Alipay Plus",
+        "cardDesc": "顧客以錢包掃描商戶產生、包含訂單信息的 QR Code 完成付款。",
+        "detailsTitle": "Alipay Plus 詳細說明",
+        "enterTitle": "輸入交易金額",
+        "enterHint": "商戶可先選擇偏好幣別（LKR 或 USD），再輸入金額。",
+        "alts": { "enter": "輸入金額截圖", "scan": "掃描 QR", "success": "付款成功截圖" },
+        "scanTitle": "掃描 QR Code",
+        "scanTextPre": "請使用裝置搭配",
+        "scanTextAnchor": "Alipay+ 支援錢包",
+        "scanTextPost": "掃描下方 QR Code 完成付款。",
+        "completeTitle": "付款完成",
+        "completeText": "付款完成後，商戶將看到「Payment Received」成功訊息。"
+      },
+
+      "scanPay": {
+        "cardTitle": "以 Alipay Plus 掃描用戶 QR 收款",
+        "cardDesc": "商戶掃描顧客出示的 QR Code 以收款。",
+        "detailsTitle": "以 Alipay Plus 掃描用戶 QR 收款",
+        "enterTitle": "輸入交易金額",
+        "enterHint": "商戶可先選擇偏好幣別（LKR 或 USD），再輸入金額。",
+        "alts": { "enter": "掃描 QR 截圖", "camera": "相機掃描視窗", "success": "付款成功截圖" },
+        "scanTitle": "掃描 QR Code",
+        "scanText": "建立交易後，Alipay Plus 會產生 QR Code。請使用裝置相機（如下）掃描並確認。",
+        "completeTitle": "付款完成",
+        "completeText": "完成付款後，系統會顯示「Payment Received」成功訊息。"
+      },
+
+      "sripay": {
+        "cardTitle": "SriPay",
+        "cardDesc": "透過單一整合，輕鬆支援全球顧客於門市付款。",
+        "soonTitle": "SriPay",
+        "soonText": "此付款方式即將推出！",
+        "soonSub": "敬請期待後續更新。"
+      },
+
+      "visamaster": {
+        "cardTitle": "Visa/Master",
+        "cardDesc": "接受全球顧客以信用卡或金融卡付款。",
+        "detailsTitle": "Visa/Master 詳細說明",
+        "p1": "功能即將推出！在櫃台安全接受全球 Visa/MasterCard 付款。",
+        "p2": "未來可支援晶片卡與感應式（非接觸）付款。"
+      },
+
+      "usdt": {
+        "cardTitle": "USDT",
+        "cardDesc": "讓顧客以 Tether（USDT）加密貨幣安全付款。",
+        "detailsTitle": "USDT 詳細說明",
+        "p1": "即將推出：支援以全球主流加密貨幣 USDT 付款。",
+        "p2": "可順暢兌換為 LKR，且交易手續費較低。"
+      }
+    }
+  },
+  "online": {
+    "title": "線上支付",
+    "heroLead": "透過一次整合至 Antom，您即可接受所有已接入的電子錢包、卡片與替代支付方式。未來若有新的支付通道接入，也能以極小成本快速支援。\n\n以下內容說明不同線上支付類型如何協助您順利收款。",
+    "videoTitle": "QR 付款影片",
+
+    "sectionsMenu": {
+      "step1": "建立線上交易",
+      "step2": "錢包選擇",
+      "step3": "網頁支付流程",
+      "step4": "選擇付款方式",
+      "step5": "收據與明細"
+    },
+
+    "howTo": {
+      "title": "如何建立線上交易？",
+      "navPath": "Transactions > Alipay+ Online > Create Transaction",
+      "alts": { "createTx": "建立交易畫面", "selectMethod": "選擇付款方式畫面" }
+    },
+
+    "note": "備註：若您要指定特定錢包，請點選「指定錢包」分頁以查看相關資訊；若要面向所有錢包，請點選「全部錢包」分頁以取得對應指引。",
+
+    "tabs": {
+      "targetWallet": "指定錢包",
+      "targetAllWallets": "全部錢包",
+      "web": "網頁",
+      "mobile": "行動裝置"
+    },
+
+    "targetWallet": {
+      "lead": "當商戶指定特定錢包時，可選擇由「網頁」或「行動裝置」完成付款。",
+
+      "web": {
+        "title": "網頁支付流程",
+        "desc": "商戶選擇網頁方式啟動 Alipay+ 交易，系統會產生付款連結，可直接分享給顧客並於瀏覽器完成付款。",
+        "selectTitle": "選擇付款方式",
+        "selectDesc": "為本次交易選擇偏好的付款方式，包含 Alipay+ 與 SriPay。",
+        "receiptTitle": "收據與明細",
+        "receiptDesc": "可產生 QR 供顧客掃碼付款，或複製／分享付款連結，提升交易彈性。",
+        "alts": {
+          "flow": "網頁付款流程示意",
+          "method": "付款方式選擇畫面",
+          "receipt": "收據／分享選項"
+        }
+      },
+
+      "mobile": {
+        "title": "行動裝置支付流程",
+        "desc": "選擇「行動裝置」作為使用者付款環境，並指定 iOS／Android 與「App 內／瀏覽器內」模式，提供順暢體驗。",
+        "selectTitle": "選擇付款方式",
+        "selectDesc": "選擇 Alipay+ 或 SriPay，以決定處理流程與體驗。",
+        "receiptTitle": "收據與明細",
+        "receiptDesc": "可使用付款連結完成交易並分享給顧客。",
+        "alts": {
+          "flow": "行動裝置付款流程示意",
+          "method": "付款方式選擇畫面",
+          "receipt": "付款連結分享"
+        }
+      }
+    },
+
+    "targetAll": {
+      "lead": "當商戶面向所有錢包時，仍可依需求選擇以網頁或行動裝置完成付款。",
+
+      "web": {
+        "title": "網頁支付流程",
+        "desc": "選擇「網頁」為使用者付款環境，顧客可直接於瀏覽器完成付款——適合桌機或免安裝 App 的結帳。",
+        "selectTitle": "選擇付款方式",
+        "selectDesc": "選擇 Alipay+ 或 SriPay，以決定處理流程與體驗。",
+        "receiptTitle": "收據與明細",
+        "receiptDesc": "可使用付款連結完成交易並分享給顧客。",
+        "alts": {
+          "flow": "網頁付款流程示意",
+          "method": "付款方式選擇畫面",
+          "receipt": "收據／分享選項"
+        }
+      },
+
+      "mobile": {
+        "title": "行動裝置支付流程",
+        "desc": "選擇「行動裝置」為使用者付款環境，並指定 iOS／Android 與 App 內／瀏覽器內模式，提供順暢體驗。",
+        "selectTitle": "選擇付款方式",
+        "selectDesc": "選擇 Alipay+ 或 SriPay，以決定處理流程與體驗。",
+        "receiptTitle": "收據與明細",
+        "receiptDesc": "可產生 QR 供掃碼付款，或複製／分享付款連結，彈性完成交易。",
+        "alts": {
+          "flow": "行動裝置付款流程示意",
+          "method": "付款方式選擇畫面",
+          "receipt": "收據／分享選項"
+        }
+      }
+    }
+  },
+  "cardpayments": {
+    "title": "信用卡支付",
+    "sectionsMenu": {
+      "step1": "介紹",
+      "step2": "建立付款連結"
+    },
+    "intro": "SriPay 支援透過 Visa、Mastercard 與銀聯（UnionPay）進行流暢的信用卡收款。商戶可輕鬆處理國內與國際交易，提供快速、安全、可靠的卡片支付體驗。無論線上或門市，SriPay 在確保最高安全性的同時，為顧客帶來零摩擦的結帳流程。",
+    "alts": {
+      "ui": "信用卡支付介面截圖",
+      "txn": "信用卡交易截圖"
+    },
+    "paymentLink": {
+      "title": "建立付款連結",
+      "p1": "此畫面顯示商戶已成功為顧客建立「信用卡付款連結」。彈出訊息「Payment Link Created Successfully!」代表交易已初始化。商戶可看到以下重點資訊：",
+      "list": {
+        "clientRef": "Client Reference（客戶參考）— 供內部追蹤的交易識別碼。",
+        "requestId": "Request ID（請求編號）— 此次支付 API 呼叫的唯一請求代碼。",
+        "expiresAt": "Expires At（到期時間）— 逾期後此付款連結即失效。",
+        "paymentUrl": "Payment Page URL（付款頁面連結）— 可直接開啟或複製分享給顧客的安全連結。"
+      },
+      "p2": "頁面下方提供「Open Payment Page」按鈕可立即前往；「Next Steps」則提醒顧客須在到期前完成付款。"
+    }
+  },
+  "instorereports": {
+    "title": "Alipay+ 店內報表",
+    "intro": "「Alipay+ 店內報表」提供所有已結清的店內交易之清晰總覽，並可即時產生詳細報表、追蹤交易表現與監控結清紀錄。",
+    "sectionsMenu": {
+      "step1": "已結清交易",
+      "step2": "已結清交易表格",
+      "step3": "交易表格欄位"
+    },
+    "alts": {
+      "kpi": "含成功、退款、作廢與總額 KPI 的總覽",
+      "search": "交易搜尋與篩選控制項",
+      "filter": "篩選下拉與日期選擇器",
+      "columns": "交易表格欄位總覽"
+    },
+
+    "settled": {
+      "title": "已結清交易",
+      "desc": "此區塊提供所有已完成之店內支付活動的即時摘要，協助快速掌握結果並評估整體營運表現。",
+      "kpis": {
+        "success": "成功交易：已成功完成並結清的付款筆數。",
+        "refunded": "退款交易：已將款項退還給顧客的交易筆數。",
+        "voided": "作廢交易：在結清前已被取消的付款筆數。",
+        "total": "總金額：所有已結清交易的合計金額（以 USD 與 LKR 顯示）。"
+      }
+    },
+
+    "table": {
+      "title": "已結清交易表格",
+      "searchTitle": "搜尋功能",
+      "filterTitle": "篩選功能"
+    },
+
+    "columns": {
+      "title": "交易表格欄位",
+      "labels": {
+        "date": "日期",
+        "id": "交易編號",
+        "store": "商店名稱",
+        "currency": "幣別",
+        "value": "金額",
+        "status": "狀態",
+        "actions": "操作"
+      },
+      "items": {
+        "date": "交易發生的日期與時間。",
+        "id": "系統指派的唯一交易識別碼。",
+        "store": "發生交易的商店名稱。",
+        "currency": "此筆交易所使用的幣別。",
+        "value": "交易金額。",
+        "statusDesc": "目前交易狀態 —",
+        "actions": "可進一步的操作，例如檢視詳細資訊。"
+      },
+      "statusBadges": {
+        "success": "成功",
+        "refunded": "已退款",
+        "voided": "已作廢"
+      }
+    }
+  },
+  "onlinereports": {
+    "title": "Alipay+ 線上報表",
+    "intro": "「Alipay+ 線上報表」為商戶提供所有已結清之線上交易的清晰總覽，並能即時產生詳細報表、追蹤交易表現與監控結清紀錄。",
+    "sectionsMenu": {
+      "step1": "已結清交易",
+      "step2": "已結清交易表格",
+      "step3": "交易表格欄位"
+    },
+    "alts": {
+      "kpi": "含成功、退款、作廢與總額 KPI 的總覽",
+      "search": "交易搜尋與篩選控制項",
+      "filter": "篩選下拉與日期選擇器",
+      "columns": "交易表格欄位總覽"
+    },
+
+    "settled": {
+      "title": "已結清交易",
+      "desc": "此區塊提供所有已完成之線上支付活動的即時摘要，協助快速掌握結果並評估整體營運表現。",
+      "kpis": {
+        "success": "成功交易：已成功完成並結清的付款筆數。",
+        "refunded": "退款交易：已將款項退還給顧客的交易筆數。",
+        "voided": "作廢交易：在結清前已被取消的付款筆數。",
+        "total": "總金額：所有已結清交易的合計金額（以 USD 與 LKR 顯示）。"
+      }
+    },
+
+    "table": {
+      "title": "已結清交易表格",
+      "searchTitle": "搜尋功能",
+      "filterTitle": "篩選功能"
+    },
+
+    "columns": {
+      "title": "交易表格欄位",
+      "labels": {
+        "date": "日期",
+        "id": "交易編號",
+        "store": "商店名稱",
+        "currency": "幣別",
+        "value": "金額",
+        "status": "狀態",
+        "actions": "操作"
+      },
+      "items": {
+        "date": "交易發生的日期與時間。",
+        "id": "系統指派的唯一交易識別碼。",
+        "store": "發生交易的商店名稱。",
+        "currency": "此筆交易所使用的幣別。",
+        "value": "交易金額。",
+        "statusDesc": "目前交易狀態 —",
+        "actions": "可進一步的操作，例如檢視詳細資訊。"
+      },
+      "statusBadges": {
+        "success": "成功",
+        "refunded": "已退款",
+        "voided": "已作廢"
+      }
+    }
+  },
+  "cardreports": {
+    "title": "信用卡支付報表",
+    "intro": "SriPay 支援透過 Visa、Mastercard 與銀聯（UnionPay）進行安全可靠的信用卡收款，涵蓋國內與國際交易。「信用卡支付報表」提供所有已結清交易的清晰總覽，協助商戶產生詳細報表、追蹤銷售表現並監控結清歷程。無論線上或門市，SriPay 在確保最高安全性的同時，為顧客帶來快速、零摩擦的體驗。",
+    "sectionsMenu": {
+      "step1": "已結清交易",
+      "step2": "已結清交易表格",
+      "step3": "交易表格欄位"
+    },
+    "alts": {
+      "kpi": "含筆數與金額 KPI 的已結清交易總覽",
+      "search": "交易搜尋與篩選控制項",
+      "filter": "篩選下拉與日期選擇器",
+      "columns": "交易表格欄位總覽"
+    },
+    "settled": {
+      "title": "已結清交易",
+      "desc": "此摘要顯示於所選期間與篩選條件下，已結清入帳之信用卡付款，協助您不必開啟完整表格便能快速掌握交易量與金額。",
+      "kpis": {
+        "totalTx": "總交易筆數：於所選期間達到最終結清的信用卡付款筆數。不含待處理、拒絕或作廢的付款。",
+        "success": "成功交易：最終狀態為成功（已授權、已請款且已結清）的筆數。",
+        "totalUsd": "以 USD 計之總金額：以美元呈現之已結清信用卡付款總額。多幣別情境依結清幣別設定換算為 USD。",
+        "totalLkr": "以 LKR 計之總金額：同一批已結清信用卡付款，以斯里蘭卡盧比呈現之總額，供在地報表使用。"
+      },
+      "notesTitle": "注意事項",
+      "notes": {
+        "n1": "所有指標皆會依據目前的篩選條件（日期區間、商店、付款方式等）。",
+        "n2": "金額以「已結清金額」（已請款且結清）為準，非原始授權金額。",
+        "n3": "待處理、拒絕或作廢的付款不計入上述總計。",
+        "n4": "金額同時以 USD 與 LKR 顯示，小數點後四捨五入至兩位。"
+      }
+    },
+    "table": {
+      "title": "已結清交易表格",
+      "searchTitle": "搜尋功能",
+      "filterTitle": "篩選功能"
+    },
+    "columns": {
+      "title": "交易表格欄位",
+      "labels": {
+        "date": "日期",
+        "id": "交易編號",
+        "store": "商店名稱",
+        "currency": "幣別",
+        "value": "金額",
+        "status": "狀態",
+        "actions": "操作"
+      },
+      "items": {
+        "date": "交易發生的日期與時間。",
+        "id": "系統指派的唯一交易識別碼。",
+        "store": "發生交易的商店名稱。",
+        "currency": "此筆交易所使用的幣別。",
+        "value": "交易金額。",
+        "statusDesc": "目前交易狀態 —",
+        "actions": "可進一步的操作，例如檢視詳細資訊。"
+      },
+      "statusBadges": {
+        "success": "成功",
+        "refunded": "已退款",
+        "voided": "已作廢"
+      },
+      "statusHints": {
+        "completed": "（付款完成）",
+        "returned": "（已退還給顧客）",
+        "canceled": "（結清前取消）"
+      }
+    }
+  },
+  "troubleshootings": {
+    "title": "問題排解",
+    "intro": "本指南提供 SriPay 商戶與店鋪使用者常見問題的解決方式。",
+    "sectionsMenu": {
+      "merchant": "商戶端問題",
+      "storeUser": "店鋪使用者問題"
+    },
+    "labels": {
+      "issue": "問題",
+      "solution": "解決方式"
+    },
+    "merchantIssues": {
+      "title": "商戶端問題",
+      "items": [
+        {
+          "issue": "指派店鋪使用者時未收到 OTP",
+          "solution": "請使用者檢查垃圾郵件匣，並確認輸入的是有效的電子郵件地址。"
+        },
+        {
+          "issue": "無法指派店鋪使用者",
+          "solution": "請確認完整填寫姓名、電子郵件與密碼，且該電子郵件未被其他帳號使用。"
+        },
+        {
+          "issue": "商戶註冊停留在「Waiting for Approval」",
+          "solution": "屬正常情況，請等待收單機構完成審核，無需額外操作。"
+        },
+        {
+          "issue": "圖庫上傳媒體失敗",
+          "solution": "請確認上傳檔案至少 10MB。小於 10MB 的檔案可能不被接受。"
+        }
+      ]
+    },
+    "storeUserIssues": {
+      "title": "店鋪使用者問題",
+      "items": [
+        {
+          "issue": "電子郵件驗證失敗",
+          "solution": "請由商戶後台重新傳送 OTP，並確認使用者在有效時間內輸入正確的驗證碼。"
+        },
+        {
+          "issue": "無法登入",
+          "solution": "請確認帳號已驗證且為啟用狀態；必要時可嘗試重設密碼。"
+        }
+      ]
+    }
+  },
+  "supports": {
+    "title": "支援資訊",
+    "banner": "若您需要協助，請聯絡 SriPay 商戶支援團隊：",
+    "sectionsMenu": {
+      "email": "電子郵件",
+      "website": "網站",
+      "mobile": "行動電話"
+    },
+    "alts": {
+      "emailLogo": "電子郵件圖示",
+      "websiteLogo": "SriPay 標誌",
+      "callLogo": "電話圖示"
+    },
+
+    "email": {
+      "title": "電子郵件",
+      "blurb": "請依您的需求聯絡對應的業務或技術支援團隊，我們會在 1 個工作日內回覆：",
+      "groupTitle": "SriPay 商戶支援",
+      "labels": {
+        "address": "電子郵件",
+        "hours": "服務時間"
+      },
+      "items": {
+        "addressValue": "admin@sripay.lk",
+        "hoursValue": "全年無休，週一至週日，UTC+8"
+      }
+    },
+
+    "website": {
+      "title": "網站",
+      "blurb": "前往官方網站以取得更多詳情、文件與最新服務更新。",
+      "groupTitle": "SriPay 商戶支援",
+      "labels": {
+        "weblink": "網站連結"
+      },
+      "items": {
+        "linkHref": "https://www.sripay.lk",
+        "linkText": "www.sripay.lk"
+      }
+    },
+
+    "mobile": {
+      "title": "行動電話",
+      "blurb": "若需立即協助（商戶處理或技術支援），可直接來電聯絡我們。",
+      "merchantGroupTitle": "SriPay 商戶支援",
+      "technicalGroupTitle": "SriPay 商戶技術支援",
+      "labels": {
+        "mobile": "電話",
+        "hours": "服務時間"
+      },
+      "merchant": {
+        "phone": "+94 76 703 5500（Nishadi 女士）",
+        "hoursValue": "全年無休，週一至週日，UTC+8"
+      },
+      "technical": {
+        "phone": "+94 76 664 1614（Rusith 先生）",
+        "hoursValue": "全年無休，週一至週日，UTC+8"
+      }
+    }
+  },
+  "faqs": {
+    "title": "常見問題",
+    "alts": { "illustration": "常見問題插圖" },
+
+    "q1": {
+      "q": "提交後可以修改商戶的 KYC 嗎？",
+      "a": "不可以。提交後不可再編輯；您需將申請退回，請商戶重新註冊。"
+    },
+    "q2": {
+      "q": "支援哪些類型的企業？",
+      "a": "SriPay 支援獨資、合夥、私人與上市公司等多種企業型態，涵蓋廣泛產業。"
+    },
+    "q3": {
+      "q": "可以使用自有的商戶編號（Merchant ID）嗎？",
+      "a": "可以。若該自訂商戶編號未被占用，系統會驗證並接受。"
+    },
+    "q4": {
+      "q": "我核准商戶後會發生什麼事？",
+      "a": "申請會先送交 SriPay 進行第二層審查，接著提交 Alipay 進行最終審核。每個階段系統都會通知您。"
+    },
+    "q5": {
+      "q": "如果兩個商戶使用相同的電子郵件怎麼辦？",
+      "a": "不允許重複的電子郵件。每位商戶必須使用唯一的 Email 進行註冊。"
+    }
+  },
+  "devgettingstart": {
+    "title": "什麼是 SriPay 開發者文件？",
+    "p1": "SriPay 開發者文件是一份完整指南，協助開發者有效整合並運用 SriPay 的支付解決方案。內容涵蓋 API 端點、驗證方式，以及使用 SriPay 開發應用程式的最佳實務。",
+    "p2": "SriPay Connect 採用現代化技術堆疊：前端使用 React.js、Tailwind CSS 與 Ant Design；後端採用 Express.js（支援叢集）；基礎設施建置於 Google Cloud Platform。系統以 Firestore 儲存結構化資料，並透過 Realtime Database 傳遞即時交易更新，確保效能與可擴充性。",
+    "p3": "平台提供完整的商戶管理、門市管理、交易處理、結清作業與詳細報表能力。資安方面包含 JWT/OAuth 2.0 驗證、AES-256-CBC 加密、與對 Alipay+ 的 RSA2 簽章通訊，並透過代碼化（tokenization）符合 PCI DSS 規範。",
+    "p4": "文件涵蓋系統架構、整合 Firebase Cloud Messaging 的 Flutter 行動應用、RESTful API 端點、第三方整合（簡訊閘道、Google Analytics）、部署於 GCP Cloud Run 的流程，以及 99.9% 可用度 SLA 與 L1–L3 分級支援的維運機制。",
+    "p5_prefix": "想快速上手，請前往",
+    "p5_link_text": "docs.sripay.lk",
+    "p5_suffix": "查看詳細技術規格、整合指南與開發資源。"
+  },
+  "systemintro": {
+    "title": "簡介",
+    "p1": "SriPay Connect 是一款雲端化的支付企業資源規劃（ERP）應用，協助商戶透過 Alipay+（線上與線下）處理國際與在地數位支付，連結全球顧客與斯里蘭卡及其他地區的商家。本系統架構報告提供給銀行合作夥伴，完整說明 SriPay Connect 的技術架構、安全措施、整合能力與營運韌性，以支援安全且可擴充的金流處理。",
+    "p2": "SriPay Connect 的服務對象多元，包含商戶、金融機構與金流服務供應商，提供完善功能：商戶管理、門市管理、交易管理、結清，以及詳細的交易報表。系統採用現代化技術並建置於安全的雲端基礎設施上，確保高可用性、合規性與客製化能力，以滿足品牌需求。",
+    "p3": "本文件說明系統架構，涵蓋前後端元件、資料庫設計、安全性機制、API 整合與合規事項，協助銀行合作夥伴在導入前獲得透明資訊與信心。"
+  },
+  "systemarch": {
+    "title": "系統架構總覽",
+    "sectionsMenu": {
+      "overview": "總覽",
+      "diagram": "系統架構圖",
+      "components": "元件說明"
+    },
+    "p1": "SriPay Connect 採雲原生與模組化設計，結合以微服務為核心的後端、回應式的網頁／行動前端，以及強化的資料庫基礎。系統原生整合 Alipay+（線上與線下），並以外掛式連接器處理通知、分析與其他第三方服務；開放的 RESTful API 讓與夥伴之間的擴充更為順暢。",
+    "p2": "安全與可觀測性貫穿整個堆疊：使用 JWT／OAuth 2.0 進行驗證，機密以 GCP KMS 管理並採用 AES-256-CBC，加上對 Alipay+ 的 RSA2 簽章呼叫；同時提供集中化日誌與分散式追蹤，實現端到端可視性與快速事件應對。",
+    "alts": {
+      "diagram": "系統架構總覽圖"
+    },
+    "components": {
+      "title": "元件說明",
+      "items": {
+        "webApp": "網頁應用：以 React.js、Tailwind CSS 與 Ant Design（AntD）打造，可自訂且具回應式介面，支援商戶與門市管理、交易報表、結清與多種使用者角色。",
+        "mobileApp": "行動應用：以 Flutter（Dart）與 Material 3 開發，整合 Firebase Cloud Messaging 推播，於跨平台 App 中提供商戶／門市管理、交易報表、結清與角色式存取。",
+        "backend": "後端伺服器：以 Express.js 搭配叢集因應擴充性，負責商業邏輯、API 協調與外部整合。",
+        "database": "資料庫：以 Firestore 儲存結構化資料、Realtime Database 提供即時交易更新，並每日產出 JSON 備份以利復原。",
+        "notification": "通知伺服器：在 GCP 上以 Node.js／Express 服務 SMS 與電子郵件通知。",
+        "openSeaApi": "Open Sea API 伺服器：以 Express.js 與叢集架構提供高效能與可擴充性，負責核心商業邏輯執行、API 協調與外部服務整合。",
+        "security": "安全層：採用 JWT 與 OAuth 進行安全驗證，並以 AES 加密與代碼化保護敏感資料，確保機密性、完整性與符合產業安全標準。",
+        "backupDb": "備援資料庫：獨立的 Firestore 以儲存 JSON 備份，確保資料冗餘、災難復原準備與長期歸檔。"
+      }
+    }
+  },
+  "webarch": {
+    "title": "網站應用程式架構",
+    "p1": "SriPay Connect 的前端是以 React.js 開發的網站應用，採用 Tailwind CSS 進行實用導向（utility-first）樣式設計，並結合 Ant Design（AntD）提供一致、企業級的 UI 元件。整體架構強調模組化、效能與客製化，以滿足品牌需求。",
+    "alts": { "diagram": "網站應用架構圖" },
+    "features": {
+      "framework": {
+        "label": "框架",
+        "desc": "以 React.js 進行元件化開發，提升 UI 元件的重用性。"
+      },
+      "styling": {
+        "label": "樣式設計",
+        "desc": "Tailwind CSS 讓設計快速且具回應式；AntD 提供表格、表單、對話框等預製元件。"
+      },
+      "state": {
+        "label": "狀態管理",
+        "desc": "以 React Context API 與 Redux 管理應用狀態，確保交易與商戶資料的即時一致。"
+      },
+      "routing": {
+        "label": "路由",
+        "desc": "使用 React Router 串接各模組（如商戶管理、交易報表）。"
+      },
+      "customization": {
+        "label": "客製化",
+        "desc": "支援白標化，可自訂標誌、色彩與主題，同時保留「Powered by SriPay」品牌標識。"
+      },
+      "performance": {
+        "label": "效能",
+        "desc": "採用延遲載入、程式碼分割與透過 Webpack 最佳化資產傳遞。"
+      },
+      "accessibility": {
+        "label": "無障礙",
+        "desc": "遵循 WCAG 2.1 規範，提升可近用性。"
+      }
+    }
+  },
+  "mobilearch": {
+    "title": "行動應用程式架構",
+    "p1": "SriPay Connect 的行動應用以 Flutter 開發，於 iOS 與 Android 提供跨平台且高效能的體驗。系統整合 Firebase Cloud Messaging（FCM）以即時推播通知，並串接 SriPay 後端 API 以確保資料同步。整體架構著重於模組化、回應速度與安全性，確保跨裝置一致的使用體驗。",
+    "features": {
+      "framework": {
+        "label": "框架",
+        "desc": "以 Flutter 進行跨平台開發，一套程式碼同時支援 iOS 與 Android，並維持近似原生的效能。"
+      },
+      "styling": {
+        "label": "樣式設計",
+        "desc": "採用 Flutter 的元件式 UI 系統，提供可客製、具回應式的版面；支援主題化以維持品牌一致性。"
+      },
+      "state": {
+        "label": "狀態管理",
+        "desc": "使用 Provider 與 Riverpod/Bloc 進行結構化狀態處理，確保資料流順暢與即時 UI 更新。"
+      },
+      "routing": {
+        "label": "路由",
+        "desc": "採用 Flutter Navigator 2.0，提供結構化、宣告式的功能導覽。"
+      },
+      "notifications": {
+        "label": "通知",
+        "desc": "以 Firebase Cloud Messaging（FCM）推送交易、結清與帳戶更新的即時通知。"
+      },
+      "performance": {
+        "label": "效能",
+        "desc": "最佳化繪製、減少 widget 重建、並預載資產，以帶來順暢的操作體驗。"
+      },
+      "security": {
+        "label": "安全性",
+        "desc": "以安全儲存保護敏感資料，API 通訊採用 HTTPS，並使用 JWT/OAuth 的權杖式驗證。"
+      }
+    }
+  },
+  "backendarch": {
+    "title": "後端架構",
+    "p1": "後端以 Express.js（輕量級 Node.js 框架）建置，並啟用叢集（clustering）以運用多核心處理器，提升吞吐量。整體採微服務啟發式設計，將交易處理、商戶管理與第三方整合等功能模組化。",
+    "alts": { "diagram": "後端架構圖" },
+    "features": {
+      "framework": {
+        "label": "框架",
+        "desc": "以 Express.js 開發 RESTful API，並透過中介軟體處理記錄、錯誤處理與流量限制。"
+      },
+      "clustering": {
+        "label": "叢集",
+        "desc": "使用 Node.js Cluster 模組將工作分配至多個 CPU 核心，確保可擴充性與效能。"
+      },
+      "api": {
+        "label": "API 設計",
+        "desc": "採用 JSON 載荷的 RESTful 端點，並以 OpenAPI/Swagger 撰寫文件，提升可讀性與開發者採用度。"
+      },
+      "integration": {
+        "label": "整合層",
+        "desc": "專屬服務模組負責 Alipay+ 線上／線下支付處理與 Google Analytics 追蹤。"
+      },
+      "error": {
+        "label": "錯誤處理",
+        "desc": "集中式錯誤管理：自訂錯誤代碼、結構化回應，並整合日誌以利監控與疑難排解。"
+      },
+      "scalability": {
+        "label": "可擴充性",
+        "desc": "透過容器化（Docker）與協同調度（Kubernetes）支援水平擴充。"
+      },
+      "monitoring": {
+        "label": "監控",
+        "desc": "整合記錄框架（GCP Log）與效能監測工具，主動追蹤系統健康狀態。"
+      }
+    }
+  },
+  "databasearch": {
+    "title": "資料庫架構",
+    "p1": "SriPay Connect 使用 Google Cloud Firestore 儲存結構化資料、Realtime Database 處理即時交易更新，並透過每日 JSON 備份提升資料冗餘。",
+    "alts": { "diagram": "資料庫架構圖" },
+    "features": {
+      "collections": {
+        "label": "集合（Collections）",
+        "desc": "Merchants、Stores、Transactions、Settlements 等。"
+      },
+      "schema": {
+        "label": "結構（Schema）",
+        "desc": "層級式設計：文件包含商戶檔案、門市資料、交易紀錄與結清日誌。"
+      },
+      "indexing": {
+        "label": "索引（Indexing）",
+        "desc": "為常見查詢（如交易狀態、日期區間）建立複合索引。保存即時交易更新所需的暫存資料並與 Firestore 同步，支援即時看板與通知。"
+      },
+      "backup": {
+        "label": "JSON 備份",
+        "desc": "每日將 Firestore 匯出至另一個 Firestore 資料庫以供封存與災難復原；備份結構對應主要資料庫並採標準化設計。"
+      },
+      "integrity": {
+        "label": "資料一致性",
+        "desc": "透過 Firestore 觸發器與驗證規則維持一致性並避免不合法資料寫入。"
+      },
+      "performance": {
+        "label": "效能",
+        "desc": "最佳化查詢、複合索引與快取策略，於高流量情境仍提供快速讀取。"
+      }
+    }
+  },
+  "auth": {
+    "title": "身分驗證與授權",
+    "p1": "SriPay Connect 採用嚴謹的身分驗證與授權措施，以確保安全存取並保護敏感使用者資料。所有打往後端 API 的請求皆以權杖為基礎並在處理前完成驗證。",
+    "alts": { "diagram": "驗證與授權服務架構圖" },
+    "sectionsMenu": {
+      "authentication": "身分驗證",
+      "authorization": "授權",
+      "session": "工作階段管理",
+      "best": "安全性最佳實務"
+    },
+    "authentication": {
+      "items": {
+        "jwt": {
+          "label": "JWT（JSON Web Tokens）",
+          "desc": "以無狀態方式管理工作階段，權杖使用 RSA256 簽章，提供強韌的密碼學安全。"
+        },
+        "oauth": {
+          "label": "OAuth 2.0",
+          "desc": "支援第三方登入（如 Google、Alipay），適用於商戶與系統管理員。"
+        },
+        "tokenization": {
+          "label": "代碼化（Tokenization）",
+          "desc": "敏感資料以代碼化載荷交換，避免直接暴露機密資訊。"
+        },
+        "tokenValidity": {
+          "label": "權杖效期",
+          "points": {
+            "access": "存取權杖最長有效期為 1 小時。",
+            "refresh": "重新整理權杖具較長效期並以安全方式保存，用於在不重新登入的情況下延續工作階段。"
+          }
+        },
+        "aes": {
+          "label": "AES-256 加密",
+          "desc": "對靜態與傳輸中的敏感資料，以 AES-256-CBC 進行加密。"
+        }
+      }
+    },
+    "authorization": {
+      "items": {
+        "rbac": {
+          "label": "角色為本的存取控制（RBAC）",
+          "desc": "角色包含系統管理員、商戶、門市管理者與檢視者。"
+        },
+        "policy": {
+          "label": "政策強制",
+          "desc": "在 Express.js 中以中介層檢查 JWT 宣告，於授權路由前驗證角色權限。"
+        }
+      }
+    },
+    "session": {
+      "items": {
+        "short": "以短效存取權杖（最長 1 小時）搭配重新整理權杖維持工作階段。",
+        "storage": "以僅限 HTTPS 的 Cookie 或加密的本機儲存保存權杖。",
+        "invalidate": "於登出、密碼變更或帳號停用時自動使權杖失效。"
+      }
+    },
+    "best": {
+      "items": {
+        "requireJwt": "所有 API 端點皆需有效的 JWT 驗證。",
+        "httpsOnly": "權杖僅透過 HTTPS 傳輸。",
+        "monitoring": "以中介層記錄並監控失敗的驗證嘗試，以利異常偵測。",
+        "rateLimit": "以頻率限制與 IP 節流降低暴力破解或權杖濫用風險。"
+      }
+    }
+  },
+  "encsec": {
+    "title": "加密與資訊安全",
+    "p1": "SriPay Connect 以產業標準的加密與安全通訊協定為基礎，並採多層防護機制，優先確保資料安全。",
+    "alts": { "diagram": "加密與資安架構圖" },
+    "sectionsMenu": {
+      "transit": "傳輸中的資料",
+      "atRest": "靜態資料",
+      "token": "代碼化（Tokenization）",
+      "audits": "安全稽核與監控",
+      "network": "網路與應用程式防護"
+    },
+    "transit": {
+      "items": {
+        "https": "所有通訊皆使用 HTTPS 與 TLS 1.3，以確保最高安全與前向保密（Forward Secrecy）。",
+        "rsa": "以 RSA256 進行數位簽章與非對稱加密。",
+        "hash": "雜湊與完整性檢查採用 SHA-256；在相容性需求下亦可支援 MD5。"
+      }
+    },
+    "atRest": {
+      "items": {
+        "aes": "在 Firestore 儲存之敏感欄位使用 AES-256-CBC 加密。",
+        "gcp": "Firestore 與 Realtime Database 使用 Google Cloud 預設加密。",
+        "backup": "Firestore 備份檔採加密保存。"
+      }
+    },
+    "token": {
+      "items": {
+        "scope": "透過 Alipay+ API 對敏感支付資料進行代碼化，降低 PCI DSS 符規範疇。",
+        "store": "系統儲存的是代碼化數值而非原始支付資料，以降低外洩風險。"
+      }
+    },
+    "audits": {
+      "items": {
+        "pentest": "定期進行滲透測試與弱點掃描，及早發現並修補弱點。",
+        "logging": "集中化日誌與即時監控，用以偵測可疑行為。"
+      }
+    },
+    "network": {
+      "items": {
+        "waf": "以 WAF 防禦 DDoS、SQL Injection 與跨站腳本（XSS）等攻擊。",
+        "allow": "對敏感後台端點實施 IP 允許清單與地理圍籬（Geofencing）。",
+        "ratelimit": "以頻率限制防止對公開 API 的濫用。"
+      }
+    }
+  },
+  "apisec": {
+    "title": "API 安全",
+    "p1": "SriPay Connect 的 RESTful API 采用多层安全机制，防止未授权访问，保护敏感数据，并保障系统完整性。",
+    "alts": { "diagram": "API 安全架构图" },
+    "sectionsMenu": {
+      "auth": "认证与授权",
+      "rate": "限流与滥用防护",
+      "cors": "CORS 与域名限制",
+      "input": "输入校验与清理",
+      "gateway": "API 网关与监控",
+      "logging": "日志与审计追踪"
+    },
+    "auth": {
+      "items": {
+        "require": "所有 API 端点均需 JWT 与 Access Key 令牌方可访问。",
+        "claims": "在处理请求前，由 Express.js 中间件校验令牌声明（claims）。"
+      }
+    },
+    "rate": {
+      "items": {
+        "limit": "通过 Express.js 中间件实现请求限流，以控制频率并缓解滥用。",
+        "throttle": "对重复失败的认证尝试进行 IP 节流。"
+      }
+    },
+    "cors": {
+      "items": {
+        "strict": "严格的跨域资源共享（CORS）策略，仅允许受信任域名访问。",
+        "preflight": "预检请求强制校验来源、方法与请求头。"
+      }
+    },
+    "input": {
+      "items": {
+        "validate": "使用 Joi 等库对所有入站数据进行校验与清理，防止注入攻击。",
+        "protect": "防护 SQL 注入、XSS 与畸形 JSON 载荷等风险。"
+      }
+    },
+    "gateway": {
+      "items": {
+        "gcp": "使用 Google Cloud API Gateway 提供额外安全、流量路由与监控能力。",
+        "monitor": "对接 Google Cloud Monitoring & Logging，实时跟踪 API 活动。"
+      }
+    },
+    "logging": {
+      "items": {
+        "audit": "记录所有 API 请求用于审计与调试，日志中排除敏感数据。",
+        "retain": "根据合规要求保留日志以支持取证分析。"
+      }
+    }
+  },
+  "deployinfra": {
+    "title": "部署与基础设施",
+    "p1": "SriPay Connect 采用多云架构部署，主要基于 Google Cloud Platform（GCP），并配备独立通知服务器，以确保高可用、可伸缩与冗余能力。",
+    "alts": { "diagram": "部署与基础设施示意图" },
+    "sectionsMenu": {
+      "hosting": "托管与计算",
+      "notify": "通知服务",
+      "backup": "备份与灾难恢复",
+      "scaling": "扩展与性能优化",
+      "monitoring": "监控与告警"
+    },
+    "hosting": {
+      "items": {
+        "cloudrun": "使用 GCP Cloud Run 运行容器化的 Express.js 后端服务，实现无服务器伸缩与高效资源利用。",
+        "hosting": "使用 GCP Firebase Hosting 提供静态 React.js 前端资源，并通过全球 CDN 分发。",
+        "firestore": "Firestore 与 Realtime Database 部署于 us-central1 区域，提供低时延访问。"
+      }
+    },
+    "notify": {
+      "items": {
+        "separate": "独立服务器用于高并发的短信与邮件通知。",
+        "integrated": "与后端服务集成，发送事务与告警类消息。"
+      }
+    },
+    "backup": {
+      "items": {
+        "compute": "使用 GCP Compute Engine 实例执行计划性的 SQL 备份与恢复操作。",
+        "daily": "将 Firestore 与 Realtime Database 的每日备份同步到其它 GCP 备份区域以实现冗余。"
+      }
+    },
+    "scaling": {
+      "items": {
+        "autoscale": "为 Cloud Run 配置基于 CPU/内存阈值触发的自动扩缩容策略。",
+        "coldstart": "优化后端服务的冷启动性能。"
+      }
+    },
+    "monitoring": {
+      "items": {
+        "gcpmon": "使用 Google Cloud Monitoring 进行实时性能监测与可用性检查。",
+        "alerts": "出现异常、时延突增或部署失败时自动触发告警。"
+      }
+    }
+  },
+  "thirdparty": {
+    "title": "第三方集成",
+    "p1": "SriPay Connect 借助可信赖的第三方服务扩展功能，为用户提供无缝的支付与管理体验。",
+    "sectionsMenu": {
+      "alipay": "Alipay+",
+      "sms": "短信网关",
+      "ga": "Google Analytics（分析）"
+    },
+    "alipay": {
+      "items": {
+        "support": "支持线上与线下支付方式，包括扫码与移动钱包交易。",
+        "integrated": "通过 Alipay+ SDK 与 API 深度集成，保障交易处理、清算与对账的安全可靠。"
+      }
+    },
+    "sms": {
+      "items": {
+        "powers": "用于交易提醒、多因素认证（MFA）以及重要商户通知。",
+        "templates": "支持可配置的通知模板，满足品牌化与个性化消息需求。"
+      }
+    },
+    "ga": {
+      "items": {
+        "tracks": "追踪用户交互、交易漏斗与商户参与度等指标。",
+        "gtm": "通过 Google Tag Manager 集成，以实现高级前端分析与事件追踪。"
+      }
+    }
+  },
+  "compliance": {
+    "title": "合规与隐私",
+    "p1": "SriPay Connect 遵循全球与本地法规，确保合规性、保护用户隐私，并与商户与客户建立信任。",
+    "items": {
+      "pci": "PCI DSS：完全符合一级（Level 1）支付处理要求，并借助 Alipay+ 令牌化以尽量缩小 PCI 范围。",
+      "gdpr": "GDPR：遵循欧盟《通用数据保护条例》，包括数据最小化、明确的用户同意以及“被遗忘权”等实践。",
+      "local": "本地法规：符合斯里兰卡金融监管及斯里兰卡中央银行对支付服务提供商的相关要求。",
+      "privacy": "隐私政策：透明说明数据收集、使用、保存与共享的具体做法。",
+      "terms": "条款与条件：清晰界定服务使用规则、商户义务及争议解决流程。",
+      "audits": "审计：定期开展第三方合规审计，以验证对法规与安全标准的遵循。"
+    },
+    "links": {
+      "privacyHref": "https://sripay.lk/privacy-policy",
+      "privacyLabel": "查看隐私政策",
+      "termsHref": "https://sripay.lk/terms-conditions",
+      "termsLabel": "查看条款与条件"
+    }
+  },
+  "maintenance": {
+    "title": "维护与支持",
+    "p1": "SriPay Connect 提供完善的维护与支持服务，确保系统稳定、性能最佳以及支付业务不中断。",
+    "items": {
+      "updates": "更新：通过 CI/CD 流水线持续交付安全补丁、缺陷修复与功能改进。",
+      "monitoring": "监控：7×24 小时实时监控，并对性能异常、安全事件和服务降级自动告警。",
+      "support": "支持：分级支持模式（L1–L3），可通过电子邮件与电话进行问题跟踪与处理。",
+      "sla": "服务等级协议（SLA）：提供 99.9% 正常运行时间保证；关键优先级问题 2 小时内响应。",
+      "docs": "文档：为商户、管理员和开发者提供完整的用户指南、API 文档与管理手册。"
+    },
+    "links": {
+      "docsHref": "https://docs.sripay.lk/",
+      "docsLabel": "docs.sripay.lk"
+    }
+  },
+  "acqApi": {
+    "title": "收单方 API 概览",
+    "p1": "由 SriPay 提供并与 Alipay+ 集成的收单方 API，为商户提供安全可靠的编程式能力，用于处理支付、管理账户和交易。该 API 支持多种支付方式，包括线上支付、商户展示码（动态二维码）、用户展示码、撤销与退款。API 设计简洁且安全，通过统一请求头与严格校验，确保一致的请求处理。",
+    "p2": "本文档说明了 API 的端点、请求结构、工作流与错误场景，并附带示例以便集成。",
+
+    "sections": {
+      "overview": "概览",
+      "requestStructure": "API 请求结构",
+      "urlFormat": "请求 URL 格式",
+      "method": "请求方法",
+      "headers": "请求头",
+      "responseBody": "响应体",
+      "responseCodes": "响应码"
+    },
+
+    "structureList": {
+      "urlFormat": "请求 URL 格式",
+      "method": "请求方法",
+      "headers": "请求头",
+      "headersAuthKey": "Authorization Key",
+      "headersAcquirerId": "Acquirer Id",
+      "headersAuth": "Auth Key",
+      "headersContentType": "Content-Type",
+      "responseBody": "响应体",
+      "responseCodes": "响应码"
+    },
+
+    "url": {
+      "intro": "SriPay Connect ACQ API 采用结构化的请求 URL，由两部分组成：",
+      "pattern": "https://{Host}/{Endpoint}",
+      "bulletHost": "Host – 连接的 ACQ API 环境基础地址。",
+      "bulletEndpoint": "Endpoint – 指定所请求服务或操作的具体 API 路径。",
+      "exampleTitle": "示例",
+      "exampleHost": "Host：",
+      "exampleEndpoint": "Endpoint：",
+      "completeTitle": "完整请求 URL"
+    },
+
+    "method": {
+      "intro": "ACQ API 仅支持两种 HTTPS 请求方法：",
+      "postTitle": "POST",
+      "postDesc": "用于在服务器创建或提交新数据。",
+      "postExample": "示例：发起付款、创建交易、提交处理请求。",
+      "getTitle": "GET",
+      "getDesc": "用于从服务器读取数据。",
+      "getExample": "示例：查询交易详情、获取状态更新或检索记录。"
+    },
+
+    "headers": {
+      "intro": "所有 ACQ API 请求必须包含以下请求头，以确保正确的鉴权与路由：",
+      "table": {
+        "colName": "请求头名称",
+        "colDesc": "说明",
+        "colExample": "示例",
+        "authorizationName": "Authorization 或 x-api-key",
+        "authorizationDesc": "用于请求鉴权的 API Key。",
+        "authorizationEx": "Bearer\\neyJhbGciOiJIUzI1NiIs..",
+        "authKeyName": "AuthKey 或 x-auth-key",
+        "authKeyDesc": "用于增强安全校验的附加鉴权键。",
+        "authKeyEx": "Bearer\\nabc123securetoken",
+        "acquirerIdName": "AcquirerId 或 x-acq-id",
+        "acquirerIdDesc": "为每个收单方分配的唯一标识，用于请求路由与访问控制。",
+        "acquirerIdEx": "ndklkldmkedewswmmx",
+        "contentTypeName": "Content-Type",
+        "contentTypeDesc": "定义请求体格式，固定为 application/json。",
+        "contentTypeEx": "application/json"
+      },
+      "stepsTitle": "获取密钥的步骤：",
+      "step1": "进入个人资料页。",
+      "step2": "滚动至页面底部。",
+      "step3": "通过密码完成验证。",
+      "step4": "获取您的密钥。"
+    },
+
+    "respBody": {
+      "intro": "所有 API 响应均包含 Result 对象，包含三个关键字段：",
+      "code": "Code – 简短的机器可读标识，用于指示请求结果，主要供程序处理使用。",
+      "message": "Message – 便于人理解的说明，提供额外结果信息，适合用于前端提示与日志记录。",
+      "status": "Status – 业务层面的结果类别，用于标记审批、拒绝或处理中等流程状态。"
+    },
+
+    "respCodes": {
+      "intro": "ACQ API 在响应体之外，还会返回标准 HTTP 状态码，用于指示协议层面的结果：",
+      "table": {
+        "colCode": "代码",
+        "colName": "名称",
+        "colDesc": "说明",
+        "colTypical": "典型场景",
+        "200_name": "OK",
+        "200_desc": "请求成功，服务器返回了期望的数据。",
+        "200_typ": "正常的成功请求。",
+        "201_name": "Created",
+        "201_desc": "请求成功并创建了新资源。",
+        "201_typ": "创建支付、发起交易。",
+        "202_name": "Accepted",
+        "202_desc": "请求已接受但尚未完成处理。",
+        "202_typ": "异步操作、排队请求。",
+        "204_name": "No Content",
+        "204_desc": "请求成功但无返回内容。",
+        "204_typ": "删除操作、空的成功响应。",
+        "400_name": "Bad Request",
+        "400_desc": "请求格式错误或缺少必填参数。",
+        "400_typ": "校验失败、字段缺失。",
+        "401_name": "Unauthorized",
+        "401_desc": "鉴权失败或缺失/无效的 API Key。",
+        "401_typ": "缺失/无效 Authorization 头。",
+        "403_name": "Forbidden",
+        "403_desc": "已鉴权用户无执行该操作的权限。",
+        "403_typ": "基于角色的访问限制。",
+        "404_name": "Not Found",
+        "404_desc": "请求的资源不存在。",
+        "404_typ": "端点或资源 ID 无效。",
+        "409_name": "Conflict",
+        "409_desc": "资源当前状态与请求冲突，无法完成。",
+        "409_typ": "重复交易、并发冲突。",
+        "500_name": "Internal Server Error",
+        "500_desc": "服务器发生未预期的错误。",
+        "500_typ": "未处理的后端异常。"
+      }
+    }
+  },
+  "acqEndpoints": {
+    "title": "端点",
+    "intro": "SriPay Connect 提供以下 API 端点，使收单方能够无缝集成到其 Web、POS 系统或其他支付平台中。",
+    "sections": {
+      "instore": "Alipay+ 线下（In-store）API",
+      "online": "Alipay+ 线上（Online）API"
+    },
+    "instore": {
+      "title": "Alipay+ 线下（In-store）API",
+      "desc": "基于 Alipay+ 二维码技术，安全、实时地发起、处理并跟踪线下交易的支付状态。商户既可扫描用户出示的付款码，也可生成商户收款码，并通过可靠的查询机制监控交易结果。",
+      "items": {
+        "orderCodePayQr": "订单码收款（Pay QR）",
+        "orderCodeResultListener": "订单码结果监听",
+        "userPresentPay": "用户展示码支付",
+        "userPresentPayWaiting": "用户展示码支付等待",
+        "instorePaymentInquiry": "线下支付查询"
+      }
+    },
+    "online": {
+      "title": "Alipay+ 线上（Online）API",
+      "desc": "Alipay+ Online API 是一套轻量级的 REST 接口，可将您的网站或任意互联网应用直接接入全球 Alipay+ 钱包网络。通过单个端点即可创建安全且带品牌样式的支付链接，将买家跳转至 Alipay+ 收银台，并在无额外网关或地区特定代码的情况下，实时接收支付状态、退款与清结算回调。",
+      "items": {
+        "paymentLinkCreate": "创建支付链接",
+        "paymentInquiry": "支付查询"
+      }
+    }
+  },
+  "common": {
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "common": {
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "orderCodePayQr": {
+    "sections": {
+      "title": "订单码收款（Pay QR）",
+      "endpoint": "端点",
+      "headers": "请求头",
+      "requestBody": "请求体",
+      "sampleRequest": "请求示例",
+      "successResponse": "成功响应",
+      "errorResponses": "错误响应"
+    },
+    "methodBadge": "POST",
+    "endpointPath": "/v2/alipayplus/instore/ordercode-pay",
+    "lede1": "订单码收款允许商户生成动态二维码并展示给顾客完成支付；支付结果将实时返回。以下 API 说明了触发请求所需的条件。",
+    "lede2": "该端点会基于传入的收单方、门店和终端信息创建订单，从而生成 Alipay+ 线下交易用的二维码，适用于收单方的定制化集成。",
+
+    "endpoint": {
+      "title": "端点",
+      "urlLabel": "URL",
+      "methodLabel": "方法",
+      "descLabel": "说明",
+      "desc": "生成用于线下支付的二维码，并基于收单方凭证进行校验。"
+    },
+
+    "headers": {
+      "title": "请求头",
+      "acqId": "acquirerid 或 x-acq-id（字符串，必填）：收单方唯一标识。",
+      "authorization": "Authorization（字符串，必填）：收单方授权密钥。",
+      "authKey": "Auth-Key（字符串，必填）：收单方认证密钥。",
+      "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+    },
+
+    "requestBody": {
+      "title": "请求体",
+      "intro": "请求体必须为 JSON 格式并包含以下参数：",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "描述",
+        "validation": "校验规则",
+        "yes": "是"
+      },
+      "rows": {
+        "outletId": {
+          "description": "门店唯一标识。",
+          "validation": "必须为非空字符串。"
+        },
+        "amount": {
+          "description": "交易金额。",
+          "validation": "必须为大于 0 的正数。"
+        },
+        "subject": {
+          "description": "交易说明。",
+          "validation": "必须为字符串，最大 100 个字符。"
+        },
+        "currency": {
+          "description": "交易币种。",
+          "validation": "仅支持 USD 或 LKR。"
+        },
+        "terminalId": {
+          "description": "终端唯一标识。",
+          "validation": "必须为非空字符串。"
+        }
+      },
+      "validationTitle": "请求体校验",
+      "validationBullets": {
+        "outletId": "outletId：必填，非空字符串。",
+        "amount": "amount：必填，必须为大于 0 的正数。",
+        "subject": "subject：必填，最长 100 个字符。",
+        "currency": "currency：必填，仅支持 USD 或 LKR。",
+        "terminalId": "terminalId：必填，非空字符串。"
+      }
+    },
+
+    "sampleRequest": {
+      "title": "请求示例",
+      "headersLabel": "请求头"
+    },
+
+    "successResponse": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "contentType": "内容类型",
+      "responseBody": "响应体",
+      "okLabel": "200 OK"
+    },
+
+    "errors": {
+      "title": "错误响应",
+      "intro": "下方列出了可能的错误响应，包括状态码、错误码与消息：",
+      "items": {
+        "missingParams": "1. 缺少参数",
+        "invalidAmount": "2. 金额不合法",
+        "invalidCurrency": "3. 币种不合法",
+        "invalidSubject": "4. 说明不合法",
+        "outletNotFound": "5. 未找到门店",
+        "acqOutletMismatch": "6. 收单方与门店不匹配",
+        "outletNotApproved": "7. 门店未审批通过",
+        "outletNotApprovedOffline": "8. 门店未通过 Alipay+ 线下审批",
+        "terminalNotApproved": "9. 终端未激活/未通过",
+        "outletMissingMerchant": "10. 门店缺少商户关联",
+        "merchantNotFound": "11. 未找到商户",
+        "acqMerchantMismatch": "12. 收单方与商户不匹配",
+        "alipayUnreachable": "13. 无法连接 Alipay+",
+        "xmlParseError": "14. XML 解析错误",
+        "alipayFailed": "15. Alipay+ 处理失败",
+        "sripayQrError": "16. SriPay 二维码生成失败",
+        "serverError": "17. 服务器错误"
+      },
+      "statusCode": "状态码",
+      "responseBody": "响应体",
+      "labels": {
+        "badRequest": "400 Bad Request",
+        "forbidden": "403 Forbidden",
+        "notFound": "404 Not Found",
+        "badGateway": "502 Bad Gateway",
+        "internalError": "500 Internal Server Error"
+      }
+    }
+  },
+   "common": {
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "orderCodePayQr": {
+    "menu": {
+      "section1": "订单码收款（Pay QR）",
+      "section2": "端点",
+      "section3": "请求头",
+      "section4": "请求体",
+      "section5": "请求示例",
+      "section6": "成功响应",
+      "section7": "错误响应"
+    },
+    "title": "订单码收款（Pay QR）",
+    "methodBadge": "POST",
+    "endpointPath": "/v2/alipayplus/instore/ordercode-pay",
+    "lede1": "订单码收款允许商户生成动态二维码并展示给顾客完成支付；支付结果将实时返回。以下 API 说明了触发请求所需的条件。",
+    "lede2": "该端点会基于传入的收单方、门店与终端信息创建订单，从而生成 Alipay+ 线下交易用的二维码，适用于收单方的定制化集成。",
+
+    "endpoint": {
+      "title": "端点",
+      "urlLabel": "URL",
+      "methodLabel": "方法",
+      "descLabel": "说明",
+      "desc": "生成用于线下支付的二维码，并基于收单方凭证进行校验。"
+    },
+
+    "headers": {
+      "title": "请求头",
+      "acqId": "acquirerid 或 x-acq-id（字符串，必填）：收单方唯一标识。",
+      "authorization": "Authorization（字符串，必填）：收单方授权密钥。",
+      "authKey": "Auth-Key（字符串，必填）：收单方认证密钥。",
+      "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+    },
+
+    "requestBody": {
+      "title": "请求体",
+      "intro": "请求体必须为 JSON 格式并包含以下参数：",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "描述",
+        "validation": "校验规则",
+        "yes": "是"
+      },
+      "rows": {
+        "outletId": {
+          "description": "门店唯一标识。",
+          "validation": "必须为非空字符串。"
+        },
+        "amount": {
+          "description": "交易金额。",
+          "validation": "必须为大于 0 的正数。"
+        },
+        "subject": {
+          "description": "交易说明。",
+          "validation": "必须为字符串，最大 100 个字符。"
+        },
+        "currency": {
+          "description": "交易币种。",
+          "validation": "仅支持 USD 或 LKR。"
+        },
+        "terminalId": {
+          "description": "终端唯一标识。",
+          "validation": "必须为非空字符串。"
+        }
+      },
+      "validationTitle": "请求体校验",
+      "validationBullets": {
+        "outletId": "outletId：必填，非空字符串。",
+        "amount": "amount：必填，必须为大于 0 的正数。",
+        "subject": "subject：必填，最长 100 个字符。",
+        "currency": "currency：必填，仅支持 USD 或 LKR。",
+        "terminalId": "terminalId：必填，非空字符串。"
+      }
+    },
+
+    "sampleRequest": {
+      "title": "请求示例",
+      "headersLabel": "请求头"
+    },
+
+    "successResponse": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "contentType": "内容类型",
+      "responseBody": "响应体",
+      "okLabel": "200 OK"
+    },
+
+    "errors": {
+      "title": "错误响应",
+      "intro": "下方列出了可能的错误响应，包括状态码、错误码与消息：",
+      "statusCode": "状态码",
+      "responseBody": "响应体",
+      "labels": {
+        "badRequest": "400 Bad Request",
+        "forbidden": "403 Forbidden",
+        "notFound": "404 Not Found",
+        "badGateway": "502 Bad Gateway",
+        "internalError": "500 Internal Server Error"
+      },
+      "items": {
+        "missingParams": "1. 缺少参数",
+        "invalidAmount": "2. 金额不合法",
+        "invalidCurrency": "3. 币种不合法",
+        "invalidSubject": "4. 说明不合法",
+        "outletNotFound": "5. 未找到门店",
+        "acqOutletMismatch": "6. 收单方与门店不匹配",
+        "outletNotApproved": "7. 门店未审批通过",
+        "outletNotApprovedOffline": "8. 门店未通过 Alipay+ 线下审批",
+        "terminalNotApproved": "9. 终端未激活/未通过",
+        "outletMissingMerchant": "10. 门店缺少商户关联",
+        "merchantNotFound": "11. 未找到商户",
+        "acqMerchantMismatch": "12. 收单方与商户不匹配",
+        "alipayUnreachable": "13. 无法连接 Alipay+",
+        "xmlParseError": "14. XML 解析错误",
+        "alipayFailed": "15. Alipay+ 处理失败",
+        "sripayQrError": "16. SriPay 二维码生成失败",
+        "serverError": "17. 服务器错误"
+      }
+    }
+  },
+  "orderCodeResultListener": {
+    "title": "订单码结果监听",
+    "intro": "该端点通过 Server-Sent Events（SSE）建立实时连接，用于监听由 outTradeNo 标识的 Alipay+ 交易更新。它会将时间戳从 GMT+8 转换为 Asia/Colombo（GMT+5:30）。",
+    "sections": {
+      "step1": "订单码结果监听",
+      "endpoint": "接口端点",
+      "headers": "请求头",
+      "requestParams": "请求参数",
+      "sampleRequest": "示例请求",
+      "successResponse": "成功响应",
+      "errorResponses": "错误响应"
+    },
+    "endpoint": {
+      "title": "接口端点",
+      "urlLabel": "接口地址",
+      "methodLabel": "请求方式",
+      "descriptionLabel": "描述",
+      "description": "通过 SSE 为指定 outTradeNo 提供交易状态的实时更新。"
+    },
+    "headers": {
+      "title": "请求头",
+      "items": {
+        "acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单机构的唯一标识。",
+        "authorization": "Authorization（字符串，必填）：收单机构的授权密钥。",
+        "authKey": "Auth-Key（字符串，必填）：收单机构的认证密钥。",
+        "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+      }
+    },
+    "requestParams": {
+      "title": "请求参数",
+      "intro": "该请求包含一个路径参数",
+      "table": {
+        "outTradeNo": "Alipay+ 交易的唯一标识。"
+      },
+      "validationTitle": "请求参数校验",
+      "rules": {
+        "outTradeNo": "必填，且必须为非空字符串。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "urlExampleLabel": "接口地址",
+      "headers": "请求头"
+    },
+    "success": {
+      "title": "成功响应",
+      "bullets": {
+        "statusCode": "状态码",
+        "status200": "200 OK",
+        "contentType": "内容类型",
+        "eventStream": "text/event-stream",
+        "responseBody": "响应体",
+        "streams": "以 SSE 格式持续推送事件。"
+      },
+      "exampleWithTime": "示例（截至 2025 年 8 月 5 日 星期二 +0530 13:37）：",
+      "eventUpdate": "事件：update",
+      "items": {
+        "event": "事件：update — 表示交易状态更新。",
+        "data": "数据：包含交易详情的 JSON 数组（id、trade_status、timestamp）。"
+      }
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下列出可能的错误响应及其状态码、错误码与消息：",
+      "items": {
+        "firestoreError": "1. Firestore 监听错误",
+        "unexpectedError": "2. 非预期的服务器错误"
+      },
+      "okWithError": "200 OK（通过 error 事件返回）",
+      "responseBody": "响应体",
+      "eventError": "事件：error"
+    }
+  },
+  "commons": {
+    "yes": "是",
+    "copy": "复制",
+    "copied": "已复制！",
+    "statusCode": "状态码",
+    "contentType": "内容类型",
+    "responseBody": "响应体",
+    "example": "示例",
+    "labels": {
+      "url": "接口地址",
+      "method": "请求方式",
+      "description": "描述"
+    },
+    "table": {
+      "parameter": "参数",
+      "type": "类型",
+      "required": "必填",
+      "description": "说明"
+    },
+    "headers": {
+      "contentType": "Content-Type"
+    },
+    "http": {
+      "get": "GET",
+      "post": "POST"
+    },
+    "contentTypes": {
+      "eventStream": "text/event-stream"
+    },
+    "mime": {
+      "json": "application/json"
+    }
+  },
+  "userPresentPay": {
+    "title": "用户出示付款",
+    "intro": "该端点用于在“用户出示”场景下发起 Alipay+ 海外当面付交易，校验收单方、门店与终端信息，并生成交易请求。",
+    "sections": {
+      "step1": "用户出示付款",
+      "endpoint": "接口端点",
+      "requestHeader": "请求头",
+      "requestBody": "请求体",
+      "sampleRequest": "示例请求",
+      "successResponse": "成功响应",
+      "errorResponses": "错误响应"
+    },
+    "endpoint": {
+      "title": "接口端点",
+      "urlLabel": "接口地址",
+      "methodLabel": "请求方式",
+      "descriptionLabel": "描述",
+      "description": "通过校验入参并调用 Alipay+ API，发起用户出示的支付交易（面向收单方集成）。"
+    },
+    "headers": {
+      "title": "请求头",
+      "items": {
+        "acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单机构唯一标识。",
+        "authorization": "Authorization（字符串，必填）：收单机构授权密钥。",
+        "authKey": "Auth-Key（字符串，必填）：收单机构认证密钥。",
+        "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+      }
+    },
+    "requestBody": {
+      "title": "请求体",
+      "intro": "请求体必须为 JSON 格式，并包含以下参数",
+      "validationTitle": "请求体验证",
+      "table": {
+        "outletId": {
+          "description": "门店唯一标识。",
+          "validation": "必须为非空字符串。"
+        },
+        "amount": {
+          "description": "交易金额。",
+          "validation": "必须为大于 0 的正数。"
+        },
+        "subject": {
+          "description": "交易描述。",
+          "validation": "必须为字符串，最长 100 个字符。"
+        },
+        "currency": {
+          "description": "交易币种。",
+          "validation": "必须为 USD 或 LKR。"
+        },
+        "terminalId": {
+          "description": "终端唯一标识。",
+          "validation": "必须为非空字符串。"
+        },
+        "buyerIdentityCode": {
+          "description": "买家身份码（如：条码）。",
+          "validation": "必须为非空字符串。"
+        }
+      },
+      "rules": {
+        "outletId": "必填，非空字符串。",
+        "amount": "必填，大于 0 的正数。",
+        "subject": "必填，字符串且最长 100 个字符。",
+        "currency": "必填，仅限 USD 或 LKR。",
+        "terminalId": "必填，非空字符串。",
+        "buyerIdentityCode": "必填，非空字符串。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "headers": "请求头"
+    },
+    "success": {
+      "title": "成功响应",
+      "successLabel": "（成功）",
+      "pendingLabel": "（待用户认证）"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "下列为可能出现的错误响应及其状态码、错误码与消息：",
+      "items": {
+        "missingParams": "1. 缺少参数",
+        "invalidAmount": "2. 金额不合法",
+        "invalidCurrency": "3. 币种不合法",
+        "invalidSubject": "4. 描述不合法",
+        "outletNotFound": "5. 未找到门店",
+        "acquirerOutletMismatch": "6. 收单与门店不匹配",
+        "outletNotApproved": "7. 门店未审核通过",
+        "outletNotApprovedOffline": "8. 门店未开通 Alipay+ 线下",
+        "terminalNotApproved": "9. 终端未审核通过",
+        "outletMissingMerchant": "10. 门店缺少商户关联",
+        "merchantNotFound": "11. 未找到商户",
+        "acquirerMerchantMismatch": "12. 收单与商户不匹配",
+        "alipayUnreachable": "13. 无法连接 Alipay+",
+        "xmlParseError": "14. XML 解析错误",
+        "alipayInvalidResponse": "15. Alipay+ 返回无效",
+        "alipayTransactionFailed": "16. Alipay+ 交易失败",
+        "serverError": "17. 服务器错误"
+      },
+      "labels": {
+        "badRequest": "错误请求",
+        "forbidden": "禁止访问",
+        "notFound": "未找到",
+        "badGateway": "网关错误",
+        "internalServerError": "服务器内部错误"
+      }
+    }
+  },
+  "commont": {
+    "yes": "是",
+    "copy": "复制",
+    "copied": "已复制！",
+    "statusCode": "状态码",
+    "contentType": "内容类型",
+    "responseBody": "响应体",
+    "labels": {
+      "url": "接口地址",
+      "method": "请求方式",
+      "description": "描述"
+    },
+    "table": {
+      "parameter": "参数",
+      "type": "类型",
+      "required": "必填",
+      "description": "说明",
+      "validationRules": "校验规则"
+    },
+    "http": {
+      "get": "GET",
+      "post": "POST"
+    },
+    "mime": {
+      "json": "application/json"
+    }
+  },
+  "global_btn_copy": "复制",
+  "global_btn_copied": "已复制！",
+  "global_http_get": "GET",
+  "global_http_post": "POST",
+  "global_table_parameter": "参数",
+  "global_table_type": "类型",
+  "global_table_required": "必填",
+  "global_table_description": "说明",
+  "global_label_statusCode": "状态码",
+  "global_label_contentType": "内容类型",
+  "global_label_responseBody": "响应体",
+  "global_yes": "是",
+
+  "acqUpwWait_nav_step1": "用户出示码轮询",
+  "acqUpwWait_nav_step2": "接口信息",
+  "acqUpwWait_nav_step3": "请求头",
+  "acqUpwWait_nav_step4": "请求参数",
+  "acqUpwWait_nav_step5": "请求示例",
+  "acqUpwWait_nav_step6": "成功响应",
+  "acqUpwWait_nav_step7": "错误响应",
+
+  "acqUpwWait_title": "User Present Pay Waiting（用户出示码等待）",
+  "acqUpwWait_intro": "该接口根据 partnerTransId 获取等待用户认证的 Alipay+ 交易状态。可用于重复查询以确认用户是否完成认证，并返回最新交易详情。",
+
+  "acqUpwWait_endpoint_heading": "接口信息",
+  "acqUpwWait_endpoint_urlLabel": "地址",
+  "acqUpwWait_endpoint_methodLabel": "方法",
+  "acqUpwWait_endpoint_descLabel": "说明",
+  "acqUpwWait_endpoint_descText": "根据 partnerTransId 查询交易状态，适用于用户认证后的二次确认场景，并适配收单方集成。",
+
+  "acqUpwWait_headers_heading": "请求头",
+  "acqUpwWait_headers_acquirerId": "acquirerid 或 x-acq-id（string，必填）：收单方唯一标识。",
+  "acqUpwWait_headers_authorization": "Authorization（string，必填）：收单方授权密钥。",
+  "acqUpwWait_headers_authKey": "Auth-Key（string，必填）：收单方认证密钥。",
+  "acqUpwWait_headers_contentType": "Content-Type（string，必填）：必须为 application/json。",
+
+  "acqUpwWait_params_heading": "请求参数",
+  "acqUpwWait_params_intro": "该请求包含一个路径参数：",
+  "acqUpwWait_params_table_partnerTransId_desc": "合作方交易唯一标识。",
+  "acqUpwWait_params_validation_heading": "参数校验规则",
+  "acqUpwWait_params_rule_partnerTransId": "必填，且不能为空字符串。",
+  "acqUpwWait_params_rule_acquirerId": "必填，通过请求头 acquirerid 或 x-acq-id 提供。",
+
+  "acqUpwWait_sample_heading": "请求示例",
+  "acqUpwWait_sample_headers_title": "请求头示例",
+
+  "acqUpwWait_success_heading": "成功响应",
+  "acqUpwWait_success_responseBody_timeNote": "（示例时间：2025 年 8 月 5 日 星期二 14:18，UTC+5:30）",
+
+  "acqUpwWait_errors_heading": "错误响应",
+  "acqUpwWait_errors_intro": "以下列出可能的错误响应，包括状态码、错误码及说明：",
+  "acqUpwWait_err1_title": "1. 缺少参数",
+  "acqUpwWait_err2_title": "2. 未找到交易",
+  "acqUpwWait_err3_title": "3. 服务器错误",
+
+
+  "vt_title": "撤销交易（Void）",
+  "vt_intro": "该端点允许收单方向在完成支付的同一哥伦布时间（日历日）撤销一笔成功的 Alipay 交易，并在收单侧更新交易状态并通知相关方。",
+
+  "vt_sections_step1": "撤销交易（Void）",
+  "vt_sections_endpoint": "接口信息",
+  "vt_sections_requestHeader": "请求头",
+  "vt_sections_requestBody": "请求体",
+  "vt_sections_sampleRequest": "示例请求",
+  "vt_sections_successResponse": "成功响应",
+  "vt_sections_errorResponses": "错误响应",
+
+  "vt_endpoint_title": "接口信息",
+  "vt_endpoint_urlLabel": "URL",
+  "vt_endpoint_methodLabel": "请求方法",
+  "vt_endpoint_url": "{Host}/v2/alipayplus/instore/void-transaction",
+  "vt_endpoint_description": "仅当在交易发生的同一哥伦布日期内发起时，才可撤销成功交易。",
+
+  "vt_headers_title": "请求头",
+  "vt_headers_item_acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单机构的唯一标识。",
+  "vt_headers_item_authorization": "Authorization（字符串，必填）：收单侧授权密钥。",
+  "vt_headers_item_authKey": "Auth-Key（字符串，必填）：收单侧认证密钥。",
+  "vt_headers_item_contentType": "Content-Type（字符串，必填）：必须为 application/json。",
+
+  "vt_requestBody_title": "请求体",
+  "vt_requestBody_intro": "请求体必须为 JSON 格式，并包含以下参数",
+  "vt_requestBody_validationTitle": "请求体校验",
+  "vt_requestBody_table_transactionId_desc": "需要撤销的交易唯一标识。",
+  "vt_requestBody_table_outletId_desc": "与该交易关联的门店唯一标识。",
+  "vt_requestBody_rule_transactionId": "必填，非空字符串。",
+  "vt_requestBody_rule_outletId": "必填，非空字符串。",
+  "vt_requestBody_rule_acquirerId": "必填，通过请求头 acquirerid 或 x-acq-id 提供。",
+
+  "vt_sample_title": "示例请求",
+  "vt_sample_headers": "请求头",
+  "vt_sample_body": "{\n    \"transactionId\": \"TXN_1234567890\",\n    \"outletId\": \"outlet_12345\"\n}",
+
+  "vt_success_title": "成功响应",
+  "vt_success_status200": "200 OK",
+  "vt_success_body": "{\n    \"code\": \"VOID_SUCCESS\",\n    \"message\": \"撤销成功。\",\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"transactionId\": \"TXN_1234567890\",\n        \"trade_no\": null,\n        \"out_trade_no\": \"TXN_1234567890\",\n        \"timestamp\": \"2025-08-11 14:46:00\",\n        \"provider\": {\n            \"result_code\": \"SUCCESS\",\n            \"is_success\": \"T\"\n        }\n    }\n}",
+
+  "vt_errors_title": "错误响应",
+  "vt_errors_intro": "以下为可能出现的错误响应（包含状态码、错误码与消息）：",
+
+  "vt_err_1_title": "1. 缺少参数",
+  "vt_err_1_status": "400 Bad Request",
+  "vt_err_1_body": "{\n    \"code\": \"MISSING_PARAMS\",\n    \"message\": \"transactionId 和 outletId 为必填。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_2_title": "2. 缺少认证",
+  "vt_err_2_status": "401 Unauthorized",
+  "vt_err_2_body": "{\n    \"code\": \"MISSING_AUTH\",\n    \"message\": \"缺少收单认证（x-acq-id）。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_3_title": "3. 未找到收单机构",
+  "vt_err_3_status": "404 Not Found",
+  "vt_err_3_body": "{\n    \"code\": \"ACQUIRER_NOT_FOUND\",\n    \"message\": \"未找到收单机构：acquirer_98765\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_4_title": "4. 收单机构未激活",
+  "vt_err_4_status": "403 Forbidden",
+  "vt_err_4_body": "{\n    \"code\": \"ACQUIRER_INACTIVE\",\n    \"message\": \"收单机构未激活。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_5_title": "5. 未找到门店",
+  "vt_err_5_status": "404 Not Found",
+  "vt_err_5_body": "{\n    \"code\": \"OUTLET_NOT_FOUND\",\n    \"message\": \"未找到门店：outlet_12345\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_6_title": "6. 门店缺少商户关联",
+  "vt_err_6_status": "400 Bad Request",
+  "vt_err_6_body": "{\n    \"code\": \"OUTLET_NO_MERCHANT\",\n    \"message\": \"门店缺少商户关联。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_7_title": "7. 门店缺少收单关联",
+  "vt_err_7_status": "400 Bad Request",
+  "vt_err_7_body": "{\n    \"code\": \"OUTLET_NO_ACQUIRER\",\n    \"message\": \"门店缺少收单机构关联。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_8_title": "8. 收单与门店不匹配",
+  "vt_err_8_status": "403 Forbidden",
+  "vt_err_8_body": "{\n    \"code\": \"ACQUIRER_OUTLET_MISMATCH\",\n    \"message\": \"门店不属于该 acquirerId。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_9_title": "9. 未找到商户",
+  "vt_err_9_status": "404 Not Found",
+  "vt_err_9_body": "{\n    \"code\": \"MERCHANT_NOT_FOUND\",\n    \"message\": \"未找到商户：<merchantId>\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_10_title": "10. 未找到交易",
+  "vt_err_10_status": "404 Not Found",
+  "vt_err_10_body": "{\n    \"code\": \"TXN_NOT_FOUND\",\n    \"message\": \"未找到交易：TXN_1234567890\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_11_title": "11. 交易与门店不匹配",
+  "vt_err_11_status": "403 Forbidden",
+  "vt_err_11_body": "{\n    \"code\": \"TXN_OUTLET_MISMATCH\",\n    \"message\": \"交易不属于该 outletId。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_12_title": "12. 交易与收单不匹配",
+  "vt_err_12_status": "403 Forbidden",
+  "vt_err_12_body": "{\n    \"code\": \"TXN_ACQUIRER_MISMATCH\",\n    \"message\": \"交易不属于该 acquirerId。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_13_title": "13. 非法状态",
+  "vt_err_13_status": "400 Bad Request",
+  "vt_err_13_body": "{\n    \"code\": \"INVALID_STATUS\",\n    \"message\": \"仅允许对 SUCCESS 状态的交易进行撤销。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_14_title": "14. 交易时间戳非法",
+  "vt_err_14_status": "400 Bad Request",
+  "vt_err_14_body": "{\n    \"code\": \"INVALID_TXN_TIMESTAMP\",\n    \"message\": \"交易时间戳缺失或非法。\",\n    \"status\": \"FAIL\"\n}",
+
+  "vt_err_15_title": "15. 撤销时间窗已关闭",
+  "vt_err_15_status": "400 Bad Request",
+  "vt_err_15_body": "{\n    \"code\": \"VOID_WINDOW_CLOSED\",\n    \"message\": \"仅可在交易发生之哥伦布日期当日 23:59:59 前撤销。\",\n    \"status\": \"FAIL\",\n    \"txnDateColombo\": \"2025-08-10\",\n    \"nowDateColombo\": \"2025-08-11\"\n}",
+
+  "vt_err_16_title": "16. 缺少 Alipay 配置",
+  "vt_err_16_status": "500 Internal Server Error",
+  "vt_err_16_body": "{\n    \"code\": \"ALIPAY_CONFIG_MISSING\",\n    \"message\": \"缺少 Alipay 配置（endpoint/partner）。\",\n    \"status\": \"ERROR\"\n}",
+
+  "vt_err_17_title": "17. Alipay 响应解析失败",
+  "vt_err_17_status": "502 Bad Gateway",
+  "vt_err_17_body": "{\n    \"code\": \"ALIPAY_PARSE_ERROR\",\n    \"message\": \"解析 Alipay 响应 XML 失败。\",\n    \"status\": \"ERROR\"\n}",
+
+  "vt_err_18_title": "18. Alipay 撤销失败",
+  "vt_err_18_status": "400 Bad Request",
+  "vt_err_18_body": "{\n    \"code\": \"ALIPAY_VOID_FAILED\",\n    \"message\": \"Alipay 撤销失败。\",\n    \"status\": \"FAIL\",\n    \"provider\": {\n        \"is_success\": \"F\",\n        \"result_code\": \"FAILURE\",\n        \"detail_error_code\": \"CODE_123\",\n        \"detail_error_des\": \"交易状态非法\"\n    },\n    \"timestamp\": \"2025-08-11 14:46:00\"\n}",
+
+  "vt_err_19_title": "19. 撤销处理异常",
+  "vt_err_19_status": "500 Internal Server Error",
+  "vt_err_19_body": "{\n    \"code\": \"VOID_ERROR\",\n    \"message\": \"撤销处理出现异常。\",\n    \"status\": \"ERROR\",\n    \"error\": \"具体错误信息。\",\n    \"timestamp\": \"2025-08-11 14:46:00\"\n}",
+
+  "vt_ui_post": "POST",
+  "vt_ui_statusCode": "状态码",
+  "vt_ui_contentType": "内容类型",
+  "vt_ui_responseBody": "响应体",
+  "vt_ui_copy": "复制",
+  "vt_ui_copied": "已复制！",
+  "ipi_sections_step1": "instore payment inquiry",
+  "ipi_sections_endpoint": "接口信息",
+  "ipi_sections_requestHeader": "请求头",
+  "ipi_sections_requestParams": "请求参数",
+  "ipi_sections_sampleRequest": "示例请求",
+  "ipi_sections_successResponse": "成功响应",
+  "ipi_sections_errorResponses": "错误响应",
+
+  "ipi_title": "Instore Payment Inquiry",
+  "ipi_intro": "该接口用于根据指定的 transactionId（trade_no）与收单机构，查询该交易及其退款的详细信息，并按时间戳倒序返回。",
+
+  "ipi_ui_get": "GET",
+  "ipi_ui_statusCode": "状态码",
+  "ipi_ui_contentType": "内容类型",
+  "ipi_ui_responseBody": "响应体",
+  "ipi_ui_url": "URL",
+  "ipi_ui_method": "请求方法",
+  "ipi_ui_copy": "复制",
+  "ipi_ui_copied": "已复制！",
+
+  "ipi_endpoint_title": "接口信息",
+  "ipi_endpoint_url": "{Host}/v2/alipayplus/instore/pay-info/:transactionId",
+
+  "ipi_headers_title": "请求头",
+  "ipi_headers_item_acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单机构的唯一标识。",
+  "ipi_headers_item_authorization": "Authorization（字符串，必填）：收单侧授权密钥。",
+  "ipi_headers_item_authKey": "Auth-Key（字符串，必填）：收单侧认证密钥。",
+  "ipi_headers_item_contentType": "Content-Type（字符串，必填）：必须为 application/json。",
+
+  "ipi_params_title": "请求参数",
+  "ipi_params_intro": "该请求包含路径参数",
+  "ipi_params_table_transactionId_desc": "交易唯一标识（trade_no）。",
+  "ipi_params_validationTitle": "请求参数校验",
+  "ipi_params_rule_transactionId": "必填，且必须为非空字符串。",
+
+  "ipi_tbl_parameter": "参数",
+  "ipi_tbl_type": "类型",
+  "ipi_tbl_required": "必填",
+  "ipi_tbl_description": "说明",
+
+  "ipi_sample_title": "示例请求",
+  "ipi_sample_urlLabel": "URL",
+  "ipi_sample_urlValue": "{Host}/v2/alipayplus/instore/pay-info/ALIPAY_TX_123456",
+  "ipi_sample_headers": "请求头",
+
+  "ipi_success_title": "成功响应",
+  "ipi_success_status200": "200 OK",
+  "ipi_success_body": "{\n    \"code\": \"TRANSACTION_FOUND\",\n    \"message\": \"Transaction record(s) retrieved successfully.\",\n    \"status\": \"SUCCESS\",\n    \"data\": {\n        \"transactions\": [\n            {\n                \"transactionId\": \"tx123456\",\n                \"timestamp\": \"2025-08-05 14:20:00\",\n                \"currency\": \"USD\",\n                \"amount\": \"50.00\",\n                \"outletName\": \"Outlet XYZ\",\n                \"outletId\": \"outlet_12345\",\n                \"subject\": \"Purchase at Outlet XYZ\",\n                \"transactionStatus\": \"SUCCESS\",\n                \"settlementStatus\": true,\n                \"paymentMethod\": \"Alipay+\"\n            },\n            {\n                \"transactionId\": \"refund123\",\n                \"timestamp\": \"2025-08-05 14:15:00\",\n                \"currency\": \"USD\",\n                \"amount\": \"25.00\",\n                \"outletName\": \"Outlet XYZ\",\n                \"outletId\": \"outlet_12345\",\n                \"subject\": \"Partial Refund\",\n                \"transactionStatus\": \"REFUNDED\",\n                \"settlementStatus\": false,\n                \"paymentMethod\": \"Alipay+\"\n            }\n        ]\n    }\n}",
+
+  "ipi_errors_title": "错误响应",
+  "ipi_errors_intro": "以下为可能出现的错误响应（包含状态码、错误码与消息）：",
+
+  "ipi_err_1_title": "1. 缺少交易号",
+  "ipi_err_1_status": "400 Bad Request",
+  "ipi_err_1_body": "{\n    \"code\": \"MISSING_TRANSACTION_ID\",\n    \"message\": \"transactionId (trade_no) is required.\",\n    \"status\": \"FAIL\"\n}",
+
+  "ipi_err_2_title": "2. 未找到交易",
+  "ipi_err_2_status": "404 Not Found",
+  "ipi_err_2_body": "{\n    \"code\": \"TRANSACTION_NOT_FOUND\",\n    \"message\": \"No transaction or refund record found for the given trade number.\",\n    \"status\": \"FAIL\"\n}",
+
+  "ipi_err_3_title": "3. 服务器错误",
+  "ipi_err_3_status": "500 Internal Server Error",
+  "ipi_err_3_body": "{\n    \"code\": \"SERVER_ERROR\",\n    \"message\": \"An error occurred while retrieving transaction details.\",\n    \"status\": \"ERROR\",\n    \"error\": \"Specific error message\"\n}",
+
+
+  "opi_sections_step1": "Payment Inquiry",
+  "opi_sections_endpoint": "接口信息",
+  "opi_sections_requestHeader": "请求头",
+  "opi_sections_requestParams": "请求参数",
+  "opi_sections_sampleRequest": "示例请求",
+  "opi_sections_successResponse": "成功响应",
+  "opi_sections_errorResponses": "错误响应",
+
+  "opi_title": "Payment Inquiry",
+  "opi_intro": "该端点根据指定的 paymentRequestId 和收单方，查询关联的支付与退款交易详情，并按时间戳倒序返回。",
+
+  "opi_ui_get": "GET",
+  "opi_ui_statusCode": "状态码",
+  "opi_ui_contentType": "内容类型",
+  "opi_ui_responseBody": "响应体",
+  "opi_ui_url": "URL",
+  "opi_ui_method": "请求方法",
+  "opi_ui_description": "描述",
+  "opi_ui_copy": "复制",
+  "opi_ui_copied": "已复制！",
+
+  "opi_endpoint_title": "接口信息",
+  "opi_endpoint_url": "{Host}/v2/alipayplus/online/pay-info/:id",
+  "opi_endpoint_description": "基于 paymentRequestId 从 AlipayPlus-Transactions 与 AlipayPlus-Refund-Transactions 集合查询支付与退款记录，面向收单集成。",
+
+  "opi_headers_title": "请求头",
+  "opi_headers_item_acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单机构唯一标识。",
+  "opi_headers_item_authorization": "Authorization（字符串，必填）：收单授权密钥。",
+  "opi_headers_item_authKey": "Auth-Key（字符串，必填）：收单认证密钥。",
+  "opi_headers_item_contentType": "Content-Type（字符串，必填）：必须为 application/json。",
+
+  "opi_params_title": "请求参数",
+  "opi_params_intro": "该请求包含路径参数",
+  "opi_params_table_id_desc": "支付请求唯一标识（paymentRequestId）。",
+  "opi_params_validationTitle": "请求参数校验",
+  "opi_params_rule_id": "必填，且必须为非空字符串（表示 paymentRequestId）。",
+
+  "opi_tbl_parameter": "参数",
+  "opi_tbl_type": "类型",
+  "opi_tbl_required": "必填",
+  "opi_tbl_description": "说明",
+
+  "opi_sample_title": "示例请求",
+  "opi_sample_urlLabel": "URL",
+  "opi_sample_urlValue": "{Host}/v2/alipayplus/online/pay-info/PAY_1234567890abcdef",
+  "opi_sample_headers": "请求头",
+
+  "opi_success_title": "成功响应",
+  "opi_success_status200": "200 OK",
+  "opi_success_body": "{\n    \"code\": \"TRANSACTION_FOUND\",\n    \"message\": \"Transaction record(s) retrieved successfully.\",\n    \"status\": \"SUCCESS\",\n    \"data\": [\n        {\n            \"paymentId\": \"PAY_1234567890abcdef\",\n            \"timestamp\": \"2025-08-05 14:50:00\",\n            \"outletId\": \"outlet_12345\",\n            \"outletName\": \"Outlet XYZ\",\n            \"orderDescription\": \"Online purchase at Outlet XYZ\",\n            \"paymentResult\": \"SUCCESS\",\n            \"currency\": \"USD\",\n            \"paymentAmount\": \"50.00\",\n            \"paymentMethod\": \"CONNECT_WALLET\",\n            \"walletBrandName\": \"Alipay\",\n            \"env\": { \"terminalType\": \"WEB\" },\n            \"is_settled\": false\n        },\n        {\n            \"paymentId\": \"PAY_1234567890abcdef\",\n            \"timestamp\": \"2025-08-05 14:45:00\",\n            \"outletId\": \"outlet_12345\",\n            \"outletName\": \"Outlet XYZ\",\n            \"orderDescription\": \"Partial Refund\",\n            \"paymentResult\": \"SUCCESS\",\n            \"currency\": \"USD\",\n            \"paymentAmount\": \"25.00\",\n            \"paymentMethod\": \"CONNECT_WALLET\",\n            \"walletBrandName\": \"Alipay\",\n            \"env\": { \"terminalType\": \"WEB\" },\n            \"is_settled\": false\n        }\n    ]\n}",
+
+  "opi_errors_title": "错误响应",
+  "opi_errors_intro": "以下为可能出现的错误响应（包含状态码、错误码与消息）",
+
+  "opi_err_1_title": "1. 缺少参数",
+  "opi_err_1_status": "400 Bad Request",
+  "opi_err_1_body": "{\n    \"code\": \"MISSING_PARAMS\",\n    \"message\": \"paymentRequestId and acquirerId are required.\",\n    \"status\": \"FAIL\"\n}",
+
+  "opi_err_2_title": "2. 未找到交易",
+  "opi_err_2_status": "404 Not Found",
+  "opi_err_2_body": "{\n    \"code\": \"TRANSACTION_NOT_FOUND\",\n    \"message\": \"No transaction found for paymentId: PAY_1234567890abcdef, acquirerId: acquirer_98765\",\n    \"status\": \"FAIL\"\n}",
+
+  "opi_err_3_title": "3. 交易查询错误",
+  "opi_err_3_status": "500 Internal Server Error",
+  "opi_err_3_body": "{\n    \"code\": \"TRANSACTION_ERROR\",\n    \"message\": \"Error fetching transaction data.\",\n    \"status\": \"ERROR\",\n    \"error\": \"Specific error message\"\n}",
+  "marketing_hero_badge": "支付营销",
+  "marketing_hero_title_1": "将每一次",
+  "marketing_hero_title_2": "交易转化为",
+  "marketing_hero_title_3": "有价值的体验。",
+  "marketing_hero_desc": "提升线上和线下的结账体验。SriPay 将个性化激励和独家优惠与您的支付方式相结合，让客户每次支付时都有更多理由选择您。",
+  "marketing_contact_btn": "联系我们",
+
+  "marketing_cards_header": "营销素材",
+  "marketing_card_multi_title": "多币种结算",
+  "marketing_card_multi_desc": "实现全球处理，并自动在客户的本地货币中显示折扣。",
+  "marketing_card_top_title": "顶级商户",
+  "marketing_card_top_desc": "随着交易量的增长，商户的佣金率会降低。",
+  "marketing_card_social_title": "社交媒体推广",
+  "marketing_card_social_desc": "我们通过社交渠道和 SriPay 集成的业务网站推广商户，帮助商户获得更多曝光。",
+
+  "marketing_top_title": "顶级商户标识",
+  "marketing_top_desc": "在门店后台显示顶级商户标识。",
+  "marketing_qr_title": "店内二维码卡",
+  "marketing_qr_desc": "我们的营销技术分析用户支付行为，提供个性化的即时激励，例如折扣、积分和礼品，以帮助商户在店内提升转化，并为移动支付服务商创造新的收入来源。"
+,
+"branding": {
+    "title": "SriPay 基础品牌指南",
+    "brandAssets": {
+      "title": "品牌标识资源 (ZIP)",
+      "desc": "下载 SriPay 官方品牌标识资源，可用于印刷和数字渠道。ZIP 包含矢量和光栅徽标文件，支持多种格式和配色，适用于浅色和深色背景。请在使用这些资源时遵循《SriPay 基础品牌指南》。",
+      "formats": "• 格式：SVG, PNG (@1x, @2x), PDF",
+      "colorways": "• 配色方案：全彩，单色（黑/白）",
+      "backgrounds": "• 背景：浅色，深色，透明",
+      "extras": "• 额外说明：留白与最小尺寸要求 (README)",
+      "downloadBtn": "下载 Brand_Mark_Assets.zip",
+      "note": "注意：部分浏览器可能会屏蔽 ZIP 预览。如果“在新标签页中打开”无效，请使用“下载”。"
+    },
+    "guidelines": {
+      "title": "基础品牌指南"
+    },
+    "mobile": {
+      "notice": "移动端和平板不支持 PDF 预览，请使用以下链接：",
+      "open": "在新标签页中打开",
+      "download": "下载指南",
+      "tip": "提示：如果无法在新标签页中打开，请尝试点击下载按钮。"
+    },
+    "desktop": {
+      "fallback": "如果内嵌 PDF 无法加载，请使用“在新标签页中打开”或“下载 PDF”。"
+    }
+  },
+  "merchantEndpoints": {
+    "title": "接口",
+    "desc": "SriPay Connect 提供以下 API 接口，使收单机构能够无缝集成到其 Web、POS 系统或其他支付平台。",
+    "sections": {
+      "instore": "Alipay+ 店内 API",
+      "instore_items": {
+        "orderCodePay": "订单码支付二维码",
+        "orderCodeListener": "订单码结果监听",
+        "userPresentPay": "用户出示支付",
+        "userPresentPayWaiting": "用户出示支付等待中",
+        "voidTransactions": "撤销交易",
+        "inquiry": "店内支付查询",
+        "notSettled": "店内未清算最新交易"
+      },
+      "merchantWeb": "商户网页框架在线支付",
+      "merchantWeb_items": {
+        "paymentRequest": "支付请求"
+      },
+      "online": "Alipay+ 在线 API",
+      "online_items": {
+        "paymentLinkCreate": "支付链接创建",
+        "paymentInquiry": "支付查询"
+      },
+      "card": "在线银行卡支付（Visa、Mastercard、银联）",
+      "card_items": {
+        "paymentLinkCreate": "支付链接创建",
+        "paymentInquiry": "支付查询"
+      }
+    }
+  }
+  ,
+  "mao_sections_overview": "概览",
+  "mao_sections_reqStructure": "API 请求结构",
+  "mao_sections_reqUrl": "请求 URL 格式",
+  "mao_sections_reqMethod": "请求方法",
+  "mao_sections_reqHeaders": "请求头",
+  "mao_sections_respBody": "响应体",
+  "mao_sections_respCodes": "响应码",
+
+  "mao_title": "商户 API 概览",
+  "mao_intro_1": "由 SriPay 提供并集成 Alipay+、Visa、Mastercard、UnionPay、Amex 的商户 API，为商户提供安全且强大的能力，以编程方式处理支付、管理账户并处理交易。该 API 支持多种支付方式，包括线上支付、商户展示模式（动态二维码）、用户展示模式、撤销与退款。API 以简洁与安全为设计原则，通过通用请求头与严格校验来确保一致性。",
+  "mao_intro_2": "本文档说明了 API 的端点、请求结构、流程与错误场景，并附带示例以便集成。",
+
+  "mao_reqStructure_title": "API 请求结构",
+  "mao_reqStructure_list_1": "请求 URL 格式",
+  "mao_reqStructure_list_2": "请求方法",
+  "mao_reqStructure_list_3": "请求头",
+  "mao_reqStructure_list_3_a": "授权密钥",
+  "mao_reqStructure_list_3_b": "商户编号",
+  "mao_reqStructure_list_3_c": "Content-Type",
+  "mao_reqStructure_list_4": "响应体",
+  "mao_reqStructure_list_5": "响应码",
+
+  "mao_reqUrl_title": "1. 请求 URL 格式",
+  "mao_reqUrl_desc": "SriPay Connect 商户 API 的请求 URL 由两个部分组成：",
+  "mao_reqUrl_host_label": "Host",
+  "mao_reqUrl_host_desc": "所连接的 SriPay Connect 商户 API 环境基地址。",
+  "mao_reqUrl_endpoint_label": "Endpoint",
+  "mao_reqUrl_endpoint_desc": "表示所请求服务/操作的具体 API 路径。",
+  "mao_reqUrl_example_label": "示例",
+  "mao_reqUrl_complete": "完整请求 URL",
+
+  "mao_reqMethod_title": "2. 请求方法",
+  "mao_reqMethod_desc": "商户 API 仅支持两种 HTTPS 方法：",
+  "mao_reqMethod_post": "POST",
+  "mao_reqMethod_post_desc": "—— 用于创建或向服务器提交新数据。",
+  "mao_reqMethod_post_example": "示例：发起支付、创建交易、提交处理请求。",
+  "mao_reqMethod_get": "GET",
+  "mao_reqMethod_get_desc": "—— 用于从服务器获取数据。",
+  "mao_reqMethod_get_example": "示例：查询交易详情、获取状态更新或检索记录。",
+
+  "mao_reqHeaders_title": "3. 请求头",
+  "mao_reqHeaders_desc": "所有商户 API 请求必须包含以下请求头，以确保正确的认证与路由：",
+  "mao_tbl_headerName": "请求头名称",
+  "mao_tbl_description": "说明",
+  "mao_tbl_example": "示例",
+
+  "mao_headers_auth_name": "Authorization 或 x-api-key",
+  "mao_headers_auth_desc": "用于请求认证的 API 密钥。",
+  "mao_headers_merchant_name": "MerchantId 或 x-mch-id",
+  "mao_headers_merchant_desc": "分配给每个商户的唯一标识，用于路由与访问控制。",
+  "mao_headers_ct_name": "Content-Type",
+  "mao_headers_ct_desc": "定义请求体格式。始终使用 application/json。",
+
+  "mao_keys_steps_title": "获取密钥的步骤：",
+  "mao_keys_step_1": "进入个人资料页。",
+  "mao_keys_step_2": "点击“API 管理”。",
+  "mao_keys_step_3": "使用密码进行验证。",
+  "mao_keys_step_4": "获取您的密钥。",
+
+  "mao_respBody_title": "4. 响应体",
+  "mao_respBody_desc": "所有 API 响应都包含一个 Result 对象，含以下三个关键字段：",
+  "mao_respBody_code": "Code",
+  "mao_respBody_code_desc": "—— 简短的机器可读标识，用于指示请求结果，便于程序处理。",
+  "mao_respBody_message": "Message",
+  "mao_respBody_message_desc": "—— 人类可读的描述信息，适用于用户可见的错误提示与日志记录。",
+  "mao_respBody_status": "Status",
+  "mao_respBody_status_desc": "—— 业务层面的结果类别，用以跟踪审批、拒绝或待处理等流程状态。",
+
+  "mao_respCodes_title": "5. 响应码",
+  "mao_respCodes_desc": "SriPay Connect ACQ API 会返回标准的 HTTP 状态码以及响应体，以表示协议层面的请求结果。",
+  "mao_tbl_code": "状态码",
+  "mao_tbl_name": "名称",
+  "mao_tbl_typical": "典型场景",
+
+  "mao_code_200_name": "OK",
+  "mao_code_200_desc": "请求成功，服务器返回预期数据。",
+  "mao_code_200_typical": "成功的 API 请求。",
+
+  "mao_code_201_name": "Created",
+  "mao_code_201_desc": "请求成功并创建了新资源。",
+  "mao_code_201_typical": "已创建支付、发起交易。",
+
+  "mao_code_202_name": "Accepted",
+  "mao_code_202_desc": "请求已被接受但尚未完成处理。",
+  "mao_code_202_typical": "异步操作、进入队列的请求。",
+
+  "mao_code_204_name": "No Content",
+  "mao_code_204_desc": "请求成功但无返回内容。",
+  "mao_code_204_typical": "删除操作、空的成功响应。",
+
+  "mao_code_400_name": "Bad Request",
+  "mao_code_400_desc": "请求格式错误或缺少必填参数。",
+  "mao_code_400_typical": "校验错误、缺失字段。",
+
+  "mao_code_401_name": "Unauthorized",
+  "mao_code_401_desc": "认证失败或缺少/无效的 API 密钥。",
+  "mao_code_401_typical_prefix": "缺少/无效的",
+  "mao_code_401_typical_suffix": "请求头。",
+
+  "mao_code_403_name": "Forbidden",
+  "mao_code_403_desc": "当前用户无权限执行该操作。",
+  "mao_code_403_typical": "基于角色的权限限制。",
+
+  "mao_code_404_name": "Not Found",
+  "mao_code_404_desc": "所请求的资源不存在。",
+  "mao_code_404_typical": "无效的端点或资源 ID。",
+
+  "mao_code_409_name": "Conflict",
+  "mao_code_409_desc": "与资源当前状态冲突，无法完成请求。",
+  "mao_code_409_typical": "重复交易、冲突更新。",
+
+  "mao_code_500_name": "Internal Server Error",
+  "mao_code_500_desc": "服务器发生未预期的错误。",
+  "mao_code_500_typical": "任何未处理的后端错误。"
+  ,
+  "wfo_sections_step1": "商户网页框架（在线支付）",
+  "wfo_sections_overview": "概览",
+  "wfo_sections_features": "核心特性",
+  "wfo_sections_benefits": "商户收益",
+
+  "wfo_title": "商户网页框架（在线支付）",
+  "wfo_intro": "SriPay Connect 商户网页框架是一个统一、安全且自适应的支付界面，旨在简化商户与消费者的线上支付体验。该动态支付框架将多种支付方式聚合为一次集成，从而降低复杂度并加速上线。",
+
+  "wfo_overview_title": "概览",
+  "wfo_overview_desc": "商户只需将一个 API 端点集成到网站或网店，即可启用完整的线上支付能力，无需多个网关或重复配置。",
+  "wfo_img_alt": "商户网页框架概览",
+
+  "wfo_features_title": "核心特性",
+
+  "wfo_feat1_title": "一次集成，覆盖所有支付",
+  "wfo_feat1_desc_part1": "支持多种支付方式，包括",
+  "wfo_feat1_desc_part2": "并通过",
+  "wfo_feat1_desc_part3": "单一端点",
+
+  "wfo_feat2_title": "多币种支持",
+  "wfo_feat2_desc_main": "支持以下币种收款",
+  "wfo_feat2_note_label": "注意：",
+  "wfo_feat2_note_msg": "Alipay+ Online 仅支持 USD 交易",
+
+  "wfo_feat3_title": "实时交易更新",
+  "wfo_feat3_desc_part1": "客户在支付成功后将即时收到",
+  "wfo_feat3_desc_bold": "短信通知",
+  "wfo_feat3_desc_part2": "，提升透明度与信任度。",
+
+  "wfo_feat4_title": "安全与合规",
+  "wfo_feat4_desc_part1": "基于",
+  "wfo_feat4_desc_part2": "的基础设施，结合令牌化与端到端加密，确保数据安全达到最高标准。",
+
+  "wfo_feat5_title": "响应式设计",
+  "wfo_feat5_desc": "全面适配移动端，确保不同设备上都拥有顺畅的结账体验。",
+
+  "wfo_benefits_title": "商户收益",
+  "wfo_benefit_1": "降低集成成本与开发者工作量",
+  "wfo_benefit_2": "更快的接入与部署",
+  "wfo_benefit_3": "对账与报表集中化",
+  "wfo_benefit_4": "统一后端架构，降低维护成本",
+  "wfo_benefit_5": "面向未来，支持即将上线的支付方式",
+  "cpo_title": "在线银行卡支付（Visa、Mastercard、银联）",
+  "cpo_intro": "SriPay Connect 通过统一接口提供无缝的在线银行卡受理，商户一次集成即可支持 Visa、Mastercard、银联及美国运通（Amex）等卡组织。",
+  "cpo_overview_title": "概览",
+  "cpo_overview_body": "我们的在线银行卡支付方案在性能、安全与灵活性方面表现出色，支持 LKR 与 USD 两种币种。内置合规与风控能力，帮助商户安心面向本地与国际客户提供银行卡支付。",
+
+  "acquirer": {
+    "download": "下载协议",
+    "title": "支付宝+ 服务提供商协议 – 子收单方 [线下即时支付]",
+    "subtitle": "本支付宝+ 服务提供商协议适用于 IPG（线上）和线下支付",
+
+    "section3_4_b_iii": "iii) 要求子商户提交有效营业执照、表格1、斯里兰卡国民身份证或董事/合伙人/业主护照的真实复印件，以及最近3个月的银行对账单及（如适用）原始董事会决议 …",
+    "section3_4_c": "(c) 不允许任何子商户申请授权，如果该子商户在子收单方的“黑名单”中 …",
+    "section3_4_d": "(d) 不允许任何子商户申请授权，如果其从事第6.1条所列禁止业务 …",
+    "section3_4_e": "(e) 向子收单方提供合理要求的信息/文件，包括季度报告 …",
+    "section3_4_f": "(f) 保持支付交易和持卡人数据的机密性，不得向任何第三方披露 …",
+    "section3_4_g": "(g) 未经书面同意不得让第三方参与支付交易 …",
+    "section3_4_h": "(h) 不得将子收单方分配的密码分享给任何人 …",
+    "section3_4_i": "(i) 始终遵守斯里兰卡相关法律法规和指令 …",
+    "section3_4_j": "(j) 收单方和/或集团公司必须持有并保持 PCI-DSS 认证 …",
+
+    "section3_5": "3.5 银行授予收单方和集团公司 …",
+    "section4_title": "4. 银行的义务",
+    "section4_1": "4.1 银行应在协议签署后向收单方提供支付宝+支付网关和二维码支付系统 …",
+    "section4_2": "4.2 银行应遵守所有法律法规 …",
+    "section4_3": "4.3 银行应保持支付交易和子商户客户数据的机密性 …",
+    "section4_4": "4.4 银行应确保开设一个以收单方名义的结算账户 …"
+  },
+  "mocpq": {
+    "title": "订单码支付二维码",
+    "intro": "“订单码支付”允许商户生成一个动态二维码并展示给顾客完成支付；商户可实时收到支付结果。以下 API 说明了发起请求所需的参数与规则。",
+    "sections": {
+      "step1": "订单码支付二维码",
+      "step2": "接口信息",
+      "step3": "请求头",
+      "step4": "请求体",
+      "step5": "示例请求",
+      "step6": "成功响应",
+      "step7": "错误响应"
+    },
+    "endpoint": {
+      "title": "接口信息",
+      "urlLabel": "URL",
+      "methodLabel": "方法"
+    },
+    "http": {
+      "post": "POST",
+      "get": "GET"
+    },
+    "headers": {
+      "title": "请求头",
+      "items": {
+        "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+        "authorization": "Authorization 或 x-api-key（string，必填）：商户唯一密钥。"
+      }
+    },
+    "requestBody": {
+      "title": "请求体",
+      "intro": "请求体需为 JSON 格式并包含以下参数",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "validationRules": "校验规则",
+        "rows": {
+          "outletId": {
+            "description": "门店唯一标识。",
+            "validation": "不能为空字符串。"
+          },
+          "amount": {
+            "description": "交易金额。",
+            "validation": "必须为大于 0 的正数。"
+          },
+          "subject": {
+            "description": "交易描述。",
+            "validation": "字符串，最长 100 个字符。"
+          },
+          "currency": {
+            "description": "交易币种。",
+            "validation": "只能为 USD 或 LKR。"
+          },
+          "terminalId": {
+            "description": "终端唯一标识。",
+            "validation": "不能为空字符串。"
+          }
+        }
+      },
+      "validationTitle": "请求体校验",
+      "rules": {
+        "outletId": "必填，非空字符串。",
+        "amount": "必填，必须为大于 0 的正数。",
+        "subject": "必填，字符串且最长 100 个字符。",
+        "currency": "必填，USD 或 LKR 之一。",
+        "terminalId": "必填，非空字符串。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "headersLabel": "请求头"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCodeLabel": "状态码",
+      "contentTypeLabel": "内容类型",
+      "responseBodyLabel": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下为可能出现的错误响应，包含状态码、错误码与消息：",
+      "items": {
+        "missingParams": "1. 缺少参数",
+        "invalidAmount": "2. 金额不合法",
+        "invalidCurrency": "3. 币种不合法",
+        "invalidSubject": "4. 交易描述不合法",
+        "outletNotFound": "5. 未找到门店",
+        "merchantOutletMismatch": "6. 商户与门店不匹配",
+        "outletNotApproved": "7. 门店未通过审核",
+        "outletNotApprovedAplusOffline": "8. 门店未获 Alipay+ 线下资格",
+        "terminalNotApproved": "9. 终端未通过审核或不存在",
+        "merchantNotFound": "10. 未找到商户",
+        "alipayFailed": "11. Alipay 请求失败",
+        "xmlParseError": "12. XML 解析错误",
+        "serverError": "13. 服务器错误"
+      }
+    },
+    "httpStatus": {
+      "badRequest": "400 错误的请求",
+      "forbidden": "403 禁止访问",
+      "notFound": "404 未找到",
+      "internalServerError": "500 服务器内部错误",
+      "ok": "200 成功"
+    },
+    "common": {
+      "yes": "是",
+      "applicationJson": "application/json",
+      "notes": "说明"
+    },
+    "notes": {
+      "n1": "该接口会调用 Alipay 的 API 以生成线下交易二维码。",
+      "n2": "merchantId 可在请求头中用 merchantid 或 x-mch-id 传递。",
+      "n3": "生成的二维码链接返回在 allPicUrls 对象中，包括支付码、大/小/中图链接。",
+      "n4": "outTradeNo 是 Alipay 订单的唯一标识，会存储在数据库中以供引用。"
+    }
+  },
+  "ocrll": {
+    "sections": {
+      "s1": "订单码结果监听",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+    "title": "订单码结果监听",
+    "methodGet": "GET",
+    "path": "{Host}/v2/alipayplus/instore/ordercode-listener/:outTradeNo",
+    "intro": "该接口通过服务端推送（SSE）与服务端建立实时连接，基于 outTradeNo 监听 Alipay+ 交易的状态变更。接口会推送状态更新，并将时间戳从 GMT+8 转换为 Asia/Colombo（GMT+5:30）。",
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "方法",
+      "desc": "通过 SSE 为指定的 outTradeNo 提供实时交易状态更新。"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（string，必填）：商户唯一密钥。"
+    },
+    "reqParams": {
+      "title": "请求参数",
+      "intro": "该请求包含一个路径参数",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "rowOutTradeNoDesc": "Alipay+ 交易的唯一标识。",
+        "yes": "是"
+      },
+      "validationTitle": "参数校验",
+      "ruleOutTradeNo": "必填，非空字符串。"
+    },
+    "sample": {
+      "title": "示例请求",
+      "url": "URL",
+      "headers": "请求头",
+      "exampleUrl": "{Host}/v2/alipayplus/instore/ordercode-listener/abc1234567890"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 成功",
+      "contentType": "内容类型",
+      "ctEventStream": "text/event-stream",
+      "body": "响应体",
+      "streams": "以 SSE 格式持续推送事件。",
+      "exampleLead": "示例（2025 年 8 月 5 日 星期二，13:37 +0530）：",
+      "eventUpdate": "event: update",
+      "bul1": "event: update —— 表示交易有更新。",
+      "bul2": "data：包含交易明细的 JSON 数组（id、trade_status、timestamp）。"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下列出可能的错误响应，包含状态码、错误码与消息：",
+      "firestore": "1. Firestore 监听错误",
+      "server": "2. 非预期服务器错误",
+      "status200WithEvent": "200 成功（以 error 事件返回）",
+      "responseBody": "响应体："
+    },
+    "notes": {
+      "title": "说明",
+      "n1": "该接口使用 SSE 保持长连接，从 Alipay+ 线下交易集合中推送更新。",
+      "n2": "时间戳（gmt_payment）会从 GMT+8 转换为 Asia/Colombo（GMT+5:30）。",
+      "n3": "每 30 秒发送一次心跳（:\\n\\n）以保持连接。",
+      "n4": "当收到交易更新或发生错误时连接会自动关闭，并在客户端断开时清理资源。"
+    }
+  },
+  "uppw": {
+    "sections": {
+      "s1": "用户出示支付等待",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应",
+      "notes": "说明"
+    },
+    "title": "用户出示支付等待",
+    "methodGet": "GET",
+    "path": "{Host}/v2/alipayplus/instore/userpresent-waiting",
+    "intro": "该接口根据 partnerTransId 获取等待用户认证的 Alipay+ 交易状态。用于再次查询以确认用户是否已完成认证，并返回最新交易详情。",
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "方法",
+      "desc": "查询指定 partnerTransId 的交易状态，适用于用户认证后的二次核验。"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（string，必填）：商户唯一密钥。"
+    },
+    "reqParams": {
+      "title": "请求参数",
+      "intro": "该请求包含一个路径参数",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "rowPartnerDesc": "合作方交易唯一标识。",
+        "yes": "是"
+      },
+      "validationTitle": "参数校验",
+      "rulePartner": "必填，非空字符串。"
+    },
+    "sample": {
+      "title": "示例请求",
+      "url": "URL",
+      "headers": "请求头",
+      "exampleUrl": "{Host}/v2/alipayplus/instore/userpresent-waiting/202507310949543232"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 成功",
+      "contentType": "内容类型",
+      "ctJson": "application/json",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下列出可能的错误响应，包含状态码、错误码与消息：",
+      "missing": "1. 缺少参数",
+      "notFound": "2. 未找到交易",
+      "server": "3. 服务器错误",
+      "respBody": "响应体："
+    },
+    "notes": {
+      "title": "说明",
+      "n1": "该接口基于 partnerTransId 查询 Alipay 交易集合以获取交易详情。",
+      "n2": "响应包含 transactionId、timestamp、currency、amount、outletName、outletId、transactionStatus、paymentMethod 等字段。",
+      "n3": "在通过 /userpresent-pay 发起交易并等待用户认证时，可用此接口进行复查。",
+      "n4": "时间戳为 Asia/Colombo（GMT+5:30）。",
+      "n5": "若交易仍为待处理，可在用户完成认证后重复调用以获取更新。"
+    }
+  },
+  "instoreInquiry": {
+    "sections": {
+      "s1": "店内支付查询",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+    "title": "店内支付查询",
+    "methodGet": "GET",
+    "path": "{Host}/v2/alipayplus/instore/pay-info",
+    "intro": "该接口为指定商户根据 transactionId（trade_no）查询相关交易与退款信息，并按时间倒序返回。",
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "方法",
+      "desc": "基于 transactionId 查询交易与退款记录。"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（string，必填）：商户 API 密钥。"
+    },
+    "req": {
+      "title": "请求参数",
+      "intro": "该请求包含一个路径参数",
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "yes": "是",
+        "rowIdDesc": "交易唯一标识（trade_no）。"
+      },
+      "validationTitle": "参数校验",
+      "ruleId": "必填，非空字符串。"
+    },
+    "sample": {
+      "title": "示例请求",
+      "url": "URL",
+      "headers": "请求头",
+      "exampleUrl": "{Host}/v2/alipayplus/instore/pay-info/ALIPAY_TX_123456"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 成功",
+      "contentType": "内容类型",
+      "ctJson": "application/json",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下列出可能的错误响应，包含状态码、错误码与消息：",
+      "missingId": "1. 缺少交易号",
+      "notFound": "2. 未找到交易",
+      "server": "3. 服务器错误",
+      "respBody": "响应体："
+    }
+  },
+  "instoreLatest": {
+    "sections": {
+      "s1": "店内未结算的最新交易",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+    "title": "店内未结算的最新交易",
+    "methodGet": "GET",
+    "path": "{Host}/v2/alipayplus/instore/latest-transactions",
+    "intro": "该接口按时间倒序获取指定商户最新的未结算交易与退款记录。",
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "方法",
+      "desc": "返回认证商户下 settlementStatus 为 false 的最新交易与退款。"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（string，必填）：商户 API 密钥。"
+    },
+    "req": {
+      "title": "请求参数",
+      "validationTitle": "参数校验",
+      "ruleMerchantId": "必填，通过请求头 merchantid 或 x-mch-id 提供。"
+    },
+    "sample": {
+      "title": "示例请求",
+      "url": "URL",
+      "headers": "请求头",
+      "exampleUrl": "{Host}/v2/alipayplus/instore/latest-transactions"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 成功",
+      "contentType": "内容类型",
+      "ctJson": "application/json",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下列出可能的错误响应，包含状态码、错误码与消息：",
+      "notFound": "1. 未找到交易",
+      "server": "2. 服务器错误",
+      "respBody": "响应体："
+    },
+    "notes": {
+      "title": "备注"
+    }
+  },
+  "voidTxn": {
+    "sections": {
+      "s1": "撤销交易",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+    "title": "撤销交易",
+    "methodPost": "POST",
+    "path": "{Host}/v2/alipayplus/instore/void-transaction",
+    "intro": "该接口允许商户在交易完成的同一科伦坡日期内撤销一笔已成功的 Alipay 交易，并更新交易状态、通知相关方。",
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "方法"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（string，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（string，必填）：商户 API 密钥。"
+    },
+    "req": {
+      "title": "请求参数",
+      "desc": "请求体需为 JSON，并包含以下参数：",
+      "validationTitle": "参数校验",
+      "ruleTxnId": "必填，非空字符串。",
+      "ruleOutletId": "必填，非空字符串。",
+      "ruleMerchantId": "必填，通过请求头 merchantid 或 x-mch-id 提供。",
+      "cols": {
+        "param": "参数名",
+        "type": "类型",
+        "required": "必填",
+        "desc": "说明"
+      },
+      "rows": {
+        "txnIdDesc": "要撤销的交易唯一标识。",
+        "outletIdDesc": "与该交易关联的门店唯一标识。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "headers": "请求头"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 成功",
+      "contentType": "内容类型",
+      "ctJson": "application/json",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "可能返回的错误如下，包含状态码、错误码及消息：",
+      "e1": "1. 缺少参数",
+      "e2": "2. 缺少认证",
+      "e3": "3. 未找到门店",
+      "e4": "4. 门店未关联商户",
+      "e5": "5. 禁止的门店",
+      "e6": "6. 未找到商户",
+      "e7": "7. 未找到交易",
+      "e8": "8. 交易与门店不匹配",
+      "e9": "9. 非法状态",
+      "e10": "10. 交易时间戳无效",
+      "e11": "11. 撤销时间窗口已关闭",
+      "e12": "12. 缺少 Alipay 配置",
+      "e13": "13. Alipay 解析错误",
+      "e14": "14. Alipay 撤销失败",
+      "e15": "15. 撤销异常",
+      "respBody": "响应体："
+    }
+  },
+  "merchant_onlinepay_section_title": "支付查询",
+  "merchant_onlinepay_section_endpoint": "接口",
+  "merchant_onlinepay_section_headers": "请求头",
+  "merchant_onlinepay_section_params": "请求参数",
+  "merchant_onlinepay_section_sample": "示例请求",
+  "merchant_onlinepay_section_success": "成功响应",
+  "merchant_onlinepay_section_errors": "错误响应",
+
+  "merchant_onlinepay_method": "GET",
+  "merchant_onlinepay_intro": "该接口用于根据指定的 paymentRequestId 获取与某商户相关的支付与退款交易详情，并按时间倒序返回。",
+
+  "merchant_onlinepay_label_url": "请求地址",
+  "merchant_onlinepay_label_method": "请求方式",
+  "merchant_onlinepay_label_headers": "请求头",
+  "merchant_onlinepay_label_status": "状态码",
+  "merchant_onlinepay_label_content_type": "内容类型",
+  "merchant_onlinepay_label_response_body": "响应体",
+
+  "merchant_onlinepay_header_merchant": "merchantId 或 x-mch-id（字符串，必填）：商户唯一标识。",
+  "merchant_onlinepay_header_auth": "Authorization 或 x-api-key（字符串，必填）：商户的唯一 API Key。",
+
+  "merchant_onlinepay_params_intro": "该请求包含一个路径参数",
+  "merchant_onlinepay_required_yes": "是",
+  "merchant_onlinepay_param_id_desc": "支付请求的唯一标识（paymentRequestId）。",
+
+  "merchant_onlinepay_tbl_param": "参数",
+  "merchant_onlinepay_tbl_type": "类型",
+  "merchant_onlinepay_tbl_required": "必填",
+  "merchant_onlinepay_tbl_desc": "说明",
+
+  "merchant_onlinepay_validation_title": "参数校验",
+  "merchant_onlinepay_validation_id": "必填，必须为非空字符串（表示 paymentRequestId）。",
+
+  "merchant_onlinepay_errors_intro": "以下列出了可能的错误响应，包括状态码、错误码和消息：",
+  "merchant_onlinepay_err_missing_title": "1. 参数缺失",
+  "merchant_onlinepay_err_notfound_title": "2. 未找到交易",
+  "merchant_onlinepay_err_server_title": "3. 交易查询错误",
+
+  "merchant_onlinepay_copy": "复制",
+  "merchant_onlinepay_copied": "已复制！",
+  "merchant_paylink_section_title": "创建支付链接",
+  "merchant_paylink_section_endpoint": "接口",
+  "merchant_paylink_section_headers": "请求头",
+  "merchant_paylink_section_body": "请求体",
+  "merchant_paylink_section_sample": "示例请求",
+  "merchant_paylink_section_success": "成功响应",
+  "merchant_paylink_section_errors": "错误响应",
+
+  "merchant_paylink_method": "POST",
+  "merchant_paylink_intro": "该接口为指定门店发起 Alipay+ 在线支付交易，生成带重定向地址的支付请求，便于用户授权，适用于商户系统集成。",
+  "merchant_paylink_label_url": "请求地址",
+  "merchant_paylink_label_method": "请求方式",
+  "merchant_paylink_label_desc": "说明",
+  "merchant_paylink_desc_text": "发起 Alipay+ 在线支付流程，校验门店与商户信息，并返回用于用户授权的支付链接。",
+  "merchant_paylink_label_headers": "请求头",
+  "merchant_paylink_label_status": "状态码",
+  "merchant_paylink_label_content_type": "内容类型",
+  "merchant_paylink_label_response_body": "响应体",
+
+  "merchant_paylink_header_merchant": "merchantId 或 x-mch-id（字符串，必填）：商户唯一标识。",
+  "merchant_paylink_header_auth": "Authorization 或 x-api-key（字符串，必填）：商户的唯一 API Key。",
+
+  "merchant_paylink_body_intro": "请求体需为 JSON，并包含以下参数：",
+  "merchant_paylink_required_yes": "是",
+
+  "merchant_paylink_param_outletId_desc": "门店唯一标识。",
+  "merchant_paylink_param_outletId_val": "必须为非空字符串。",
+  "merchant_paylink_param_amount_desc": "交易金额。",
+  "merchant_paylink_param_amount_val": "必须为大于 0 的正数。",
+  "merchant_paylink_param_order_desc": "订单描述。",
+  "merchant_paylink_param_order_val": "必须为字符串，最大长度 100 个字符。",
+
+  "merchant_paylink_tbl_param": "参数",
+  "merchant_paylink_tbl_type": "类型",
+  "merchant_paylink_tbl_required": "必填",
+  "merchant_paylink_tbl_desc": "说明",
+  "merchant_paylink_tbl_validation": "校验规则",
+
+  "merchant_paylink_validation_title": "请求体验证",
+  "merchant_paylink_val_outletId": "必填，非空字符串。",
+  "merchant_paylink_val_amount": "必填，金额需为大于 0 的正数。",
+  "merchant_paylink_val_order": "必填，字符串，最大 100 个字符。",
+  "merchant_paylink_val_currency": "固定为 USD（该接口不支持自定义）。",
+
+  "merchant_paylink_errors_intro": "以下列出了可能的错误响应，包括状态码、错误码和消息：",
+  "merchant_paylink_err_invalid_input": "参数不合法",
+  "merchant_paylink_err_order_too_long": "订单描述过长",
+  "merchant_paylink_err_invalid_amount": "金额不合法",
+  "merchant_paylink_err_outlet_not_found": "未找到门店",
+  "merchant_paylink_err_outlet_not_approved": "门店未审核通过",
+  "merchant_paylink_err_outlet_not_alipay": "门店未通过 Alipay 在线受理",
+  "merchant_paylink_err_outlet_missing_merchant": "门店缺少商户信息",
+  "merchant_paylink_err_merchant_mismatch": "商户 ID 不匹配",
+  "merchant_paylink_err_merchant_not_found": "未找到商户",
+  "merchant_paylink_err_config_missing": "配置缺失",
+  "merchant_paylink_err_signature_failed": "签名生成失败",
+  "merchant_paylink_err_payment_failed": "支付失败",
+
+  "merchant_paylink_copy": "复制",
+  "merchant_paylink_copied": "已复制！",
+  "paymentRequest": {
+    "title": "支付请求",
+    "intro": "该接口为商户创建 WebFrame 支付请求，生成 24 小时内有效的唯一支付链接。系统会根据门店已批准的状态自动包含可用支付方式（如 Alipay+ 或银行卡），并将用户重定向到支付方式选择页。",
+    "endpointDesc": "为商户生成支付请求，校验门店信息并保存包含可用支付方式的请求记录。",
+    "bodyIntro": "请求体需为 JSON 格式，并包含以下参数：",
+    "params": {
+      "outletId": { "desc": "门店唯一标识。", "val": "必须为非空字符串。" },
+      "amount":   { "desc": "交易金额。", "val": "必须为正数。" },
+      "currency": { "desc": "交易币种。", "val": "必须为 USD 或 LKR。" },
+      "subject":  { "desc": "交易描述。", "val": "必须为字符串；若长度超过 100，将截断至 99。" }
+    },
+    "validationTitle": "请求参数校验",
+    "validation": {
+      "outletId": "必填，非空字符串。",
+      "amount": "必填，且为正数。",
+      "currency": "必填，币种为 USD 或 LKR（不区分大小写）。",
+      "subject": "必填，最大有效长度 100 个字符（超出将截断为 99）。"
+    },
+    "errorsIntro": "可能的错误响应如下（包含状态码、错误码与消息）：",
+    "errors": {
+      "missingField": { "title": "缺少字段" },
+      "outletNotFound": { "title": "门店不存在" },
+      "outletInactive": { "title": "门店未通过审核" },
+      "merchantMismatch": { "title": "商户不匹配" },
+      "noPaymentMethod": { "title": "无可用支付方式" },
+      "badCurrency": { "title": "币种不支持" },
+      "badAmount": { "title": "金额不合法" },
+      "serverOutlet": { "title": "服务器错误（门店校验）" },
+      "serverCreate": { "title": "服务器错误（创建记录）" }
+    }
+  },
+  "commona": {
+    "endpoint": "接口信息",
+    "headers": "请求头",
+    "requestBody": "请求体",
+    "sampleRequest": "示例请求",
+    "successResponse": "成功响应",
+    "errorResponses": "错误响应",
+    "url": "URL",
+    "headerAuth":"授權或 x-api-key (字串，必需)：商家的唯一識別 Key。",
+    "headerMerchant":"merchandId 或 x-mch-id (字串，必需)：商家的唯一識別碼。",
+   
+    "method": "方法",
+    "description": "说明",
+    "yes": "是",
+    "tbl": {
+      "parameter": "参数",
+      "type": "类型",
+      "required": "必填",
+      "description": "描述",
+      "validation": "校验规则"
+    },
+    "statusCode": "状态码",
+    "contentType": "内容类型",
+    "responseBody": "响应体",
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "cardInquiry": {
+    "title": "支付查询",
+    "intro": "该接口根据 clientRef 为指定商户查询或更新 Paycorp 交易状态；若状态尚未最终确定，将与 Paycorp 同步并返回详细的交易信息。",
+    "paramsIntro": "请求包含一个路径参数：",
+    "params": {
+      "clientRef": { "desc": "交易的客户端参考唯一标识。" }
+    },
+    "validationTitle": "请求参数校验",
+    "validation": {
+      "clientRef": "必填，且为非空字符串。"
+    },
+    "finalStatuses": "最终状态（SUCCESS、REQUEST_EXPIRED、UNKNOWN）示例",
+    "updatedStatus": "状态已更新示例",
+    "errorsIntro": "以下为可能的错误响应，包括状态码、错误码与消息：",
+    "errors": {
+      "missingParams": { "title": "缺少参数" },
+      "notFound": { "title": "交易不存在" },
+      "merchantMismatch": { "title": "商户 ID 不匹配" },
+      "txnError": { "title": "交易错误" }
+    },
+    "orSpecificPaycorp": "或具体的 Paycorp 错误状态"
+  },
+  "commonq": {
+    "endpoint": "接口信息",
+    "headers": "请求头",
+    "requestParams": "请求参数",
+    "requestBody": "请求体",
+    "sampleRequest": "示例请求",
+    "successResponse": "成功响应",
+    "headerMerchant":"merchandId 或 x-mch-id (字串，必需)：商家的唯一識別碼",
+    "errorResponses": "错误响应",
+    "url": "URL",
+    "headerAuth":"授權或 x-api-key (字串，必需)：商家的唯一識別 Key。",
+    "method": "方法",
+    "description": "说明",
+    "yes": "是",
+    "tbl": {
+      "parameter": "参数",
+      "type": "类型",
+      "required": "必填",
+      "description": "描述",
+      "validation": "校验规则"
+    },
+    "statusCode": "状态码",
+    "contentType": "内容类型",
+    "responseBody": "响应体",
+    "copy": "复制",
+    "copied": "已复制！"
+  },
+  "commonr": {
+    "copy": "复制",
+    "copied": "已复制！",
+    "description": "说明",
+    "statusCode": "状态码",
+    "yes": "是"
+  },
+  "cardPayLink": {
+    "title": "创建支付链接",
+    "methodPost": "POST",
+    "path": "{Host}/v2/card-payment/pay",
+    "intro": "该接口为商户发起 Paycorp 支付交易，生成供用户授权的支付页面 URL，适用于商户集成。",
+    "sections": { "s1": "创建支付链接", "s2": "接口信息", "s3": "请求头", "s4": "请求体", "s5": "示例请求", "s6": "成功响应", "s7": "错误响应" },
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "请求方式",
+      "desc": "初始化 Paycorp 支付流程，校验商户与门店信息，并返回带过期时间的支付页面 URL。"
+    },
+    "headers": {
+      "title": "请求头",
+      "merchantId": "merchantId 或 x-mch-id（字符串，必填）：商户唯一标识。",
+      "auth": "Authorization 或 x-api-key（字符串，必填）：商户的 API 密钥。"
+    },
+    "req": {
+      "title": "请求体",
+      "intro": "请求体为 JSON 格式，包含以下参数：",
+      "validationTitle": "请求体验证规则",
+      "rules": {
+        "outlet": "必填，非空字符串。",
+        "amount": "必填，需为有效的正数。",
+        "currency": "必填，仅支持 LKR 或 USD；LKR 最低 100，USD 最低 5。",
+        "description": "必填，非空字符串且不超过 100 个字符。"
+      },
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "validation": "校验规则",
+        "amountDesc": "交易金额",
+        "amountVal": "需为有效的正数。",
+        "currencyDesc": "交易币种。",
+        "currencyVal": "仅支持 LKR 或 USD。",
+        "outletDesc": "门店唯一标识。",
+        "outletVal": "需为非空字符串。",
+        "descDesc": "交易说明。",
+        "descVal": "非空且不超过 100 个字符。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "headers": "请求头示例"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "contentType": "内容类型",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下为可能的错误响应及其状态码、错误码与提示：",
+      "respBody": "响应体：",
+      "missing": { "title": "1. 缺少字段" },
+      "invalidAmount": { "title": "2. 金额无效" },
+      "invalidCurrency": { "title": "3. 币种无效" },
+      "invalidUSD": { "title": "4. USD 金额不合法" },
+      "invalidLKR": { "title": "5. LKR 金额不合法" },
+      "invalidDesc": { "title": "6. 描述无效" },
+      "outletNotFound": { "title": "7. 门店不存在" },
+      "merchantMismatch": { "title": "8. 商户 ID 不匹配" },
+      "merchantNotFound": { "title": "9. 商户不存在" },
+      "initError": { "title": "10. 支付初始化错误" }
+    }
+  },
+
+  "instoreInquiryAcq": {
+    "ui": { "copy": "复制", "copied": "已复制！" },
+    "labels": { "statusCode": "状态码" },
+    "sections": {
+      "s1": "门店支付查询",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求参数",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+    "title": "门店支付查询",
+    "methodGet": "GET",
+    "path": "{Host}/v2/alipayplus/instore/pay-info/:transactionId",
+    "intro": "根据 transactionId（trade_no）查询该交易及其退款的详细信息，按时间倒序返回。",
+    "endpoint": { "title": "接口信息", "url": "URL", "method": "请求方式" },
+    "headers": {
+      "title": "请求头",
+      "acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单方唯一标识。",
+      "authorization": "Authorization（字符串，必填）：收单方授权键。",
+      "authKey": "Auth-Key（字符串，必填）：收单方认证键。",
+      "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+    },
+    "req": {
+      "title": "请求参数",
+      "intro": "该接口包含一个路径参数。",
+      "validationTitle": "参数校验",
+      "rules": { "txnId": "必填，非空字符串。" },
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "yes": "是",
+        "txnIdDesc": "交易唯一标识（trade_no）。"
+      }
+    },
+    "sample": {
+      "title": "示例请求",
+      "url": "URL",
+      "exampleUrl": "{Host}/v2/alipayplus/instore/pay-info/ALIPAY_TX_123456",
+      "headers": "请求头"
+    },
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 OK",
+      "contentType": "内容类型",
+      "body": "响应体"
+    },
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下为可能的错误响应（含状态码与消息）：",
+      "respBody": "响应体：",
+      "missingId": { "title": "缺少交易号" },
+      "notFound": { "title": "交易不存在" },
+      "server": { "title": "服务器错误" }
+    }
+  }
+  ,
+  "voidTxnAcquirer": {
+    "ui": { "copy": "复制", "copied": "已复制！" },
+    "labels": { "statusCode": "状态码" },
+
+    "sections": {
+      "s1": "交易撤销",
+      "s2": "接口信息",
+      "s3": "请求头",
+      "s4": "请求体",
+      "s5": "示例请求",
+      "s6": "成功响应",
+      "s7": "错误响应"
+    },
+
+    "title": "交易撤销",
+    "methodPost": "POST",
+    "path": "{Host}/v2/alipayplus/instore/void-transaction",
+    "intro": "允许收单方在交易完成当天（科伦坡时区）对成功的支付宝交易进行撤销，并更新交易状态及通知相关方。",
+
+    "endpoint": {
+      "title": "接口信息",
+      "url": "URL",
+      "method": "请求方式"
+    },
+
+    "headers": {
+      "title": "请求头",
+      "acquirerId": "acquirerid 或 x-acq-id（字符串，必填）：收单方唯一标识。",
+      "authorization": "Authorization（字符串，必填）：收单方授权键。",
+      "authKey": "Auth-Key（字符串，必填）：收单方认证键。",
+      "contentType": "Content-Type（字符串，必填）：必须为 application/json。"
+    },
+
+    "req": {
+      "title": "请求体",
+      "intro": "请求体需为 JSON，并包含以下字段：",
+      "validationTitle": "请求体验证",
+      "rules": {
+        "txnId": "必填，非空字符串。",
+        "outletId": "必填，非空字符串。",
+        "acquirerId": "必填，需在请求头中以 acquirerid 或 x-acq-id 提供。"
+      },
+      "table": {
+        "parameter": "参数",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明",
+        "yes": "是",
+        "txnIdDesc": "待撤销交易的唯一标识。",
+        "outletIdDesc": "与该交易关联的门店唯一标识。"
+      }
+    },
+
+    "sample": {
+      "title": "示例请求",
+      "headers": "请求头"
+    },
+
+    "success": {
+      "title": "成功响应",
+      "statusCode": "状态码",
+      "ok": "200 OK",
+      "contentType": "内容类型",
+      "body": "响应体"
+    },
+
+    "errors": {
+      "title": "错误响应",
+      "intro": "以下为可能出现的错误响应（含状态码与消息）：",
+      "respBody": "响应体：",
+      "missingParams": { "title": "缺少参数" },
+      "missingAuth": { "title": "缺少认证信息" },
+      "acquirerNotFound": { "title": "收单方不存在" },
+      "acquirerInactive": { "title": "收单方未激活" },
+      "outletNotFound": { "title": "门店不存在" },
+      "outletNoMerchant": { "title": "门店缺少商户关联" },
+      "outletNoAcquirer": { "title": "门店缺少收单方关联" },
+      "acquirerOutletMismatch": { "title": "收单方与门店不匹配" },
+      "merchantNotFound": { "title": "商户不存在" },
+      "txnNotFound": { "title": "交易不存在" },
+      "txnOutletMismatch": { "title": "交易与门店不匹配" },
+      "txnAcquirerMismatch": { "title": "交易与收单方不匹配" },
+      "invalidStatus": { "title": "无效状态" },
+      "invalidTimestamp": { "title": "交易时间戳无效" },
+      "voidWindow": { "title": "撤销时窗已关闭" },
+      "alipayConfig": { "title": "缺少支付宝配置" },
+      "alipayParse": { "title": "支付宝响应解析错误" },
+      "alipayVoidFail": { "title": "支付宝撤销失败" },
+      "voidError": { "title": "撤销处理异常" }
+    }
+  },
+  "payment_link_create_title": "支付链接创建",
+  "payment_link_create_intro": "该接口为指定门店发起一笔 Alipay+ 在线支付交易，生成用于用户授权的重定向支付链接，适用于收单机构的系统集成。",
+
+  "payment_link_create_http_post": "POST",
+  "payment_link_create_endpoint_path": "{Host}/v2/alipayplus/online/pay",
+
+  "payment_link_create_section_endpoint": "接口信息",
+  "payment_link_create_section_headers": "请求头",
+  "payment_link_create_section_request_body": "请求体",
+  "payment_link_create_section_sample_request": "示例请求",
+  "payment_link_create_section_success_response": "成功响应",
+  "payment_link_create_section_error_responses": "错误响应",
+
+  "payment_link_create_header_acquirerid": "acquirerid 或 x-acq-id（字符串，必填）：收单机构的唯一标识。",
+  "payment_link_create_header_authorization": "Authorization（字符串，必填）：收单机构的授权密钥。",
+  "payment_link_create_header_authkey": "Auth-Key（字符串，必填）：收单机构的认证密钥。",
+  "payment_link_create_header_content_type": "Content-Type（字符串，必填）：必须为 application/json。",
+
+  "payment_link_create_request_body_intro": "请求体必须为 JSON 格式，并包含以下参数：",
+  "payment_link_create_table_parameter": "参数",
+  "payment_link_create_table_type": "类型",
+  "payment_link_create_table_required": "必填",
+  "payment_link_create_table_description": "说明",
+  "payment_link_create_table_validation_rules": "校验规则",
+
+  "payment_link_create_field_outletId_desc": "门店的唯一标识。",
+  "payment_link_create_field_outletId_validation": "必须为非空字符串。",
+
+  "payment_link_create_field_amount_desc": "交易金额。",
+  "payment_link_create_field_amount_validation": "必须为大于 0 的正数。",
+
+  "payment_link_create_field_orderDescription_desc": "订单描述。",
+  "payment_link_create_field_orderDescription_validation": "必须为字符串，最大长度 100 个字符。",
+
+  "payment_link_create_validation_outletId": "必填，非空字符串。",
+  "payment_link_create_validation_amount": "必填，必须为大于 0 的正数。",
+  "payment_link_create_validation_orderDescription": "必填，字符串且最大长度 100 个字符。",
+  "payment_link_create_validation_currency": "固定为 USD（该接口不支持自定义）。",
+
+  "payment_link_create_sample_headers": "请求头",
+
+  "payment_link_create_label_status_code": "状态码",
+  "payment_link_create_label_content_type": "内容类型",
+  "payment_link_create_label_response_body": "响应体",
+
+  "payment_link_create_error_intro": "下面列出了可能的错误响应，包括状态码、错误码和错误信息：",
+  "payment_link_create_error_invalid_input": "参数无效",
+  "payment_link_create_error_order_desc_too_long": "订单描述过长",
+  "payment_link_create_error_invalid_amount": "金额无效",
+  "payment_link_create_error_outlet_not_found": "未找到门店",
+  "payment_link_create_error_outlet_not_approved": "门店未审核通过",
+  "payment_link_create_error_outlet_not_alipay_online_approved": "门店未通过 Alipay 在线审核",
+  "payment_link_create_error_outlet_missing_merchant": "门店缺少商户信息",
+  "payment_link_create_error_acquirer_outlet_mismatch": "收单机构与门店不匹配",
+  "payment_link_create_error_merchant_not_found": "未找到商户",
+  "payment_link_create_error_config_missing": "配置缺失",
+  "payment_link_create_error_signature_failed": "签名生成失败",
+  "payment_link_create_error_payment_failed": "支付处理失败",
+
+  "payment_link_create_ui_copy": "复制",
+  "payment_link_create_ui_copied": "已复制！",
+
+
+  "online_payment_inquiry_title": "支付查询",
+  "online_payment_inquiry_intro": "该接口根据指定的 paymentRequestId 和收单机构（acquirer）检索相关的支付与退款交易信息，并按时间戳降序返回。",
+
+  "online_payment_inquiry_http_get": "GET",
+  "online_payment_inquiry_endpoint_path": "{Host}/v2/alipayplus/online/pay-info/:id",
+
+  "online_payment_inquiry_section_title": "支付查询",
+  "online_payment_inquiry_section_endpoint": "接口信息",
+  "online_payment_inquiry_section_headers": "请求头",
+  "online_payment_inquiry_section_params": "请求参数",
+  "online_payment_inquiry_section_sample_request": "示例请求",
+  "online_payment_inquiry_section_success_response": "成功响应",
+  "online_payment_inquiry_section_error_responses": "错误响应",
+
+  "online_payment_inquiry_label_url": "URL",
+  "online_payment_inquiry_label_method": "请求方式",
+  "online_payment_inquiry_label_description": "说明",
+  "online_payment_inquiry_label_status_code": "状态码",
+  "online_payment_inquiry_label_content_type": "内容类型",
+  "online_payment_inquiry_label_response_body": "响应体",
+
+  "online_payment_inquiry_endpoint_desc": "基于 paymentRequestId，从 AlipayPlus-Transactions 和 AlipayPlus-Refund-Transactions 集合中查询支付与退款记录，适用于收单机构系统集成。",
+
+  "online_payment_inquiry_header_acquirerid": "acquirerid 或 x-acq-id（字符串，必填）：收单机构的唯一标识。",
+  "online_payment_inquiry_header_authorization": "Authorization（字符串，必填）：收单机构的授权密钥。",
+  "online_payment_inquiry_header_authkey": "Auth-Key（字符串，必填）：收单机构的认证密钥。",
+  "online_payment_inquiry_header_content_type": "Content-Type（字符串，必填）：必须为 application/json。",
+
+  "online_payment_inquiry_params_intro": "该请求包含一个路径参数",
+  "online_payment_inquiry_table_parameter": "参数",
+  "online_payment_inquiry_table_type": "类型",
+  "online_payment_inquiry_table_required": "必填",
+  "online_payment_inquiry_table_description": "说明",
+  "online_payment_inquiry_type_string": "string",
+  "online_payment_inquiry_common_yes": "是",
+  "online_payment_inquiry_param_id_desc": "支付请求的唯一标识（paymentRequestId）。",
+
+  "online_payment_inquiry_validation_title": "参数校验",
+  "online_payment_inquiry_validation_id": "必填，非空字符串（表示 paymentRequestId）。",
+
+  "online_payment_inquiry_sample_url": "{Host}/v2/alipayplus/online/pay-info/PAY_1234567890abcdef",
+  "online_payment_inquiry_sample_headers": "请求头",
+
+  "online_payment_inquiry_errors_intro": "以下为可能的错误响应，包括状态码、错误码和错误信息：",
+  "online_payment_inquiry_error_missing_params": "缺少参数",
+  "online_payment_inquiry_error_tx_not_found": "未找到交易",
+  "online_payment_inquiry_error_tx_error": "交易查询错误",
+
+  "online_payment_inquiry_ui_copy": "复制",
+  "online_payment_inquiry_ui_copied": "已复制！",
+  "merchant_user_present_pay_title": "用户出示码支付",
+  "merchant_user_present_pay_intro": "该接口用于发起 Alipay 海外到店（spot pay）的用户出示码场景交易，校验商户、门店与终端信息，并生成交易请求。",
+
+  "merchant_user_present_pay_http_post": "POST",
+  "merchant_user_present_pay_endpoint_path": "{Host}/v2/alipayplus/instore/userpresent-pay",
+
+  "merchant_user_present_pay_section_title": "用户出示码支付",
+  "merchant_user_present_pay_section_endpoint": "接口信息",
+  "merchant_user_present_pay_section_headers": "请求头",
+  "merchant_user_present_pay_section_request_body": "请求体",
+  "merchant_user_present_pay_section_sample_request": "示例请求",
+  "merchant_user_present_pay_section_success_response": "成功响应",
+  "merchant_user_present_pay_section_error_responses": "错误响应",
+  "merchant_user_present_pay_section_notes": "说明",
+
+  "merchant_user_present_pay_label_url": "URL",
+  "merchant_user_present_pay_label_method": "请求方式",
+  "merchant_user_present_pay_label_description": "说明",
+  "merchant_user_present_pay_label_status_code": "状态码",
+  "merchant_user_present_pay_label_content_type": "内容类型",
+  "merchant_user_present_pay_label_response_body": "响应体",
+
+  "merchant_user_present_pay_endpoint_desc": "在校验参数后，与 Alipay+ API 交互以发起用户出示码交易。",
+
+  "merchant_user_present_pay_header_merchantId": "merchantId 或 x-mch-id（字符串，必填）：商户唯一标识。",
+  "merchant_user_present_pay_header_authorization": "Authorization 或 x-api-key（字符串，必填）：商户的 API Key 或授权令牌。",
+
+  "merchant_user_present_pay_request_body_intro": "请求体必须为 JSON 格式，并包含以下参数：",
+  "merchant_user_present_pay_table_parameter": "参数",
+  "merchant_user_present_pay_table_type": "类型",
+  "merchant_user_present_pay_table_required": "必填",
+  "merchant_user_present_pay_table_description": "说明",
+  "merchant_user_present_pay_table_validation": "校验规则",
+
+  "merchant_user_present_pay_type_string": "string",
+  "merchant_user_present_pay_type_number": "number",
+  "merchant_user_present_pay_common_yes": "是",
+
+  "merchant_user_present_pay_field_outletId_desc": "门店唯一标识。",
+  "merchant_user_present_pay_field_outletId_validation": "必须为非空字符串。",
+  "merchant_user_present_pay_field_amount_desc": "交易金额。",
+  "merchant_user_present_pay_field_amount_validation": "必须为大于 0 的正数。",
+  "merchant_user_present_pay_field_subject_desc": "交易描述。",
+  "merchant_user_present_pay_field_subject_validation": "必须为字符串，最大长度 100 个字符。",
+  "merchant_user_present_pay_field_currency_desc": "交易币种。",
+  "merchant_user_present_pay_field_currency_validation": "必须为 USD 或 LKR。",
+  "merchant_user_present_pay_field_terminalId_desc": "终端唯一标识。",
+  "merchant_user_present_pay_field_terminalId_validation": "必须为非空字符串。",
+  "merchant_user_present_pay_field_buyer_identity_code_desc": "买方身份码（如条码）。",
+  "merchant_user_present_pay_field_buyer_identity_code_validation": "必须为非空字符串。",
+
+  "merchant_user_present_pay_validation_title": "请求体校验",
+  "merchant_user_present_pay_validation_outletId": "必填，非空字符串。",
+  "merchant_user_present_pay_validation_amount": "必填，必须为大于 0 的正数。",
+  "merchant_user_present_pay_validation_subject": "必填，字符串且最大长度 100 个字符。",
+  "merchant_user_present_pay_validation_currency": "必填，取值为 USD 或 LKR。",
+  "merchant_user_present_pay_validation_terminalId": "必填，非空字符串。",
+  "merchant_user_present_pay_validation_buyer_identity_code": "必填，非空字符串。",
+
+  "merchant_user_present_pay_sample_headers": "请求头",
+
+  "merchant_user_present_pay_status_success": "成功",
+  "merchant_user_present_pay_status_pending": "待用户认证",
+
+  "merchant_user_present_pay_errors_intro": "以下为可能的错误响应，包括状态码、错误码和错误信息：",
+  "merchant_user_present_pay_error_missing_params": "缺少参数",
+  "merchant_user_present_pay_error_invalid_subject": "交易描述不合法",
+  "merchant_user_present_pay_error_invalid_currency": "币种不合法",
+  "merchant_user_present_pay_error_invalid_amount": "金额不合法",
+  "merchant_user_present_pay_error_outlet_not_found": "未找到门店",
+  "merchant_user_present_pay_error_merchant_outlet_mismatch": "商户与门店不匹配",
+  "merchant_user_present_pay_error_terminal_not_approved": "终端未通过审核或不存在",
+  "merchant_user_present_pay_error_merchant_not_found": "未找到商户",
+  "merchant_user_present_pay_error_alipay_invalid_response": "Alipay+ 响应无效",
+  "merchant_user_present_pay_error_alipay_tx_failed": "Alipay+ 交易失败",
+  "merchant_user_present_pay_error_server_error": "服务器错误",
+
+  "merchant_user_present_pay_note_spot_pay": "该接口触发 acquire.overseas.spot.pay 的用户出示码交易流程。",
+  "merchant_user_present_pay_note_tz": "时间戳为 Asia/Colombo（GMT+5:30）时区。",
+  "merchant_user_present_pay_note_orderId": "orderId 由当前时间与随机数生成。",
+  "merchant_user_present_pay_note_buyer_code": "buyer_identity_code 应为买家条码或类似标识。",
+  "merchant_user_present_pay_note_statuses": "等待用户认证时返回 PENDING；成功发起后返回 SUCCESS。",
+
+  "merchant_user_present_pay_ui_copy": "复制",
+  "merchant_user_present_pay_ui_copied": "已复制！",
+
+  "sidebar_expand": "展开侧边栏",
+  "sidebar_collapse": "收起侧边栏",
+
+  "sidebar_back_to_home": "返回首页",
+  "sidebar_group_acquirer": "收单机构",
+
+  "sidebar_introduction": "简介",
+  "sidebar_getting_started": "快速开始",
+
+  "sidebar_features": "功能与特性",
+
+  "sidebar_merchant_registration": "商户入驻",
+  "sidebar_registration_workflow": "入驻流程",
+  "sidebar_bulk_registration": "批量入驻",
+  "sidebar_self_registration": "自助入驻",
+
+  "sidebar_merchant_management": "商户管理",
+  "sidebar_suspending_merchant": "暂停商户",
+  "sidebar_activating_merchant": "恢复商户",
+  "sidebar_uploading_agreement": "上传协议",
+
+  "sidebar_store_management": "门店管理",
+  "sidebar_view_all_stores": "查看全部门店",
+  "sidebar_create_new_store": "创建新门店",
+  "sidebar_assign_store_users": "分配门店用户",
+  "sidebar_terminal_management": "终端管理",
+
+  "sidebar_troubleshooting": "故障排查",
+  "sidebar_faq": "常见问题",
+  "sidebar_support_information": "支持信息",
+  "merchant_sidebar_expand": "展开侧边栏",
+  "merchant_sidebar_collapse": "收起侧边栏",
+
+  "merchant_sidebar_back_to_home": "返回首页",
+  "merchant_sidebar_group_merchant": "商户",
+
+  "merchant_sidebar_introduction": "简介",
+  "merchant_sidebar_getting_started": "快速开始",
+  "merchant_sidebar_categories": "商户类别",
+
+  "merchant_sidebar_features": "功能与特性",
+
+  "merchant_sidebar_merchant_registration": "商户入驻",
+
+  "merchant_sidebar_store_management": "门店管理",
+  "merchant_sidebar_view_all_stores": "查看全部门店",
+  "merchant_sidebar_single_store_creation": "单个门店创建",
+  "merchant_sidebar_multiple_store_creation": "批量门店创建",
+  "merchant_sidebar_assign_store_users": "分配门店用户",
+  "merchant_sidebar_terminal_management": "终端管理",
+
+  "merchant_sidebar_merchant_transactions": "商户交易",
+  "merchant_sidebar_alipay_instore": "Alipay+ 到店",
+  "merchant_sidebar_alipay_online": "Alipay+ 在线",
+  "merchant_sidebar_card_payments": "银行卡支付",
+
+  "merchant_sidebar_transaction_reports": "交易报表",
+  "merchant_sidebar_reports_alipay_instore": "Alipay+ 到店",
+  "merchant_sidebar_reports_alipay_online": "Alipay+ 在线",
+  "merchant_sidebar_reports_card_payments": "银行卡支付",
+
+  "merchant_sidebar_troubleshooting": "故障排查",
+  "merchant_sidebar_faq": "常见问题",
+  "merchant_sidebar_support_information": "支持信息"
+,
+"developer_sidebar_expand": "展开侧边栏",
+  "developer_sidebar_collapse": "收起侧边栏",
+
+  "developer_sidebar_back_to_home": "返回首页",
+  "developer_sidebar_group_developer": "开发者",
+
+  "developer_sidebar_getting_started": "快速开始",
+
+  "developer_sidebar_system_overview": "系统概览",
+  "developer_sidebar_introduction": "介绍",
+  "developer_sidebar_system_architecture": "系统架构",
+  "developer_sidebar_web_application_architecture": "Web 应用架构",
+  "developer_sidebar_mobile_application_architecture": "移动应用架构",
+  "developer_sidebar_backend_architecture": "后端架构",
+  "developer_sidebar_database_architecture": "数据库架构",
+  "developer_sidebar_authentication_and_authorization": "认证与授权",
+  "developer_sidebar_encryption_and_security": "加密与安全",
+  "developer_sidebar_api_security": "API 安全",
+  "developer_sidebar_deployment_and_infrastructure": "部署与基础设施",
+  "developer_sidebar_third_party_integration": "第三方集成",
+  "developer_sidebar_compliance_and_privacy": "合规与隐私",
+  "developer_sidebar_maintenance_and_support": "运维与支持",
+
+  "developer_sidebar_acquirer_apis": "收单方 APIs",
+  "developer_sidebar_overview": "概览",
+  "developer_sidebar_endpoints": "端点",
+  "developer_sidebar_alipay_instore_apis": "Alipay+ 到店 APIs",
+  "developer_sidebar_order_code_pay_qr": "订单二维码支付",
+  "developer_sidebar_order_code_result_listener": "订单结果监听",
+  "developer_sidebar_user_present_pay": "用户出示码支付",
+  "developer_sidebar_user_present_pay_waiting": "用户出示码等待",
+  "developer_sidebar_void_transaction": "撤销交易",
+  "developer_sidebar_instore_payment_inquiry": "到店支付查询",
+  "developer_sidebar_alipay_online_apis": "Alipay+ 在线 APIs",
+  "developer_sidebar_payment_link_create": "支付链接创建",
+  "developer_sidebar_payment_inquiry": "支付查询",
+
+  "developer_sidebar_merchant_apis": "商户 APIs",
+  "developer_sidebar_instore_not_settled_latest_transactions": "到店未清算最新交易",
+  "developer_sidebar_web_frame_online_apis": "Web Frame 在线 APIs",
+  "developer_sidebar_payment_request": "支付请求",
+  "developer_sidebar_card_payments_apis": "银行卡支付 APIs"
+
+  
+
+
+  
 }
+
+  
+  
+

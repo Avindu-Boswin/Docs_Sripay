@@ -15,26 +15,26 @@ function MerchantStoresView() {
             {/* Description Block */}
             <div className='py-3'>
                 <p className='text-xl font-medium text-gray-800 mb-2'>
-                    Merchants can apply under the following three categories:
+                   { t('viewallstore.title2')}
                 </p>
                 <ul className='ml-8 list-disc text-base text-gray-700 mb-6'>
-                    <li className='py-1'> In-Store </li>
-                    <li className='py-1'> Online </li>
-                    <li className='py-1'> Visa / Master </li>
+                    <li className='py-1'> { t('viewallstore.category1')} </li>
+                    <li className='py-1'> { t('viewallstore.category2')}</li>
+                    <li className='py-1'> { t('viewallstore.category3')} </li>
                 </ul>
 
                 <p className='text-gray-700 text-base leading-relaxed'>
-                    Once a store is created, its visibility depends on the current status:
+                { t('viewallstore.title3')}
                 </p>
                 <ul className='ml-8 list-disc text-base text-gray-700 mt-2 space-y-2'>
                     <li>
-                        <strong>Approved:</strong> The store will appear under its corresponding category (In-Store, Online, or Visa/Master).
+                        <strong> { t('viewallstore.status.status1')}</strong> { t('viewallstore.desc1')}
                     </li>
                     <li>
-                        <strong>Draft:</strong> If the store creation process is incomplete, it will appear in the 'Draft' section.
+                        <strong>{ t('viewallstore.status.status2')}</strong> { t('viewallstore.desc2')}
                     </li>
                     <li>
-                        <strong>Rejected:</strong> If the store is rejected by Alipay, it will be listed under the 'Rejected' section.
+                        <strong>{ t('viewallstore.status.status3')}</strong> { t('viewallstore.desc3')}
                     </li>
                 </ul>
             </div>

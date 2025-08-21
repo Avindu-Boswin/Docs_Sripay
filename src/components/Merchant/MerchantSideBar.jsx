@@ -6,11 +6,13 @@ import {
   MenuUnfoldOutlined
 } from "@ant-design/icons";
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
+  const { t } = useTranslation("merchant_sidebar");
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   const toggleCollapse = () => {
@@ -60,6 +62,7 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             type="text"
             onClick={toggleCollapse}
+            aria-label={collapsed ? t("merchant_sidebar_expand") : t("merchant_sidebar_collapse")}
           />
         </div>
       )}
@@ -67,83 +70,81 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
         <div className="overflow-y-auto scrollbar-thin h-full pt-6">
           <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
-              <NavLink to="/" onClick={handleLinkClick}>Back To Home</NavLink>
+              <NavLink to="/" onClick={handleLinkClick}>{t("merchant_sidebar_back_to_home")}</NavLink>
             </Menu.Item>
 
             <div className="flex items-center justify-center my-2 mt-5 mb-5">
               <span className="flex-1 h-0.5 bg-gray-300 ml-7 mr-2" />
-              <span className="whitespace-nowrap">Merchant</span>
+              <span className="whitespace-nowrap">{t("merchant_sidebar_group_merchant")}</span>
               <span className="flex-1 h-0.5 bg-gray-300 ml-2 mr-6" />
             </div>
 
             {/* <Menu.Item key="introduction">
-              <NavLink to="/docs/merchant/introduction" onClick={handleLinkClick}>Introduction</NavLink>
+              <NavLink to="/docs/merchant/introduction" onClick={handleLinkClick}>{t("merchant_sidebar_introduction")}</NavLink>
             </Menu.Item> */}
             <Menu.Item key="gettingStart">
-              <NavLink to="/docs/merchant/gettingStart" onClick={handleLinkClick}>Getting Started</NavLink>
+              <NavLink to="/docs/merchant/gettingStart" onClick={handleLinkClick}>{t("merchant_sidebar_getting_started")}</NavLink>
             </Menu.Item>
             <Menu.Item key="categories">
-              <NavLink to="/docs/merchant/categories" onClick={handleLinkClick}>Merchant Categories</NavLink>
+              <NavLink to="/docs/merchant/categories" onClick={handleLinkClick}>{t("merchant_sidebar_categories")}</NavLink>
             </Menu.Item>
-            <SubMenu key="features" title={"Features and Functionalities"}>
-
-
+            <SubMenu key="features" title={t("merchant_sidebar_features")}>
 
               <Menu.Item key="self-registration">
-                <NavLink to="/docs/merchant/merchant-selfregistration" onClick={handleLinkClick}>Merchant Registration</NavLink>
+                <NavLink to="/docs/merchant/merchant-selfregistration" onClick={handleLinkClick}>{t("merchant_sidebar_merchant_registration")}</NavLink>
               </Menu.Item>
 
-
-
-
-              <SubMenu key="store-management" title={"Merchant Store Management"}>
+              <SubMenu key="store-management" title={t("merchant_sidebar_store_management")}>
                 <Menu.Item key="view-all-stores">
-                  <NavLink to="/docs/merchant/merchant-StoresViewAll" onClick={handleLinkClick}>View All Stores</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoresViewAll" onClick={handleLinkClick}>{t("merchant_sidebar_view_all_stores")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-store">
-                  <NavLink to="/docs/merchant/merchant-StoreCreate" onClick={handleLinkClick}>Single Store Creation</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoreCreate" onClick={handleLinkClick}>{t("merchant_sidebar_single_store_creation")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="create-new-stores-bulk">
-                  <NavLink to="/docs/merchant/merchant-StoreCreateMultiple" onClick={handleLinkClick}>Multiple Store Creation</NavLink>
+                  <NavLink to="/docs/merchant/merchant-StoreCreateMultiple" onClick={handleLinkClick}>{t("merchant_sidebar_multiple_store_creation")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="assign-store-users">
-                  <NavLink to="/docs/merchant/merchant-management/store/assign-users" onClick={handleLinkClick}>Assigning Store Users</NavLink>
+                  <NavLink to="/docs/merchant/merchant-management/store/assign-users" onClick={handleLinkClick}>{t("merchant_sidebar_assign_store_users")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="terminal-management">
-                  <NavLink to="/docs/merchant/merchant-TerminalManagement" onClick={handleLinkClick}>Terminal Management</NavLink>
+                  <NavLink to="/docs/merchant/merchant-TerminalManagement" onClick={handleLinkClick}>{t("merchant_sidebar_terminal_management")}</NavLink>
                 </Menu.Item>
               </SubMenu>
-              <SubMenu key='merchant-transaction' title={'Merchant Transactions'}>
+
+              <SubMenu key='merchant-transaction' title={t('merchant_sidebar_merchant_transactions')}>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/alipay-instore'> Alipay+Instore </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/alipay-instore'> {t('merchant_sidebar_alipay_instore')} </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/alipay-online'> Alipay+Online </NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/alipay-online'> {t('merchant_sidebar_alipay_online')} </NavLink>
                 </Menu.Item>
                 <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/card-payments'> Card Payments</NavLink>
-                </Menu.Item>
-              </SubMenu>
-              <SubMenu key='merchant-transaction-reports' title={' Transaction Reports'}>
-                <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-instore'> Alipay+Instore </NavLink>
-                </Menu.Item>
-                <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-online'> Alipay+Online </NavLink>
-                </Menu.Item>
-                <Menu.Item>
-                  <NavLink to='/docs/merchant/merchant-transaction/reports/card-payments'> Card Payments</NavLink>
+                  <NavLink to='/docs/merchant/merchant-transaction/card-payments'> {t('merchant_sidebar_card_payments')}</NavLink>
                 </Menu.Item>
               </SubMenu>
+
+              <SubMenu key='merchant-transaction-reports' title={t('merchant_sidebar_transaction_reports')}>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-instore'> {t('merchant_sidebar_reports_alipay_instore')} </NavLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/alipay-online'> {t('merchant_sidebar_reports_alipay_online')} </NavLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <NavLink to='/docs/merchant/merchant-transaction/reports/card-payments'> {t('merchant_sidebar_reports_card_payments')}</NavLink>
+                </Menu.Item>
+              </SubMenu>
+
             </SubMenu>
             <Menu.Item key="troubleshooting">
-              <NavLink to="/docs/merchant/troubleshooting" onClick={handleLinkClick}>Troubleshooting</NavLink>
+              <NavLink to="/docs/merchant/troubleshooting" onClick={handleLinkClick}>{t("merchant_sidebar_troubleshooting")}</NavLink>
             </Menu.Item>
             <Menu.Item key="faq">
-              <NavLink to="/docs/merchant/faq" onClick={handleLinkClick}>Frequently Asked Questions</NavLink>
+              <NavLink to="/docs/merchant/faq" onClick={handleLinkClick}>{t("merchant_sidebar_faq")}</NavLink>
             </Menu.Item>
             <Menu.Item key="support">
-              <NavLink to="/docs/merchant/support" onClick={handleLinkClick}>Support Information</NavLink>
+              <NavLink to="/docs/merchant/support" onClick={handleLinkClick}>{t("merchant_sidebar_support_information")}</NavLink>
             </Menu.Item>
           </Menu>
 

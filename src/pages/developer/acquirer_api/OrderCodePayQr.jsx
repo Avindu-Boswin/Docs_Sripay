@@ -36,13 +36,13 @@ function OrderCodePayQr() {
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'Order Code Pay QR' },
-            { id: 'step-2', label: 'Endpoint' },
-            { id: 'step-3', label: 'Request Header' },
-            { id: 'step-4', label: 'Request Body' },
-            { id: 'step-5', label: 'Sample Request' },
-            { id: 'step-6', label: 'Success Response' },
-            { id: 'step-7', label: 'Error Responses' }
+            { id: 'step-1', label: t('orderCodePayQr.menu.section1') },
+            { id: 'step-2', label: t('orderCodePayQr.menu.section2') },
+            { id: 'step-3', label: t('orderCodePayQr.menu.section3') },
+            { id: 'step-4', label: t('orderCodePayQr.menu.section4') },
+            { id: 'step-5', label: t('orderCodePayQr.menu.section5') },
+            { id: 'step-6', label: t('orderCodePayQr.menu.section6') },
+            { id: 'step-7', label: t('orderCodePayQr.menu.section7') }
         ]);
         return () => setSections([]);
         // eslint-disable-next-line
@@ -50,48 +50,48 @@ function OrderCodePayQr() {
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
-            {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
+            {/* TOP-LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Order Code Pay QR
+                {t('orderCodePayQr.title')}
             </h1>
 
             <div className="flex flex-row items-start md:items-center gap-2 mb-8">
-                <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">POST</span>
+                <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">{t('orderCodePayQr.methodBadge')}</span>
                 <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/ordercode-pay</span>
             </div>
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
-                The Order Code Pay option allows the merchant to generate a dynamic QR code and display it to the customer for payment. The merchant then receives the payment result in real time. The following API specifies the criteria required to initiate the request.
+                {t('orderCodePayQr.lede1')}
             </p>
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
-                This endpoint generates a QR code for Alipay+ offline transactions by creating an order with the provided acquirer, outlet, and terminal details, tailored for acquirer-specific integrations.            </p>
-
+                {t('orderCodePayQr.lede2')}
+            </p>
 
             {/* ---------- Endpoint ------------------------------------------------ */}
             <div className='mt-8 mb-6'>
                 <p id='step-2' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Endpoint
+                    {t('orderCodePayQr.endpoint.title')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/ordercode-pay</span></li>
-                    <li><span className='font-semibold'>Method</span> – <span className='font-bold text-yellow-500'>POST</span></li>
-                    <li><span className='font-semibold'>Description</span> – Initiates an Alipay+ offline transaction by generating a QR code for payment, validated against acquirer credentials.</li>
+                    <li><span className='font-semibold'>{t('orderCodePayQr.endpoint.urlLabel')}</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/ordercode-pay</span></li>
+                    <li><span className='font-semibold'>{t('orderCodePayQr.endpoint.methodLabel')}</span> – <span className='font-bold text-yellow-500'>{t('orderCodePayQr.methodBadge')}</span></li>
+                    <li><span className='font-semibold'>{t('orderCodePayQr.endpoint.descLabel')}</span> – {t('orderCodePayQr.endpoint.desc')}</li>
                 </ul>
 
             </div>
             {/* ---------- Headers --------------------------------------- */}
             <div className='mt-8 mb-6'>
                 <p id='step-3' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Headers
+                    {t('orderCodePayQr.headers.title')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>acquirerid <span className='font-normal'>or</span> x-acq-id</span> (string, required): The unique identifier of the acquirer.</li>
-                    <li><span className='font-semibold'>Authorization</span> (string, required): The authorization key for the acquirer.</li>
-                    <li><span className='font-semibold'>Auth-Key</span> (string, required): The authentication key for the acquirer.</li>
-                    <li><span className='font-semibold'>Content-Type</span> (string, required): Must be application/json.</li>
+                    <li>{t('orderCodePayQr.headers.acqId')}</li>
+                    <li>{t('orderCodePayQr.headers.authorization')}</li>
+                    <li>{t('orderCodePayQr.headers.authKey')}</li>
+                    <li>{t('orderCodePayQr.headers.contentType')}</li>
                 </ul>
             </div>
 
@@ -99,10 +99,10 @@ function OrderCodePayQr() {
             {/* ---------- Request Body --------------------------------------- */}
             <div id='step-4' className='mt-8 mb-6'>
                 <p className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Request Body
+                    {t('orderCodePayQr.requestBody.title')}
                 </p>
                 <p className='text-gray-700 text-base leading-relaxed mb-4'>
-                    The request body must be in JSON format and include the following parameters
+                    {t('orderCodePayQr.requestBody.intro')}
                 </p>
                 <div className="overflow-x-auto" style={{ maxWidth: '100%' }}>
                     <Table
@@ -115,73 +115,69 @@ function OrderCodePayQr() {
                                 key: '1',
                                 parameter: <span className='font-mono'>outletId</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the outlet.',
-                                validation: 'Must be a non-empty string.',
+                                required: t('orderCodePayQr.requestBody.table.yes'),
+                                description: t('orderCodePayQr.requestBody.rows.outletId.description'),
+                                validation: t('orderCodePayQr.requestBody.rows.outletId.validation'),
                             },
                             {
                                 key: '2',
                                 parameter: <span className='font-mono'>amount</span>,
-                                type: (
-                                    <>
-                                        number
-                                    </>
-                                ),
-                                required: 'Yes',
-                                description: 'Transaction amount.',
-                                validation: 'Must be a positive number greater than 0.',
+                                type: (<>number</>),
+                                required: t('orderCodePayQr.requestBody.table.yes'),
+                                description: t('orderCodePayQr.requestBody.rows.amount.description'),
+                                validation: t('orderCodePayQr.requestBody.rows.amount.validation'),
                             },
                             {
                                 key: '3',
                                 parameter: <span className='font-mono'>subject</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Description of the transaction.',
-                                validation: 'Must be a string, max length 100 characters.',
+                                required: t('orderCodePayQr.requestBody.table.yes'),
+                                description: t('orderCodePayQr.requestBody.rows.subject.description'),
+                                validation: t('orderCodePayQr.requestBody.rows.subject.validation'),
                             },
                             {
                                 key: '4',
                                 parameter: <span className='font-mono'>currency</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Currency of the transaction.',
-                                validation: 'Must be either USD or LKR.',
+                                required: t('orderCodePayQr.requestBody.table.yes'),
+                                description: t('orderCodePayQr.requestBody.rows.currency.description'),
+                                validation: t('orderCodePayQr.requestBody.rows.currency.validation'),
                             },
                             {
                                 key: '5',
                                 parameter: <span className='font-mono'>terminalId</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the terminal.',
-                                validation: 'Must be a non-empty string.',
+                                required: t('orderCodePayQr.requestBody.table.yes'),
+                                description: t('orderCodePayQr.requestBody.rows.terminalId.description'),
+                                validation: t('orderCodePayQr.requestBody.rows.terminalId.validation'),
                             },
                         ]}
                         columns={[
                             {
-                                title: <span className='font-semibold'>Parameter</span>,
+                                title: <span className='font-semibold'>{t('orderCodePayQr.requestBody.table.parameter')}</span>,
                                 dataIndex: 'parameter',
                                 key: 'parameter',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Type</span>,
+                                title: <span className='font-semibold'>{t('orderCodePayQr.requestBody.table.type')}</span>,
                                 dataIndex: 'type',
                                 key: 'type',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Required</span>,
+                                title: <span className='font-semibold'>{t('orderCodePayQr.requestBody.table.required')}</span>,
                                 dataIndex: 'required',
                                 key: 'required',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Description</span>,
+                                title: <span className='font-semibold'>{t('orderCodePayQr.requestBody.table.description')}</span>,
                                 dataIndex: 'description',
                                 key: 'description',
                             },
                             {
-                                title: <span className='font-semibold'>Validation Rules</span>,
+                                title: <span className='font-semibold'>{t('orderCodePayQr.requestBody.table.validation')}</span>,
                                 dataIndex: 'validation',
                                 key: 'validation',
                             },
@@ -190,33 +186,24 @@ function OrderCodePayQr() {
                 </div>
 
                 <p id='' className='text-md mb-4 mt-10 font-bold text-gray-700'>
-                    Request Body Validation
+                    {t('orderCodePayQr.requestBody.validationTitle')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>outletId: </span> Required, non-empty string.</li>
-                    <li><span className='font-semibold'>amount:</span> Required, must be a positive number (greater than 0).</li>
-                    <li><span className='font-semibold'>subject: </span> Required, string with a maximum length of 100 characters.</li>
-                    <li><span className='font-semibold'>currency: </span>  Required, must be one of USD or LKR.</li>
-                    <li><span className='font-semibold'>terminalId: </span> Required, non-empty string.</li>
+                    <li>{t('orderCodePayQr.requestBody.validationBullets.outletId')}</li>
+                    <li>{t('orderCodePayQr.requestBody.validationBullets.amount')}</li>
+                    <li>{t('orderCodePayQr.requestBody.validationBullets.subject')}</li>
+                    <li>{t('orderCodePayQr.requestBody.validationBullets.currency')}</li>
+                    <li>{t('orderCodePayQr.requestBody.validationBullets.terminalId')}</li>
                 </ul>
             </div>
 
 
             {/* ---------- Sample Request --------------------------------------- */}
             <div id='step-5' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Sample Request</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">{t('orderCodePayQr.sampleRequest.title')}</p>
 
-                {/* <pre className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base overflow-x-auto mb-4">
-                    {`{
-    "outletId": "outlet_12345",
-    "amount": 50.00,
-    "subject": "Purchase at Outlet XYZ",
-    "currency": "USD",
-    "terminalId": "T001"
-}`}
-                </pre> */}
-                <CodeBlock 
+                <CodeBlock
                     code={`{
     "outletId": "outlet_12345",
     "amount": 50.00,
@@ -226,7 +213,7 @@ function OrderCodePayQr() {
 }`}
                 />
 
-                <p className="font-semibold mb-2">Headers</p>
+                <p className="font-semibold mb-2">{t('orderCodePayQr.sampleRequest.headersLabel')}</p>
                 <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
                     <div>acquirerid: acquirer_98765</div>
                     <div>Authorization: Bearer abc123xyz789</div>
@@ -237,15 +224,15 @@ function OrderCodePayQr() {
 
             {/* ---------- Success Response --------------------------------------- */}
             <div id='step-6' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Success Response</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">{t('orderCodePayQr.successResponse.title')}</p>
 
                 <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
-                    <li><span className="font-semibold">Status Code</span>: <span className='text-green-600 font-bold'>200 OK</span></li>
-                    <li><span className="font-semibold">Content Type</span>: application/json</li>
-                    <li><span className="font-semibold">Response Body</span>:</li>
+                    <li><span className="font-semibold">{t('orderCodePayQr.successResponse.statusCode')}</span>: <span className='text-green-600 font-bold'>{t('orderCodePayQr.successResponse.okLabel')}</span></li>
+                    <li><span className="font-semibold">{t('orderCodePayQr.successResponse.contentType')}</span>: application/json</li>
+                    <li><span className="font-semibold">{t('orderCodePayQr.successResponse.responseBody')}</span>:</li>
                 </ul>
 
-                <CodeBlock 
+                <CodeBlock
                     code={`{
     "code": "QR_GENERATED",
     "message": "QR code generated successfully.",
@@ -266,17 +253,17 @@ function OrderCodePayQr() {
 
             {/* ---------- Error Response --------------------------------------- */}
             <div id='step-7' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Error Responses</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">{t('orderCodePayQr.errors.title')}</p>
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
-                    Below are the possible error responses, including their status codes, error codes, and messages:
+                    {t('orderCodePayQr.errors.intro')}
                 </p>
 
                 {/* Missing Parameters */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.missingParams')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "MISSING_PARAMS",
     "message": "acquirerId, outletId, terminalId, amount, subject and currency are required.",
@@ -288,10 +275,10 @@ function OrderCodePayQr() {
 
                 {/* Invalid Amount */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">2. Invalid Amount</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.invalidAmount')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "INVALID_AMOUNT",
     "message": "Amount must be a positive number.",
@@ -303,10 +290,10 @@ function OrderCodePayQr() {
 
                 {/* Invalid Currency */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">3. Invalid Currency</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.invalidCurrency')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "INVALID_CURRENCY",
     "message": "Currency must be one of: USD, LKR",
@@ -318,10 +305,10 @@ function OrderCodePayQr() {
 
                 {/* Invalid Subject */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">4. Invalid Subject</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.invalidSubject')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "INVALID_SUBJECT",
     "message": "Subject max length is 100 characters.",
@@ -333,10 +320,10 @@ function OrderCodePayQr() {
 
                 {/* Outlet Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">5. Outlet Not Found</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.outletNotFound')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.notFound')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "OUTLET_NOT_FOUND",
     "message": "Outlet outlet_12345 not found.",
@@ -348,10 +335,10 @@ function OrderCodePayQr() {
 
                 {/* Acquirer-Outlet Mismatch */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">6. Acquirer-Outlet Mismatch</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.acqOutletMismatch')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "ACQUIRER_OUTLET_MISMATCH",
     "message": "Outlet does not belong to provided acquirerId.",
@@ -363,10 +350,10 @@ function OrderCodePayQr() {
 
                 {/* Outlet Not Approved */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">7. Outlet Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.outletNotApproved')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "OUTLET_NOT_APPROVED",
     "message": "Outlet status not approved.",
@@ -378,10 +365,10 @@ function OrderCodePayQr() {
 
                 {/* Outlet Not Approved for Alipay+ */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">8. Outlet Not Approved for Alipay+ Offline</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.outletNotApprovedOffline')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "OUTLET_NOT_APPROVED",
     "message": "Outlet is not approved for Alipay+ offline transactions.",
@@ -393,10 +380,10 @@ function OrderCodePayQr() {
 
                 {/* Terminal Not Approved */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">9. Terminal Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.terminalNotApproved')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "TERMINAL_NOT_APPROVED",
     "message": "Terminal is not active for this outlet.",
@@ -408,10 +395,10 @@ function OrderCodePayQr() {
 
                 {/* Outlet Missing Merchant */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">10. Outlet Missing Merchant</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.outletMissingMerchant')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.internalError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "OUTLET_MISSING_MERCHANT",
     "message": "Outlet document does not contain a merchant reference.",
@@ -423,10 +410,10 @@ function OrderCodePayQr() {
 
                 {/* Merchant Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">11. Merchant Not Found</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.merchantNotFound')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.notFound')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "MERCHANT_NOT_FOUND",
     "message": "Merchant <merchantId> not found.",
@@ -438,10 +425,10 @@ function OrderCodePayQr() {
 
                 {/* Acquirer-Merchant Mismatch */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">12. Acquirer-Merchant Mismatch</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.acqMerchantMismatch')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "ACQUIRER_MERCHANT_MISMATCH",
     "message": "Merchant does not belong to provided acquirerId.",
@@ -453,10 +440,10 @@ function OrderCodePayQr() {
 
                 {/* Alipay+ Unreachable */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">13. Alipay+ Unreachable</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.alipayUnreachable')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badGateway')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "ALIPAY_UNREACHABLE",
     "message": "Unable to reach Alipay+ endpoint.",
@@ -469,10 +456,10 @@ function OrderCodePayQr() {
 
                 {/* XML Parse Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">14. XML Parse Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.xmlParseError')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.internalError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "XML_PARSE_ERROR",
     "message": "Error parsing Alipay+ response.",
@@ -485,10 +472,10 @@ function OrderCodePayQr() {
 
                 {/* Alipay+ Failed */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">15. Alipay+ Failed</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.alipayFailed')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "ALIPAY_FAILED",
     "message": "Failed to generate static QR code.",
@@ -501,15 +488,27 @@ function OrderCodePayQr() {
 
                 {/* SriPay QR Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">16. SriPay QR Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">
+                        {t('orderCodePayQr.errors.items.sripayQrError')}
+                    </p>
+                    <p className="text-gray-700 mb-2">
+                        <span className="font-semibold">
+                            {t('orderCodePayQr.errors.statusCode')}
+                        </span>
+                        :{' '}
+                        <span className="text-red-600 font-bold">
+                            {t('orderCodePayQr.errors.labels.badGateway')}
+                        </span>
+                    </p>
+                    <p className="text-gray-700 mb-2">
+                        {t('orderCodePayQr.errors.responseBody')}:
+                    </p>
+                    <CodeBlock
                         code={`{
-    "code": "SRIPAY_QR_ERROR",
-    "message": "Failed to generate SriPay QR image.",
-    "status": "ERROR",
-    "error": "Specific error message"
+  "code": "SRIPAY_QR_ERROR",
+  "message": "Failed to generate SriPay QR image.",
+  "status": "ERROR",
+  "error": "Specific error message"
 }`}
                         bgColor="bg-red-50"
                     />
@@ -517,10 +516,10 @@ function OrderCodePayQr() {
 
                 {/* Server Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">17. Server Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock 
+                    <p className="text-lg font-semibold text-gray-700">{t('orderCodePayQr.errors.items.serverError')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('orderCodePayQr.errors.statusCode')}</span>: <span className="text-red-600 font-bold">{t('orderCodePayQr.errors.labels.internalError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('orderCodePayQr.errors.responseBody')}:</p>
+                    <CodeBlock
                         code={`{
     "code": "SERVER_ERROR",
     "message": "Error generating QR code.",

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Agreement from './Agreement';
 import AcquirerAgreement from './AcquirerAgreement';
-
+import Header from '../components/Merchant/MerchantNavBar';
 const AgreementType = () => {
     const { t } = useTranslation();
     const [selectedType, setSelectedType] = useState('acquirer');
@@ -12,6 +12,9 @@ const AgreementType = () => {
     };
 
     return (
+        <>
+         <Header/>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-0 md:pt-20 mb-20 md:mb-15">
             {/* Agreement Type Selector */}
             <div className="mb-8">
@@ -44,6 +47,7 @@ const AgreementType = () => {
                 {selectedType === 'acquirer' && <AcquirerAgreement/>}
             </div>
         </div>
+        </>
     );
 };
 

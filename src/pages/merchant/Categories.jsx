@@ -3,32 +3,34 @@ import mccData from '../../data/mcc.json';
 import privateMccData from '../../data/private_mcc.json';
 import { useSections } from '../../components/SectionContext';
 
-
+import { useTranslation } from 'react-i18next';
 
 function MerchantCategories() {
+    const { t } = useTranslation();
     const { setSections } = useSections();
+    
 
     useEffect(() => {
         setSections([
-            { id: 'mcc-list', label: 'MCC List' },
-            { id: 'iso-mcc', label: 'A1: Codes defined by ISO 18245' },
-            { id: 'private-mcc', label: 'A2: Codes defined by SriPay for private use' },
+            { id: 'mcc-list', label: t('merchantcategories.sections.section1') },
+            { id: 'iso-mcc', label: t('merchantcategories.sections.section2') },
+            { id: 'private-mcc', label: t('merchantcategories.sections.section3') },
         ]);
         return () => {
             setSections([]);
         };
-    }, [setSections]);
+    }, [setSections,t]);
 
     return (
         <div className="w-full px-4 sm:px-6 md:px-10 lg:px-[12%] mt-8 mb-16">
             <h1 id="mcc-list" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                MCC List
+               {t('merchantcategories.title')}
             </h1>
             <p className="text-md text-gray-600 max-w-3xl mx-auto mb-4">
-                Below is the list of Merchant Category Codes (MCC) used by SriPay. These codes are essential for categorizing merchants based on the type of goods or services they provide.
+            {t('merchantcategories.desc')}
             </p>
             <p id="iso-mcc" className="text-xl text-gray-800 font-semibold max-w-3xl mx-auto mb-5 mt-5">
-                A1: Codes defined by ISO 18245
+            {t('merchantcategories.desc2')}
             </p>
             <div className="overflow-x-auto">
                 <table className="min-w-full border border-blue-200 bg-white rounded-md text-sm">
