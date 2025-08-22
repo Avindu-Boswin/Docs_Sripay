@@ -7,12 +7,15 @@ import { Table } from 'antd';
 
 // Code block component with copy functionality
 const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
+    const { t } = useTranslation();
     const handleCopy = () => {
         navigator.clipboard.writeText(code);
         const btn = document.activeElement;
-        const originalText = btn.innerText;
-        btn.innerText = "Copied!";
-        setTimeout(() => { btn.innerText = originalText; }, 1500);
+        if (btn) {
+            const originalText = btn.innerText;
+            btn.innerText = t('commont.copied');
+            setTimeout(() => { btn.innerText = originalText; }, 1500);
+        }
     };
 
     return (
@@ -23,8 +26,9 @@ const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
             <button
                 onClick={handleCopy}
                 className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-md px-2 py-1 text-xs font-medium transition-colors duration-200"
+                aria-label={t('commont.copy')}
             >
-                Copy
+                {t('commont.copy')}
             </button>
         </div>
     );
@@ -36,14 +40,13 @@ function UserPresentPay() {
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'User Present Pay' },
-            { id: 'step-2', label: 'Endpoint' },
-            { id: 'step-3', label: 'Request Header' },
-            { id: 'step-4', label: 'Request Body' },
-            { id: 'step-5', label: 'Sample Request' },
-            { id: 'step-6', label: 'Success Response' },
-            { id: 'step-7', label: 'Error Responses' }
-
+            { id: 'step-1', label: t('userPresentPay.sections.step1') },
+            { id: 'step-2', label: t('userPresentPay.sections.endpoint') },
+            { id: 'step-3', label: t('userPresentPay.sections.requestHeader') },
+            { id: 'step-4', label: t('userPresentPay.sections.requestBody') },
+            { id: 'step-5', label: t('userPresentPay.sections.sampleRequest') },
+            { id: 'step-6', label: t('userPresentPay.sections.successResponse') },
+            { id: 'step-7', label: t('userPresentPay.sections.errorResponses') }
         ]);
         return () => setSections([]);
         // eslint-disable-next-line
@@ -51,42 +54,57 @@ function UserPresentPay() {
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
-            {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
+            {/* TOP-LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                User Present Pay
+                {t('userPresentPay.title')}
             </h1>
 
             <div className="flex flex-row items-start md:items-center gap-2 mb-8">
-                <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">POST</span>
-                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/userpresent-pay</span>
+                <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">
+                    {t('commont.http.post')}
+                </span>
+                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">
+                    &#123;Host&#125;/v2/alipayplus/instore/userpresent-pay
+                </span>
             </div>
 
-            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint initiates an Alipay+ overseas spot payment transaction for user-presented scenarios, validating acquirer, outlet, and terminal details, and generating a transaction request.</p>
+            <p className='text-gray-700 text-base leading-relaxed mb-8'>
+                {t('userPresentPay.intro')}
+            </p>
 
             {/* ---------- Endpoint ------------------------------------------------ */}
             <div className='mt-8 mb-6'>
                 <p id='step-2' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Endpoint
+                    {t('userPresentPay.endpoint.title')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-pay</span></li>
-                    <li><span className='font-semibold'>Method</span> – <span className='font-bold text-yellow-500'>POST</span></li>
-                    <li><span className='font-semibold'>Description</span> – Initiates a user-presented Alipay+ transaction by validating inputs and interacting with the Alipay+ API, tailored for acquirer integrations.</li>
+                    <li>
+                        <span className='font-semibold'>{t('userPresentPay.endpoint.urlLabel')}</span> –{' '}
+                        <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-pay</span>
+                    </li>
+                    <li>
+                        <span className='font-semibold'>{t('userPresentPay.endpoint.methodLabel')}</span> –{' '}
+                        <span className='font-bold text-yellow-500'>{t('commont.http.post')}</span>
+                    </li>
+                    <li>
+                        <span className='font-semibold'>{t('userPresentPay.endpoint.descriptionLabel')}</span> –{' '}
+                        {t('userPresentPay.endpoint.description')}
+                    </li>
                 </ul>
 
             </div>
             {/* ---------- Headers --------------------------------------- */}
             <div className='mt-8 mb-6'>
                 <p id='step-3' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Headers
+                    {t('userPresentPay.headers.title')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>acquirerid <span className='font-normal'>or</span> x-acq-id</span> (string, required): The unique identifier of the acquirer.</li>
-                    <li><span className='font-semibold'>Authorization</span> (string, required): The authorization key for the acquirer.</li>
-                    <li><span className='font-semibold'>Auth-Key</span> (string, required): The authentication key for the acquirer.</li>
-                    <li><span className='font-semibold'>Content-Type</span> (string, required): Must be application/json.</li>
+                    <li>{t('userPresentPay.headers.items.acquirerId')}</li>
+                    <li>{t('userPresentPay.headers.items.authorization')}</li>
+                    <li>{t('userPresentPay.headers.items.authKey')}</li>
+                    <li>{t('userPresentPay.headers.items.contentType')}</li>
                 </ul>
             </div>
 
@@ -94,10 +112,10 @@ function UserPresentPay() {
             {/* ---------- Request Body --------------------------------------- */}
             <div id='step-4' className='mt-8 mb-6'>
                 <p className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Request Body
+                    {t('userPresentPay.requestBody.title')}
                 </p>
                 <p className='text-gray-700 text-base leading-relaxed mb-4'>
-                    The request body must be in JSON format and include the following parameters
+                    {t('userPresentPay.requestBody.intro')}
                 </p>
                 <div className="overflow-x-auto" style={{ maxWidth: '100%' }}>
                     <Table
@@ -110,81 +128,77 @@ function UserPresentPay() {
                                 key: '1',
                                 parameter: <span className='font-mono'>outletId</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the outlet.',
-                                validation: 'Must be a non-empty string.',
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.outletId.description'),
+                                validation: t('userPresentPay.requestBody.table.outletId.validation'),
                             },
                             {
                                 key: '2',
                                 parameter: <span className='font-mono'>amount</span>,
-                                type: (
-                                    <>
-                                        number
-                                    </>
-                                ),
-                                required: 'Yes',
-                                description: 'Transaction amount.',
-                                validation: 'Must be a positive number greater than 0.',
+                                type: <>number</>,
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.amount.description'),
+                                validation: t('userPresentPay.requestBody.table.amount.validation'),
                             },
                             {
                                 key: '3',
                                 parameter: <span className='font-mono'>subject</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Description of the transaction.',
-                                validation: 'Must be a string, max length 100 characters.',
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.subject.description'),
+                                validation: t('userPresentPay.requestBody.table.subject.validation'),
                             },
                             {
                                 key: '4',
                                 parameter: <span className='font-mono'>currency</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Currency of the transaction.',
-                                validation: 'Must be either USD or LKR.',
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.currency.description'),
+                                validation: t('userPresentPay.requestBody.table.currency.validation'),
                             },
                             {
                                 key: '5',
                                 parameter: <span className='font-mono'>terminalId</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the terminal.',
-                                validation: 'Must be a non-empty string.',
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.terminalId.description'),
+                                validation: t('userPresentPay.requestBody.table.terminalId.validation'),
                             },
                             {
                                 key: '6',
                                 parameter: <span className='font-mono'>buyer_identity_code</span>,
                                 type: 'string',
-                                required: 'Yes',
-                                description: 'Buyer\'s identity code (e.g., barcode).',
-                                validation: 'Must be a non-empty string.',
+                                required: t('commont.yes'),
+                                description: t('userPresentPay.requestBody.table.buyerIdentityCode.description'),
+                                validation: t('userPresentPay.requestBody.table.buyerIdentityCode.validation'),
                             }
                         ]}
                         columns={[
                             {
-                                title: <span className='font-semibold'>Parameter</span>,
+                                title: <span className='font-semibold'>{t('commont.table.parameter')}</span>,
                                 dataIndex: 'parameter',
                                 key: 'parameter',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Type</span>,
+                                title: <span className='font-semibold'>{t('commont.table.type')}</span>,
                                 dataIndex: 'type',
                                 key: 'type',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Required</span>,
+                                title: <span className='font-semibold'>{t('commont.table.required')}</span>,
                                 dataIndex: 'required',
                                 key: 'required',
                                 align: 'center',
                             },
                             {
-                                title: <span className='font-semibold'>Description</span>,
+                                title: <span className='font-semibold'>{t('commont.table.description')}</span>,
                                 dataIndex: 'description',
                                 key: 'description',
                             },
                             {
-                                title: <span className='font-semibold'>Validation Rules</span>,
+                                title: <span className='font-semibold'>{t('commont.table.validationRules')}</span>,
                                 dataIndex: 'validation',
                                 key: 'validation',
                             },
@@ -192,24 +206,26 @@ function UserPresentPay() {
                     />
                 </div>
 
-                <p id='' className='text-md mb-4 mt-10 font-bold text-gray-700'>
-                    Request Body Validation
+                <p className='text-md mb-4 mt-10 font-bold text-gray-700'>
+                    {t('userPresentPay.requestBody.validationTitle')}
                 </p>
 
                 <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>outletId: </span> Required, non-empty string.</li>
-                    <li><span className='font-semibold'>amount:</span> Required, must be a positive number (greater than 0).</li>
-                    <li><span className='font-semibold'>subject: </span> Required, string with a maximum length of 100 characters.</li>
-                    <li><span className='font-semibold'>currency: </span>  Required, must be one of USD or LKR.</li>
-                    <li><span className='font-semibold'>terminalId: </span> Required, non-empty string.</li>
-                    <li><span className='font-semibold'>buyer_identity_code: </span> Required, non-empty string.</li>
+                    <li><span className='font-semibold'>outletId: </span>{t('userPresentPay.requestBody.rules.outletId')}</li>
+                    <li><span className='font-semibold'>amount: </span>{t('userPresentPay.requestBody.rules.amount')}</li>
+                    <li><span className='font-semibold'>subject: </span>{t('userPresentPay.requestBody.rules.subject')}</li>
+                    <li><span className='font-semibold'>currency: </span>{t('userPresentPay.requestBody.rules.currency')}</li>
+                    <li><span className='font-semibold'>terminalId: </span>{t('userPresentPay.requestBody.rules.terminalId')}</li>
+                    <li><span className='font-semibold'>buyer_identity_code: </span>{t('userPresentPay.requestBody.rules.buyerIdentityCode')}</li>
                 </ul>
             </div>
 
 
             {/* ---------- Sample Request --------------------------------------- */}
             <div id='step-5' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Sample Request</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">
+                    {t('userPresentPay.sample.title')}
+                </p>
 
                 <CodeBlock
                     code={`{
@@ -222,25 +238,27 @@ function UserPresentPay() {
 }`}
                 />
 
-                <p className="font-semibold mb-2">Headers</p>
+                <p className="font-semibold mb-2">{t('userPresentPay.sample.headers')}</p>
                 <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
                     <div>acquirerid: acquirer_98765</div>
                     <div>Authorization: Bearer abc123xyz789</div>
                     <div>AuthKey: key_456def789</div>
-                    <div>Content-Type: application/json</div>
+                    <div>Content-Type: {t('commont.mime.json')}</div>
                 </div>
             </div>
 
             {/* ---------- Success Response --------------------------------------- */}
             <div id='step-6' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Success Response</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">
+                    {t('userPresentPay.success.title')}
+                </p>
 
                 <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
-                    <li><span className="font-semibold">Status Code</span>: <span className='text-green-600 font-bold'>200 OK</span></li>
-                    <li><span className="font-semibold">Content Type</span>: application/json</li>
+                    <li><span className="font-semibold">{t('commont.statusCode')}</span>: <span className='text-green-600 font-bold'>200 OK</span></li>
+                    <li><span className="font-semibold">{t('commont.contentType')}</span>: {t('commont.mime.json')}</li>
                 </ul>
 
-                <p><span className="font-semibold">Response Body</span>:   (Success):</p>
+                <p><span className="font-semibold">{t('commont.responseBody')}</span>: {t('userPresentPay.success.successLabel')}</p>
 
                 <CodeBlock
                     code={`{
@@ -254,12 +272,11 @@ function UserPresentPay() {
         "outTradeNo": "202508051345001234"
     }
 }
-
 `}
                     bgColor="bg-green-50"
                 />
 
-                <p><span className="font-semibold">Response Body</span>:   (Pending Authentication):</p>
+                <p><span className="font-semibold">{t('commont.responseBody')}</span>: {t('userPresentPay.success.pendingLabel')}</p>
 
                 <CodeBlock
                     code={`{
@@ -273,8 +290,6 @@ function UserPresentPay() {
         "outTradeNo": "202508051345001234"
     }
 }
-
-
 `}
                     bgColor="bg-green-50"
                 />
@@ -282,16 +297,16 @@ function UserPresentPay() {
 
             {/* ---------- Error Response --------------------------------------- */}
             <div id='step-7' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Error Responses</p>
+                <p className="text-xl mb-4 font-semibold text-gray-700">{t('userPresentPay.errors.title')}</p>
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
-                    Below are the possible error responses, including their status codes, error codes, and messages:
+                    {t('userPresentPay.errors.intro')}
                 </p>
 
                 {/* Missing Parameters */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.missingParams')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "MISSING_PARAMS",
@@ -304,9 +319,9 @@ function UserPresentPay() {
 
                 {/* Invalid Amount */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">2. Invalid Amount</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.invalidAmount')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "INVALID_AMOUNT",
@@ -319,9 +334,9 @@ function UserPresentPay() {
 
                 {/* Invalid Currency */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">3. Invalid Currency</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.invalidCurrency')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "INVALID_CURRENCY",
@@ -334,9 +349,9 @@ function UserPresentPay() {
 
                 {/* Invalid Subject */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">4. Invalid Subject</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.invalidSubject')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "INVALID_SUBJECT",
@@ -349,9 +364,9 @@ function UserPresentPay() {
 
                 {/* Outlet Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">5. Outlet Not Found</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.outletNotFound')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">404 {t('userPresentPay.errors.labels.notFound')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "OUTLET_NOT_FOUND",
@@ -364,9 +379,9 @@ function UserPresentPay() {
 
                 {/* Acquirer-Outlet Mismatch */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">6. Acquirer-Outlet Mismatch</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.acquirerOutletMismatch')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">403 {t('userPresentPay.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "ACQUIRER_OUTLET_MISMATCH",
@@ -379,9 +394,9 @@ function UserPresentPay() {
 
                 {/* Outlet Not Approved */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">7. Outlet Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.outletNotApproved')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "OUTLET_NOT_APPROVED",
@@ -394,9 +409,9 @@ function UserPresentPay() {
 
                 {/* Outlet Not Approved for Alipay+ Offline */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">8. Outlet Not Approved for Alipay+ Offline</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.outletNotApprovedOffline')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">403 {t('userPresentPay.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "OUTLET_NOT_APPROVED",
@@ -409,9 +424,9 @@ function UserPresentPay() {
 
                 {/* Terminal Not Approved */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">9. Terminal Not Approved</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.terminalNotApproved')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">403 {t('userPresentPay.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "TERMINAL_NOT_APPROVED",
@@ -424,9 +439,9 @@ function UserPresentPay() {
 
                 {/* Outlet Missing Merchant */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">10. Outlet Missing Merchant</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.outletMissingMerchant')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">500 {t('userPresentPay.errors.labels.internalServerError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "OUTLET_MISSING_MERCHANT",
@@ -439,9 +454,9 @@ function UserPresentPay() {
 
                 {/* Merchant Not Found */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">11. Merchant Not Found</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.merchantNotFound')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">404 {t('userPresentPay.errors.labels.notFound')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "MERCHANT_NOT_FOUND",
@@ -454,9 +469,9 @@ function UserPresentPay() {
 
                 {/* Acquirer-Merchant Mismatch */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">12. Acquirer-Merchant Mismatch</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">403 Forbidden</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.acquirerMerchantMismatch')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">403 {t('userPresentPay.errors.labels.forbidden')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "ACQUIRER_MERCHANT_MISMATCH",
@@ -469,9 +484,9 @@ function UserPresentPay() {
 
                 {/* Alipay+ Unreachable */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">13. Alipay+ Unreachable</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.alipayUnreachable')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">502 {t('userPresentPay.errors.labels.badGateway')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "ALIPAY_UNREACHABLE",
@@ -485,9 +500,9 @@ function UserPresentPay() {
 
                 {/* XML Parse Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">14. XML Parse Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.xmlParseError')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">500 {t('userPresentPay.errors.labels.internalServerError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "XML_PARSE_ERROR",
@@ -501,9 +516,9 @@ function UserPresentPay() {
 
                 {/* Alipay+ Invalid Response */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">15. Alipay+ Invalid Response</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">502 Bad Gateway</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.alipayInvalidResponse')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">502 {t('userPresentPay.errors.labels.badGateway')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "ALIPAY_INVALID_RESPONSE",
@@ -516,9 +531,9 @@ function UserPresentPay() {
 
                 {/* Alipay+ Transaction Failed */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">16. Alipay+ Transaction Failed</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.alipayTransactionFailed')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">400 {t('userPresentPay.errors.labels.badRequest')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "ALIPAY_TRANSACTION_FAILED",
@@ -532,9 +547,9 @@ function UserPresentPay() {
 
                 {/* Server Error */}
                 <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">17. Server Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
+                    <p className="text-lg font-semibold text-gray-700">{t('userPresentPay.errors.items.serverError')}</p>
+                    <p className="text-gray-700 mb-2"><span className="font-semibold">{t('commont.statusCode')}</span>: <span className="text-red-600 font-bold">500 {t('userPresentPay.errors.labels.internalServerError')}</span></p>
+                    <p className="text-gray-700 mb-2">{t('commont.responseBody')}:</p>
                     <CodeBlock 
                         code={`{
     "code": "SERVER_ERROR",

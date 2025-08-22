@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { useSections } from '../../../components/SectionContext';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -9,45 +9,49 @@ function MerchantEndpoints() {
 
     return (
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
-            {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
+            {/* TOP-LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Endpoints
+                {t('merchantEndpoints.title')}
             </h1>
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
-                SriPay Connect provides the following API endpoints, enabling acquirers to seamlessly integrate with their Web, POS systems or other payment platforms.
+                {t('merchantEndpoints.desc')}
             </p>
+
             <ol className="list-decimal pl-6 space-y-4 text-gray-800">
                 <li>
-                    <span className="font-semibold">Alipay+ Instore API</span>
+                    <span className="font-semibold">{t('merchantEndpoints.sections.instore')}</span>
                     <ol className="list-[lower-alpha] pl-6 space-y-1 mt-2">
-                        <li>Order Code Pay QR</li>
-                        <li>Order Code Result Listener</li>
-                        <li>User Present Pay</li>
-                        <li>User Present Pay Waiting</li>
-                        <li>Void Transactions</li>
-                        <li>Instore Payment Inquiry</li>
-                        <li>Instore Not Settled Latest Transactions</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.orderCodePay')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.orderCodeListener')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.userPresentPay')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.userPresentPayWaiting')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.voidTransactions')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.inquiry')}</li>
+                        <li>{t('merchantEndpoints.sections.instore_items.notSettled')}</li>
                     </ol>
                 </li>
+
                 <li>
-                    <span className="font-semibold">Merchant Web Frame for Online Payment</span>
+                    <span className="font-semibold">{t('merchantEndpoints.sections.merchantWeb')}</span>
                     <ol className="list-[lower-alpha] pl-6 space-y-1 mt-2">
-                        <li>Payment Request</li>
+                        <li>{t('merchantEndpoints.sections.merchantWeb_items.paymentRequest')}</li>
                     </ol>
                 </li>
+
                 <li>
-                    <span className="font-semibold">Alipay+ Online API</span>
+                    <span className="font-semibold">{t('merchantEndpoints.sections.online')}</span>
                     <ol className="list-[lower-alpha] pl-6 space-y-1 mt-2">
-                        <li>Payment Link Create</li>
-                        <li>Payment Inquiry</li>
+                        <li>{t('merchantEndpoints.sections.online_items.paymentLinkCreate')}</li>
+                        <li>{t('merchantEndpoints.sections.online_items.paymentInquiry')}</li>
                     </ol>
                 </li>
+
                 <li>
-                    <span className="font-semibold">Card Payments For Online (Visa, Mastercard, Union Pay)</span>
+                    <span className="font-semibold">{t('merchantEndpoints.sections.card')}</span>
                     <ol className="list-[lower-alpha] pl-6 space-y-1 mt-2">
-                        <li>Payment Link Create</li>
-                        <li>Payment Inquiry</li>
+                        <li>{t('merchantEndpoints.sections.card_items.paymentLinkCreate')}</li>
+                        <li>{t('merchantEndpoints.sections.card_items.paymentInquiry')}</li>
                     </ol>
                 </li>
             </ol>

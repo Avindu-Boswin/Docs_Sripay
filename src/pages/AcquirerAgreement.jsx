@@ -8,6 +8,8 @@ function AcquirerAgreement() {
       : AcquirerAgreementPdf;
 
     return (
+        <>
+   
         <div className="w-full max-w-6xl mx-auto p-8 bg-white shadow-md print:shadow-none">
             {/* Download Link */}
           <div className="mt-1 mb-5 w-full flex justify-end">
@@ -1298,6 +1300,7 @@ function AcquirerAgreement() {
 
             </div>
         </div>
+        </>
     );
 }
 

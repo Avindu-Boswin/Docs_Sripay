@@ -69,9 +69,9 @@ function RoleCards() {
         { to: '/docs/acquirer/introduction', title: t('roles.acquirer.title'), desc: t('roles.acquirer.desc'), Icon: Building2 },
         { to: '/docs/merchant/gettingstart', title: t('roles.merchant.title'), desc: t('roles.merchant.desc'), Icon: Store },
         { to: '/docs/developer/gettingstart', title: t('roles.developer.title'), desc: t('roles.developer.desc'), Icon: Code2 },
-        { to: '/docs/branding-guidelines', title: 'Branding Guidelines', desc: 'Guidelines ensuring consistent brand voice', Icon: Palette },
-        { to: '/docs/marketing-materials', title: 'Marketing Materials', desc: 'Assets showcasing our brand story', Icon: Megaphone },
-        { to: '/docs/agreement', title: 'View Agreement', desc: 'View acquirer and merchant agreements', Icon: FileText },
+        { to: '/docs/branding-guidelines', title: t('roles.bradingguidline.title'), desc: t('roles.bradingguidline.desc'), Icon: Palette },
+        { to: '/docs/marketing-materials', title: t('roles.marketingmaterials.title'), desc: t('roles.marketingmaterials.desc'), Icon: Megaphone },
+        { to: '/docs/agreement', title: t('roles.agreement.title'), desc: t('roles.agreement.desc'), Icon: FileText },
     ];
 
     return (
@@ -97,7 +97,7 @@ function RoleCards() {
 
                     <h2 className="mt-4 text-3xl  sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-[.3rem]
                     ">
-                        Sections
+                       {t('sections')}
                     </h2>
 
 

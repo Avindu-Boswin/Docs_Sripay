@@ -1,16 +1,15 @@
 // Sidebar.tsx
 import { useState } from "react";
 import { Menu, Button, Layout } from "antd";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined
-} from "@ant-design/icons";
-import { NavLink, useNavigate } from 'react-router-dom';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
+  const { t } = useTranslation("developer_sidebar");
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   const toggleCollapse = () => {
@@ -25,41 +24,41 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
   const handleLinkClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
   return (
     <div
-      className={`transition-all duration-300 fixed top-[4.5rem] left-0 z-30 h-[calc(100vh-4.5rem)] bg-white shadow-md ${isMobileOpen ? "w-64 md:hidden" : collapsed ? "w-0" : "w-64"
-        } ${!isMobileOpen && isMobile ? "hidden" : ""}`}
+      className={`transition-all duration-300 fixed top-[4.5rem] left-0 z-30 h-[calc(100vh-4.5rem)] bg-white shadow-md ${
+        isMobileOpen ? "w-64 md:hidden" : collapsed ? "w-0" : "w-64"
+      } ${!isMobileOpen && isMobile ? "hidden" : ""}`}
     >
       {/* Collapse button (desktop only) */}
       {!isMobile && (
         <div
-          className={`absolute top-1/2 transform -translate-y-1/2 z-40 ${collapsed ? "left-0" : "left-64"
-            }`}
+          className={`absolute top-1/2 transform -translate-y-1/2 z-40 ${
+            collapsed ? "left-0" : "left-64"
+          }`}
         >
-
           <Button
             style={{
-
-              transform: 'translateY(-50%)',
+              transform: "translateY(-50%)",
               height: 56,
               width: 48,
-              background: 'rgba(255,255,255,1)',
-              borderRadius: '0 12px 12px 0',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'background 0.2s',
-              cursor: 'pointer',
+              background: "rgba(255,255,255,1)",
+              borderRadius: "0 12px 12px 0",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "background 0.2s",
+              cursor: "pointer",
             }}
-
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             type="text"
             onClick={toggleCollapse}
+            aria-label={collapsed ? t("developer_sidebar_expand") : t("developer_sidebar_collapse")}
           />
         </div>
       )}
@@ -95,161 +94,159 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               }
             `}
           </style>
-          <Menu theme='light' mode='inline' defaultSelectedKeys={['1']} style={{ fontSize: 14, fontWeight: 500 }}>
+          <Menu theme="light" mode="inline" defaultSelectedKeys={["1"]} style={{ fontSize: 14, fontWeight: 500 }}>
             <Menu.Item key="home">
-              <NavLink to="/" onClick={handleLinkClick}>Back To Home</NavLink>
+              <NavLink to="/" onClick={handleLinkClick}>{t("developer_sidebar_back_to_home")}</NavLink>
             </Menu.Item>
 
             <div className="flex items-center justify-center my-2 mt-5 mb-5">
               <span className="flex-1 h-0.5 bg-gray-300 ml-7 mr-2" />
-              <span className="whitespace-nowrap">Developer</span>
+              <span className="whitespace-nowrap">{t("developer_sidebar_group_developer")}</span>
               <span className="flex-1 h-0.5 bg-gray-300 ml-2 mr-6" />
             </div>
 
             <Menu.Item key="gettingStart">
-              <NavLink to="/docs/developer/gettingstart" onClick={handleLinkClick}>Getting Started</NavLink>
+              <NavLink to="/docs/developer/gettingstart" onClick={handleLinkClick}>{t("developer_sidebar_getting_started")}</NavLink>
             </Menu.Item>
 
-            <SubMenu key="system-architecture" title={"System Overview"} className="!text-gray-700">
-                <Menu.Item key="intro">
-                  <NavLink to="/docs/developer/introduction" onClick={handleLinkClick}>Introduction</NavLink>
+            <SubMenu key="system-architecture" title={t("developer_sidebar_system_overview")} className="!text-gray-700">
+              <Menu.Item key="intro">
+                <NavLink to="/docs/developer/introduction" onClick={handleLinkClick}>{t("developer_sidebar_introduction")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="system-architecture">
+                <NavLink to="/docs/developer/system-architecture" onClick={handleLinkClick}>{t("developer_sidebar_system_architecture")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="web-application-architecture">
+                <NavLink to="/docs/developer/web-application-architecture" onClick={handleLinkClick}>{t("developer_sidebar_web_application_architecture")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="mobile-application-architecture">
+                <NavLink to="/docs/developer/mobile-application-architecture" onClick={handleLinkClick}>{t("developer_sidebar_mobile_application_architecture")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="backend-architecture">
+                <NavLink to="/docs/developer/backend-architecture" onClick={handleLinkClick}>{t("developer_sidebar_backend_architecture")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="database-architecture">
+                <NavLink to="/docs/developer/database-architecture" onClick={handleLinkClick}>{t("developer_sidebar_database_architecture")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="authentication-and-authorization">
+                <NavLink to="/docs/developer/authentication-and-authorization" onClick={handleLinkClick}>{t("developer_sidebar_authentication_and_authorization")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="encryption-and-security">
+                <NavLink to="/docs/developer/encryption-and-security" onClick={handleLinkClick}>{t("developer_sidebar_encryption_and_security")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="api-security">
+                <NavLink to="/docs/developer/api-security" onClick={handleLinkClick}>{t("developer_sidebar_api_security")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="deployment-and-infrastructure">
+                <NavLink to="/docs/developer/deployment-and-infrastructure" onClick={handleLinkClick}>{t("developer_sidebar_deployment_and_infrastructure")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="third-party-integration">
+                <NavLink to="/docs/developer/third-party-integration" onClick={handleLinkClick}>{t("developer_sidebar_third_party_integration")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="compliance-and-privacy">
+                <NavLink to="/docs/developer/compliance-and-privacy" onClick={handleLinkClick}>{t("developer_sidebar_compliance_and_privacy")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="maintenance-and-support">
+                <NavLink to="/docs/developer/maintenance-and-support" onClick={handleLinkClick}>{t("developer_sidebar_maintenance_and_support")}</NavLink>
+              </Menu.Item>
+            </SubMenu>
+
+            <SubMenu key="api-acquirer" title={t("developer_sidebar_acquirer_apis")} className="!text-gray-700">
+              <Menu.Item key="overview">
+                <NavLink to="/docs/developer/acquirer-api/overview" onClick={handleLinkClick}>{t("developer_sidebar_overview")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="endpoints">
+                <NavLink to="/docs/developer/acquirer-api/endpoints" onClick={handleLinkClick}>{t("developer_sidebar_endpoints")}</NavLink>
+              </Menu.Item>
+              <SubMenu key="api-instore" title={t("developer_sidebar_alipay_instore_apis")} className="!text-gray-700">
+                <Menu.Item key="order-code-pay-qr">
+                  <NavLink to="/docs/developer/acquirer-api/instore/order-code-pay-qr" onClick={handleLinkClick}>{t("developer_sidebar_order_code_pay_qr")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="system-architecture">
-                  <NavLink to="/docs/developer/system-architecture" onClick={handleLinkClick}>System Architecture</NavLink>
+                <Menu.Item key="order-code-result-listener">
+                  <NavLink to="/docs/developer/acquirer-api/instore/order-code-result-listener" onClick={handleLinkClick}>{t("developer_sidebar_order_code_result_listener")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="web-application-architecture">
-                  <NavLink to="/docs/developer/web-application-architecture" onClick={handleLinkClick}>Web App Architecture</NavLink>
+                <Menu.Item key="user-present-pay">
+                  <NavLink to="/docs/developer/acquirer-api/instore/user-present-pay" onClick={handleLinkClick}>{t("developer_sidebar_user_present_pay")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="mobile-application-architecture">
-                  <NavLink to="/docs/developer/mobile-application-architecture" onClick={handleLinkClick}>Mobile App Architecture</NavLink>
+                <Menu.Item key="user-present-pay-waiting">
+                  <NavLink to="/docs/developer/acquirer-api/instore/user-present-pay-waiting" onClick={handleLinkClick}>{t("developer_sidebar_user_present_pay_waiting")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="backend-architecture">
-                  <NavLink to="/docs/developer/backend-architecture" onClick={handleLinkClick}>Backend Architecture</NavLink>
+                <Menu.Item key="void-transaction">
+                  <NavLink to="/docs/developer/acquirer-api/instore/void-transaction" onClick={handleLinkClick}>{t("developer_sidebar_void_transaction")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="database-architecture">
-                  <NavLink to="/docs/developer/database-architecture" onClick={handleLinkClick}>Database Architecture</NavLink>
-                </Menu.Item>
-                <Menu.Item key="authentication-and-authorization">
-                  <NavLink to="/docs/developer/authentication-and-authorization" onClick={handleLinkClick}>Authentication & Authorization</NavLink>
-                </Menu.Item>
-                <Menu.Item key="encryption-and-security">
-                  <NavLink to="/docs/developer/encryption-and-security" onClick={handleLinkClick}>Encryption & Security</NavLink>
-                </Menu.Item>
-                <Menu.Item key="api-security">
-                  <NavLink to="/docs/developer/api-security" onClick={handleLinkClick}>API Security</NavLink>
-                </Menu.Item>
-                <Menu.Item key="deployment-and-infrastructure">
-                  <NavLink to="/docs/developer/deployment-and-infrastructure" onClick={handleLinkClick}>Deployment & Infrastructure</NavLink>
-                </Menu.Item>
-                <Menu.Item key="third-party-integration">
-                  <NavLink to="/docs/developer/third-party-integration" onClick={handleLinkClick}>Third Party Integration</NavLink>
-                </Menu.Item>
-                <Menu.Item key="compliance-and-privacy">
-                  <NavLink to="/docs/developer/compliance-and-privacy" onClick={handleLinkClick}>Compliance & Privacy</NavLink>
-                </Menu.Item>
-                <Menu.Item key="maintenance-and-support">
-                  <NavLink to="/docs/developer/maintenance-and-support" onClick={handleLinkClick}>Maintenance & Support</NavLink>
+                <Menu.Item key="instore-payment-inquiry">
+                  <NavLink to="/docs/developer/acquirer-api/instore/instore-payment-inquiry" onClick={handleLinkClick}>{t("developer_sidebar_instore_payment_inquiry")}</NavLink>
                 </Menu.Item>
               </SubMenu>
-
-              <SubMenu key="api-acquirer" title={"Acquirer APIs"} className="!text-gray-700">
-                <Menu.Item key="overview">
-                  <NavLink to="/docs/developer/acquirer-api/overview" onClick={handleLinkClick}>Overview</NavLink>
+              <SubMenu key="api-online" title={t("developer_sidebar_alipay_online_apis")} className="!text-gray-700">
+                <Menu.Item key="payment-link-create">
+                  <NavLink to="/docs/developer/acquirer-api/online/payment-link-create" onClick={handleLinkClick}>{t("developer_sidebar_payment_link_create")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="endpoints">
-                  <NavLink to="/docs/developer/acquirer-api/endpoints" onClick={handleLinkClick}>Endpoints</NavLink>
+                <Menu.Item key="payment-inquiry">
+                  <NavLink to="/docs/developer/acquirer-api/online/payment-inquiry" onClick={handleLinkClick}>{t("developer_sidebar_payment_inquiry")}</NavLink>
                 </Menu.Item>
-                <SubMenu key="api-instore" title={"Alipay+ Instore APIs"} className="!text-gray-700">
-                  <Menu.Item key="order-code-pay-qr">
-                    <NavLink to="/docs/developer/acquirer-api/instore/order-code-pay-qr" onClick={handleLinkClick}>Order Code Pay QR</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="order-code-result-listener">
-                    <NavLink to="/docs/developer/acquirer-api/instore/order-code-result-listener" onClick={handleLinkClick}>Order Code Result Listener</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="user-present-pay">
-                    <NavLink to="/docs/developer/acquirer-api/instore/user-present-pay" onClick={handleLinkClick}>User Present Pay</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="user-present-pay-waiting">
-                    <NavLink to="/docs/developer/acquirer-api/instore/user-present-pay-waiting" onClick={handleLinkClick}>User Present Pay Waiting</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="void-transaction">
-                    <NavLink to="/docs/developer/acquirer-api/instore/void-transaction" onClick={handleLinkClick}>Void Transaction</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="instore-payment-inquiry">
-                    <NavLink to="/docs/developer/acquirer-api/instore/instore-payment-inquiry" onClick={handleLinkClick}>Instore Payment Inquiry</NavLink>
-                  </Menu.Item>
-                </SubMenu>
-                <SubMenu key="api-online" title={"Alipay+ Online APIs"} className="!text-gray-700">
-                  <Menu.Item key="payment-link-create">
-                    <NavLink to="/docs/developer/acquirer-api/online/payment-link-create" onClick={handleLinkClick}>Payment Link Create</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="payment-inquiry">
-                    <NavLink to="/docs/developer/acquirer-api/online/payment-inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
-                  </Menu.Item>
-                </SubMenu>
               </SubMenu>
+            </SubMenu>
 
-              <SubMenu key="api-merchant" title={"Merchant APIs"} className="!text-gray-700">
-                <Menu.Item key="overview-mer">
-                  <NavLink to="/docs/developer/merchant-api/overview" onClick={handleLinkClick}>Overview</NavLink>
+            <SubMenu key="api-merchant" title={t("developer_sidebar_merchant_apis")} className="!text-gray-700">
+              <Menu.Item key="overview-mer">
+                <NavLink to="/docs/developer/merchant-api/overview" onClick={handleLinkClick}>{t("developer_sidebar_overview")}</NavLink>
+              </Menu.Item>
+              <Menu.Item key="endpoints-mer">
+                <NavLink to="/docs/developer/merchant-api/endpoints" onClick={handleLinkClick}>{t("developer_sidebar_endpoints")}</NavLink>
+              </Menu.Item>
+              <SubMenu key="api-instore-mer" title={t("developer_sidebar_alipay_instore_apis")} className="!text-gray-700">
+                <Menu.Item key="order-code-pay-qr-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/order-code-pay-qr" onClick={handleLinkClick}>{t("developer_sidebar_order_code_pay_qr")}</NavLink>
                 </Menu.Item>
-                <Menu.Item key="endpoints-mer">
-                  <NavLink to="/docs/developer/merchant-api/endpoints" onClick={handleLinkClick}>Endpoints</NavLink>
+                <Menu.Item key="order-code-result-listener-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/order-code-result-listener" onClick={handleLinkClick}>{t("developer_sidebar_order_code_result_listener")}</NavLink>
                 </Menu.Item>
-                <SubMenu key="api-instore-mer" title={"Alipay+ Instore APIs"} className="!text-gray-700">
-                  <Menu.Item key="order-code-pay-qr-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/order-code-pay-qr" onClick={handleLinkClick}>Order Code Pay QR</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="order-code-result-listener-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/order-code-result-listener" onClick={handleLinkClick}>Order Code Result Listener</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="user-present-pay-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/user-present-pay" onClick={handleLinkClick}>User Present Pay</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="user-present-pay-waiting-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/user-present-pay-waiting" onClick={handleLinkClick}>User Present Pay Waiting</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="void-transaction-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/void-transaction" onClick={handleLinkClick}>Void Transaction</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="instore-payment-inquiry-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/instore-payment-inquiry" onClick={handleLinkClick}>Instore Payment Inquiry</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="instore-not-settled-latest-merchant">
-                    <NavLink to="/docs/developer/merchant-api/instore/not-settled-latest-transactions" onClick={handleLinkClick}>Instore Not Settled Latest Transactions</NavLink>
-                  </Menu.Item>
-                </SubMenu>
-                <SubMenu key="webframe-mer" title={"Web Frame Online APIs"} className="!text-gray-700">
-                  <Menu.Item key="overview-webframe-mer">
-                    <NavLink to="/docs/developer/merchant-api/online-webframe/overview" onClick={handleLinkClick}>Overview</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="payment-request-webframe-mer">
-                    <NavLink to="/docs/developer/merchant-api/online-webframe/payment-request" onClick={handleLinkClick}>Payment Request</NavLink>
-                  </Menu.Item>
-                </SubMenu>
-                <SubMenu key="api-online-mer" title={"Alipay+ Online APIs"} className="!text-gray-700">
-                  <Menu.Item key="online-payment-link-create-merchant">
-                    <NavLink to="/docs/developer/merchant-api/online/payment-link-create" onClick={handleLinkClick}>Payment Link Create</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="online-payment-inquiry-merchant">
-                    <NavLink to="/docs/developer/merchant-api/online/payment-inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
-                  </Menu.Item>
-                </SubMenu>
-                <SubMenu key="api-card-mer" title={"Card Payments APIs"} className="!text-gray-700">
-                  <Menu.Item key="overview-card-mer">
-                    <NavLink to="/docs/developer/merchant-api/card-payments/overview" onClick={handleLinkClick}>Overview</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="card-payment-link-create-mer">
-                    <NavLink to="/docs/developer/merchant-api/card-payments/payment-link-create" onClick={handleLinkClick}>Payment Link Create</NavLink>
-                  </Menu.Item>
-                  <Menu.Item key="card-payment-inquiry-mer">
-                    <NavLink to="/docs/developer/merchant-api/card-payments/payment-inquiry" onClick={handleLinkClick}>Payment Inquiry</NavLink>
-                  </Menu.Item>
-                </SubMenu>
+                <Menu.Item key="user-present-pay-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/user-present-pay" onClick={handleLinkClick}>{t("developer_sidebar_user_present_pay")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="user-present-pay-waiting-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/user-present-pay-waiting" onClick={handleLinkClick}>{t("developer_sidebar_user_present_pay_waiting")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="void-transaction-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/void-transaction" onClick={handleLinkClick}>{t("developer_sidebar_void_transaction")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="instore-payment-inquiry-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/instore-payment-inquiry" onClick={handleLinkClick}>{t("developer_sidebar_instore_payment_inquiry")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="instore-not-settled-latest-merchant">
+                  <NavLink to="/docs/developer/merchant-api/instore/not-settled-latest-transactions" onClick={handleLinkClick}>{t("developer_sidebar_instore_not_settled_latest_transactions")}</NavLink>
+                </Menu.Item>
               </SubMenu>
-
+              <SubMenu key="webframe-mer" title={t("developer_sidebar_web_frame_online_apis")} className="!text-gray-700">
+                <Menu.Item key="overview-webframe-mer">
+                  <NavLink to="/docs/developer/merchant-api/online-webframe/overview" onClick={handleLinkClick}>{t("developer_sidebar_overview")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="payment-request-webframe-mer">
+                  <NavLink to="/docs/developer/merchant-api/online-webframe/payment-request" onClick={handleLinkClick}>{t("developer_sidebar_payment_request")}</NavLink>
+                </Menu.Item>
+              </SubMenu>
+              <SubMenu key="api-online-mer" title={t("developer_sidebar_alipay_online_apis")} className="!text-gray-700">
+                <Menu.Item key="online-payment-link-create-merchant">
+                  <NavLink to="/docs/developer/merchant-api/online/payment-link-create" onClick={handleLinkClick}>{t("developer_sidebar_payment_link_create")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="online-payment-inquiry-merchant">
+                  <NavLink to="/docs/developer/merchant-api/online/payment-inquiry" onClick={handleLinkClick}>{t("developer_sidebar_payment_inquiry")}</NavLink>
+                </Menu.Item>
+              </SubMenu>
+              <SubMenu key="api-card-mer" title={t("developer_sidebar_card_payments_apis")} className="!text-gray-700">
+                <Menu.Item key="overview-card-mer">
+                  <NavLink to="/docs/developer/merchant-api/card-payments/overview" onClick={handleLinkClick}>{t("developer_sidebar_overview")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="card-payment-link-create-mer">
+                  <NavLink to="/docs/developer/merchant-api/card-payments/payment-link-create" onClick={handleLinkClick}>{t("developer_sidebar_payment_link_create")}</NavLink>
+                </Menu.Item>
+                <Menu.Item key="card-payment-inquiry-mer">
+                  <NavLink to="/docs/developer/merchant-api/card-payments/payment-inquiry" onClick={handleLinkClick}>{t("developer_sidebar_payment_inquiry")}</NavLink>
+                </Menu.Item>
+              </SubMenu>
+            </SubMenu>
           </Menu>
-
         </div>
       )}
     </div>

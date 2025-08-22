@@ -1,275 +1,228 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { useSections } from '../../../components/SectionContext';
-import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { Table } from 'antd';
 
-// Code block component with copy functionality
 const CodeBlock = ({ code, bgColor = "bg-gray-50" }) => {
-    const handleCopy = () => {
-        navigator.clipboard.writeText(code);
-        const btn = document.activeElement;
-        const originalText = btn.innerText;
-        btn.innerText = "Copied!";
-        setTimeout(() => { btn.innerText = originalText; }, 1500);
-    };
-
-    return (
-        <div className="relative">
-            <pre className={`${bgColor} rounded-2xl p-4 text-sm md:text-base overflow-x-auto mb-4`}>
-                {code}
-            </pre>
-            <button
-                onClick={handleCopy}
-                className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-md px-2 py-1 text-xs font-medium transition-colors duration-200"
-            >
-                Copy
-            </button>
-        </div>
-    );
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    const btn = document.activeElement;
+    const originalText = btn.innerText;
+    btn.innerText = "Copied!";
+    setTimeout(() => { btn.innerText = originalText; }, 1500);
+  };
+  return (
+    <div className="relative">
+      <pre className={`${bgColor} rounded-2xl p-4 text-sm md:text-base overflow-x-auto mb-4`}>
+        {code}
+      </pre>
+      <button
+        onClick={handleCopy}
+        className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-md px-2 py-1 text-xs font-medium transition-colors duration-200"
+      >
+        Copy
+      </button>
+    </div>
+  );
 };
 
 function MerchantUserPresentPayWaiting() {
-    const { t } = useTranslation();
-    const { setSections } = useSections();
+  const { t } = useTranslation();
+  const { setSections } = useSections();
 
-    useEffect(() => {
-        setSections([
-            { id: 'step-1', label: 'User Present Pay Waiting' },
-            { id: 'step-2', label: 'Endpoint' },
-            { id: 'step-3', label: 'Request Header' },
-            { id: 'step-4', label: 'Request Parameters' },
-            { id: 'step-5', label: 'Sample Request' },
-            { id: 'step-6', label: 'Success Response' },
-            { id: 'step-7', label: 'Error Responses' }
+  useEffect(() => {
+    setSections([
+      { id: 'step-1', label: t('uppw.sections.s1') },
+      { id: 'step-2', label: t('uppw.sections.s2') },
+      { id: 'step-3', label: t('uppw.sections.s3') },
+      { id: 'step-4', label: t('uppw.sections.s4') },
+      { id: 'step-5', label: t('uppw.sections.s5') },
+      { id: 'step-6', label: t('uppw.sections.s6') },
+      { id: 'step-7', label: t('uppw.sections.s7') }
+    ]);
+    return () => setSections([]);
+    // eslint-disable-next-line
+  }, [setSections, t]);
 
-        ]);
-        return () => setSections([]);
-        // eslint-disable-next-line
-    }, [setSections, t]);
+  return (
+    <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
+      <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
+        {t('uppw.title')}
+      </h1>
 
-    return (
-        <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
-            {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
-            <h1 id='step-1' className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                User Present Pay Waiting
-            </h1>
+      <div className="flex flex-row items-start md:items-center gap-2 mb-8">
+        <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">
+          {t('uppw.methodGet')}
+        </span>
+        <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">
+          {t('uppw.path')}
+        </span>
+      </div>
 
-            <div className="flex flex-row items-start md:items-center gap-2 mb-8">
-                <span className="bg-blue-500 text-white font-semibold px-3 py-1 rounded-md text-sm md:text-xl lg:text-2xl mb-2 md:mb-0">GET</span>
-                <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting</span>
-            </div>
+      <p className='text-gray-700 text-base leading-relaxed mb-8'>{t('uppw.intro')}</p>
 
-            <p className='text-gray-700 text-base leading-relaxed mb-8'>This endpoint retrieves the status of a user-presented Alipay transaction awaiting authentication, identified by partnerTransId. It allows rechecking to verify if user authentication has occurred, returning the latest transaction details.</p>
+      {/* Endpoint */}
+      <div className='mt-8 mb-6'>
+        <p id='step-2' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
+          {t('uppw.endpoint.title')}
+        </p>
+        <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
+          <li><span className='font-semibold'>{t('uppw.endpoint.url')}</span> – <span className='font-medium text-[#0073ff]'>{t('uppw.path')}/:partnerTransId</span></li>
+          <li><span className='font-semibold'>{t('uppw.endpoint.method')}</span> – <span className='font-bold text-green-500'>{t('uppw.methodGet')}</span></li>
+          <li><span className='font-semibold'>Description</span> – <span>{t('uppw.endpoint.desc')}</span></li>
+        </ul>
+      </div>
 
-            {/* ---------- Endpoint ------------------------------------------------ */}
-            <div className='mt-8 mb-6'>
-                <p id='step-2' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Endpoint
-                </p>
+      {/* Headers */}
+      <div className='mt-8 mb-6'>
+        <p id='step-3' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
+          {t('uppw.headers.title')}
+        </p>
+        <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
+          <li>{t('uppw.headers.merchantId')}</li>
+          <li>{t('uppw.headers.auth')}</li>
+        </ul>
+      </div>
 
-                <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/:partnerTransId</span></li>
-                    <li><span className='font-semibold'>Method</span> – <span className='font-bold text-green-500'>GET</span></li>
-                    <li><span className='font-semibold'>Description</span> – Fetches the transaction status for a given partnerTransId, useful for rechecking after user authentication.</li>
-                </ul>
+      {/* Request Parameters */}
+      <div id='step-4' className='mt-8 mb-6'>
+        <p className='text-xl mb-4 mt-10 font-semibold text-gray-700'>{t('uppw.reqParams.title')}</p>
+        <p className='text-gray-700 text-base leading-relaxed mb-4'>{t('uppw.reqParams.intro')}</p>
+        <div className="overflow-x-auto" style={{ maxWidth: '100%' }}>
+          <Table
+            bordered
+            pagination={false}
+            size="middle"
+            scroll={{ x: true }}
+            dataSource={[{
+              key: '1',
+              parameter: <span className='font-mono'>partnerTransId</span>,
+              type: 'string',
+              required: t('uppw.reqParams.table.yes'),
+              description: t('uppw.reqParams.table.rowPartnerDesc')
+            }]}
+            columns={[
+              { title: <span className='font-semibold'>{t('uppw.reqParams.table.parameter')}</span>, dataIndex: 'parameter', key: 'parameter', align: 'center' },
+              { title: <span className='font-semibold'>{t('uppw.reqParams.table.type')}</span>, dataIndex: 'type', key: 'type', align: 'center' },
+              { title: <span className='font-semibold'>{t('uppw.reqParams.table.required')}</span>, dataIndex: 'required', key: 'required', align: 'center' },
+              { title: <span className='font-semibold'>{t('uppw.reqParams.table.description')}</span>, dataIndex: 'description', key: 'description' }
+            ]}
+          />
+        </div>
 
-            </div>
-            {/* ---------- Headers --------------------------------------- */}
-            <div className='mt-8 mb-6'>
-                <p id='step-3' className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Headers
-                </p>
+        <p className='text-md mb-4 mt-10 font-bold text-gray-700'>{t('uppw.reqParams.validationTitle')}</p>
+        <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
+          <li><span className='font-semibold'>partnerTransId: </span>{t('uppw.reqParams.rulePartner')}</li>
+        </ul>
+      </div>
 
-                <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>merchantId <span className='font-normal'>or</span> x-mch-id</span> (string, required): The unique identifier of the merchant.</li>
-                    <li><span className='font-semibold'>Authorization <span className='font-normal'>or</span> x-api-key</span> (string, required): The unique identifier Key of the merchant.</li>
-                </ul>
-            </div>
+      {/* Sample Request */}
+      <div id='step-5' className="mt-12 mb-8">
+        <p className="text-xl mb-4 font-semibold text-gray-700">{t('uppw.sample.title')}</p>
+        <p><span className='font-semibold'>{t('uppw.sample.url')}</span> – <span className='font-medium text-[#0073ff]'>{t('uppw.sample.exampleUrl')}</span></p>
 
+        <p className="font-semibold mb-2">{t('uppw.sample.headers')}</p>
+        <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
+          <div>merchantId: merchant_98765</div>
+          <div>Authorization: Bearer abc123xyz789</div>
+        </div>
+      </div>
 
-            {/* ---------- Request Body --------------------------------------- */}
-            <div id='step-4' className='mt-8 mb-6'>
-                <p className='text-xl mb-4 mt-10 font-semibold text-gray-700'>
-                    Request Parameters
-                </p>
-                <p className='text-gray-700 text-base leading-relaxed mb-4'>
-                    The request includes a path parameter
-                </p>
-                <div className="overflow-x-auto" style={{ maxWidth: '100%' }}>
-                    <Table
-                        bordered
-                        pagination={false}
-                        size="middle"
-                        scroll={{ x: true }}
-                        dataSource={[
-                            {
-                                key: '1',
-                                parameter: <span className='font-mono'>partnerTransId</span>,
-                                type: 'string',
-                                required: 'Yes',
-                                description: 'Unique identifier of the partner transaction.'
-                            }
-                        ]}
-                        columns={[
-                            {
-                                title: <span className='font-semibold'>Parameter</span>,
-                                dataIndex: 'parameter',
-                                key: 'parameter',
-                                align: 'center',
-                            },
-                            {
-                                title: <span className='font-semibold'>Type</span>,
-                                dataIndex: 'type',
-                                key: 'type',
-                                align: 'center',
-                            },
-                            {
-                                title: <span className='font-semibold'>Required</span>,
-                                dataIndex: 'required',
-                                key: 'required',
-                                align: 'center',
-                            },
-                            {
-                                title: <span className='font-semibold'>Description</span>,
-                                dataIndex: 'description',
-                                key: 'description',
-                            }
-                        ]}
-                    />
-                </div>
+      {/* Success Response */}
+      <div id='step-6' className="mt-12 mb-8">
+        <p className="text-xl mb-4 font-semibold text-gray-700">{t('uppw.success.title')}</p>
+        <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
+          <li><span className="font-semibold">{t('uppw.success.statusCode')}</span>: <span className='text-green-600 font-bold'>{t('uppw.success.ok')}</span></li>
+          <li><span className="font-semibold">{t('uppw.success.contentType')}</span>: {t('uppw.success.ctJson')}</li>
+        </ul>
+        <p><span className="font-semibold">{t('uppw.success.body')}</span></p>
 
-                <p id='' className='text-md mb-4 mt-10 font-bold text-gray-700'>
-                    Request Parameters Validation
-                </p>
-
-                <ul className='list-disc pl-6 mb-4 text-gray-800 space-y-2'>
-                    <li><span className='font-semibold'>partnerTransId: </span> Required, must be a non-empty string.</li>
-                </ul>
-            </div>
-
-            {/* ---------- Sample Request --------------------------------------- */}
-            <div id='step-5' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Sample Request</p>
-                <p><span className='font-semibold'>URL</span> – <span className='font-medium text-[#0073ff]'>&#123;Host&#125;/v2/alipayplus/instore/userpresent-waiting/202507310949543232</span></p>
-
-                <p className="font-semibold mb-2">Headers</p>
-                <div className="bg-gray-50 rounded-2xl p-4 text-sm md:text-base font-mono text-gray-800">
-                    <div>merchantId: merchant_98765</div>
-                    <div>Authorization: Bearer abc123xyz789</div>
-                </div>
-            </div>
-
-            {/* ---------- Success Response --------------------------------------- */}
-            <div id='step-6' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Success Response</p>
-
-                <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
-                    <li><span className="font-semibold">Status Code</span>: <span className='text-green-600 font-bold'>200 OK</span></li>
-                    <li><span className="font-semibold">Content Type</span>: application/json</li>
-                </ul>
-
-                <p><span className="font-semibold">Response Body</span></p>
-
-                <CodeBlock
-                    code={`{
-    "code": "TRANSACTION_FOUND",
-    "message": "Transaction retrieved successfully.",
-    "status": "SUCCESS",
-    "transactions": [
-        {
-            "transactionId": "tx123456",
-            "timestamp": "2025-08-05 14:10:00",
-            "currency": "USD",
-            "amount": "50.00",
-            "outletName": "Outlet XYZ",
-            "outletId": "outlet_12345",
-            "transactionStatus": "SUCCESS",
-            "paymentMethod": "Alipay+"
-        }
-    ]
+        <CodeBlock
+          code={`{
+  "code": "TRANSACTION_FOUND",
+  "message": "Transaction retrieved successfully.",
+  "status": "SUCCESS",
+  "transactions": [
+    {
+      "transactionId": "tx123456",
+      "timestamp": "2025-08-05 14:10:00",
+      "currency": "USD",
+      "amount": "50.00",
+      "outletName": "Outlet XYZ",
+      "outletId": "outlet_12345",
+      "transactionStatus": "SUCCESS",
+      "paymentMethod": "Alipay+"
+    }
+  ]
 }
 `}
-                    bgColor="bg-green-50"
-                />
-            </div>
+          bgColor="bg-green-50"
+        />
+      </div>
 
-            {/* ---------- Error Response --------------------------------------- */}
-            <div id='step-7' className="mt-12 mb-8">
-                <p className="text-xl mb-4 font-semibold text-gray-700">Error Responses</p>
-                <p className="text-gray-700 text-base leading-relaxed mb-4">
-                    Below are the possible error responses, including their status codes, error codes, and messages:
-                </p>
+      {/* Error Responses */}
+      <div id='step-7' className="mt-12 mb-8">
+        <p className="text-xl mb-4 font-semibold text-gray-700">{t('uppw.errors.title')}</p>
+        <p className="text-gray-700 text-base leading-relaxed mb-4">{t('uppw.errors.intro')}</p>
 
-                {/* Missing Parameters */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">1. Missing Parameters</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock
-                        code={`{
-    "code": "MISSING_PARAMS",
-    "message": "partnerTransId and merchantId are required.",
-    "status": "FAIL"
+        <div className="mb-6">
+          <p className="text-lg font-semibold text-gray-700">{t('uppw.errors.missing')}</p>
+          <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">400 Bad Request</span></p>
+          <p className="text-gray-700 mb-2">{t('uppw.errors.respBody')}</p>
+          <CodeBlock
+            code={`{
+  "code": "MISSING_PARAMS",
+  "message": "partnerTransId and merchantId are required.",
+  "status": "FAIL"
 }`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Transaction Not Found */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">2. Transaction Not Found</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock
-                        code={`{
-    "code": "TRANSACTION_NOT_FOUND",
-    "message": "No transaction found for the given partnerTransId and merchantId.",
-    "status": "FAIL"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-
-                {/* Server Error */}
-                <div className="mb-6">
-                    <p className="text-lg font-semibold text-gray-700">3. Server Error</p>
-                    <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
-                    <p className="text-gray-700 mb-2">Response Body:</p>
-                    <CodeBlock
-                        code={`{
-    "code": "SERVER_ERROR",
-    "message": "An error occurred while retrieving transaction details.",
-    "status": "ERROR",
-    "error": "Specific error message"
-}`}
-                        bgColor="bg-red-50"
-                    />
-                </div>
-            </div>
-
-            <div>
-                <p className="text-lg font-semibold text-gray-700">Notes</p>
-                <ul className='list-disc pl-6 mb-4 space-y-2'>
-                    <li>This endpoint queries the Alipay Transactions to retrieve transaction details based
-                        on partnerTransId. 
-                    </li>
-                    <li>The response includes transaction details such as transactionId, timestamp,
-                        currency, amount, outletName, outletId, transactionStatus, and paymentMethod.
-                    </li>
-                    <li>Use this endpoint to recheck the transaction status after initiating a payment via
-                        /userpresent-pay, especially when awaiting user authentication. 
-                    </li>
-                    <li>The timestamp reflects the time in Asia/Colombo (GMT+5:30).
-                    </li>
-                    <li>If the transaction status is still pending, repeated calls can be made to check for
-                        updates after user authentication.
-                    </li>
-                </ul>
-            </div>
+            bgColor="bg-red-50"
+          />
         </div>
-    )
+
+        <div className="mb-6">
+          <p className="text-lg font-semibold text-gray-700">{t('uppw.errors.notFound')}</p>
+          <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">404 Not Found</span></p>
+          <p className="text-gray-700 mb-2">{t('uppw.errors.respBody')}</p>
+          <CodeBlock
+            code={`{
+  "code": "TRANSACTION_NOT_FOUND",
+  "message": "No transaction found for the given partnerTransId and merchantId.",
+  "status": "FAIL"
+}`}
+            bgColor="bg-red-50"
+          />
+        </div>
+
+        <div className="mb-6">
+          <p className="text-lg font-semibold text-gray-700">{t('uppw.errors.server')}</p>
+          <p className="text-gray-700 mb-2"><span className="font-semibold">Status Code</span>: <span className="text-red-600 font-bold">500 Internal Server Error</span></p>
+          <p className="text-gray-700 mb-2">{t('uppw.errors.respBody')}</p>
+          <CodeBlock
+            code={`{
+  "code": "SERVER_ERROR",
+  "message": "An error occurred while retrieving transaction details.",
+  "status": "ERROR",
+  "error": "Specific error message"
+}`}
+            bgColor="bg-red-50"
+          />
+        </div>
+      </div>
+
+      {/* Notes */}
+      <div>
+        <p className="text-lg font-semibold text-gray-700">{t('uppw.sections.notes')}</p>
+        <ul className='list-disc pl-6 mb-4 space-y-2'>
+          <li>{t('uppw.notes.n1')}</li>
+          <li>{t('uppw.notes.n2')}</li>
+          <li>{t('uppw.notes.n3')}</li>
+          <li>{t('uppw.notes.n4')}</li>
+          <li>{t('uppw.notes.n5')}</li>
+        </ul>
+      </div>
+    </div>
+  )
 }
 
 export default MerchantUserPresentPayWaiting;

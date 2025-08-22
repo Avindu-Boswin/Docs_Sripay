@@ -23,14 +23,14 @@ function SelfRegistration() {
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'Registration Details' },
-            { id: 'step-2', label: 'Address Details' },
-            { id: 'step-3', label: 'Business Contact Person' },
-            { id: 'step-4', label: 'Business Activities' },
-            { id: 'step-5', label: 'Company Settlement Bank Details' },
-            { id: 'step-6', label: 'Owner Details' },
-            { id: 'step-7', label: 'Review & Submit KYC Summary' },
-            { id: 'step-8', label: 'Constitutional Documents' },
+            { id: 'step-1', label: t('selfregistration.sections.section1') },
+            { id: 'step-2', label: t('selfregistration.sections.section2')},
+            { id: 'step-3', label:t('selfregistration.sections.section3') },
+            { id: 'step-4', label: t('selfregistration.sections.section4')},
+            { id: 'step-5', label: t('selfregistration.sections.section5') },
+            { id: 'step-6', label: t('selfregistration.sections.section6') },
+            { id: 'step-7', label: t('selfregistration.sections.section7') },
+            { id: 'step-8', label: t('selfregistration.sections.section8') },
         ]);
         return () => setSections([]);
         // eslint-disable-next-line
@@ -44,16 +44,16 @@ function SelfRegistration() {
             </h1>
 
 
-<p className='text-gray-700 text-base leading-relaxed mb-8'>
-  Once a merchant signs up and logs in to the <span className='font-semibold text-blue-600'>SriPay</span> system, they are automatically redirected to this registration workflow. This form is essential to complete their onboarding process. After submitting all required information, the merchant will be placed on a <span className='font-semibold text-yellow-600'>waiting list</span> until the assigned Acquirer reviews and approves the application.
-</p>
+            <p className='text-gray-700 text-base leading-relaxed mb-8'>
+                {t('selfregistration.desc')}
+            </p>
 
 
 
             {/* ---------- STEP 1 ------------------------------------------------ */}
             <div id="step-1" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 1: Registration Details
+                {t('selfregistration.step1')}
                 </h4>
                 <img src={Img4} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Registration Details' />
                 <span className='font-semibold text-gray-600'>{steps[3].fieldsTitle}</span>
@@ -72,7 +72,7 @@ function SelfRegistration() {
             {/* ---------- STEP 2 ------------------------------------------------ */}
             <div id="step-2" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 2: Address Details
+                {t('selfregistration.step2')}
                 </h4>
                 <img src={Img5} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Address Details' />
 
@@ -92,7 +92,7 @@ function SelfRegistration() {
             {/* ---------- STEP 3 ------------------------------------------------ */}
             <div id="step-3" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 3: Business Contact Person
+                {t('selfregistration.step3')}
                 </h4>
                 <img src={Img6} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Business Contact Person' />
 
@@ -112,7 +112,7 @@ function SelfRegistration() {
             {/* ---------- STEP 4 ------------------------------------------------ */}
             <div id="step-4" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 4: Business Activities
+                     {t('selfregistration.step4')}
                 </h4>
                 <img src={Img7} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Business Activities' />
 
@@ -132,7 +132,7 @@ function SelfRegistration() {
             {/* ---------- STEP 5 ------------------------------------------------ */}
             <div id="step-5" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 5: Company Settlement Bank Details
+                {t('selfregistration.step5')}
                 </h4>
                 <img src={Img8} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Company Settlement Bank Details' />
 
@@ -168,7 +168,7 @@ function SelfRegistration() {
             {/* ---------- STEP 6 ------------------------------------------------ */}
             <div id="step-6" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 6. Owner Details
+                {t('selfregistration.step6')}
                 </h4>
                 <img src={Img9} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Owner Details' />
 
@@ -190,14 +190,14 @@ function SelfRegistration() {
             {/* ---------- STEP 7 ------------------------------------------------ */}
             <div id="step-7" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 7: Review & Submit KYC Summary
+                {t('selfregistration.step7')}
                 </h4>
                 <img src={Img10} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Review & Submit KYC Summary' />
 
                 <span className='font-semibold text-gray-600'>{steps[10].fieldsTitle}</span>
                 <ul className='list-disc text-gray-700 ml-6 sm:ml-8 mb-4 mt-5 text-sm'>
-                    <li>Auto-generated summary of all completed fields</li>
-                    <li>Merchant can reviews and confirms final submission</li>
+                    <li>      {t('selfregistration.des.sub1')}</li>
+                    <li> {t('selfregistration.des.sub2')}</li>
                 </ul>
 
                 <span className='font-semibold text-gray-600'>{steps[10].purposeTitle}</span>
@@ -208,11 +208,11 @@ function SelfRegistration() {
             {/* ---------- STEP 8 ------------------------------------------------ */}
             <div id="step-8" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Step 8: Constitutional Documents
+                {t('selfregistration.step8')}
                 </h4>
-                <p  className='text-base text-gray-700' >Constitutional Documents can update following below steps after merchant registration: </p>
+                <p className='text-base text-gray-700' > {t('selfregistration.des.sub3')}</p>
                 <span className='text-base text-gray-700'>
-                    Navigate to <strong>Home</strong>, then select <strong>Profile</strong>, go to <strong>My Account</strong>, choose <strong>KYC</strong>, and finally select <strong>Constitutional Documents</strong>.
+                {t('selfregistration.des.sub4')}
                 </span>
 
                 <img src={Img11} className='mb-8 mx-auto my-6 block md:w-4/5' alt='Review & Submit KYC Summary' />
