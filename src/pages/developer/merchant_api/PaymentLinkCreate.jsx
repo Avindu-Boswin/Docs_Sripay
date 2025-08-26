@@ -62,7 +62,7 @@ function MerchantPaymentLinkCreate() {
           {t('merchant_paylink_method')}
         </span>
         <span className="text-gray-400 font-semibold text-md md:text-xl lg:text-2xl break-all">
-          {'{Host}'}/v2/alipayplus/pay
+          {'{Host}'}/v2/alipayplus/online/pay
         </span>
       </div>
 
@@ -79,7 +79,7 @@ function MerchantPaymentLinkCreate() {
         <ul className="list-disc pl-6 mb-4 text-gray-800 space-y-2">
           <li>
             <span className="font-semibold">{t('merchant_paylink_label_url')}</span> –{' '}
-            <span className="font-medium text-[#0073ff]">{'{Host}'}/v2/alipayplus/pay</span>
+            <span className="font-medium text-[#0073ff]">{'{Host}'}/v2/alipayplus/online/pay</span>
           </li>
           <li>
             <span className="font-semibold">{t('merchant_paylink_label_method')}</span> –{' '}
