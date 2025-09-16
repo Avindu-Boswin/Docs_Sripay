@@ -90,13 +90,13 @@ const DocumentationHero = () => {
               className="absolute md:right-[1%] lg:right-[-1.5%] md:top-[20%] lg:top-[14%] h-[150px] md:h-[123px] lg:h-[210px] w-auto rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 190px, 210px"
             />
-            <img
+            {/* <img
               src={RightWeather}
               alt="Weather widget"
               loading="lazy"
               className="absolute hidden lg:block right-[-3%] top-[55%] h-[160px] md:h-[200px] lg:h-[250px] w-[120px] rounded-2xl shadow-xl ring-1 ring-black/5 bg-white object-contain select-none"
               sizes="(max-width: 1024px) 200px, 210px"
-            />
+            /> */}
             <img
               src={BottomLeft}
               alt="Stats card"
