@@ -16,7 +16,7 @@ function DeveloperHeading() {
       };
 
     const handleClick =()=>{
-        navigate('/docs/developer/gettingstart');
+        navigate('/docs/app/introduction');
         handleLinkClick();
     }
     return (

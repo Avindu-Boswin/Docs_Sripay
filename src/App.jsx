@@ -94,6 +94,8 @@ import MerchantOnlinePaymentInquiry from './pages/developer/merchant_api/OnlineP
 import CardPaymentOverview from './pages/developer/merchant_api/CardPaymentOverview.jsx';
 import MerchantPaymentLinkCreateCard from './pages/developer/merchant_api/PaymentLinkCreateCard.jsx';
 import CardPaymentInquiry from './pages/developer/merchant_api/CardPaymentInquiry.jsx';
+import MobileLayout from './layouts/MobileAppLayout.jsx';
+import MobileAppIntroduction from './pages/mobileApp/Introduction.jsx';
 
 function App() {
   return (
@@ -204,8 +206,11 @@ function App() {
         </Route>
 
         {/* Mobile App Layout */}
+        <Route path="/docs/app" element={<MobileLayout />}>
+          {/* <Route path="introduction" element={<Introduction />} /> */}
+          <Route path="introduction" element={<MobileAppIntroduction />} />
+        </Route>
 
-        
 
 
         {/* Fallbacks */}
