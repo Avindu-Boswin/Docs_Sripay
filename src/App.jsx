@@ -203,6 +203,10 @@ function App() {
           <Route path="merchant-api/card-payments/payment-inquiry" element={<CardPaymentInquiry />} />
         </Route>
 
+        {/* Mobile App Layout */}
+
+        
+
 
         {/* Fallbacks */}
         <Route path="/not-found" element={<NotFound />} />

@@ -1,12 +1,13 @@
 {
     "docs": "文档",
     "doc": "文档",
+    "viewguide": "查看应用指南",
     "sections": "部分",
     "subtitle": "探索我们产品、服务等的文档。请选择您的角色和产品以开始。",
     "documentationIntro": "SriPay 文件是您整合安全可靠付款的端到端指南。探索 REST API、身份驗證流程、Webhook 和最佳實踐，讓您自信地快速交付",
     "thirdsectiontitle": "使用 SriPay 構建",
-    "developersectiondiscription": "SriPay 開發者文件是一份全面的指南，旨在幫助開發者有效地整合和使用 SriPay 的支付解決方案。它提供了有關 API 端點、身份驗證方法以及使用 SriPay 建立應用程式的最佳實踐的詳細資訊。",
-    "developerheading": "開發者標題",
+    "developersectiondiscription": "除了全面的 SriPay 开发者文档外，我们还推出了专为商家和用户设计的 SriPay 移动应用程序。商家将拥有一个一体化平台，可以随时随地管理交易、跟踪结算并监控业务绩效。同时，用户将体验到安全、直观、无缝的支付方式，查看历史记录，并与 SriPay 生态系统保持全面连接。",
+    "developerheading": "SriPay 移动应用指南",
     "footer": {
         "learnMore": "了解更多关于",
         "visitSripay": "访问 SriPay",

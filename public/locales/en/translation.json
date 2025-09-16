@@ -1,11 +1,12 @@
 {
     "docs": "DOCS",
     "doc": "Documentation",
-    "developerheading": "Developer Heading",
+    "developerheading": "SriPay Mobile App Guide",
+    "viewguide": "View App Guide",
     "sections": "Sections",
     "documentationIntro": "SriPay Documentation is your end-to-end guide to integrate secure, reliable payments. Explore REST APIs, authentication flows, webhooks, and best practices to ship faster with confidence.",
     "thirdsectiontitle": "Build With SriPay",
-    "developersectiondiscription": "SriPay Developer Documentation is a comprehensive guide designed to help developers integrate and utilize SriPay's payment solutions effectively. It provides detailed information on API endpoints, authentication methods, and best practices for building applications with SriPay.",
+    "developersectiondiscription": "Introducing SriPay mobile applications designed for both merchants and users. Merchants will have an all-in-one platform to manage transactions, track settlements, and monitor business performance on the go. At the same time, users will experience a secure, intuitive, and seamless way to make payments, review their history, and stay fully connected within the SriPay ecosystem.",
     "subtitle": "Explore docs for our products, services, and more. Select your role and a product to get started.",
     "footer": {
         "learnMore": "Learn more about",

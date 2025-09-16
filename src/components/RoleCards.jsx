@@ -10,54 +10,41 @@ function Card({ to, title, desc, Icon }) {
         <Link
             to={to}
             onClick={handleLinkClick}
-            className="group relative rounded-2xl overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
+            className="group block rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
         >
-            {/* Hover spotlight */}
             <div
-                className="pointer-events-none absolute inset-0 rounded-2xl 
-                 "
-            />
-
-            {/* Card background with gradient & brightness effect */}
-            <div
-                className="relative h-full 
-                 bg-blue-100
-                     backdrop-blur-xl
-                     shadow-[0_14px_40px_rgba(2,6,23,0.12)]
-                     hover:shadow-[0_22px_60px_rgba(2,6,23,0.16)]
-                     rounded-2xl p-7 md:p-9 transition-all duration-300
-                     hover:-bg-blue-300     "
-                  
+                className="relative h-full bg-white
+                     border border-gray-200
+                     shadow-sm hover:shadow-md
+                     rounded-xl p-6 transition-all duration-200
+                     hover:border-blue-300 hover:-translate-y-1"
             >
                 <div className="flex items-start gap-4">
-                    <div className="rounded-xl p-3 bg-gradient-to-br from-[#0A65D6] to-[#4F46E5] text-white
-                            shadow-md ring-1 ring-inset ring-white/20">
-                        <Icon className="h-5 w-5" />
+                    <div className="flex-shrink-0 rounded-lg p-3 bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+                        <Icon className="h-6 w-6" />
                     </div>
-                    <div className="flex-1 ">
-                        <h3 className="text-xl md:text-[1.35rem] font-semibold tracking-tight text-slate-900">
+                    <div className="flex-1 min-w-0">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                             {title}
                         </h3>
-                        <p className="mt-1.5 text-[15px] leading-6 text-slate-600">
+                        <p className="text-sm text-gray-600 leading-relaxed">
                             {desc}
                         </p>
                     </div>
                 </div>
 
-                <div className="mt-6 flex items-center gap-2 text-sm font-medium text-indigo-700">
-                    <span className="relative">
-                        <span className="absolute -inset-1 rounded-full bg-indigo-100/70 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <span className="relative">Open</span>
-                    </span>
+                <div className="mt-4 flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">
+                    <span>Learn more</span>
                     <svg
-                        className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
+                        className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                     >
-                        <path d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L12 6.414V16a1 1 0 11-2 0V6.414L6.707 9.707A1 1 0 015.293 8.293l5-5z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </div>
-            </div>s
+            </div>
         </Link>
     );
 }
@@ -78,13 +65,7 @@ function RoleCards() {
         <section
             id="roles"
             aria-label={t('roles.sectionLabel') || 'Primary roles'}
-            className="
-        relative isolate scroll-mt-28
-        pt-14 md:pt-20
-        [--band-from:#E6F2FF] [--band-to:#FFFFFF]
-        before:absolute before:inset-0 before:-z-10
-       
-        "
+            className="py-16 bg-gray-50"
         >
             {/* Decorative rings & glow to make this section “featured” */}
             <div className="pointer-events-none absolute inset-0 -z-10">

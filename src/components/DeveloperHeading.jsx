@@ -1,5 +1,6 @@
 import React from 'react';
 import MobilePhone from '../assets/iPhone-14-Plus-docs.sripay.lk.png';
+import MobilePhone1 from '../assets/mobile-app-wireframe.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -32,17 +33,18 @@ function DeveloperHeading() {
                        { t('developersectiondiscription')}
                     </p>
                     <button  onClick={handleClick}  className="px-6 py-2 border text-blue-700 mx-auto border-blue-700 rounded-full hover:bg-blue-300 transition">
-                        See More          </button>
+                        {t('viewguide')}
+                    </button>
                 </div>
 
                 {/* Right side - Mobile Image */}
       
                     <img
-                        src={MobilePhone}
+                        src={MobilePhone1}
                         alt="mobile"
                         className="  h-[550px]"
                     />
-               
+            
 
             </div>
         </div>
