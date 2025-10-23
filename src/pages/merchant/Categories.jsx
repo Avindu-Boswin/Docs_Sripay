@@ -26,10 +26,10 @@ function MerchantCategories() {
             <h1 id="mcc-list" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
                {t('merchantcategories.title')}
             </h1>
-            <p className="text-md text-gray-600 max-w-3xl mx-auto mb-4">
+            <p className="text-md text-gray-600  mx-auto mb-4">
             {t('merchantcategories.desc')}
             </p>
-            <p id="iso-mcc" className="text-xl text-gray-800 font-semibold max-w-3xl mx-auto mb-5 mt-5">
+            <p id="iso-mcc" className="text-xl text-gray-800 font-semibold mx-auto mb-5 mt-5">
             {t('merchantcategories.desc2')}
             </p>
             <div className="overflow-x-auto">
@@ -53,10 +53,10 @@ function MerchantCategories() {
                     </tbody>
                 </table>
             </div>
-            <p id="private-mcc" className="text-xl text-gray-800 font-semibold max-w-3xl mx-auto mt-10 mb-5">
+            <p id="private-mcc" className="text-xl text-gray-800 font-semibold mx-auto mt-10 mb-5">
                 A2: Codes defined by SriPay for private use
             </p>
-            <div className="max-w-3xl mx-auto mb-6 flex items-center gap-4 bg-yellow-200 border-l-8 border-yellow-500 p-5 rounded-lg shadow-lg animate-pulse-once">
+            <div className="mx-auto mb-6 flex items-center gap-4 bg-yellow-200 border-l-8 border-yellow-500 p-5 rounded-lg shadow-lg animate-pulse-once">
                 <svg className="w-8 h-8 text-yellow-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" /></svg>
                 <span className="text-sm text-yellow-900 font-semibold leading-snug"><strong>Attention Required:</strong> If a merchant provides services or products related to <span className="underline">special industries</span> such as <b>cryptocurrencies</b>, <b>online gambling</b>, <b>pornography etc..</b> or any of the categories listed in the table below, they <span className="underline">must enter into a special agreement with Sripay before onboarding</span>.</span>
             </div>
