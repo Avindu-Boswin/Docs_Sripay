@@ -27,15 +27,15 @@ const DocumentationHero = () => {
     <div>
   
     <div className="relative">
-      {/* Background glows (hidden on mobile for perf) */}
+      {/* Background glows */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 overflow-hidden "
       >
         <div className="absolute inset-0 bg-gradient-to-b from-sky-100 via-blue-100 to-white" />
-        <div className="absolute -top-24 -left-28 w-[38rem] h-[38rem] rounded-full blur-[100px] opacity-80 bg-[radial-gradient(circle_at_center,_#5ED6FF,_#3BB9F5_60%,_transparent_70%)]" />
-        <div className="absolute hidden md:block -right-32 top-10 w-[42rem] h-[42rem] rounded-full blur-[120px] opacity-50 bg-[radial-gradient(circle_at_center,_#0025E0,_#0012A5_55%,_transparent_70%)]" />
-        <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-full h-[28rem] rounded-[999px] blur-[120px] opacity-70 bg-[linear-gradient(90deg,_#60A5FA,_#0EA5E9,_#22D3EE)]" />
+        <div className="absolute -top-12 -left-14 sm:-top-24 sm:-left-28 w-[20rem] h-[20rem] sm:w-[38rem] sm:h-[38rem] rounded-full blur-[60px] sm:blur-[100px] opacity-60 sm:opacity-80 bg-[radial-gradient(circle_at_center,_#5ED6FF,_#3BB9F5_60%,_transparent_70%)]" />
+        <div className="absolute -right-16 top-5 sm:-right-32 sm:top-10 w-[22rem] h-[22rem] sm:w-[42rem] sm:h-[42rem] rounded-full blur-[80px] sm:blur-[120px] opacity-40 sm:opacity-50 bg-[radial-gradient(circle_at_center,_#0025E0,_#0012A5_55%,_transparent_70%)]" />
+        <div className="absolute -bottom-16 sm:-bottom-32 left-1/2 -translate-x-1/2 w-full h-[14rem] sm:h-[28rem] rounded-[999px] blur-[80px] sm:blur-[120px] opacity-50 sm:opacity-70 bg-[linear-gradient(90deg,_#60A5FA,_#0EA5E9,_#22D3EE)]" />
       </div>
 
       {/* Soft fallback bg on mobile */}

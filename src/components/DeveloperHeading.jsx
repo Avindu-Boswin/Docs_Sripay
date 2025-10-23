@@ -29,7 +29,7 @@ function DeveloperHeading() {
                        {t('developerheading')}
                     </h1>
 
-                    <p className="text-gray-600  mb-6 text-lg   ">
+                    <p className="text-gray-600 text-base sm:text-lg">
                        { t('developersectiondiscription')}
                     </p>
                     <button  onClick={handleClick}  className="px-6 py-2 border text-blue-700 mx-auto border-blue-700 rounded-full hover:bg-blue-300 transition">
@@ -42,7 +42,7 @@ function DeveloperHeading() {
                     <img
                         src={MobilePhone1}
                         alt="mobile"
-                        className="  h-[550px]"
+                        className="h-[500px] md:h-[550px]"
                     />
             
 
