@@ -42,7 +42,7 @@ function DeveloperHeading() {
                     <img
                         src={MobilePhone1}
                         alt="mobile"
-                        className="h-[500px] md:h-[550px]"
+                        className="w-full md:w-[60%] lg:w-[50%]"
                     />
             
 

@@ -30,16 +30,14 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 
   return (
     <div
-      className={`transition-all duration-300 fixed top-[4.5rem] left-0 z-30 h-[calc(100vh-4.5rem)] bg-white shadow-md ${
-        isMobileOpen ? "w-64 md:hidden" : collapsed ? "w-0" : "w-64"
-      } ${!isMobileOpen && isMobile ? "hidden" : ""}`}
+      className={`transition-all duration-300 fixed top-[4.5rem] left-0 z-30 h-[calc(100vh-4.5rem)] bg-white shadow-md ${isMobileOpen ? "w-64 md:hidden" : collapsed ? "w-0" : "w-64"
+        } ${!isMobileOpen && isMobile ? "hidden" : ""}`}
     >
       {/* Collapse button (desktop only) */}
       {!isMobile && (
         <div
-          className={`absolute top-1/2 transform -translate-y-1/2 z-40 ${
-            collapsed ? "left-0" : "left-64"
-          }`}
+          className={`absolute top-1/2 transform -translate-y-1/2 z-40 ${collapsed ? "left-0" : "left-64"
+            }`}
         >
           <Button
             style={{
@@ -109,22 +107,66 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
               <NavLink to="/docs/app/introduction" onClick={handleLinkClick}>Introduction to the App</NavLink>
             </Menu.Item>
 
-            <SubMenu key="system-architecture" title={t("developer_sidebar_system_overview")} className="!text-gray-700">
+            <SubMenu key="merchant-app" title="Merchant App" className="!text-gray-700">
               <Menu.Item key="intro">
-                <NavLink to="/docs/app/introduction" onClick={handleLinkClick}>{t("developer_sidebar_introduction")}</NavLink>
+                <NavLink to="/docs/app/merchant/getting-started" onClick={handleLinkClick}>Getting Started</NavLink>
+              </Menu.Item>
+              <SubMenu key="merchant-features" title="Merchant Features" className="!text-gray-700">
+                <Menu.Item key="transactions">
+                  <NavLink to="/docs/app/merchant/features/transactions" onClick={handleLinkClick}>Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="instore-transactions">
+                  <NavLink to="/docs/app/merchant/features/instore-transactions" onClick={handleLinkClick}>In-Store Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="online-transactions">
+                  <NavLink to="/docs/app/merchant/features/online-transactions" onClick={handleLinkClick}>Online Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="card-transactions">
+                  <NavLink to="/docs/app/merchant/features/card-transactions" onClick={handleLinkClick}>Card Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="transactions-history">
+                  <NavLink to="/docs/app/merchant/features/transactions-history" onClick={handleLinkClick}>Transactions History</NavLink>
+                </Menu.Item>
+                <Menu.Item key="merchant-profile">
+                  <NavLink to="/docs/app/merchant/features/merchant-profile" onClick={handleLinkClick}>Merchant Profile</NavLink>
+                </Menu.Item>
+                <Menu.Item key="merchant-wallets">
+                  <NavLink to="/docs/app/merchant/features/wallets" onClick={handleLinkClick}>Wallets</NavLink>
+                </Menu.Item>
+                <Menu.Item key="merchant-stores">
+                  <NavLink to="/docs/app/merchant/features/stores" onClick={handleLinkClick}>Stores</NavLink>
+                </Menu.Item>
+              </SubMenu>
+              <SubMenu key="store-user-features" title="Store User Features" className="!text-gray-700">
+                <Menu.Item key="user-intro">
+                  <NavLink to="/docs/app/store-user/overview" onClick={handleLinkClick}>Overview</NavLink>
+                </Menu.Item>
+                <Menu.Item key="store-user-instore-transactions">
+                  <NavLink to="/docs/app/store-user/features/instore-transactions" onClick={handleLinkClick}>In-Store Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="store-user-online-transactions">
+                  <NavLink to="/docs/app/store-user/features/online-transactions" onClick={handleLinkClick}>Online Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="store-user-card-transactions">
+                  <NavLink to="/docs/app/store-user/features/card-transactions" onClick={handleLinkClick}>Card Transactions</NavLink>
+                </Menu.Item>
+                <Menu.Item key="store-user-profile">
+                  <NavLink to="/docs/app/store-user/features/store-user-profile" onClick={handleLinkClick}>Store User Profile</NavLink>
+                </Menu.Item>
+              </SubMenu>
+            </SubMenu>
+
+
+            <SubMenu key="user-app" title="User App" className="!text-gray-700">
+              {/* Shown but disabled for now - keeps the menu visible without navigation */}
+              <Menu.Item key="intro" disabled>
+                <span className="text-gray-400 cursor-not-allowed">App Under Development</span>
               </Menu.Item>
             </SubMenu>
 
-            {/* <SubMenu key="api-acquirer" title={t("developer_sidebar_acquirer_apis")} className="!text-gray-700">
-              <Menu.Item key="overview">
-                <NavLink to="/docs/app/acquirer-api/overview" onClick={handleLinkClick}>{t("developer_sidebar_overview")}</NavLink>
-              </Menu.Item>         
-              <SubMenu key="api-online" title={t("developer_sidebar_alipay_online_apis")} className="!text-gray-700">
-                <Menu.Item key="payment-link-create">
-                  <NavLink to="/docs/app/acquirer-api/online/payment-link-create" onClick={handleLinkClick}>{t("developer_sidebar_payment_link_create")}</NavLink>
-                </Menu.Item>
-              </SubMenu>
-            </SubMenu> */}
+            <Menu.Item key="support">
+              <NavLink to="/docs/app/support" onClick={handleLinkClick}>Support</NavLink>
+            </Menu.Item>
 
           </Menu>
         </div>

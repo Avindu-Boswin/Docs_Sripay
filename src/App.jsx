@@ -46,7 +46,7 @@ import Instore from './pages/merchant/transactions/Instore.jsx';
 import Online from './pages/merchant/transactions/Online.jsx';
 
 import CartPayment from './pages/merchant/transactions/CartPayment.jsx';
- 
+
 import InstoreReports from './pages/merchant/Reports/Instore.jsx';
 import OnlineReports from './pages/merchant/Reports/Online.jsx';
 
@@ -96,6 +96,21 @@ import MerchantPaymentLinkCreateCard from './pages/developer/merchant_api/Paymen
 import CardPaymentInquiry from './pages/developer/merchant_api/CardPaymentInquiry.jsx';
 import MobileLayout from './layouts/MobileAppLayout.jsx';
 import MobileAppIntroduction from './pages/mobileApp/Introduction.jsx';
+import MerchantMobileGettingStart from './pages/mobileApp/merchantApp/GettingStart.jsx';
+import MerchantMobileMerchantTransactions from './pages/mobileApp/merchantApp/MerchantTransactions.jsx';
+import MerchantMobileMerchantInstoreTransactions from './pages/mobileApp/merchantApp/MerchantInstoreTransactions.jsx';
+import MerchantMobileMerchantOnlineTransactions from './pages/mobileApp/merchantApp/MerchantOnlineTransactions.jsx';
+import MerchantMobileMerchantCardTransactions from './pages/mobileApp/merchantApp/MerchantCardTransactions.jsx';
+import TransactionHistory from './pages/mobileApp/merchantApp/TransactionHistory.jsx';
+import MerchantProfile from './pages/mobileApp/merchantApp/MerchantProfile.jsx';
+import MerchantWallets from './pages/mobileApp/merchantApp/MerchantWallets.jsx';
+import MerchantStores from './pages/mobileApp/merchantApp/MerchantStores.jsx';
+import StoreUserMobileGettingStart from './pages/mobileApp/merchantApp/StoreUserGettingStart.jsx';
+import MerchantMobileStoreUserInstoreTransactions from './pages/mobileApp/merchantApp/StoreUserInstoreTransactions.jsx';
+import MerchantMobileStoreUserOnlineTransactions from './pages/mobileApp/merchantApp/StoreUserOnlineTransactions.jsx';
+import MerchantMobileStoreUserCardTransactions from './pages/mobileApp/merchantApp/StoreUserCardTransactions.jsx';
+import StoreUserProfile from './pages/mobileApp/merchantApp/StoreuserProfile.jsx';
+import AppSupport from './pages/mobileApp/Support.jsx';
 
 function App() {
   return (
@@ -132,7 +147,7 @@ function App() {
           <Route path="troubleshooting" element={<Troubleshooting />} />
           <Route path="faq" element={<Faq />} />
           <Route path="support" element={<Support />} />
-          
+
         </Route>
 
         {/* Merchant Docs Layout */}
@@ -152,9 +167,9 @@ function App() {
           <Route path="merchant-transaction/reports/alipay-instore" element={<InstoreReports />} />
           <Route path="merchant-transaction/reports/alipay-online" element={<OnlineReports />} />
           <Route path="merchant-transaction/reports/card-payments" element={<CardPayment />} />
-          <Route path="troubleshooting" element={<TroubleshootingMerchant/>} />
-          <Route path="faq" element={<FaqMerchant/>} />
-          <Route path='support' element={<MerchantSupport/>}/>
+          <Route path="troubleshooting" element={<TroubleshootingMerchant />} />
+          <Route path="faq" element={<FaqMerchant />} />
+          <Route path='support' element={<MerchantSupport />} />
         </Route>
 
 
@@ -207,8 +222,22 @@ function App() {
 
         {/* Mobile App Layout */}
         <Route path="/docs/app" element={<MobileLayout />}>
-          {/* <Route path="introduction" element={<Introduction />} /> */}
           <Route path="introduction" element={<MobileAppIntroduction />} />
+          <Route path="merchant/getting-started" element={<MerchantMobileGettingStart />} />
+          <Route path="merchant/features/transactions" element={<MerchantMobileMerchantTransactions />} />
+          <Route path="merchant/features/instore-transactions" element={<MerchantMobileMerchantInstoreTransactions />} />
+          <Route path="merchant/features/online-transactions" element={<MerchantMobileMerchantOnlineTransactions />} />
+          <Route path="merchant/features/card-transactions" element={<MerchantMobileMerchantCardTransactions />} />
+          <Route path="merchant/features/transactions-history" element={<TransactionHistory />} />
+          <Route path="merchant/features/merchant-profile" element={<MerchantProfile />} />
+          <Route path="merchant/features/wallets" element={<MerchantWallets />} />
+          <Route path="merchant/features/stores" element={<MerchantStores />} />
+          <Route path="store-user/overview" element={<StoreUserMobileGettingStart />} />
+          <Route path="store-user/features/instore-transactions" element={<MerchantMobileStoreUserInstoreTransactions />} />
+          <Route path="store-user/features/online-transactions" element={<MerchantMobileStoreUserOnlineTransactions />} />
+          <Route path="store-user/features/card-transactions" element={<MerchantMobileStoreUserCardTransactions />} />
+          <Route path="store-user/features/store-user-profile" element={<StoreUserProfile />} />
+          <Route path="support" element={<AppSupport />} />
         </Route>
 
 
