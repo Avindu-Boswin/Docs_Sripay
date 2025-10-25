@@ -14,9 +14,9 @@ function MerchantMobileMerchantOnlineTransactions() {
 
     useEffect(() => {
         setSections([
-            { id: 'transaction-setup', label: 'Transaction Setup' },
-            { id: 'select-amount', label: 'Select Amount' },
-            { id: 'payment-processing', label: 'Payment Processing' },
+            { id: 'transaction-setup', label: t('merchantOnlineTransactions.sections.transactionSetup') },
+            { id: 'select-amount', label: t('merchantOnlineTransactions.sections.selectAmount') },
+            { id: 'payment-processing', label: t('merchantOnlineTransactions.sections.paymentProcessing') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -25,18 +25,18 @@ function MerchantMobileMerchantOnlineTransactions() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Online-Store Transactions
+                {t('merchantOnlineTransactions.title')}
             </h1>
 
             {/* TRANSACTION SETUP */}
             <div id="transaction-setup" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Transaction Setup
+                    {t('merchantOnlineTransactions.transactionSetup.title')}
                 </h2>
                 <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                    <li><strong>Outlet Selection - </strong> Select your outlet from a dropdown menu.</li>
-                    <li><strong>Purpose of Payment - </strong> Choose the payment purpose from a dropdown menu</li>
-                    <li><strong>Next Button - </strong> Click "Next" to proceed to the Select Amount page.</li>
+                    <li><strong>{t('merchantOnlineTransactions.transactionSetup.outletLabel')} </strong> {t('merchantOnlineTransactions.transactionSetup.outletText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.transactionSetup.purposeLabel')} </strong> {t('merchantOnlineTransactions.transactionSetup.purposeText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.transactionSetup.nextLabel')} </strong> {t('merchantOnlineTransactions.transactionSetup.nextText')}</li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M11} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -46,14 +46,14 @@ function MerchantMobileMerchantOnlineTransactions() {
             {/* SELECT AMOUNT */}
             <div id="select-amount" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Select Amount Page
+                    {t('merchantOnlineTransactions.selectAmount.title')}
                 </h2>
                 <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                    <li><strong>Currency - </strong> Only USD is available for online store transactions.</li>
-                    <li><strong>Amount Entry - </strong> Enter the transaction amount manually.</li>
-                    <li><strong>Wallet Selection - </strong> Optionally select a wallet (Alipay HK or Alipay CN) from a dropdown menu.</li>
-                    <li><strong>User Pay Type - </strong> Choose between "Web" or "Mobile" from a dropdown menu.</li>
-                    <li><strong>Generate Payment Link Button - </strong> Click to navigate to the Payment Processing page.</li>
+                    <li><strong>{t('merchantOnlineTransactions.selectAmount.currencyLabel')} </strong> {t('merchantOnlineTransactions.selectAmount.currencyText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.selectAmount.amountLabel')} </strong> {t('merchantOnlineTransactions.selectAmount.amountText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.selectAmount.walletLabel')} </strong> {t('merchantOnlineTransactions.selectAmount.walletText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.selectAmount.userPayTypeLabel')} </strong> {t('merchantOnlineTransactions.selectAmount.userPayTypeText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.selectAmount.generateButtonLabel')} </strong> {t('merchantOnlineTransactions.selectAmount.generateButtonText')}</li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M12} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -66,19 +66,19 @@ function MerchantMobileMerchantOnlineTransactions() {
             {/* PAYMENT PROCESSING */}
             <div id="payment-processing" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Payment Processing Page
+                    {t('merchantOnlineTransactions.paymentProcessing.title')}
                 </h2>
-                <p className='text-gray-700 mb-3'>Navigation: After clicking "Generate Payment Link," proceed to the Payment Processing page.</p>
+                <p className='text-gray-700 mb-3'>{t('merchantOnlineTransactions.paymentProcessing.navigation')}</p>
                 <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                    <li><strong>Remaining Time - </strong> Displays the remaining time to complete the transaction.</li>
-                    <li><strong>Transaction Completion - </strong> Create the transaction within the allotted time.</li>
+                    <li><strong>{t('merchantOnlineTransactions.paymentProcessing.remainingTimeLabel')} </strong> {t('merchantOnlineTransactions.paymentProcessing.remainingTimeText')}</li>
+                    <li><strong>{t('merchantOnlineTransactions.paymentProcessing.completionLabel')} </strong> {t('merchantOnlineTransactions.paymentProcessing.completionText')}</li>
                     <li>
                         <ul className='list-disc mt-2 space-y-1'>
-                            <li><strong>With Wallet Selected - </strong> If Alipay HK or Alipay CN is chosen, a QR code is displayed for scanning to process payment.</li>
+                            <li><strong>{t('merchantOnlineTransactions.paymentProcessing.withWalletLabel')} </strong> {t('merchantOnlineTransactions.paymentProcessing.withWalletText')}</li>
                             <div className="py-6 flex flex-wrap gap-4 items-center justify-center">
                                 <img src={M14} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                             </div>
-                            <li><strong>Without Wallet - </strong> If no wallet is selected, use the provided payment link to complete the transaction.</li>
+                            <li><strong>{t('merchantOnlineTransactions.paymentProcessing.withoutWalletLabel')} </strong> {t('merchantOnlineTransactions.paymentProcessing.withoutWalletText')}</li>
                             <div className="py-6 flex flex-wrap gap-4 items-center justify-center">
                                 <img src={M15} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                             </div>

@@ -20,12 +20,12 @@ function TransactionHistory() {
 
     useEffect(() => {
         setSections([
-            { id: 'transaction-setup', label: 'Overview' },
-            { id: 'transaction-selection', label: 'Transaction Selection' },
-            { id: 'transaction-summary', label: 'Transaction Summary' },
-            { id: 'transaction-actions', label: 'Transaction Actions' },
-            { id: 'void-transaction', label: 'Void Transaction' },
-            { id: 'refund-transaction', label: 'Refund Transaction' },
+            { id: 'transaction-setup', label: t('transactionHistory.sections.overview') },
+            { id: 'transaction-selection', label: t('transactionHistory.sections.transactionSelection') },
+            { id: 'transaction-summary', label: t('transactionHistory.sections.transactionSummary') },
+            { id: 'transaction-actions', label: t('transactionHistory.sections.transactionActions') },
+            { id: 'void-transaction', label: t('transactionHistory.sections.voidTransaction') },
+            { id: 'refund-transaction', label: t('transactionHistory.sections.refundTransaction') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -34,16 +34,16 @@ function TransactionHistory() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Transactions History
+                {t('transactionHistory.title')}
             </h1>
 
             {/* TRANSACTION SETUP */}
             <div id="transaction-setup" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Overview
+                    {t('transactionHistory.overview.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    The Transaction History feature allows merchants to view, refund, and void transactions. Click the <strong>"History"</strong> tab on the Home page to navigate to the Transaction History page.
+                    {t('transactionHistory.overview.description')}
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
@@ -54,10 +54,10 @@ function TransactionHistory() {
             {/* TRANSACTION SELECTION */}
             <div id="transaction-selection" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Transaction Selection
+                    {t('transactionHistory.transactionSelection.title')}
                 </h2>
                 <p className='text-gray-700 mb-2'>
-                    Select from In-Store, Online Store, or Card Payment to filter transaction history. Choosing a type displays all related transaction history.
+                    {t('transactionHistory.transactionSelection.description')}
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
@@ -68,10 +68,10 @@ function TransactionHistory() {
             {/* TRANSACTION SUMMARY */}
             <div id="transaction-summary" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Transaction Summary
+                    {t('transactionHistory.transactionSummary.title')}
                 </h2>
                 <p className='text-gray-700 mb-2'>
-                    Top of Page, shows counts of successful, refunded, and voided transactions, along with total transaction value in USD and LKR.
+                    {t('transactionHistory.transactionSummary.description')}
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
@@ -82,24 +82,24 @@ function TransactionHistory() {
             {/* TRANSACTION ACTIONS */}
             <div id="transaction-actions" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Transaction Actions
+                    {t('transactionHistory.transactionActions.title')}
                 </h2>
                 <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                    <li><strong>View Details - </strong>Click a transaction to see detailed information.</li>
-                    <li><strong>Download Receipt - </strong>Option to download the receipt for the selected transaction.</li>
-                    <li><strong>Refund and Void - </strong>Perform refund or void actions on eligible transactions.</li>
+                    <li><strong>{t('transactionHistory.transactionActions.viewDetailsLabel')} </strong>{t('transactionHistory.transactionActions.viewDetailsText')}</li>
+                    <li><strong>{t('transactionHistory.transactionActions.downloadReceiptLabel')} </strong>{t('transactionHistory.transactionActions.downloadReceiptText')}</li>
+                    <li><strong>{t('transactionHistory.transactionActions.refundVoidLabel')} </strong>{t('transactionHistory.transactionActions.refundVoidText')}</li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M22} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
-                <h3 className='text-lg sm:text-xl mt-6 mb-2 font-semibold text-gray-700'>Specific Actions</h3>
+                <h3 className='text-lg sm:text-xl mt-6 mb-2 font-semibold text-gray-700'>{t('transactionHistory.transactionActions.specificActionsTitle')}</h3>
 
                 <div id="void-transaction" className='mt-4'>
-                    <h4 className='font-semibold text-gray-700 mb-4'>Void Transaction</h4>
+                    <h4 className='font-semibold text-gray-700 mb-4'>{t('transactionHistory.voidTransaction.title')}</h4>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>Eligibility - </strong>Click a successful transaction within 24 hours to see the "Void" button.</li>
-                        <li><strong>Process - </strong>Void the transaction within the day using a 4-digit passcode.</li>
+                        <li><strong>{t('transactionHistory.voidTransaction.eligibilityLabel')} </strong>{t('transactionHistory.voidTransaction.eligibilityText')}</li>
+                        <li><strong>{t('transactionHistory.voidTransaction.processLabel')} </strong>{t('transactionHistory.voidTransaction.processText')}</li>
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                         <img src={M26} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -116,9 +116,9 @@ function TransactionHistory() {
                 </div>
 
                 <div id="refund-transaction" className='mt-6'>
-                    <h4 className='font-semibold text-gray-700 mb-4'>Refund Transaction</h4>
+                    <h4 className='font-semibold text-gray-700 mb-4'>{t('transactionHistory.refundTransaction.title')}</h4>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>Process - </strong>Initiate a refund on eligible transactions using a 4-digit passcode.</li>
+                        <li><strong>{t('transactionHistory.refundTransaction.processLabel')} </strong>{t('transactionHistory.refundTransaction.processText')}</li>
                     </ul>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">

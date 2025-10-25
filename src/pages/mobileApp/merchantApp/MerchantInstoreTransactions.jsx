@@ -16,9 +16,9 @@ function MerchantMobileMerchantInstoreTransactions() {
 
     useEffect(() => {
         setSections([
-            { id: 'payment-method-selection', label: 'Payment Method Selection' },
-            { id: 'alipay-payment-method', label: 'Alipay Payment Method' },
-            { id: 'qr-scanner', label: 'QR Scan Payment Method' },
+            { id: 'payment-method-selection', label: t('merchantInstoreTransactions.sections.paymentMethodSelection') },
+            { id: 'alipay-payment-method', label: t('merchantInstoreTransactions.sections.alipayPaymentMethod') },
+            { id: 'qr-scanner', label: t('merchantInstoreTransactions.sections.qrScanPaymentMethod') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -27,25 +27,25 @@ function MerchantMobileMerchantInstoreTransactions() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                In-Store Transactions
+                {t('merchantInstoreTransactions.title')}
             </h1>
 
             <div id="payment-method-selection" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Payment Method Selection
+                    {t('merchantInstoreTransactions.paymentMethodSelection.title')}
                 </h2>
 
                 <p className='text-gray-700 text-base leading-relaxed mb-4'>
-                    After clicking "Next" from in-store transaction page navigate to the Select Payment Method page.
+                    {t('merchantInstoreTransactions.paymentMethodSelection.description')}
                 </p>
 
-                <h3 className='text-lg font-semibold text-gray-700 mb-3'>Options</h3>
+                <h3 className='text-lg font-semibold text-gray-700 mb-3'>{t('merchantInstoreTransactions.paymentMethodSelection.optionsTitle')}</h3>
                 <ul className='list-disc pl-6 space-y-2 text-gray-700'>
                     <li>
-                        <strong>Alipay - </strong> Select to process payment via Alipay integration.
+                        <strong>{t('merchantInstoreTransactions.paymentMethodSelection.alipayLabel')} </strong> {t('merchantInstoreTransactions.paymentMethodSelection.alipayText')}
                     </li>
                     <li>
-                        <strong>QR Scanner - </strong> Choose to scan a customer's QR code for payment.
+                        <strong>{t('merchantInstoreTransactions.paymentMethodSelection.qrScannerLabel')} </strong> {t('merchantInstoreTransactions.paymentMethodSelection.qrScannerText')}
                     </li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
@@ -56,7 +56,7 @@ function MerchantMobileMerchantInstoreTransactions() {
             {/* ALIPAY PAYMENT METHOD */}
             <div id="alipay-payment-method" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Alipay Payment Method
+                    {t('merchantInstoreTransactions.alipayPaymentMethod.title')}
                 </h2>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M5} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -64,14 +64,14 @@ function MerchantMobileMerchantInstoreTransactions() {
 
                 {/* Order Value Section */}
                 <div id="order-value" className='mt-4 mb-6'>
-                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>Order Value Section</h3>
+                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>{t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.title')}</h3>
                     <p className='text-gray-700 mb-3'>
-                        Navigating to the Order Value section after selecting Alipay.
+                        {t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.description')}
                     </p>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>Currency Selection - </strong> Choose currency from a dropdown menu (LKR or USD).</li>
-                        <li><strong>Transaction Amount - </strong> Enter the payment amount manually.</li>
-                        <li><strong>Process to Payment Button - </strong> The "Process to Payment" button becomes enabled after entering the amount.</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.currencyLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.currencyText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.amountLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.amountText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.buttonLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.orderValue.buttonText')}</li>
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                         <img src={M6} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -80,14 +80,14 @@ function MerchantMobileMerchantInstoreTransactions() {
 
                 {/* Payment QR Code Section */}
                 <div id="payment-qr" className='mt-4 mb-6'>
-                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>Payment QR Code Section</h3>
+                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>{t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.title')}</h3>
                     <p className='text-gray-700 mb-3'>
-                        Clicking "Process to Payment" navigates to the Payment QR Code section.
+                        {t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.description')}
                     </p>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>QR Code Scanning - </strong> Scan the generated QR code to complete the payment.</li>
-                        <li><strong>Cancel Payment - </strong> Use the "Cancel" button to abort the transaction.</li>
-                        <li><strong>Share Payment Link - </strong> Use the relevant button to share the payment link with the customer.</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.scanLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.scanText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.cancelLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.cancelText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.shareLabel')} </strong> {t('merchantInstoreTransactions.alipayPaymentMethod.paymentQR.shareText')}</li>
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                         <img src={M7} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -100,7 +100,7 @@ function MerchantMobileMerchantInstoreTransactions() {
             {/* QR SCANNER */}
             <div id="qr-scanner" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    QR Scanner
+                    {t('merchantInstoreTransactions.qrScanner.title')}
                 </h2>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M8} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -108,14 +108,14 @@ function MerchantMobileMerchantInstoreTransactions() {
 
                 {/* QR Order Value Page */}
                 <div id="qr-order-value" className='mt-4 mb-6'>
-                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>QR Order Value Page</h3>
+                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>{t('merchantInstoreTransactions.qrScanner.orderValue.title')}</h3>
                     <p className='text-gray-700 mb-3'>
-                        Navigation: Selecting QR Scanner navigates to the QR Order Value page.
+                        {t('merchantInstoreTransactions.qrScanner.orderValue.description')}
                     </p>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>Currency Selection - </strong> Choose currency from a dropdown menu (LKR or USD).</li>
-                        <li><strong>Amount Entry - </strong> Enter the transaction amount manually.</li>
-                        <li><strong>Scan QR Code Button - </strong> The "Scan QR Code" button becomes enabled after entering the amount.</li>
+                        <li><strong>{t('merchantInstoreTransactions.qrScanner.orderValue.currencyLabel')} </strong> {t('merchantInstoreTransactions.qrScanner.orderValue.currencyText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.qrScanner.orderValue.amountLabel')} </strong> {t('merchantInstoreTransactions.qrScanner.orderValue.amountText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.qrScanner.orderValue.buttonLabel')} </strong> {t('merchantInstoreTransactions.qrScanner.orderValue.buttonText')}</li>
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                         <img src={M9} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -124,10 +124,10 @@ function MerchantMobileMerchantInstoreTransactions() {
 
                 {/* Payment Processing */}
                 <div id="qr-processing" className='mt-4 mb-6'>
-                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>Payment Processing</h3>
+                    <h3 className='text-lg font-semibold text-blue-600 mb-2'>{t('merchantInstoreTransactions.qrScanner.processing.title')}</h3>
                     <ul className='list-disc pl-6 space-y-2 text-gray-700'>
-                        <li><strong>Scanning - </strong> Use the "Scan QR Code" button to scan the customer's QR code and process the payment.</li>
-                        <li><strong>Success Message - </strong> Upon successful payment, a "Payment Successful" message is displayed.</li>
+                        <li><strong>{t('merchantInstoreTransactions.qrScanner.processing.scanningLabel')} </strong> {t('merchantInstoreTransactions.qrScanner.processing.scanningText')}</li>
+                        <li><strong>{t('merchantInstoreTransactions.qrScanner.processing.successLabel')} </strong> {t('merchantInstoreTransactions.qrScanner.processing.successText')}</li>
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                         <img src={M10} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />

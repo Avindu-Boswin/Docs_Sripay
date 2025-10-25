@@ -4663,13 +4663,539 @@
   "developer_sidebar_instore_not_settled_latest_transactions": "到店未清算最新交易",
   "developer_sidebar_web_frame_online_apis": "Web Frame 在线 APIs",
   "developer_sidebar_payment_request": "支付请求",
-  "developer_sidebar_card_payments_apis": "银行卡支付 APIs"
+  "developer_sidebar_card_payments_apis": "银行卡支付 APIs",
 
-  
+  "mobileApp_sidebar_mobile_app": "移动应用",
+  "mobileApp_sidebar_introduction_to_app": "应用程序简介",
+  "mobileApp_sidebar_merchant_app": "商户应用",
+  "mobileApp_sidebar_getting_started": "开始使用",
+  "mobileApp_sidebar_merchant_features": "商户功能",
+  "mobileApp_sidebar_transactions": "交易",
+  "mobileApp_sidebar_instore_transactions": "店内交易",
+  "mobileApp_sidebar_online_transactions": "在线交易",
+  "mobileApp_sidebar_card_transactions": "卡交易",
+  "mobileApp_sidebar_transactions_history": "交易历史",
+  "mobileApp_sidebar_merchant_profile": "商户资料",
+  "mobileApp_sidebar_wallets": "钱包",
+  "mobileApp_sidebar_stores": "商店",
+  "mobileApp_sidebar_store_user_features": "门店用户功能",
+  "mobileApp_sidebar_overview": "概述",
+  "mobileApp_sidebar_store_user_instore_transactions": "店内交易",
+  "mobileApp_sidebar_store_user_online_transactions": "在线交易",
+  "mobileApp_sidebar_store_user_card_transactions": "卡交易",
+  "mobileApp_sidebar_store_user_profile": "门店用户资料",
+  "mobileApp_sidebar_user_app": "用户应用",
+  "mobileApp_sidebar_app_under_development": "应用程序开发中",
+  "mobileApp_sidebar_support": "支持",
 
+  "mobileAppIntro": {
+    "sections": {
+      "what": "这是什么？",
+      "apps": "应用程序"
+    },
+    "title": "SriPay 移动应用",
+    "description": "SriPay 通过两个专门的应用程序提供全面的移动支付解决方案，旨在满足不同用户的需求。我们的移动生态系统包括面向企业主和服务提供商的商户应用程序，以及面向消费者进行支付的用户应用程序。两个应用程序无缝协作，创造完整的数字支付体验，实现安全交易、实时支付处理和增强的财务管理功能。",
+    "merchantApp": {
+      "title": "商户应用",
+      "introduction": {
+        "heading": "简介",
+        "text": "SriPay 商户应用是一个专为斯里兰卡商户设计的移动平台，用于无缝管理数字支付和业务运营。它与 Alipay+ 集成以实现全球覆盖，支持二维码支付、在线交易和银行卡处理，并具有用户友好的界面。"
+      },
+      "purpose": {
+        "heading": "目的",
+        "text": "SriPay 弥合了斯里兰卡企业与国际数字支付系统之间的差距：",
+        "point1": "使本地企业能够接受跨境数字支付",
+        "point2": "支持游客使用 Alipay、GCash 和其他首选钱包",
+        "point3": "促进斯里兰卡的金融包容性和电子商务采用"
+      },
+      "keyFeatures": {
+        "heading": "主要特点",
+        "feature1": "Alipay+ 和全球电子钱包支持（跨 50 多个国家/地区的 40 多个钱包）",
+        "feature2": "动态二维码生成，实现非接触式支付",
+        "feature3": "实时支付处理，即时确认",
+        "feature4": "电子商务交易的在线支付集成",
+        "feature5": "行业领先的加密增强安全性"
+      }
+    },
+    "userApp": {
+      "title": "用户应用",
+      "underDevelopment": "开发中",
+      "introduction": {
+        "heading": "简介",
+        "text": "SriPay 用户应用是一个以消费者为中心的移动支付平台，使斯里兰卡用户能够进行无缝数字支付。它连接到全球 Alipay+ 网络，允许通过二维码、移动钱包和各种支付方式进行安全交易。"
+      },
+      "purpose": {
+        "heading": "目的",
+        "text": "用户应用为消费者提供便捷的数字支付解决方案：",
+        "point1": "为日常交易启用无现金支付",
+        "point2": "提供安全的点对点转账",
+        "point3": "简化账单支付和手机充值"
+      },
+      "keyFeatures": {
+        "heading": "主要特点",
+        "feature1": "二维码扫描器，用于即时商户支付",
+        "feature2": "数字钱包管理，具有余额跟踪功能",
+        "feature3": "交易历史记录，包含详细的支付记录",
+        "feature4": "公用事业和服务的账单支付服务",
+        "feature5": "具有生物识别认证的多层安全性"
+      }
+    }
+  },
 
-  
+  "merchantMobileGettingStart": {
+    "sections": {
+      "step1": "注册和设置"
+    },
+    "title": "开始使用",
+    "description": "按照以下步骤开始使用 SriPay 商户应用程序。",
+    "step1": {
+      "title": "注册和设置",
+      "text1": "注册为商户，访问",
+      "text2": "并完成商户注册流程。",
+      "text3": "此外，点击此处可以查看",
+      "registrationSteps": "注册步骤"
+    },
+    "step2": {
+      "title": "下载应用",
+      "downloadAndroid": "下载 Android 版",
+      "downloadIOS": "下载 iOS 版"
+    },
+    "step3": {
+      "title": "登录",
+      "text": "使用在网站上注册的相同凭据登录应用程序。"
+    }
+  },
+
+  "merchantInstoreTransactions": {
+    "sections": {
+      "paymentMethodSelection": "支付方式选择",
+      "alipayPaymentMethod": "Alipay 支付方式",
+      "qrScanPaymentMethod": "二维码扫描支付方式"
+    },
+    "title": "店内交易",
+    "paymentMethodSelection": {
+      "title": "支付方式选择",
+      "description": "从店内交易页面点击\u201c下一步\u201d后，导航到选择支付方式页面。",
+      "optionsTitle": "选项",
+      "alipayLabel": "Alipay -",
+      "alipayText": "选择通过 Alipay 集成处理支付。",
+      "qrScannerLabel": "二维码扫描器 -",
+      "qrScannerText": "选择扫描客户的二维码进行支付。"
+    },
+    "alipayPaymentMethod": {
+      "title": "Alipay 支付方式",
+      "orderValue": {
+        "title": "订单金额部分",
+        "description": "选择 Alipay 后导航到订单金额部分。",
+        "currencyLabel": "货币选择 -",
+        "currencyText": "从下拉菜单中选择货币（LKR 或 USD）。",
+        "amountLabel": "交易金额 -",
+        "amountText": "手动输入支付金额。",
+        "buttonLabel": "处理支付按钮 -",
+        "buttonText": "输入金额后，\u201c处理支付\u201d按钮将启用。"
+      },
+      "paymentQR": {
+        "title": "支付二维码部分",
+        "description": "点击\u201c处理支付\u201d后导航到支付二维码部分。",
+        "scanLabel": "二维码扫描 -",
+        "scanText": "扫描生成的二维码以完成支付。",
+        "cancelLabel": "取消支付 -",
+        "cancelText": "使用\u201c取消\u201d按钮中止交易。",
+        "shareLabel": "分享支付链接 -",
+        "shareText": "使用相关按钮与客户分享支付链接。"
+      }
+    },
+    "qrScanner": {
+      "title": "二维码扫描器",
+      "orderValue": {
+        "title": "二维码订单金额页面",
+        "description": "导航：选择二维码扫描器后导航到二维码订单金额页面。",
+        "currencyLabel": "货币选择 -",
+        "currencyText": "从下拉菜单中选择货币（LKR 或 USD）。",
+        "amountLabel": "金额输入 -",
+        "amountText": "手动输入交易金额。",
+        "buttonLabel": "扫描二维码按钮 -",
+        "buttonText": "输入金额后，\u201c扫描二维码\u201d按钮将启用。"
+      },
+      "processing": {
+        "title": "支付处理",
+        "scanningLabel": "扫描 -",
+        "scanningText": "使用\u201c扫描二维码\u201d按钮扫描客户的二维码并处理支付。",
+        "successLabel": "成功消息 -",
+        "successText": "支付成功后，将显示\u201c支付成功\u201d消息。"
+      }
+    }
+  },
+
+  "merchantTransactions": {
+    "sections": {
+      "overview": "概述",
+      "transactionTypes": "交易类型",
+      "transactionSetup": "交易设置"
+    },
+    "title": "交易",
+    "overview": {
+      "title": "概述",
+      "description": "SriPay 商户应用的交易部分专为实体店的商户设计，以高效管理支付活动。",
+      "navigationLabel": "导航 -",
+      "navigationText": "通过点击导航栏的中心按钮访问交易页面。"
+    },
+    "transactionTypes": {
+      "title": "交易类型",
+      "instoreLabel": "店内交易 -",
+      "instoreText": "使用二维码或其他支持的方法处理在实体门店直接进行的支付。",
+      "onlineLabel": "在线商店交易 -",
+      "onlineText": "通过集成的支付网关处理通过在线商店收到的支付。",
+      "cardLabel": "银行卡支付交易 -",
+      "cardText": "管理通过信用卡或借记卡支付处理的交易。"
+    },
+    "transactionSetup": {
+      "title": "交易设置",
+      "outletLabel": "门店选择 -",
+      "outletText": "从列出可用位置的下拉菜单中选择您的门店。",
+      "terminalLabel": "终端选择 -",
+      "terminalText": "从下拉菜单中选择用于交易处理的终端设备。",
+      "purposeLabel": "支付目的 -",
+      "purposeText": "使用下拉菜单指定支付目的。",
+      "nextLabel": "下一步按钮 -",
+      "nextText": "点击\u201c下一步\u201d以继续到支付方式选择页面。"
+    }
+  },
+
+  "merchantOnlineTransactions": {
+    "sections": {
+      "transactionSetup": "交易设置",
+      "selectAmount": "选择金额",
+      "paymentProcessing": "支付处理"
+    },
+    "title": "在线商店交易",
+    "transactionSetup": {
+      "title": "交易设置",
+      "outletLabel": "门店选择 -",
+      "outletText": "从下拉菜单中选择您的门店。",
+      "purposeLabel": "支付目的 -",
+      "purposeText": "从下拉菜单中选择支付目的",
+      "nextLabel": "下一步按钮 -",
+      "nextText": "点击\u201c下一步\u201d以继续到选择金额页面。"
+    },
+    "selectAmount": {
+      "title": "选择金额页面",
+      "currencyLabel": "货币 -",
+      "currencyText": "在线商店交易仅支持 USD。",
+      "amountLabel": "金额输入 -",
+      "amountText": "手动输入交易金额。",
+      "walletLabel": "钱包选择 -",
+      "walletText": "可选择从下拉菜单中选择钱包（Alipay HK 或 Alipay CN）。",
+      "userPayTypeLabel": "用户支付类型 -",
+      "userPayTypeText": "从下拉菜单中选择\u201cWeb\u201d或\u201cMobile\u201d。",
+      "generateButtonLabel": "生成支付链接按钮 -",
+      "generateButtonText": "点击以导航到支付处理页面。"
+    },
+    "paymentProcessing": {
+      "title": "支付处理页面",
+      "navigation": "导航：点击\u201c生成支付链接\u201d后，进入支付处理页面。",
+      "remainingTimeLabel": "剩余时间 -",
+      "remainingTimeText": "显示完成交易的剩余时间。",
+      "completionLabel": "交易完成 -",
+      "completionText": "在分配的时间内创建交易。",
+      "withWalletLabel": "选择钱包 -",
+      "withWalletText": "如果选择 Alipay HK 或 Alipay CN，将显示二维码供扫描以处理支付。",
+      "withoutWalletLabel": "未选择钱包 -",
+      "withoutWalletText": "如果未选择钱包，请使用提供的支付链接完成交易。"
+    }
+  },
+
+  "merchantCardTransactions": {
+    "sections": {
+      "transactionSetup": "交易设置",
+      "paymentGeneration": "支付生成",
+      "paymentProcessing": "支付处理"
+    },
+    "title": "银行卡支付交易",
+    "transactionSetup": {
+      "title": "交易设置",
+      "storeLabel": "商店 -",
+      "storeText": "从下拉菜单中选择商店。",
+      "purposeLabel": "支付目的 -",
+      "purposeText": "从下拉菜单中选择目的。",
+      "currencyLabel": "货币 -",
+      "currencyText": "从下拉菜单中选择货币（LKR 或 USD）。",
+      "amountLabel": "金额 -",
+      "amountText": "手动输入交易金额。",
+      "proceedButtonLabel": "继续支付按钮 -",
+      "proceedButtonText": "点击以生成支付详情。"
+    },
+    "paymentGeneration": {
+      "title": "支付生成",
+      "clientRefLabel": "客户参考 -",
+      "clientRefText": "此交易的唯一客户提供的标识符（可选但建议提供）。",
+      "requestIdLabel": "请求 ID -",
+      "requestIdText": "API 返回的系统生成的请求标识符，用于跟踪支付请求。",
+      "expiresLabel": "过期时间 -",
+      "expiresText": "ISO 时间戳，指示支付链接或请求何时过期。",
+      "openButtonLabel": "打开支付页面按钮 -",
+      "openButtonText": "用于打开生成的支付页面的按钮，客户在该页面完成银行卡输入。"
+    },
+    "paymentProcessing": {
+      "title": "支付处理",
+      "paymentPageLabel": "支付页面 -",
+      "paymentPageText": "在打开的支付页面上输入您的银行卡详细信息。",
+      "completionLabel": "交易完成 -",
+      "completionText": "提交银行卡详细信息后成功创建交易。"
+    }
+  },
+
+  "transactionHistory": {
+    "sections": {
+      "overview": "概述",
+      "transactionSelection": "交易选择",
+      "transactionSummary": "交易摘要",
+      "transactionActions": "交易操作",
+      "voidTransaction": "撤销交易",
+      "refundTransaction": "退款交易"
+    },
+    "title": "交易历史",
+    "overview": {
+      "title": "概述",
+      "description": "交易历史功能允许商户查看、退款和撤销交易。点击主页上的\u201c历史\u201d选项卡以导航到交易历史页面。"
+    },
+    "transactionSelection": {
+      "title": "交易选择",
+      "description": "从店内、在线商店或银行卡支付中选择以过滤交易历史。选择类型将显示所有相关交易历史。"
+    },
+    "transactionSummary": {
+      "title": "交易摘要",
+      "description": "页面顶部显示成功、退款和撤销交易的计数，以及 USD 和 LKR 的总交易价值。"
+    },
+    "transactionActions": {
+      "title": "交易操作",
+      "viewDetailsLabel": "查看详情 -",
+      "viewDetailsText": "点击交易以查看详细信息。",
+      "downloadReceiptLabel": "下载收据 -",
+      "downloadReceiptText": "选择下载所选交易的收据。",
+      "refundVoidLabel": "退款和撤销 -",
+      "refundVoidText": "对符合条件的交易执行退款或撤销操作。",
+      "specificActionsTitle": "具体操作"
+    },
+    "voidTransaction": {
+      "title": "撤销交易",
+      "eligibilityLabel": "资格 -",
+      "eligibilityText": "点击 24 小时内的成功交易以查看\u201c撤销\u201d按钮。",
+      "processLabel": "流程 -",
+      "processText": "使用 4 位密码在当日内撤销交易。"
+    },
+    "refundTransaction": {
+      "title": "退款交易",
+      "processLabel": "流程 -",
+      "processText": "使用 4 位密码对符合条件的交易发起退款。"
+    }
+  },
+  "merchantProfile": {
+    "sections": {
+      "overview": "概述",
+      "profileManagement": "个人资料管理",
+      "kycVerification": "KYC 验证",
+      "storeUsers": "门店用户",
+      "securitySettings": "安全设置",
+      "logOut": "退出登录"
+    },
+    "title": "商户个人资料",
+    "overview": {
+      "title": "概述",
+      "description": "个人资料部分允许商户管理其账户、验证 KYC、管理门店用户以及调整安全设置。点击导航栏中的\u201c个人资料\u201d按钮以访问此部分。"
+    },
+    "profileManagement": {
+      "title": "个人资料管理",
+      "description": "查看和编辑商户数据。",
+      "editableFields": "可编辑字段 - ",
+      "editableFieldsDesc": "更新个人详细信息。（电子邮件编辑已锁定。）保存更改以更新商户资料"
+    },
+    "kycVerification": {
+      "title": "KYC 验证",
+      "description": "查看 KYC 验证详细信息。在此部分检查状态和已提交的文件。"
+    },
+    "storeUsers": {
+      "title": "门店用户",
+      "overview": {
+        "title": "概述",
+        "description": "查看与商户账户关联的所有门店用户。"
+      },
+      "viewDetails": {
+        "title": "门店用户详情",
+        "description": "点击门店用户以查看其详细信息并编辑其分配的门店。"
+      },
+      "editUser": {
+        "title": "编辑门店用户",
+        "description": "使用单独的\u201c编辑\u201d按钮修改门店用户详细信息并更改门店状态（激活/停用）。"
+      },
+      "addUser": {
+        "title": "添加门店用户",
+        "description": "输入有效数据（例如姓名、电子邮件）并点击\u201c添加用户\u201d以创建新的门店用户。"
+      }
+    },
+    "securitySettings": {
+      "title": "安全设置",
+      "overview": {
+        "title": "概述",
+        "description": "管理密码和密码设置以增强账户安全性。"
+      },
+      "passwordChange": {
+        "title": "重置密码",
+        "description": "输入当前密码和新密码，然后点击\u201c重置密码\u201d以更新您的密码。"
+      },
+      "passcodeChange": {
+        "title": "撤销/退款密码",
+        "description": "首先输入您的密码，然后输入 4 位数密码。此密码用于退款和撤销交易。"
+      }
+    },
+    "logOut": {
+      "title": "退出登录",
+      "description": "点击\u201c退出登录\u201d以结束当前会话。确认操作以退出并返回登录屏幕。"
+    }
+  },
+  "merchantStores": {
+    "sections": {
+      "overview": "概述",
+      "viewDetails": "查看详情",
+      "qrActions": "二维码操作"
+    },
+    "title": "门店",
+    "overview": {
+      "title": "概述",
+      "description": "门店部分允许商户管理和查看其门店详细信息。单击导航栏中的\u201c门店\u201d选项卡以查看您的门店。"
+    },
+    "viewDetails": {
+      "description": "单击\u201c查看详情\u201d以查看特定门店的信息。"
+    },
+    "qrActions": {
+      "title": "二维码操作",
+      "viewLabel": "查看二维码 -",
+      "viewText": "显示门店的二维码以用于付款目的。",
+      "downloadLabel": "下载二维码 -",
+      "downloadText": "下载二维码的选项。",
+      "shareLabel": "分享二维码 -",
+      "shareText": "与他人分享二维码的选项。"
+    }
+  },
+  "merchantWallets": {
+    "sections": {
+      "overview": "概述"
+    },
+    "title": "钱包",
+    "overview": {
+      "title": "概述",
+      "description": "钱包部分允许商户管理其支付钱包。单击导航栏中的\u201c钱包\u201d选项卡以查看您的钱包"
+    }
+  },
+  "storeUserGettingStart": {
+    "title": "门店用户概述",
+    "loginDescription": "门店用户可以通过同一SriPay商户应用程序使用门店用户帐户凭据登录。",
+    "transactionTypesDescription": "在门店用户帐户中，商户可以选择交易类型：店内、在线商店或卡支付。"
+  },
+  "storeUserInstoreTransactions": {
+    "title": "店内交易",
+    "paymentProcess": {
+      "title": "支付流程",
+      "description": "在支付宝Plus或支付宝扫码支付之间选择。",
+      "amountEntry": "金额输入",
+      "amountEntryDesc": "以美元或斯里兰卡卢比输入金额。",
+      "selectStoreDetails": "选择门店详情",
+      "selectStoreDetailsDesc": "从下拉列表中选择门店、终端和支付用途。",
+      "nextButton": "下一步按钮",
+      "nextButtonDesc": "点击\"下一步\"继续。",
+      "alipayPlusDesc": "对于支付宝Plus，扫描二维码并确认支付。",
+      "alipayQRDesc": "对于支付宝扫码支付，扫描二维码并确认支付。"
+    }
+  },
+  "storeUserOnlineTransactions": {
+    "title": "在线商店交易",
+    "paymentProcess": {
+      "title": "支付流程",
+      "paymentMethod": "支付方式",
+      "paymentMethodDesc": "选择支付方式并点击\"继续\"。",
+      "amountEntry": "金额输入",
+      "amountEntryDesc": "添加金额并点击\"下一步\"。",
+      "detailsEntry": "详情输入",
+      "detailsEntryDesc": "输入终端，选择钱包（可选），然后选择网页或移动端，接着点击\"下一步\"。",
+      "confirmPayment": "确认支付",
+      "confirmPaymentDesc": "确认以创建交易。",
+      "performPayment": "执行支付",
+      "performPaymentDesc": "然后您将被重定向到支付页面。在那里您可以找到支付链接。"
+    }
+  },
+  "storeUserCardTransactions": {
+    "title": "卡支付交易",
+    "paymentProcess": {
+      "title": "支付流程",
+      "amountEntry": "金额输入",
+      "amountEntryDesc": "输入金额并点击\"继续\"。",
+      "purposeSelection": "用途选择",
+      "purposeSelectionDesc": "选择支付用途。",
+      "createPayment": "创建支付",
+      "createPaymentDesc": "生成支付并通过可共享链接访问支付页面。"
+    }
+  },
+  "storeUserProfile": {
+    "title": "门店用户资料",
+    "sections": {
+      "overview": "概述",
+      "profileManagement": "资料管理",
+      "resetPasscode": "重置密码"
+    },
+    "overview": {
+      "description": "SriPay商户应用程序中的门店用户资料部分允许门店用户管理其个人资料设置、重置密码、查看终端状态和访问帐户信息。",
+      "navigation": "在以门店用户身份登录时使用导航栏中的\"个人资料\"按钮。"
+    },
+    "profileManagement": {
+      "description": "查看门店用户的个人资料详情。您可以查看用户信息、终端信息、银行帐户详情、商户以及与门店用户相关的门店信息。"
+    },
+    "resetPasscode": {
+      "description": "导航到重置密码部分以更新用于退款和作废的4位数密码。系统将提示您输入并确认新的4位数密码。"
+    }
+  },
+  "appSupport": {
+    "title": "联系方式",
+    "sections": {
+      "overview": "概述",
+      "supportInformation": "支持信息",
+      "officeAddress": "办公地址",
+      "additionalSupport": "额外支持"
+    },
+    "overview": {
+      "description": "联系部分为SriPay商户应用程序用户提供支持和帮助选项。"
+    },
+    "supportInformation": {
+      "email": "电子邮件",
+      "emailDesc": "联系支持团队，邮箱：",
+      "emailDescEnd": "用于一般咨询或技术问题。",
+      "phone": "电话",
+      "phoneDesc": "联系支持团队，电话：",
+      "phoneDescEnd": "（工作时间：上午9:00 - 下午5:00 斯里兰卡标准时间）。",
+      "website": "网站",
+      "websiteDesc": "访问",
+      "websiteDescEnd": "获取常见问题解答、用户指南和其他资源。"
+    },
+    "officeAddress": {
+      "address": "斯里兰卡，皮塔科特，贝达加纳路，第二巷，12号。",
+      "operatingHours": "营业时间",
+      "hours": "周一至周五，上午9:00 - 下午5:00 斯里兰卡标准时间。"
+    },
+    "additionalSupport": {
+      "description": "通过\"联系我们\"表单提交反馈或报告问题，访问"
+    }
+  }
+
 }
+  
+  
+
+
+  
+  
+
+
+  
+
 
   
   

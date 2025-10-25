@@ -16,9 +16,9 @@ function StoreUserProfile() {
 
     useEffect(() => {
         setSections([
-            { id: 'overview', label: 'Overview' },
-            { id: 'profile-management', label: 'Profile Management' },
-            { id: 'reset-passcode', label: 'Reset Passcode' },
+            { id: 'overview', label: t('storeUserProfile.sections.overview') },
+            { id: 'profile-management', label: t('storeUserProfile.sections.profileManagement') },
+            { id: 'reset-passcode', label: t('storeUserProfile.sections.resetPasscode') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -27,19 +27,18 @@ function StoreUserProfile() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Store User Profile
+                {t('storeUserProfile.title')}
             </h1>
 
             <div id="overview" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Overview
+                    {t('storeUserProfile.sections.overview')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    The Store User Profile section in the SriPay Merchant App allows store users to manage their
-                    profile settings, reset passcodes, view terminal statuses, and access account information.
+                    {t('storeUserProfile.overview.description')}
                 </p>
                 <p className='text-gray-700 mb-4'>
-                    Use the "Profile" button in the navigation bar while signed in as a store user.
+                    {t('storeUserProfile.overview.navigation')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M63} alt="Store user profile interface" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -48,10 +47,10 @@ function StoreUserProfile() {
 
             <div id="profile-management" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Profile Management
+                    {t('storeUserProfile.sections.profileManagement')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    View profile details of the store user. You can view user information, terminal information, bank account details, merchant and also the outlet information related to the store user.
+                    {t('storeUserProfile.profileManagement.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M64} alt="Store user profile management" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -72,11 +71,10 @@ function StoreUserProfile() {
 
             <div id="reset-passcode" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Reset Passcode
+                    {t('storeUserProfile.sections.resetPasscode')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    Navigate to the Reset Passcode section to update the 4-digit passcode used for refunds and voids.
-                    You will be prompted to enter and confirm the new 4-digit passcode.
+                    {t('storeUserProfile.resetPasscode.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M69} alt="Reset passcode interface" className="w-60 md:w-72 rounded-lg shadow-sm" />

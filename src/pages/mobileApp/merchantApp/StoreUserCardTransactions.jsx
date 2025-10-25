@@ -13,7 +13,7 @@ function MerchantMobileStoreUserCardTransactions() {
 
     useEffect(() => {
         setSections([
-            { id: 'process', label: 'Payment Process' },
+            { id: 'process', label: t('storeUserCardTransactions.paymentProcess.title') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -22,23 +22,23 @@ function MerchantMobileStoreUserCardTransactions() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Card Payment Transactions
+                {t('storeUserCardTransactions.title')}
             </h1>
 
 
             <div id="process" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Payment Process
+                    {t('storeUserCardTransactions.paymentProcess.title')}
                 </h2>
-                <p className='text-gray-700 mb-2'><strong>Amount Entry - </strong>Enter amount and click <strong>"Continue"</strong>.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserCardTransactions.paymentProcess.amountEntry')} - </strong>{t('storeUserCardTransactions.paymentProcess.amountEntryDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M59} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Purpose Selection - </strong>Select purpose of payment.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserCardTransactions.paymentProcess.purposeSelection')} - </strong>{t('storeUserCardTransactions.paymentProcess.purposeSelectionDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M60} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Create Payment - </strong>Generate payment and access the payment page via a shareable link.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserCardTransactions.paymentProcess.createPayment')} - </strong>{t('storeUserCardTransactions.paymentProcess.createPaymentDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M61} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>

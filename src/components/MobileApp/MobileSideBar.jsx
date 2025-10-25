@@ -99,73 +99,73 @@ const Sidebar = ({ collapsed, setCollapsed, isMobileOpen, onMobileClose }) => {
 
             <div className="flex items-center justify-center my-2 mt-5 mb-5">
               <span className="flex-1 h-0.5 bg-gray-300 ml-7 mr-2" />
-              <span className="whitespace-nowrap">Mobile App</span>
+              <span className="whitespace-nowrap">{t("mobileApp_sidebar_mobile_app")}</span>
               <span className="flex-1 h-0.5 bg-gray-300 ml-2 mr-6" />
             </div>
 
             <Menu.Item key="introduction">
-              <NavLink to="/docs/app/introduction" onClick={handleLinkClick}>Introduction to the App</NavLink>
+              <NavLink to="/docs/app/introduction" onClick={handleLinkClick}>{t("mobileApp_sidebar_introduction_to_app")}</NavLink>
             </Menu.Item>
 
-            <SubMenu key="merchant-app" title="Merchant App" className="!text-gray-700">
+            <SubMenu key="merchant-app" title={t("mobileApp_sidebar_merchant_app")} className="!text-gray-700">
               <Menu.Item key="intro">
-                <NavLink to="/docs/app/merchant/getting-started" onClick={handleLinkClick}>Getting Started</NavLink>
+                <NavLink to="/docs/app/merchant/getting-started" onClick={handleLinkClick}>{t("mobileApp_sidebar_getting_started")}</NavLink>
               </Menu.Item>
-              <SubMenu key="merchant-features" title="Merchant Features" className="!text-gray-700">
+              <SubMenu key="merchant-features" title={t("mobileApp_sidebar_merchant_features")} className="!text-gray-700">
                 <Menu.Item key="transactions">
-                  <NavLink to="/docs/app/merchant/features/transactions" onClick={handleLinkClick}>Transactions</NavLink>
+                  <NavLink to="/docs/app/merchant/features/transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="instore-transactions">
-                  <NavLink to="/docs/app/merchant/features/instore-transactions" onClick={handleLinkClick}>In-Store Transactions</NavLink>
+                  <NavLink to="/docs/app/merchant/features/instore-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_instore_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="online-transactions">
-                  <NavLink to="/docs/app/merchant/features/online-transactions" onClick={handleLinkClick}>Online Transactions</NavLink>
+                  <NavLink to="/docs/app/merchant/features/online-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_online_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="card-transactions">
-                  <NavLink to="/docs/app/merchant/features/card-transactions" onClick={handleLinkClick}>Card Transactions</NavLink>
+                  <NavLink to="/docs/app/merchant/features/card-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_card_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="transactions-history">
-                  <NavLink to="/docs/app/merchant/features/transactions-history" onClick={handleLinkClick}>Transactions History</NavLink>
+                  <NavLink to="/docs/app/merchant/features/transactions-history" onClick={handleLinkClick}>{t("mobileApp_sidebar_transactions_history")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="merchant-profile">
-                  <NavLink to="/docs/app/merchant/features/merchant-profile" onClick={handleLinkClick}>Merchant Profile</NavLink>
+                  <NavLink to="/docs/app/merchant/features/merchant-profile" onClick={handleLinkClick}>{t("mobileApp_sidebar_merchant_profile")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="merchant-wallets">
-                  <NavLink to="/docs/app/merchant/features/wallets" onClick={handleLinkClick}>Wallets</NavLink>
+                  <NavLink to="/docs/app/merchant/features/wallets" onClick={handleLinkClick}>{t("mobileApp_sidebar_wallets")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="merchant-stores">
-                  <NavLink to="/docs/app/merchant/features/stores" onClick={handleLinkClick}>Stores</NavLink>
+                  <NavLink to="/docs/app/merchant/features/stores" onClick={handleLinkClick}>{t("mobileApp_sidebar_stores")}</NavLink>
                 </Menu.Item>
               </SubMenu>
-              <SubMenu key="store-user-features" title="Store User Features" className="!text-gray-700">
+              <SubMenu key="store-user-features" title={t("mobileApp_sidebar_store_user_features")} className="!text-gray-700">
                 <Menu.Item key="user-intro">
-                  <NavLink to="/docs/app/store-user/overview" onClick={handleLinkClick}>Overview</NavLink>
+                  <NavLink to="/docs/app/store-user/overview" onClick={handleLinkClick}>{t("mobileApp_sidebar_overview")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="store-user-instore-transactions">
-                  <NavLink to="/docs/app/store-user/features/instore-transactions" onClick={handleLinkClick}>In-Store Transactions</NavLink>
+                  <NavLink to="/docs/app/store-user/features/instore-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_store_user_instore_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="store-user-online-transactions">
-                  <NavLink to="/docs/app/store-user/features/online-transactions" onClick={handleLinkClick}>Online Transactions</NavLink>
+                  <NavLink to="/docs/app/store-user/features/online-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_store_user_online_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="store-user-card-transactions">
-                  <NavLink to="/docs/app/store-user/features/card-transactions" onClick={handleLinkClick}>Card Transactions</NavLink>
+                  <NavLink to="/docs/app/store-user/features/card-transactions" onClick={handleLinkClick}>{t("mobileApp_sidebar_store_user_card_transactions")}</NavLink>
                 </Menu.Item>
                 <Menu.Item key="store-user-profile">
-                  <NavLink to="/docs/app/store-user/features/store-user-profile" onClick={handleLinkClick}>Store User Profile</NavLink>
+                  <NavLink to="/docs/app/store-user/features/store-user-profile" onClick={handleLinkClick}>{t("mobileApp_sidebar_store_user_profile")}</NavLink>
                 </Menu.Item>
               </SubMenu>
             </SubMenu>
 
 
-            <SubMenu key="user-app" title="User App" className="!text-gray-700">
+            <SubMenu key="user-app" title={t("mobileApp_sidebar_user_app")} className="!text-gray-700">
               {/* Shown but disabled for now - keeps the menu visible without navigation */}
               <Menu.Item key="intro" disabled>
-                <span className="text-gray-400 cursor-not-allowed">App Under Development</span>
+                <span className="text-gray-400 cursor-not-allowed">{t("mobileApp_sidebar_app_under_development")}</span>
               </Menu.Item>
             </SubMenu>
 
             <Menu.Item key="support">
-              <NavLink to="/docs/app/support" onClick={handleLinkClick}>Support</NavLink>
+              <NavLink to="/docs/app/support" onClick={handleLinkClick}>{t("mobileApp_sidebar_support")}</NavLink>
             </Menu.Item>
 
           </Menu>

@@ -15,7 +15,7 @@ function MerchantMobileStoreUserInstoreTransactions() {
 
     useEffect(() => {
         setSections([
-            { id: 'payment-method-selection', label: 'Payment Process' },
+            { id: 'payment-method-selection', label: t('storeUserInstoreTransactions.paymentProcess.title') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -24,16 +24,16 @@ function MerchantMobileStoreUserInstoreTransactions() {
         <div id="payment-method-selection" className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                In-Store Transactions
+                {t('storeUserInstoreTransactions.title')}
             </h1>
 
             <div className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Payment Process
+                    {t('storeUserInstoreTransactions.paymentProcess.title')}
                 </h2>
 
                 <p className='text-gray-700 text-base leading-relaxed mb-4'>
-                    Choose between Alipay Plus or Alipay QR Scan.
+                    {t('storeUserInstoreTransactions.paymentProcess.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M47} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -41,26 +41,26 @@ function MerchantMobileStoreUserInstoreTransactions() {
             </div>
 
             <div className='mt-8 mb-12'>
-                <p className='text-gray-700 mb-2'><strong>Amount Entry - </strong>Enter the amount in USD or LKR.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserInstoreTransactions.paymentProcess.amountEntry')} - </strong>{t('storeUserInstoreTransactions.paymentProcess.amountEntryDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M48} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Select Store Details - </strong>Select the store, terminal, and purpose of payment from the dropdowns.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserInstoreTransactions.paymentProcess.selectStoreDetails')} - </strong>{t('storeUserInstoreTransactions.paymentProcess.selectStoreDetailsDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M49} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Next Button - </strong>Click <strong>"Next"</strong> to proceed.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserInstoreTransactions.paymentProcess.nextButton')} - </strong>{t('storeUserInstoreTransactions.paymentProcess.nextButtonDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M50} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
                 <p className='text-gray-700 mb-2'>
-                    For Alipay Plus, scan the QR code and confirm the payment.
+                    {t('storeUserInstoreTransactions.paymentProcess.alipayPlusDesc')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M51} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
                 <p className='text-gray-700 mb-2'>
-                    For Alipay QR Scan, scan the QR code and confirm the payment.
+                    {t('storeUserInstoreTransactions.paymentProcess.alipayQRDesc')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M52} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />

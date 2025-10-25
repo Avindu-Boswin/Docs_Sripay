@@ -11,7 +11,7 @@ function MerchantWallets() {
 
     useEffect(() => {
         setSections([
-            { id: 'overview', label: 'Overview' },
+            { id: 'overview', label: t('merchantWallets.sections.overview') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -20,15 +20,15 @@ function MerchantWallets() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Wallets
+                {t('merchantWallets.title')}
             </h1>
 
             <div id="overview" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Overview
+                    {t('merchantWallets.overview.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    The Wallets section allows merchants to manage their payment wallets. Click the "Wallet" tab in the navigation bar to view your wallets
+                    {t('merchantWallets.overview.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M42} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />

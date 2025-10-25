@@ -4944,6 +4944,527 @@
   "developer_sidebar_instore_not_settled_latest_transactions": "Instore Not Settled Latest Transactions",
   "developer_sidebar_web_frame_online_apis": "Web Frame Online APIs",
   "developer_sidebar_payment_request": "Payment Request",
-  "developer_sidebar_card_payments_apis": "Card Payments APIs"
-  
+  "developer_sidebar_card_payments_apis": "Card Payments APIs",
+
+  "mobileApp_sidebar_mobile_app": "Mobile App",
+  "mobileApp_sidebar_introduction_to_app": "Introduction to the App",
+  "mobileApp_sidebar_merchant_app": "Merchant App",
+  "mobileApp_sidebar_getting_started": "Getting Started",
+  "mobileApp_sidebar_merchant_features": "Merchant Features",
+  "mobileApp_sidebar_transactions": "Transactions",
+  "mobileApp_sidebar_instore_transactions": "In-Store Transactions",
+  "mobileApp_sidebar_online_transactions": "Online Transactions",
+  "mobileApp_sidebar_card_transactions": "Card Transactions",
+  "mobileApp_sidebar_transactions_history": "Transactions History",
+  "mobileApp_sidebar_merchant_profile": "Merchant Profile",
+  "mobileApp_sidebar_wallets": "Wallets",
+  "mobileApp_sidebar_stores": "Stores",
+  "mobileApp_sidebar_store_user_features": "Store User Features",
+  "mobileApp_sidebar_overview": "Overview",
+  "mobileApp_sidebar_store_user_instore_transactions": "In-Store Transactions",
+  "mobileApp_sidebar_store_user_online_transactions": "Online Transactions",
+  "mobileApp_sidebar_store_user_card_transactions": "Card Transactions",
+  "mobileApp_sidebar_store_user_profile": "Store User Profile",
+  "mobileApp_sidebar_user_app": "User App",
+  "mobileApp_sidebar_app_under_development": "App Under Development",
+  "mobileApp_sidebar_support": "Support",
+
+  "mobileAppIntro": {
+    "sections": {
+      "what": "What is it?",
+      "apps": "Apps"
+    },
+    "title": "SriPay Mobile App",
+    "description": "SriPay provides comprehensive mobile payment solutions through two dedicated applications designed to serve different user needs. Our mobile ecosystem consists of the Merchant App for business owners and service providers, and the User App for consumers making payments. Both applications work seamlessly together to create a complete digital payment experience, enabling secure transactions, real-time payment processing, and enhanced financial management capabilities.",
+    "merchantApp": {
+      "title": "Merchant App",
+      "introduction": {
+        "heading": "Introduction",
+        "text": "The SriPay Merchant App is a mobile platform designed for merchants in Sri Lanka to manage digital payments and business operations seamlessly. It integrates with Alipay+ for global reach, supporting QR code payments, online transactions, and card processing with a user-friendly interface."
+      },
+      "purpose": {
+        "heading": "Purpose",
+        "text": "SriPay bridges the gap between Sri Lankan businesses and international digital payment systems:",
+        "point1": "Enable local businesses to accept cross-border digital payments",
+        "point2": "Support tourists using Alipay, GCash, and other preferred wallets",
+        "point3": "Boost financial inclusion and e-commerce adoption in Sri Lanka"
+      },
+      "keyFeatures": {
+        "heading": "Key Features",
+        "feature1": "Alipay+ & Global eWallet Support (40+ wallets across 50+ countries)",
+        "feature2": "Dynamic QR Code Generation for contactless payments",
+        "feature3": "Real-Time Payment Processing with instant confirmations",
+        "feature4": "Online Payment Integration for e-commerce transactions",
+        "feature5": "Enhanced Security with industry-leading encryption"
+      }
+    },
+    "userApp": {
+      "title": "User App",
+      "underDevelopment": "Under Development",
+      "introduction": {
+        "heading": "Introduction",
+        "text": "The SriPay User App is a consumer-focused mobile payment platform that enables Sri Lankan users to make seamless digital payments. It connects with the global Alipay+ network, allowing secure transactions through QR codes, mobile wallets, and various payment methods."
+      },
+      "purpose": {
+        "heading": "Purpose",
+        "text": "The User App empowers consumers with convenient digital payment solutions:",
+        "point1": "Enable cashless payments for everyday transactions",
+        "point2": "Provide secure peer-to-peer money transfers",
+        "point3": "Simplify bill payments and mobile top-ups"
+      },
+      "keyFeatures": {
+        "heading": "Key Features",
+        "feature1": "QR Code Scanner for instant merchant payments",
+        "feature2": "Digital Wallet Management with balance tracking",
+        "feature3": "Transaction History with detailed payment records",
+        "feature4": "Bill Payment Services for utilities and services",
+        "feature5": "Multi-layer Security with biometric authentication"
+      }
+    }
+  },
+
+  "merchantMobileGettingStart": {
+    "sections": {
+      "step1": "Registration and Setup"
+    },
+    "title": "Getting Started",
+    "description": "Follow these steps to begin using the SriPay Merchant App as a merchant.",
+    "step1": {
+      "title": "Registration and Setup",
+      "text1": "Register as a Merchant, Visit",
+      "text2": "and complete the merchant registration process.",
+      "text3": "Also by clicking here you can view the",
+      "registrationSteps": "registration steps"
+    },
+    "step2": {
+      "title": "Download the App",
+      "downloadAndroid": "Download for Android",
+      "downloadIOS": "Download for iOS"
+    },
+    "step3": {
+      "title": "Login",
+      "text": "Use the same credentials registered on the website to log in to the app."
+    }
+  },
+
+  "merchantInstoreTransactions": {
+    "sections": {
+      "paymentMethodSelection": "Payment Method Selection",
+      "alipayPaymentMethod": "Alipay Payment Method",
+      "qrScanPaymentMethod": "QR Scan Payment Method"
+    },
+    "title": "In-Store Transactions",
+    "paymentMethodSelection": {
+      "title": "Payment Method Selection",
+      "description": "After clicking \"Next\" from in-store transaction page navigate to the Select Payment Method page.",
+      "optionsTitle": "Options",
+      "alipayLabel": "Alipay -",
+      "alipayText": "Select to process payment via Alipay integration.",
+      "qrScannerLabel": "QR Scanner -",
+      "qrScannerText": "Choose to scan a customer's QR code for payment."
+    },
+    "alipayPaymentMethod": {
+      "title": "Alipay Payment Method",
+      "orderValue": {
+        "title": "Order Value Section",
+        "description": "Navigating to the Order Value section after selecting Alipay.",
+        "currencyLabel": "Currency Selection -",
+        "currencyText": "Choose currency from a dropdown menu (LKR or USD).",
+        "amountLabel": "Transaction Amount -",
+        "amountText": "Enter the payment amount manually.",
+        "buttonLabel": "Process to Payment Button -",
+        "buttonText": "The \"Process to Payment\" button becomes enabled after entering the amount."
+      },
+      "paymentQR": {
+        "title": "Payment QR Code Section",
+        "description": "Clicking \"Process to Payment\" navigates to the Payment QR Code section.",
+        "scanLabel": "QR Code Scanning -",
+        "scanText": "Scan the generated QR code to complete the payment.",
+        "cancelLabel": "Cancel Payment -",
+        "cancelText": "Use the \"Cancel\" button to abort the transaction.",
+        "shareLabel": "Share Payment Link -",
+        "shareText": "Use the relevant button to share the payment link with the customer."
+      }
+    },
+    "qrScanner": {
+      "title": "QR Scanner",
+      "orderValue": {
+        "title": "QR Order Value Page",
+        "description": "Navigation: Selecting QR Scanner navigates to the QR Order Value page.",
+        "currencyLabel": "Currency Selection -",
+        "currencyText": "Choose currency from a dropdown menu (LKR or USD).",
+        "amountLabel": "Amount Entry -",
+        "amountText": "Enter the transaction amount manually.",
+        "buttonLabel": "Scan QR Code Button -",
+        "buttonText": "The \"Scan QR Code\" button becomes enabled after entering the amount."
+      },
+      "processing": {
+        "title": "Payment Processing",
+        "scanningLabel": "Scanning -",
+        "scanningText": "Use the \"Scan QR Code\" button to scan the customer's QR code and process the payment.",
+        "successLabel": "Success Message -",
+        "successText": "Upon successful payment, a \"Payment Successful\" message is displayed."
+      }
+    }
+  },
+
+  "merchantTransactions": {
+    "sections": {
+      "overview": "Overview",
+      "transactionTypes": "Transaction Types",
+      "transactionSetup": "Transaction Setup"
+    },
+    "title": "Transactions",
+    "overview": {
+      "title": "Overview",
+      "description": "The Transactions section of the SriPay Merchant App is designed for merchants in physical stores to manage payment activities efficiently.",
+      "navigationLabel": "Navigation -",
+      "navigationText": "Access the Transaction page by clicking the center button on the navigation bar."
+    },
+    "transactionTypes": {
+      "title": "Transaction Types",
+      "instoreLabel": "In-Store Transaction -",
+      "instoreText": "Process payments made directly at your physical outlet using QR codes or other supported methods.",
+      "onlineLabel": "Online Store Transaction -",
+      "onlineText": "Handle payments received through your online store via integrated payment gateways.",
+      "cardLabel": "Card Payment Transaction -",
+      "cardText": "Manage transactions processed through credit or debit card payments."
+    },
+    "transactionSetup": {
+      "title": "Transaction Setup",
+      "outletLabel": "Outlet Selection -",
+      "outletText": "Choose your outlet from a dropdown menu listing available locations.",
+      "terminalLabel": "Terminal Selection -",
+      "terminalText": "Select the terminal device from a dropdown menu for transaction processing.",
+      "purposeLabel": "Purpose of Payment -",
+      "purposeText": "Specify the payment purpose using a dropdown menu.",
+      "nextLabel": "Next Button -",
+      "nextText": "Click \"Next\" to proceed to the payment method selection page."
+    }
+  },
+
+  "merchantOnlineTransactions": {
+    "sections": {
+      "transactionSetup": "Transaction Setup",
+      "selectAmount": "Select Amount",
+      "paymentProcessing": "Payment Processing"
+    },
+    "title": "Online-Store Transactions",
+    "transactionSetup": {
+      "title": "Transaction Setup",
+      "outletLabel": "Outlet Selection -",
+      "outletText": "Select your outlet from a dropdown menu.",
+      "purposeLabel": "Purpose of Payment -",
+      "purposeText": "Choose the payment purpose from a dropdown menu",
+      "nextLabel": "Next Button -",
+      "nextText": "Click \"Next\" to proceed to the Select Amount page."
+    },
+    "selectAmount": {
+      "title": "Select Amount Page",
+      "currencyLabel": "Currency -",
+      "currencyText": "Only USD is available for online store transactions.",
+      "amountLabel": "Amount Entry -",
+      "amountText": "Enter the transaction amount manually.",
+      "walletLabel": "Wallet Selection -",
+      "walletText": "Optionally select a wallet (Alipay HK or Alipay CN) from a dropdown menu.",
+      "userPayTypeLabel": "User Pay Type -",
+      "userPayTypeText": "Choose between \"Web\" or \"Mobile\" from a dropdown menu.",
+      "generateButtonLabel": "Generate Payment Link Button -",
+      "generateButtonText": "Click to navigate to the Payment Processing page."
+    },
+    "paymentProcessing": {
+      "title": "Payment Processing Page",
+      "navigation": "Navigation: After clicking \"Generate Payment Link,\" proceed to the Payment Processing page.",
+      "remainingTimeLabel": "Remaining Time -",
+      "remainingTimeText": "Displays the remaining time to complete the transaction.",
+      "completionLabel": "Transaction Completion -",
+      "completionText": "Create the transaction within the allotted time.",
+      "withWalletLabel": "With Wallet Selected -",
+      "withWalletText": "If Alipay HK or Alipay CN is chosen, a QR code is displayed for scanning to process payment.",
+      "withoutWalletLabel": "Without Wallet -",
+      "withoutWalletText": "If no wallet is selected, use the provided payment link to complete the transaction."
+    }
+  },
+
+  "merchantCardTransactions": {
+    "sections": {
+      "transactionSetup": "Transaction Setup",
+      "paymentGeneration": "Payment Generation",
+      "paymentProcessing": "Payment Processing"
+    },
+    "title": "Card Payment Transactions",
+    "transactionSetup": {
+      "title": "Transaction Setup",
+      "storeLabel": "Store -",
+      "storeText": "Select the store from a dropdown menu.",
+      "purposeLabel": "Payment Purpose -",
+      "purposeText": "Choose the purpose from a dropdown menu.",
+      "currencyLabel": "Currency -",
+      "currencyText": "Select currency from a dropdown menu (LKR or USD).",
+      "amountLabel": "Amount -",
+      "amountText": "Manually enter the transaction amount.",
+      "proceedButtonLabel": "Proceed to Pay Button -",
+      "proceedButtonText": "Click to generate the payment details."
+    },
+    "paymentGeneration": {
+      "title": "Payment Generation",
+      "clientRefLabel": "Client Reference -",
+      "clientRefText": "A unique client-provided identifier for this transaction (optional but recommended).",
+      "requestIdLabel": "Request ID -",
+      "requestIdText": "System-generated request identifier returned by the API to track the payment request.",
+      "expiresLabel": "Expires At -",
+      "expiresText": "ISO timestamp indicating when the payment link or request will expire.",
+      "openButtonLabel": "Open Payment Page Button -",
+      "openButtonText": "Button to open the generated payment page where the customer completes the card entry."
+    },
+    "paymentProcessing": {
+      "title": "Payment Processing",
+      "paymentPageLabel": "Payment Page -",
+      "paymentPageText": "Enter your bank card details on the opened payment page.",
+      "completionLabel": "Transaction Completion -",
+      "completionText": "Successfully create the transaction after submitting card details."
+    }
+  },
+
+  "transactionHistory": {
+    "sections": {
+      "overview": "Overview",
+      "transactionSelection": "Transaction Selection",
+      "transactionSummary": "Transaction Summary",
+      "transactionActions": "Transaction Actions",
+      "voidTransaction": "Void Transaction",
+      "refundTransaction": "Refund Transaction"
+    },
+    "title": "Transactions History",
+    "overview": {
+      "title": "Overview",
+      "description": "The Transaction History feature allows merchants to view, refund, and void transactions. Click the \"History\" tab on the Home page to navigate to the Transaction History page."
+    },
+    "transactionSelection": {
+      "title": "Transaction Selection",
+      "description": "Select from In-Store, Online Store, or Card Payment to filter transaction history. Choosing a type displays all related transaction history."
+    },
+    "transactionSummary": {
+      "title": "Transaction Summary",
+      "description": "Top of Page, shows counts of successful, refunded, and voided transactions, along with total transaction value in USD and LKR."
+    },
+    "transactionActions": {
+      "title": "Transaction Actions",
+      "viewDetailsLabel": "View Details -",
+      "viewDetailsText": "Click a transaction to see detailed information.",
+      "downloadReceiptLabel": "Download Receipt -",
+      "downloadReceiptText": "Option to download the receipt for the selected transaction.",
+      "refundVoidLabel": "Refund and Void -",
+      "refundVoidText": "Perform refund or void actions on eligible transactions.",
+      "specificActionsTitle": "Specific Actions"
+    },
+    "voidTransaction": {
+      "title": "Void Transaction",
+      "eligibilityLabel": "Eligibility -",
+      "eligibilityText": "Click a successful transaction within 24 hours to see the \"Void\" button.",
+      "processLabel": "Process -",
+      "processText": "Void the transaction within the day using a 4-digit passcode."
+    },
+    "refundTransaction": {
+      "title": "Refund Transaction",
+      "processLabel": "Process -",
+      "processText": "Initiate a refund on eligible transactions using a 4-digit passcode."
+    }
+  },
+
+   "merchantProfile": {
+        "sections": {
+            "overview": "Overview",
+            "profileManagement": "Profile Management",
+            "kycVerification": "KYC Verification",
+            "storeUsers": "Store Users",
+            "securitySettings": "Security Settings",
+            "logOut": "Log Out"
+        },
+        "title": "Merchant Profile",
+        "overview": {
+            "title": "Overview",
+            "description": "The Profile section allows merchants to manage their account, verify KYC, manage store users, and adjust security settings. Click the \"Profile\" button in the navigation bar to access this section."
+        },
+        "profileManagement": {
+            "title": "Profile Management",
+            "description": "View and edit merchant data.",
+            "editableFields": "Editable Fields - ",
+            "editableFieldsDesc": "Update personal details. (Email editing is locked.) And save changes to update merchant profile"
+        },
+        "kycVerification": {
+            "title": "KYC Verification",
+            "description": "Review KYC verification details. Check status and submitted documents in this section."
+        },
+        "storeUsers": {
+            "title": "Store Users",
+            "overview": {
+                "title": "Overview",
+                "description": "View all store users associated with the merchant account."
+            },
+            "viewDetails": {
+                "title": "Store User Details",
+                "description": "Click on a store user to view their details and edit their assigned outlets."
+            },
+            "editUser": {
+                "title": "Edit Store User",
+                "description": "Use the separate \"Edit\" button to modify store user details and change outlet status (active/inactive)."
+            },
+            "addUser": {
+                "title": "Add Store User",
+                "description": "Enter valid data (e.g., name, email) and click \"Add User\" to create a new store user."
+            }
+        },
+        "securitySettings": {
+            "title": "Security Settings",
+            "overview": {
+                "title": "Overview",
+                "description": "Manage password and passcode settings for enhanced account security."
+            },
+            "passwordChange": {
+                "title": "Reset Password",
+                "description": "Enter current password and new password, then click \"Reset Password\" to update your password."
+            },
+            "passcodeChange": {
+                "title": "Void/Refund Passcode",
+                "description": "First enter your password, then input a 4-digit passcode. This passcode is used for refund and void transactions."
+            }
+        },
+        "logOut": {
+            "title": "Log Out",
+            "description": "Click \"Log Out\" to end the current session. Confirm the action to sign out and return to the login screen."
+        }
+    },
+    "merchantStores": {
+        "sections": {
+            "overview": "Overview",
+            "viewDetails": "View Details",
+            "qrActions": "QR Code Actions"
+        },
+        "title": "Stores",
+        "overview": {
+            "title": "Overview",
+            "description": "The Stores section allows merchants to manage and view their store details. Click the \"Store\" tab in the navigation bar to view your stores."
+        },
+        "viewDetails": {
+            "description": "Click \"View Details\" to see store-specific information."
+        },
+        "qrActions": {
+            "title": "QR Code Actions",
+            "viewLabel": "View QR Code -",
+            "viewText": "Display the store's QR code for payment purposes.",
+            "downloadLabel": "Download QR Code -",
+            "downloadText": "Option to download the QR code.",
+            "shareLabel": "Share QR Code -",
+            "shareText": "Option to share the QR code with others."
+        }
+    },
+    "merchantWallets": {
+        "sections": {
+            "overview": "Overview"
+        },
+        "title": "Wallets",
+        "overview": {
+            "title": "Overview",
+            "description": "The Wallets section allows merchants to manage their payment wallets. Click the \"Wallet\" tab in the navigation bar to view your wallets"
+        }
+    },
+    "storeUserGettingStart": {
+        "title": "Store User Overview",
+        "loginDescription": "Store user can log in using store user account credentials through the same SriPay merchant app.",
+        "transactionTypesDescription": "In the Store User account, merchants can select transaction types: In-Store, Online Store, or Card Payment."
+    },
+    "storeUserInstoreTransactions": {
+        "title": "In-Store Transactions",
+        "paymentProcess": {
+            "title": "Payment Process",
+            "description": "Choose between Alipay Plus or Alipay QR Scan.",
+            "amountEntry": "Amount Entry",
+            "amountEntryDesc": "Enter the amount in USD or LKR.",
+            "selectStoreDetails": "Select Store Details",
+            "selectStoreDetailsDesc": "Select the store, terminal, and purpose of payment from the dropdowns.",
+            "nextButton": "Next Button",
+            "nextButtonDesc": "Click \"Next\" to proceed.",
+            "alipayPlusDesc": "For Alipay Plus, scan the QR code and confirm the payment.",
+            "alipayQRDesc": "For Alipay QR Scan, scan the QR code and confirm the payment."
+        }
+    },
+    "storeUserOnlineTransactions": {
+        "title": "Online-Store Transactions",
+        "paymentProcess": {
+            "title": "Payment Process",
+            "paymentMethod": "Payment Method",
+            "paymentMethodDesc": "Select the payment method and click \"Continue\".",
+            "amountEntry": "Amount Entry",
+            "amountEntryDesc": "Add the amount and click \"Next\".",
+            "detailsEntry": "Details Entry",
+            "detailsEntryDesc": "Enter terminal, select wallet (optional), and choose Web or Mobile, then click \"Next\".",
+            "confirmPayment": "Confirm Payment",
+            "confirmPaymentDesc": "Confirm to create the transaction.",
+            "performPayment": "Perform Payment",
+            "performPaymentDesc": "Then you'll redirect to the payment page. There you can find the payment link."
+        }
+    },
+    "storeUserCardTransactions": {
+        "title": "Card Payment Transactions",
+        "paymentProcess": {
+            "title": "Payment Process",
+            "amountEntry": "Amount Entry",
+            "amountEntryDesc": "Enter amount and click \"Continue\".",
+            "purposeSelection": "Purpose Selection",
+            "purposeSelectionDesc": "Select purpose of payment.",
+            "createPayment": "Create Payment",
+            "createPaymentDesc": "Generate payment and access the payment page via a shareable link."
+        }
+    },
+    "storeUserProfile": {
+        "title": "Store User Profile",
+        "sections": {
+            "overview": "Overview",
+            "profileManagement": "Profile Management",
+            "resetPasscode": "Reset Passcode"
+        },
+        "overview": {
+            "description": "The Store User Profile section in the SriPay Merchant App allows store users to manage their profile settings, reset passcodes, view terminal statuses, and access account information.",
+            "navigation": "Use the \"Profile\" button in the navigation bar while signed in as a store user."
+        },
+        "profileManagement": {
+            "description": "View profile details of the store user. You can view user information, terminal information, bank account details, merchant and also the outlet information related to the store user."
+        },
+        "resetPasscode": {
+            "description": "Navigate to the Reset Passcode section to update the 4-digit passcode used for refunds and voids. You will be prompted to enter and confirm the new 4-digit passcode."
+        }
+    },
+    "appSupport": {
+        "title": "Contact",
+        "sections": {
+            "overview": "Overview",
+            "supportInformation": "Support Information",
+            "officeAddress": "Office Address",
+            "additionalSupport": "Additional Support"
+        },
+        "overview": {
+            "description": "The Contact section provides support and assistance options for SriPay Merchant App users."
+        },
+        "supportInformation": {
+            "email": "Email",
+            "emailDesc": "Reach out to support at",
+            "emailDescEnd": "for general inquiries or technical issues.",
+            "phone": "Phone",
+            "phoneDesc": "Contact the support team at",
+            "phoneDescEnd": "(available during business hours: 9:00 AM - 5:00 PM SLST).",
+            "website": "Website",
+            "websiteDesc": "Visit",
+            "websiteDescEnd": "for FAQs, user guides, and additional resources."
+        },
+        "officeAddress": {
+            "address": "No.12, Second lane, Beddagana Road, Pita Kotte, Sri Lanka.",
+            "operatingHours": "Operating Hours",
+            "hours": "Monday to Friday, 9:00 AM - 5:00 PM SLST."
+        },
+        "additionalSupport": {
+            "description": "Submit feedback or report issues via the \"Contact Us\" form on"
+        }
+    }
+
 }

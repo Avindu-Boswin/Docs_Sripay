@@ -10,8 +10,8 @@ function MobileAppIntroduction() {
 
   useEffect(() => {
     setSections([
-      { id: 'what', label: 'What is it?' },
-      { id: 'apps', label: 'Apps' },
+      { id: 'what', label: t('mobileAppIntro.sections.what') },
+      { id: 'apps', label: t('mobileAppIntro.sections.apps') },
     ]);
     return () => setSections([]);
   }, [setSections, t]);
@@ -21,7 +21,7 @@ function MobileAppIntroduction() {
       <div id="what" className="mx-auto w-full max-w-4xl flex flex-col md:flex-row justify-center items-center">
         <div className="w-full md:w-full text-center ">
           <h1 className="text-blue-700 mt-10 font-bold text-2xl sm:text-3xl md:text-5xl lg:text-[4rem]">
-            SriPay Mobile App
+            {t('mobileAppIntro.title')}
           </h1>
         </div>
 
@@ -29,7 +29,7 @@ function MobileAppIntroduction() {
       <div className='mx-10 sm:mx-0'>
         <div className='w-full sm:w-[80%] mx-auto mt-8 sm:mt-10  text-base sm:text-lg text-gray-700'>
           <p className="mb-6 leading-relaxed">
-            SriPay provides comprehensive mobile payment solutions through two dedicated applications designed to serve different user needs. Our mobile ecosystem consists of the <strong>Merchant App</strong> for business owners and service providers, and the <strong>User App</strong> for consumers making payments. Both applications work seamlessly together to create a complete digital payment experience, enabling secure transactions, real-time payment processing, and enhanced financial management capabilities.
+            {t('mobileAppIntro.description')}
           </p>
         </div>
 
@@ -40,62 +40,62 @@ function MobileAppIntroduction() {
             <div className="w-full lg:w-1/2 order-2 lg:order-1">
               <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-6 lg:p-8 shadow-lg">
                 <h3 className="text-2xl lg:text-3xl font-bold text-blue-700 mb-4">
-                  Merchant App
+                  {t('mobileAppIntro.merchantApp.title')}
                 </h3>
                 
                 {/* Introduction */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Introduction</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.merchantApp.introduction.heading')}</h4>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    The SriPay Merchant App is a mobile platform designed for merchants in Sri Lanka to manage digital payments and business operations seamlessly. It integrates with Alipay+ for global reach, supporting QR code payments, online transactions, and card processing with a user-friendly interface.
+                    {t('mobileAppIntro.merchantApp.introduction.text')}
                   </p>
                 </div>
 
                 {/* Purpose */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Purpose</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.merchantApp.purpose.heading')}</h4>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    SriPay bridges the gap between Sri Lankan businesses and international digital payment systems:
+                    {t('mobileAppIntro.merchantApp.purpose.text')}
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Enable local businesses to accept cross-border digital payments</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.purpose.point1')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Support tourists using Alipay, GCash, and other preferred wallets</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.purpose.point2')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Boost financial inclusion and e-commerce adoption in Sri Lanka</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.purpose.point3')}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Key Features */}
                 <div>
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Key Features</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.merchantApp.keyFeatures.heading')}</h4>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Alipay+ & Global eWallet Support (40+ wallets across 50+ countries)</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.keyFeatures.feature1')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Dynamic QR Code Generation for contactless payments</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.keyFeatures.feature2')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Real-Time Payment Processing with instant confirmations</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.keyFeatures.feature3')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Online Payment Integration for e-commerce transactions</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.keyFeatures.feature4')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Enhanced Security with industry-leading encryption</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.merchantApp.keyFeatures.feature5')}</span>
                     </div>
                   </div>
                 </div>
@@ -131,68 +131,68 @@ function MobileAppIntroduction() {
               {/* Blur overlay for under development - only on content section */}
               <div className="absolute inset-0 bg-white/40 backdrop-blur-sm rounded-2xl z-10 flex items-center justify-center">
                 <div className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg">
-                  Under Development
+                  {t('mobileAppIntro.userApp.underDevelopment')}
                 </div>
               </div>
               
               <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-6 lg:p-8 shadow-lg">
                 <h3 className="text-2xl lg:text-3xl font-bold text-blue-700 mb-4">
-                  User App
+                  {t('mobileAppIntro.userApp.title')}
                 </h3>
                 
                 {/* Introduction */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Introduction</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.userApp.introduction.heading')}</h4>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    The SriPay User App is a consumer-focused mobile payment platform that enables Sri Lankan users to make seamless digital payments. It connects with the global Alipay+ network, allowing secure transactions through QR codes, mobile wallets, and various payment methods.
+                    {t('mobileAppIntro.userApp.introduction.text')}
                   </p>
                 </div>
 
                 {/* Purpose */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Purpose</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.userApp.purpose.heading')}</h4>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    The User App empowers consumers with convenient digital payment solutions:
+                    {t('mobileAppIntro.userApp.purpose.text')}
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Enable cashless payments for everyday transactions</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.purpose.point1')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Provide secure peer-to-peer money transfers</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.purpose.point2')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Simplify bill payments and mobile top-ups</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.purpose.point3')}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Key Features */}
                 <div>
-                  <h4 className="text-lg font-semibold text-blue-600 mb-2">Key Features</h4>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-2">{t('mobileAppIntro.userApp.keyFeatures.heading')}</h4>
                   <div className="space-y-2">
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">QR Code Scanner for instant merchant payments</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.keyFeatures.feature1')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Digital Wallet Management with balance tracking</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.keyFeatures.feature2')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Transaction History with detailed payment records</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.keyFeatures.feature3')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Bill Payment Services for utilities and services</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.keyFeatures.feature4')}</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 mt-2"></div>
-                      <span className="text-xs text-gray-600">Multi-layer Security with biometric authentication</span>
+                      <span className="text-xs text-gray-600">{t('mobileAppIntro.userApp.keyFeatures.feature5')}</span>
                     </div>
                   </div>
                 </div>

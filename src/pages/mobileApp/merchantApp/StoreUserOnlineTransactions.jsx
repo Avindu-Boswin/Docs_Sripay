@@ -16,7 +16,7 @@ function MerchantMobileStoreUserOnlineTransactions() {
 
     useEffect(() => {
         setSections([
-            { id: 'process', label: 'Payment Process' },
+            { id: 'process', label: t('storeUserOnlineTransactions.paymentProcess.title') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -25,34 +25,34 @@ function MerchantMobileStoreUserOnlineTransactions() {
         <div id="process" className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Online-Store Transactions
+                {t('storeUserOnlineTransactions.title')}
             </h1>
 
 
             <div className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Payment Process
+                    {t('storeUserOnlineTransactions.paymentProcess.title')}
                 </h2>
-                <p className='text-gray-700 mb-2'><strong>Payment Method - </strong>Select the payment method and click <strong>"Continue"</strong>.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserOnlineTransactions.paymentProcess.paymentMethod')} - </strong>{t('storeUserOnlineTransactions.paymentProcess.paymentMethodDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M53} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Amount Entry - </strong>Add the amount and click <strong>"Next"</strong>.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserOnlineTransactions.paymentProcess.amountEntry')} - </strong>{t('storeUserOnlineTransactions.paymentProcess.amountEntryDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M54} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Details Entry - </strong>Enter terminal, select wallet (optional), and choose Web or Mobile, then click <strong>"Next"</strong>.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserOnlineTransactions.paymentProcess.detailsEntry')} - </strong>{t('storeUserOnlineTransactions.paymentProcess.detailsEntryDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M55} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
                                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M56} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                <p className='text-gray-700 mb-2'><strong>Confirm Payment - </strong>Confirm to create the transaction.</p>
+                <p className='text-gray-700 mb-2'><strong>{t('storeUserOnlineTransactions.paymentProcess.confirmPayment')} - </strong>{t('storeUserOnlineTransactions.paymentProcess.confirmPaymentDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M57} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
-                                <p className='text-gray-700 mb-2'><strong>Perform Payment - </strong>Then you'll redirect to the payment page. There you can find the payment link.</p>
+                                <p className='text-gray-700 mb-2'><strong>{t('storeUserOnlineTransactions.paymentProcess.performPayment')} - </strong>{t('storeUserOnlineTransactions.paymentProcess.performPaymentDesc')}</p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M58} alt="process example" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>

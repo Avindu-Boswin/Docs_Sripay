@@ -37,7 +37,7 @@ function MerchantMobileGettingStart() {
 
     useEffect(() => {
         setSections([
-            { id: 'step-1', label: 'Registration and Setup' },
+            { id: 'step-1', label: t('merchantMobileGettingStart.sections.step1') },
 
         ]);
         return () => setSections([]);
@@ -47,33 +47,33 @@ function MerchantMobileGettingStart() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE, SUBTITLE, DESCRIPTION */}
             <h1 id="selfreg-title" className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Getting Started
+                {t('merchantMobileGettingStart.title')}
             </h1>
 
 
             <p className='text-gray-700 text-base leading-relaxed mb-8'>
-                Follow these steps to begin using the SriPay Merchant App as a merchant.
+                {t('merchantMobileGettingStart.description')}
             </p>
 
 
 
-            {/* ---------- STEP 1 ------------------------------------------------ */}
+            {/* ---------- STEP 1 ------------------------------------------------ */}
             <div id="step-1" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Registration and Setup
+                    {t('merchantMobileGettingStart.step1.title')}
                 </h4>
 
                 <p className='text-gray-700 mt-3 text-sm'>
-                    Register as a Merchant, Visit <a href="https://sripay.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://sripay.lk/</a> and complete the merchant registration process.
+                    {t('merchantMobileGettingStart.step1.text1')} <a href="https://sripay.lk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">https://sripay.lk/</a> {t('merchantMobileGettingStart.step1.text2')}
                 </p>
                 <p className='text-gray-700 mt-3 text-sm'>
-                    Also by clicking here you can view the <a href="/docs/merchant/gettingstart" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">registration steps</a>
+                    {t('merchantMobileGettingStart.step1.text3')} <a href="/docs/merchant/gettingstart" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">{t('merchantMobileGettingStart.step1.registrationSteps')}</a>
                 </p>
 
             </div>
             <div id="step-2" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Download the App
+                    {t('merchantMobileGettingStart.step2.title')}
                 </h4>
 
                 <div className='space-y-4'>
@@ -86,7 +86,7 @@ function MerchantMobileGettingStart() {
                                 onClick={() => handleAppDownload('android')}
                                 className='cursor-pointer hover:scale-105 transition-transform duration-200 w-60 h-auto'
                             />
-                            <p className='text-gray-600 text-sm mt-2'>Download for Android</p>
+                            <p className='text-gray-600 text-sm mt-2'>{t('merchantMobileGettingStart.step2.downloadAndroid')}</p>
                         </div>
 
                         {/* iOS Download Image */}
@@ -97,7 +97,7 @@ function MerchantMobileGettingStart() {
                                 onClick={() => handleAppDownload('ios')}
                                 className='cursor-pointer hover:scale-105 transition-transform duration-200 w-60 h-auto'
                             />
-                            <p className='text-gray-600 text-sm mt-2'>Download for iOS</p>
+                            <p className='text-gray-600 text-sm mt-2'>{t('merchantMobileGettingStart.step2.downloadIOS')}</p>
                         </div>
                     </div>
                 </div>
@@ -106,11 +106,11 @@ function MerchantMobileGettingStart() {
 
             <div id="step-3" className='mt-8 mb-6'>
                 <h4 className='text-xl sm:text-2xl mb-9 font-semibold text-gray-700'>
-                    Login
+                    {t('merchantMobileGettingStart.step3.title')}
                 </h4>
 
                 <p className='text-gray-700 mt-3 text-sm'>
-                    Use the same credentials registered on the website to log in to the app.   
+                    {t('merchantMobileGettingStart.step3.text')}
                 </p>
 
             </div>

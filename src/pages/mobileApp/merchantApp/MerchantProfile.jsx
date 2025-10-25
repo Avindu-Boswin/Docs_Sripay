@@ -22,12 +22,12 @@ function MerchantProfile() {
 
     useEffect(() => {
         setSections([
-            { id: 'overview', label: 'Overview' },
-            { id: 'profile-management', label: 'Profile Management' },
-            { id: 'kyc-verification', label: 'KYC Verification' },
-            { id: 'store-users', label: 'Store Users' },
-            { id: 'security-settings', label: 'Security Settings' },
-            { id: 'log-out', label: 'Log Out' },
+            { id: 'overview', label: t('merchantProfile.sections.overview') },
+            { id: 'profile-management', label: t('merchantProfile.sections.profileManagement') },
+            { id: 'kyc-verification', label: t('merchantProfile.sections.kycVerification') },
+            { id: 'store-users', label: t('merchantProfile.sections.storeUsers') },
+            { id: 'security-settings', label: t('merchantProfile.sections.securitySettings') },
+            { id: 'log-out', label: t('merchantProfile.sections.logOut') },
         ]);
         return () => setSections([]);
     }, [setSections, t]);
@@ -36,17 +36,15 @@ function MerchantProfile() {
         <div className='w-full px-4 sm:px-8 md:px-16 lg:px-[12%] mt-10'>
             {/* TOP‑LEVEL TITLE */}
             <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700 mb-8'>
-                Merchant Profile
+                {t('merchantProfile.title')}
             </h1>
 
             <div id="overview" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Overview
+                    {t('merchantProfile.overview.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    The Profile section allows merchants to manage their account, verify KYC, manage store users,
-                    and adjust security settings. Click the "Profile" button in the
-                    navigation bar to access this section.
+                    {t('merchantProfile.overview.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M32} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -55,14 +53,13 @@ function MerchantProfile() {
 
             <div id="profile-management" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Profile Management
+                    {t('merchantProfile.profileManagement.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    View and edit merchant data.
+                    {t('merchantProfile.profileManagement.description')}
                 </p>
                 <p className='text-gray-700 mb-4'>
-                    <strong>Editable Fields - </strong> Update personal details. (Email editing
-                    is locked.) And save changes to update merchant profile
+                    <strong>{t('merchantProfile.profileManagement.editableFields')}</strong>{t('merchantProfile.profileManagement.editableFieldsDesc')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M31} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -71,11 +68,10 @@ function MerchantProfile() {
 
             <div id="kyc-verification" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    KYC Verification
+                    {t('merchantProfile.kycVerification.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    Review KYC verification details. Check status and submitted documents in
-                    this section.
+                    {t('merchantProfile.kycVerification.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M33} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -84,32 +80,31 @@ function MerchantProfile() {
 
             <div id="store-users" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Store Users
+                    {t('merchantProfile.storeUsers.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    <strong>Overview - </strong>View all store users associated with the merchant account.
+                    <strong>{t('merchantProfile.storeUsers.overview.title')} - </strong>{t('merchantProfile.storeUsers.overview.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M34} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
                 <p className='text-gray-700 mb-4'>
-                    <strong>Store User Details - </strong>Click on a store user to view their details and edit their assigned outlets.
+                    <strong>{t('merchantProfile.storeUsers.viewDetails.title')} - </strong>{t('merchantProfile.storeUsers.viewDetails.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M35} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
                 <p className='text-gray-700 mb-4'>
-                    <strong>Edit Store User - </strong>Use the separate "Edit" button to modify store user details and change outlet status (active/inactive).
+                    <strong>{t('merchantProfile.storeUsers.editUser.title')} - </strong>{t('merchantProfile.storeUsers.editUser.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M36} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
                 <p className='text-gray-700 mb-4'>
-                    <strong>Add Store User - </strong>Enter valid data (e.g., name, email) and click "Add User" to
-                    create a new store user.
+                    <strong>{t('merchantProfile.storeUsers.addUser.title')} - </strong>{t('merchantProfile.storeUsers.addUser.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M37} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -118,26 +113,24 @@ function MerchantProfile() {
 
             <div id="security-settings" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Security Settings
+                    {t('merchantProfile.securitySettings.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    <strong>Overview - </strong>Manage password and passcode settings for enhanced account security.
+                    <strong>{t('merchantProfile.securitySettings.overview.title')} - </strong>{t('merchantProfile.securitySettings.overview.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M38} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
                 <p className='text-gray-700 mb-4'>
-                    <strong>Reset Password - </strong>Enter current password and new password, then click "Reset
-                    Password" to update your password.
+                    <strong>{t('merchantProfile.securitySettings.passwordChange.title')} - </strong>{t('merchantProfile.securitySettings.passwordChange.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M39} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
                 </div>
 
                 <p className='text-gray-700 mb-4'>
-                    <strong>Void/Refund Passcode - </strong>First enter your password, then input a 4-digit
-                    passcode. This passcode is used for refund and void transactions.
+                    <strong>{t('merchantProfile.securitySettings.passcodeChange.title')} - </strong>{t('merchantProfile.securitySettings.passcodeChange.description')}
                 </p>
                 <div className="my-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M41} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
@@ -146,10 +139,10 @@ function MerchantProfile() {
 
             <div id="log-out" className='mt-8 mb-12'>
                 <h2 className='text-xl sm:text-2xl mb-4 font-semibold text-gray-700'>
-                    Log Out
+                    {t('merchantProfile.logOut.title')}
                 </h2>
                 <p className='text-gray-700 mb-4'>
-                    Click "Log Out" to end the current session. Confirm the action to sign out and return to the login screen.
+                    {t('merchantProfile.logOut.description')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
                     <img src={M40} alt="transactions example 1" className="w-60 md:w-72 rounded-lg shadow-sm" />
